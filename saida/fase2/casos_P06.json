@@ -2,2110 +2,304 @@
  "codigo": "P06",
  "casos": [
   {
-   "numero": "SEI-220007/000782/2022",
+   "numero": "SEI-480002/001314/2024",
    "encerrado": false,
-   "lead_du": 1054.0,
-   "terceiros_du": 122.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 56.0,
+   "lead_du": 636.0,
+   "terceiros_du": 0.0,
+   "indeterminado_du": 180.0,
+   "cauda_du": 0.0,
    "posse_du": {
-    "CAPET": 8.0,
-    "CASAN": 130.0,
-    "CEDAE/ASS/DPR-7": 46.0,
-    "CHEGAB": 1.0,
-    "CONS-02": 284.0,
-    "CONS-05": 109.0,
-    "PRESI": 0.0,
-    "PROC": 49.0,
-    "REG": 2.0,
-    "SCEXEC": 73.0,
-    "SEDEC/COORDC01": 20.0,
-    "SEDEC/DGDEC": 1.0,
-    "SEDEC/SUBSEDEC": 0.0,
-    "SEDEC/SUPOP": 0.0,
-    "SEEDUC/CHEGAB": 0.0,
-    "SEEDUC/COOENG": 254.0,
-    "SEEDUC/COOFIC": 5.0,
-    "SEEDUC/GABSEC": 0.0,
-    "SEEDUC/SUPIE": 0.0,
-    "SEM UNIDADE": 77.0
+    "CARES": 0.0,
+    "CASAN": 70.0,
+    "PROC": 203.0,
+    "SCEXEC": 57.0,
+    "SEM UNIDADE": 306.0
    },
    "ocorrencias": [
     {
-     "atividade": "t4",
-     "inicio": "2022-03-15 00:00:00",
-     "fim": "2022-03-15 00:00:00",
-     "espera_antes_du": 2.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 2.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.0,
-     "horas_teto": 0.89
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2022-03-28 00:00:00",
-     "fim": "2022-03-28 00:00:00",
-     "espera_antes_du": 9.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0,
-      "CASAN": 8.0
-     },
-     "espera_antes_terceiros_du": 8.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.1
-    },
-    {
-     "atividade": "t11",
-     "inicio": "2022-03-28 00:00:00",
-     "fim": "2022-03-28 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.38
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2022-05-04 00:00:00",
-     "fim": "2022-05-06 00:00:00",
-     "espera_antes_du": 25.0,
-     "execucao_du": 2.0,
-     "espera_antes_por_unidade": {
-      "CASAN": 14.0,
-      "SEM UNIDADE": 11.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 6.1,
-     "horas_teto": 6.1
-    },
-    {
-     "atividade": "t10",
-     "inicio": "2022-05-12 00:00:00",
-     "fim": "2022-05-27 00:00:00",
-     "espera_antes_du": 4.0,
-     "execucao_du": 11.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 4.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.7,
-     "horas_teto": 2.85
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2022-06-24 00:00:00",
-     "fim": "2022-06-24 00:00:00",
+     "atividade": "t2",
+     "inicio": "2024-03-07 00:00:00",
+     "fim": "2024-04-29 00:00:00",
      "espera_antes_du": 19.0,
-     "execucao_du": 0.0,
+     "execucao_du": 35.0,
      "espera_antes_por_unidade": {
-      "SEM UNIDADE": 19.0
+      "CASAN": 19.0
      },
-     "espera_antes_terceiros_du": 9.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.37
-    },
-    {
-     "atividade": "t11",
-     "inicio": "2022-06-24 00:00:00",
-     "fim": "2022-06-27 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {},
      "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.35,
-     "horas_teto": 0.72
+     "horas_piso": 63.0,
+     "horas_teto": 132.54
     },
     {
      "atividade": "t3",
-     "inicio": "2022-06-28 00:00:00",
-     "fim": "2022-06-28 00:00:00",
-     "espera_antes_du": 1.0,
+     "inicio": "2024-05-08 00:00:00",
+     "fim": "2024-05-08 00:00:00",
+     "espera_antes_du": 6.0,
      "execucao_du": 0.0,
      "espera_antes_por_unidade": {
-      "CHEGAB": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.61
-    },
-    {
-     "atividade": "t11",
-     "inicio": "2022-06-30 00:00:00",
-     "fim": "2022-06-30 00:00:00",
-     "espera_antes_du": 2.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 2.0
+      "CASAN": 6.0
      },
      "espera_antes_terceiros_du": 0.0,
      "horas_piso": 0.75,
-     "horas_teto": 1.62
+     "horas_teto": 1.13
     },
     {
-     "atividade": "t3",
-     "inicio": "2022-08-23 00:00:00",
-     "fim": "2022-08-24 00:00:00",
-     "espera_antes_du": 38.0,
-     "execucao_du": 1.0,
+     "atividade": "t2",
+     "inicio": "2024-05-10 00:00:00",
+     "fim": "2024-05-20 00:00:00",
+     "espera_antes_du": 2.0,
+     "execucao_du": 6.0,
      "espera_antes_por_unidade": {
-      "SEM UNIDADE": 36.0,
       "CASAN": 2.0
      },
      "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.1,
-     "horas_teto": 7.13
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2022-09-29 00:00:00",
-     "fim": "2022-09-29 00:00:00",
-     "espera_antes_du": 25.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0,
-      "PROC": 24.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.0,
-     "horas_teto": 0.76
+     "horas_piso": 36.0,
+     "horas_teto": 79.79
     },
     {
      "atividade": "t3",
-     "inicio": "2022-10-31 00:00:00",
-     "fim": "2022-10-31 00:00:00",
-     "espera_antes_du": 20.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CASAN": 17.0,
-      "CONS-05": 3.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.0,
-     "horas_teto": 0.61
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2022-11-01 00:00:00",
-     "fim": "2022-11-01 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2022-11-22 00:00:00",
-     "fim": "2022-11-22 00:00:00",
-     "espera_antes_du": 13.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 13.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.0,
-     "horas_teto": 1.66
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2023-04-27 00:00:00",
-     "fim": "2023-04-27 00:00:00",
-     "espera_antes_du": 107.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 1.0,
-      "CONS-05": 106.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.37
-    },
-    {
-     "atividade": "t1",
-     "inicio": "2023-10-10 00:00:00",
-     "fim": "2023-10-10 00:00:00",
-     "espera_antes_du": 115.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 95.0,
-      "SEDEC/DGDEC": 1.0,
-      "SEDEC/COORDC01": 15.0,
-      "SEEDUC/COOENG": 4.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 8.1,
-     "horas_teto": 8.36
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2023-10-30 00:00:00",
-     "fim": "2023-10-30 00:00:00",
-     "espera_antes_du": 13.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SEEDUC/COOENG": 13.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.25,
-     "horas_teto": 1.46
-    },
-    {
-     "atividade": "t11",
-     "inicio": "2023-12-01 00:00:00",
-     "fim": "2023-12-01 00:00:00",
-     "espera_antes_du": 21.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SEEDUC/COOENG": 21.0
-     },
-     "espera_antes_terceiros_du": 21.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.1
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2023-12-05 00:00:00",
-     "fim": "2024-10-02 00:00:00",
-     "espera_antes_du": 2.0,
-     "execucao_du": 208.0,
-     "espera_antes_por_unidade": {
-      "SEEDUC/COOENG": 2.0
-     },
-     "espera_antes_terceiros_du": 1.0,
-     "horas_piso": 1.2,
-     "horas_teto": 2.23
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2024-12-02 00:00:00",
-     "fim": "2024-12-02 00:00:00",
-     "espera_antes_du": 40.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CASAN": 38.0,
-      "REG": 2.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.25,
-     "horas_teto": 9.04
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2024-12-02 00:00:00",
-     "fim": "2024-12-02 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.37
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2024-12-06 00:00:00",
-     "fim": "2024-12-06 00:00:00",
-     "espera_antes_du": 4.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 4.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 6.0,
-     "horas_teto": 15.21
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2024-12-11 00:00:00",
-     "fim": "2024-12-11 00:00:00",
-     "espera_antes_du": 3.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 3.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.5,
-     "horas_teto": 0.88
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2024-12-13 00:00:00",
-     "fim": "2024-12-17 00:00:00",
-     "espera_antes_du": 2.0,
-     "execucao_du": 2.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 2.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.45,
-     "horas_teto": 2.68
-    },
-    {
-     "atividade": "t2",
-     "inicio": "2025-02-18 00:00:00",
-     "fim": "2025-02-18 00:00:00",
-     "espera_antes_du": 42.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 15.0,
-      "CEDAE/ASS/DPR-7": 24.0,
-      "CASAN": 3.0
-     },
-     "espera_antes_terceiros_du": 22.0,
-     "horas_piso": 1.25,
-     "horas_teto": 2.64
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2025-03-13 00:00:00",
-     "fim": "2025-03-13 00:00:00",
-     "espera_antes_du": 15.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 15.0
-     },
-     "espera_antes_terceiros_du": 5.0,
-     "horas_piso": 0.2,
-     "horas_teto": 0.2
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-03-31 00:00:00",
-     "fim": "2025-04-01 00:00:00",
-     "espera_antes_du": 12.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 9.0,
-      "CONS-02": 3.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 8.5,
-     "horas_teto": 9.19
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2025-04-04 00:00:00",
-     "fim": "2025-04-04 00:00:00",
-     "espera_antes_du": 3.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 3.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.2,
-     "horas_teto": 0.2
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2025-04-15 00:00:00",
-     "fim": "2025-04-15 00:00:00",
-     "espera_antes_du": 7.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 2.0,
-      "CONS-02": 5.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t2",
-     "inicio": "2025-04-25 00:00:00",
-     "fim": "2025-04-25 00:00:00",
-     "espera_antes_du": 5.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 5.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.35,
-     "horas_teto": 2.88
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2025-05-12 00:00:00",
-     "fim": "2025-05-12 00:00:00",
-     "espera_antes_du": 10.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 1.0,
-      "CONS-02": 9.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.0,
-     "horas_teto": 0.8
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2025-05-19 00:00:00",
-     "fim": "2025-05-19 00:00:00",
-     "espera_antes_du": 5.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 5.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.1
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2025-05-23 00:00:00",
-     "fim": "2025-05-26 00:00:00",
-     "espera_antes_du": 4.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 4.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.7,
-     "horas_teto": 1.46
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-05-27 00:00:00",
-     "fim": "2025-05-27 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 12.2,
-     "horas_teto": 10.76
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2025-06-06 00:00:00",
-     "fim": "2025-06-30 00:00:00",
-     "espera_antes_du": 8.0,
-     "execucao_du": 15.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 8.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.5,
-     "horas_teto": 4.57
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2025-06-30 00:00:00",
-     "fim": "2025-06-30 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 10.0,
-     "horas_teto": 25.9
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2025-07-14 00:00:00",
-     "fim": "2025-07-30 00:00:00",
-     "espera_antes_du": 10.0,
-     "execucao_du": 12.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 10.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.85,
-     "horas_teto": 5.14
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2025-07-31 00:00:00",
-     "fim": "2025-07-31 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0
-     },
-     "espera_antes_terceiros_du": 1.0,
-     "horas_piso": 0.5,
-     "horas_teto": 0.87
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-08-01 00:00:00",
-     "fim": "2025-08-01 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CASAN": 1.0
-     },
-     "espera_antes_terceiros_du": 1.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.1
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2025-08-05 00:00:00",
-     "fim": "2025-08-05 00:00:00",
-     "espera_antes_du": 2.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 2.0
-     },
-     "espera_antes_terceiros_du": 2.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2025-08-08 00:00:00",
-     "fim": "2025-08-08 00:00:00",
-     "espera_antes_du": 3.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 3.0
-     },
-     "espera_antes_terceiros_du": 3.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.1
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2025-10-23 00:00:00",
-     "fim": "2025-10-23 00:00:00",
-     "espera_antes_du": 54.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 40.0,
-      "CEDAE/ASS/DPR-7": 14.0
-     },
-     "espera_antes_terceiros_du": 18.0,
-     "horas_piso": 0.5,
-     "horas_teto": 0.38
-    },
-    {
-     "atividade": "t2",
-     "inicio": "2025-12-18 00:00:00",
-     "fim": "2025-12-18 00:00:00",
-     "espera_antes_du": 38.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 18.0,
-      "CASAN": 20.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.12
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-12-18 00:00:00",
-     "fim": "2025-12-18 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 12.25,
-     "horas_teto": 14.4
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2026-01-27 00:00:00",
-     "fim": "2026-01-27 00:00:00",
-     "espera_antes_du": 25.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 18.0,
-      "CEDAE/ASS/DPR-7": 7.0
-     },
-     "espera_antes_terceiros_du": 17.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.37
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2026-03-13 00:00:00",
-     "fim": "2026-03-16 00:00:00",
-     "espera_antes_du": 31.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 7.0,
-      "CASAN": 24.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 8.1,
-     "horas_teto": 10.31
-    }
-   ]
-  },
-  {
-   "numero": "SEI-220007/004476/2022",
-   "encerrado": true,
-   "lead_du": 862.0,
-   "terceiros_du": 6.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 36.0,
-   "posse_du": {
-    "CAENE": 17.0,
-    "CONS-02": 153.0,
-    "CONS-03": 4.0,
-    "PROC": 38.0,
-    "SCEXEC": 8.0,
-    "SEM UNIDADE": 642.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2022-12-19 00:00:00",
-     "fim": "2022-12-19 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.85,
-     "horas_teto": 9.74
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2023-01-10 00:00:00",
-     "fim": "2023-01-10 00:00:00",
-     "espera_antes_du": 16.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 16.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.0,
-     "horas_teto": 7.92
-    },
-    {
-     "atividade": "t10",
-     "inicio": "2023-01-10 00:00:00",
-     "fim": "2023-01-10 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2023-01-10 00:00:00",
-     "fim": "2023-01-10 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.5,
-     "horas_teto": 0.38
-    },
-    {
-     "atividade": "t10",
-     "inicio": "2023-01-11 00:00:00",
-     "fim": "2023-01-11 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.6,
-     "horas_teto": 1.42
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2023-01-12 00:00:00",
-     "fim": "2023-01-12 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0
-     },
-     "espera_antes_terceiros_du": 1.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2023-01-12 00:00:00",
-     "fim": "2023-01-12 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.11
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2023-03-09 00:00:00",
-     "fim": "2023-03-09 00:00:00",
-     "espera_antes_du": 37.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 37.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 3.0,
-     "horas_teto": 12.01
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2025-10-07 00:00:00",
-     "fim": "2025-10-07 00:00:00",
-     "espera_antes_du": 643.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 1.0,
-      "SEM UNIDADE": 642.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2026-01-13 00:00:00",
-     "fim": "2026-01-13 00:00:00",
-     "espera_antes_du": 66.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 66.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.14
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2026-03-30 00:00:00",
-     "fim": "2026-03-30 00:00:00",
-     "espera_antes_du": 51.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 47.0,
-      "CONS-03": 4.0
-     },
-     "espera_antes_terceiros_du": 5.0,
-     "horas_piso": 7.0,
-     "horas_teto": 17.02
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2026-04-08 00:00:00",
-     "fim": "2026-04-15 00:00:00",
-     "espera_antes_du": 6.0,
-     "execucao_du": 5.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 5.0,
-      "SCEXEC": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.1,
-     "horas_teto": 2.0
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2026-04-15 00:00:00",
-     "fim": "2026-04-15 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.5,
-     "horas_teto": 1.78
-    }
-   ]
-  },
-  {
-   "numero": "SEI-220007/005630/2023",
-   "encerrado": true,
-   "lead_du": 523.0,
-   "terceiros_du": 9.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 0.0,
-   "posse_du": {
-    "ASSINF": 1.0,
-    "CAENE": 6.0,
-    "CONS-02": 30.0,
-    "PROC": 382.0,
-    "SCEXEC": 37.0,
-    "SEM UNIDADE": 67.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2023-09-26 00:00:00",
-     "fim": "2023-09-26 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 6.0,
-     "horas_teto": 11.56
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2023-10-05 00:00:00",
-     "fim": "2023-10-05 00:00:00",
-     "espera_antes_du": 7.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 6.0,
-      "ASSINF": 1.0
-     },
-     "espera_antes_terceiros_du": 6.0,
-     "horas_piso": 2.0,
-     "horas_teto": 7.92
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2025-04-28 00:00:00",
-     "fim": "2025-04-28 00:00:00",
-     "espera_antes_du": 384.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 2.0,
-      "PROC": 382.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 10.45
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2025-06-11 00:00:00",
-     "fim": "2025-06-11 00:00:00",
-     "espera_antes_du": 31.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 31.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2025-06-24 00:00:00",
-     "fim": "2025-06-24 00:00:00",
-     "espera_antes_du": 8.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 8.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.42
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2025-09-09 00:00:00",
-     "fim": "2025-09-09 00:00:00",
-     "espera_antes_du": 55.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 18.0,
-      "SEM UNIDADE": 37.0
-     },
-     "espera_antes_terceiros_du": 3.0,
-     "horas_piso": 6.0,
-     "horas_teto": 17.39
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2025-09-11 00:00:00",
-     "fim": "2025-09-17 00:00:00",
-     "espera_antes_du": 2.0,
-     "execucao_du": 4.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 2.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.85,
-     "horas_teto": 1.62
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2025-09-17 00:00:00",
-     "fim": "2025-11-03 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 32.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.5,
-     "horas_teto": 2.79
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/001210/2025",
-   "encerrado": true,
-   "lead_du": 317.0,
-   "terceiros_du": 13.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 4.0,
-   "posse_du": {
-    "CAENE": 279.0,
-    "CONS-02": 4.0,
-    "PROC": 13.0,
-    "SCEXEC": 21.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t3",
-     "inicio": "2026-01-12 00:00:00",
-     "fim": "2026-03-16 00:00:00",
-     "espera_antes_du": 234.0,
-     "execucao_du": 42.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0,
-      "CAENE": 233.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.1,
-     "horas_teto": 8.15
-    },
-    {
-     "atividade": "t10",
-     "inicio": "2026-03-17 00:00:00",
-     "fim": "2026-03-17 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.41
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2026-04-13 00:00:00",
-     "fim": "2026-04-13 00:00:00",
-     "espera_antes_du": 18.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 14.0,
-      "CAENE": 4.0
-     },
-     "espera_antes_terceiros_du": 13.0,
-     "horas_piso": 0.5,
-     "horas_teto": 1.11
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2026-05-01 00:00:00",
-     "fim": "2026-05-01 00:00:00",
-     "espera_antes_du": 12.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0,
-      "PROC": 11.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 14.33
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2026-05-12 00:00:00",
-     "fim": "2026-05-12 00:00:00",
-     "espera_antes_du": 6.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 2.0,
-      "SCEXEC": 4.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.36
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/005546/2024",
-   "encerrado": true,
-   "lead_du": 483.0,
-   "terceiros_du": 12.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 0.0,
-   "posse_du": {
-    "CAENE": 32.0,
-    "CONS-02": 112.0,
-    "CONS-03": 0.0,
-    "INEA/DIRLAM": 1.0,
-    "INEA/GERLRAC": 2.0,
-    "INEA/PRESI": 5.0,
-    "INEA/SERVARAT": 2.0,
-    "PROC": 17.0,
-    "SCEXEC": 28.0,
-    "SEM UNIDADE": 284.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2024-07-01 00:00:00",
-     "fim": "2024-07-02 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 8.0,
-     "horas_teto": 16.32
-    },
-    {
-     "atividade": "t2",
-     "inicio": "2024-08-02 00:00:00",
-     "fim": "2024-08-13 00:00:00",
-     "espera_antes_du": 23.0,
-     "execucao_du": 7.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 23.0
-     },
-     "espera_antes_terceiros_du": 7.0,
-     "horas_piso": 3.5,
-     "horas_teto": 3.51
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2024-08-14 00:00:00",
-     "fim": "2024-08-14 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.25
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2024-08-28 00:00:00",
-     "fim": "2024-08-28 00:00:00",
-     "espera_antes_du": 10.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "INEA/PRESI": 5.0,
-      "INEA/DIRLAM": 1.0,
-      "INEA/GERLRAC": 2.0,
-      "INEA/SERVARAT": 2.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.0,
-     "horas_teto": 8.41
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2025-08-19 00:00:00",
-     "fim": "2025-08-19 00:00:00",
-     "espera_antes_du": 241.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 21.0,
-      "SEM UNIDADE": 203.0,
-      "PROC": 17.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 16.18
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2025-08-26 00:00:00",
-     "fim": "2025-08-26 00:00:00",
-     "espera_antes_du": 5.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 5.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2026-01-28 00:00:00",
-     "fim": "2026-01-28 00:00:00",
-     "espera_antes_du": 106.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 106.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.13
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2026-05-29 00:00:00",
-     "fim": "2026-05-29 00:00:00",
-     "espera_antes_du": 81.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SEM UNIDADE": 81.0
-     },
-     "espera_antes_terceiros_du": 1.0,
-     "horas_piso": 9.0,
-     "horas_teto": 19.76
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2026-06-09 00:00:00",
-     "fim": "2026-06-11 00:00:00",
-     "espera_antes_du": 6.0,
-     "execucao_du": 2.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 6.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.85,
-     "horas_teto": 3.93
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2026-06-11 00:00:00",
-     "fim": "2026-06-11 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.0,
-     "horas_teto": 1.94
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/007073/2025",
-   "encerrado": false,
-   "lead_du": 181.0,
-   "terceiros_du": 7.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 3.0,
-   "posse_du": {
-    "CAENE": 11.0,
-    "CONS-02": 3.0,
-    "PROC": 98.0,
-    "REG": 20.0,
-    "SCEXEC": 69.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2025-08-21 00:00:00",
-     "fim": "2025-08-21 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 7.35,
-     "horas_teto": 12.03
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-09-05 00:00:00",
-     "fim": "2025-09-05 00:00:00",
-     "espera_antes_du": 11.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 11.0
-     },
-     "espera_antes_terceiros_du": 7.0,
-     "horas_piso": 3.0,
-     "horas_teto": 8.29
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2026-03-25 00:00:00",
-     "fim": "2026-03-25 00:00:00",
-     "espera_antes_du": 136.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 42.0,
-      "PROC": 94.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 14.89
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2026-05-13 00:00:00",
-     "fim": "2026-05-13 00:00:00",
-     "espera_antes_du": 31.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 4.0,
-      "SCEXEC": 27.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/007520/2025",
-   "encerrado": true,
-   "lead_du": 187.0,
-   "terceiros_du": 10.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 0.0,
-   "posse_du": {
-    "CAENE": 10.0,
-    "CONS-02": 14.0,
-    "CONS-03": 0.0,
-    "PROC": 24.0,
-    "SCEXEC": 57.0,
-    "SEM UNIDADE": 82.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2025-09-05 00:00:00",
-     "fim": "2025-09-05 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 8.75,
-     "horas_teto": 16.5
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-09-19 00:00:00",
-     "fim": "2025-09-19 00:00:00",
-     "espera_antes_du": 10.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 10.0
-     },
-     "espera_antes_terceiros_du": 8.0,
-     "horas_piso": 4.0,
-     "horas_teto": 8.56
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2025-12-10 00:00:00",
-     "fim": "2025-12-10 00:00:00",
-     "espera_antes_du": 56.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 32.0,
-      "PROC": 24.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 10.56
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2026-01-14 00:00:00",
-     "fim": "2026-01-14 00:00:00",
-     "espera_antes_du": 23.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 23.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2026-01-27 00:00:00",
-     "fim": "2026-01-27 00:00:00",
-     "espera_antes_du": 8.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 8.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.13
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2026-05-29 00:00:00",
-     "fim": "2026-05-29 00:00:00",
-     "espera_antes_du": 82.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SEM UNIDADE": 82.0
-     },
-     "espera_antes_terceiros_du": 2.0,
-     "horas_piso": 8.0,
-     "horas_teto": 18.71
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2026-06-09 00:00:00",
-     "fim": "2026-06-10 00:00:00",
-     "espera_antes_du": 6.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 6.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.85,
-     "horas_teto": 1.8
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2026-06-10 00:00:00",
-     "fim": "2026-06-10 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.0,
-     "horas_teto": 1.71
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2026-06-11 00:00:00",
-     "fim": "2026-06-11 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.5,
-     "horas_teto": 0.5
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2026-06-11 00:00:00",
-     "fim": "2026-06-11 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.5,
-     "horas_teto": 1.78
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/007683/2025",
-   "encerrado": true,
-   "lead_du": 184.0,
-   "terceiros_du": 8.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 0.0,
-   "posse_du": {
-    "ASSINF": 0.0,
-    "CAENE": 15.0,
-    "CONS-02": 14.0,
-    "CONS-03": 0.0,
-    "PROC": 24.0,
-    "SCEXEC": 49.0,
-    "SEM UNIDADE": 82.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2025-09-10 00:00:00",
-     "fim": "2025-09-10 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.6,
-     "horas_teto": 3.48
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-10-01 00:00:00",
-     "fim": "2025-10-01 00:00:00",
-     "espera_antes_du": 15.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 15.0
-     },
-     "espera_antes_terceiros_du": 6.0,
-     "horas_piso": 3.0,
-     "horas_teto": 7.97
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2025-12-10 00:00:00",
-     "fim": "2025-12-10 00:00:00",
-     "espera_antes_du": 48.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 24.0,
-      "PROC": 24.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 11.36
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2026-01-14 00:00:00",
-     "fim": "2026-01-14 00:00:00",
-     "espera_antes_du": 23.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 23.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2026-01-27 00:00:00",
-     "fim": "2026-01-27 00:00:00",
-     "espera_antes_du": 8.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 8.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.13
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2026-05-29 00:00:00",
-     "fim": "2026-05-29 00:00:00",
-     "espera_antes_du": 82.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SEM UNIDADE": 82.0
-     },
-     "espera_antes_terceiros_du": 2.0,
-     "horas_piso": 7.0,
-     "horas_teto": 18.38
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2026-06-09 00:00:00",
-     "fim": "2026-06-10 00:00:00",
-     "espera_antes_du": 6.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 6.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.35,
-     "horas_teto": 1.75
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2026-06-10 00:00:00",
-     "fim": "2026-06-11 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.0,
-     "horas_teto": 3.64
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/007984/2025",
-   "encerrado": true,
-   "lead_du": 176.0,
-   "terceiros_du": 8.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 12.0,
-   "posse_du": {
-    "ASSINF": 0.0,
-    "CAENE": 10.0,
-    "CONS-02": 32.0,
-    "CONS-03": 1.0,
-    "PROC": 15.0,
-    "SCEXEC": 51.0,
-    "SEM UNIDADE": 67.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2025-09-19 00:00:00",
-     "fim": "2025-09-19 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 10.25,
-     "horas_teto": 17.62
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-09-29 00:00:00",
-     "fim": "2025-09-29 00:00:00",
-     "espera_antes_du": 6.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 6.0
-     },
-     "espera_antes_terceiros_du": 4.0,
-     "horas_piso": 4.0,
-     "horas_teto": 9.5
-    },
-    {
-     "atividade": "t10",
-     "inicio": "2025-10-03 00:00:00",
-     "fim": "2025-10-03 00:00:00",
-     "espera_antes_du": 4.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 4.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.45,
-     "horas_teto": 0.45
-    },
-    {
-     "atividade": "t1",
-     "inicio": "2025-10-28 00:00:00",
-     "fim": "2025-10-28 00:00:00",
-     "espera_antes_du": 17.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 2.0,
-      "SEM UNIDADE": 12.0,
-      "CAENE": 3.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.1
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2025-10-30 00:00:00",
-     "fim": "2025-10-30 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.0,
-     "horas_teto": 2.9
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2025-12-22 00:00:00",
-     "fim": "2025-12-22 00:00:00",
-     "espera_antes_du": 36.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 25.0,
-      "PROC": 11.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 15.79
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2026-01-14 00:00:00",
-     "fim": "2026-01-14 00:00:00",
-     "espera_antes_du": 15.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 4.0,
-      "SCEXEC": 11.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2026-01-27 00:00:00",
-     "fim": "2026-01-27 00:00:00",
-     "espera_antes_du": 8.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 8.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.09
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2026-04-30 00:00:00",
-     "fim": "2026-04-30 00:00:00",
-     "espera_antes_du": 62.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 6.0,
-      "SEM UNIDADE": 55.0,
-      "CONS-03": 1.0
-     },
-     "espera_antes_terceiros_du": 4.0,
-     "horas_piso": 7.0,
-     "horas_teto": 19.76
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2026-05-13 00:00:00",
-     "fim": "2026-05-21 00:00:00",
-     "espera_antes_du": 8.0,
-     "execucao_du": 6.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 6.0,
-      "SCEXEC": 2.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.6,
-     "horas_teto": 1.72
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2026-05-22 00:00:00",
-     "fim": "2026-05-22 00:00:00",
-     "espera_antes_du": 1.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 2.02
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/008372/2024",
-   "encerrado": false,
-   "lead_du": 385.0,
-   "terceiros_du": 14.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 6.0,
-   "posse_du": {
-    "CAENE": 19.0,
-    "CONS-02": 159.0,
-    "CONS-03": 4.0,
-    "PROC": 64.0,
-    "REG": 88.0,
-    "SCEXEC": 65.0,
-    "SEM UNIDADE": 20.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2024-10-02 00:00:00",
-     "fim": "2024-10-03 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 6.0,
-     "horas_teto": 12.26
-    },
-    {
-     "atividade": "t2",
-     "inicio": "2024-10-21 00:00:00",
-     "fim": "2024-10-21 00:00:00",
-     "espera_antes_du": 12.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 12.0
-     },
-     "espera_antes_terceiros_du": 7.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.33
-    },
-    {
-     "atividade": "t3",
-     "inicio": "2024-10-29 00:00:00",
-     "fim": "2024-10-29 00:00:00",
-     "espera_antes_du": 5.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 5.0
-     },
-     "espera_antes_terceiros_du": 2.0,
-     "horas_piso": 2.0,
-     "horas_teto": 11.15
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2024-12-20 00:00:00",
-     "fim": "2024-12-20 00:00:00",
-     "espera_antes_du": 36.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 16.0,
-      "SEM UNIDADE": 20.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.12
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2025-03-27 00:00:00",
-     "fim": "2025-03-27 00:00:00",
-     "espera_antes_du": 64.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 64.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 11.3
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2025-06-11 00:00:00",
-     "fim": "2025-06-11 00:00:00",
-     "espera_antes_du": 50.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "REG": 7.0,
-      "SCEXEC": 43.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.11
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2025-06-24 00:00:00",
-     "fim": "2025-06-24 00:00:00",
-     "espera_antes_du": 8.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 8.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.75,
-     "horas_teto": 1.13
-    },
-    {
-     "atividade": "t7",
-     "inicio": "2026-03-30 00:00:00",
-     "fim": "2026-03-30 00:00:00",
-     "espera_antes_du": 192.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 141.0,
-      "REG": 47.0,
-      "CONS-03": 4.0
-     },
-     "espera_antes_terceiros_du": 3.0,
-     "horas_piso": 6.0,
-     "horas_teto": 18.39
-    },
-    {
-     "atividade": "t8",
-     "inicio": "2026-04-08 00:00:00",
-     "fim": "2026-04-15 00:00:00",
-     "espera_antes_du": 6.0,
-     "execucao_du": 5.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 5.0,
-      "SCEXEC": 1.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 1.1,
-     "horas_teto": 1.98
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2026-04-15 00:00:00",
-     "fim": "2026-04-15 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.5,
-     "horas_teto": 1.78
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/009573/2024",
-   "encerrado": false,
-   "lead_du": 390.0,
-   "terceiros_du": 20.0,
-   "indeterminado_du": 0.0,
-   "cauda_du": 11.0,
-   "posse_du": {
-    "CASAN": 33.0,
-    "CONS-02": 121.0,
-    "PROC": 145.0,
-    "SCEXEC": 77.0,
-    "SEM UNIDADE": 16.0
-   },
-   "ocorrencias": [
-    {
-     "atividade": "t1",
-     "inicio": "2025-02-27 00:00:00",
-     "fim": "2025-03-13 00:00:00",
-     "espera_antes_du": 73.0,
-     "execucao_du": 8.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 49.0,
-      "CASAN": 24.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 10.75,
-     "horas_teto": 12.69
-    },
-    {
-     "atividade": "t4",
-     "inicio": "2025-08-19 00:00:00",
-     "fim": "2025-08-19 00:00:00",
-     "espera_antes_du": 108.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "CASAN": 1.0,
-      "PROC": 107.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 4.0,
-     "horas_teto": 11.92
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2025-08-24 00:00:00",
-     "fim": "2025-08-24 00:00:00",
-     "espera_antes_du": 4.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 4.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.25,
-     "horas_teto": 0.36
-    },
-    {
-     "atividade": "t10",
-     "inicio": "2025-08-25 00:00:00",
-     "fim": "2025-08-25 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.5,
-     "horas_teto": 3.8
-    },
-    {
-     "atividade": "t11",
-     "inicio": "2025-09-08 00:00:00",
-     "fim": "2025-09-26 00:00:00",
-     "espera_antes_du": 10.0,
-     "execucao_du": 14.0,
-     "espera_antes_por_unidade": {
-      "SCEXEC": 10.0
-     },
-     "espera_antes_terceiros_du": 10.0,
-     "horas_piso": 1.2,
-     "horas_teto": 2.87
-    },
-    {
-     "atividade": "t5",
-     "inicio": "2025-10-07 00:00:00",
-     "fim": "2025-10-07 00:00:00",
+     "inicio": "2024-05-29 00:00:00",
+     "fim": "2024-05-29 00:00:00",
      "espera_antes_du": 7.0,
      "execucao_du": 0.0,
      "espera_antes_por_unidade": {
       "SEM UNIDADE": 7.0
      },
      "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
+     "horas_piso": 0.75,
+     "horas_teto": 1.11
     },
     {
-     "atividade": "t9",
-     "inicio": "2026-02-06 00:00:00",
-     "fim": "2026-02-06 00:00:00",
-     "espera_antes_du": 83.0,
-     "execucao_du": 0.0,
+     "atividade": "t2",
+     "inicio": "2024-06-03 00:00:00",
+     "fim": "2024-06-06 00:00:00",
+     "espera_antes_du": 2.0,
+     "execucao_du": 3.0,
      "espera_antes_por_unidade": {
-      "CONS-02": 66.0,
-      "PROC": 17.0
+      "SEM UNIDADE": 2.0
      },
      "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.1
+     "horas_piso": 25.0,
+     "horas_teto": 45.63
     },
-    {
-     "atividade": "t4",
-     "inicio": "2026-03-10 00:00:00",
-     "fim": "2026-03-10 00:00:00",
-     "espera_antes_du": 20.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 20.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.0,
-     "horas_teto": 1.33
-    },
-    {
-     "atividade": "t9",
-     "inicio": "2026-03-27 00:00:00",
-     "fim": "2026-03-27 00:00:00",
-     "espera_antes_du": 13.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {
-      "PROC": 1.0,
-      "CONS-02": 12.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.1
-    },
-    {
-     "atividade": "t6",
-     "inicio": "2026-05-26 00:00:00",
-     "fim": "2026-05-27 00:00:00",
-     "espera_antes_du": 38.0,
-     "execucao_du": 1.0,
-     "espera_antes_por_unidade": {
-      "CONS-02": 38.0
-     },
-     "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.0,
-     "horas_teto": 3.21
-    }
-   ]
-  },
-  {
-   "numero": "SEI-480002/010157/2025",
-   "encerrado": false,
-   "lead_du": 116.0,
-   "terceiros_du": 43.0,
-   "indeterminado_du": 17.0,
-   "cauda_du": 4.0,
-   "posse_du": {
-    "CAENE": 85.0,
-    "CONS-02": 4.0,
-    "PROC": 20.0,
-    "REG": 18.0,
-    "SCEXEC": 6.0,
-    "SEM UNIDADE": 3.0
-   },
-   "ocorrencias": [
     {
      "atividade": "t1",
-     "inicio": "2025-11-24 00:00:00",
-     "fim": "2025-11-24 00:00:00",
-     "espera_antes_du": 0.0,
+     "inicio": "2024-06-24 00:00:00",
+     "fim": "2024-06-24 00:00:00",
+     "espera_antes_du": 12.0,
      "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 12.0
+     },
      "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 7.5,
-     "horas_teto": 14.05
+     "horas_piso": 0.75,
+     "horas_teto": 1.09
     },
     {
      "atividade": "t3",
-     "inicio": "2025-12-03 00:00:00",
-     "fim": "2025-12-03 00:00:00",
-     "espera_antes_du": 7.0,
+     "inicio": "2024-06-27 00:00:00",
+     "fim": "2024-06-27 00:00:00",
+     "espera_antes_du": 3.0,
      "execucao_du": 0.0,
      "espera_antes_por_unidade": {
-      "CAENE": 6.0,
-      "REG": 1.0
+      "SEM UNIDADE": 3.0
      },
-     "espera_antes_terceiros_du": 5.0,
-     "horas_piso": 3.0,
-     "horas_teto": 2.35
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.12
     },
     {
      "atividade": "t2",
-     "inicio": "2025-12-05 00:00:00",
-     "fim": "2025-12-18 00:00:00",
-     "espera_antes_du": 2.0,
-     "execucao_du": 9.0,
+     "inicio": "2024-07-25 00:00:00",
+     "fim": "2024-08-02 00:00:00",
+     "espera_antes_du": 20.0,
+     "execucao_du": 6.0,
      "espera_antes_por_unidade": {
-      "REG": 2.0
+      "SEM UNIDADE": 20.0
      },
      "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 2.25,
-     "horas_teto": 2.93
+     "horas_piso": 24.0,
+     "horas_teto": 50.76
     },
     {
      "atividade": "t3",
-     "inicio": "2025-12-18 00:00:00",
-     "fim": "2025-12-18 00:00:00",
-     "espera_antes_du": 0.0,
-     "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
+     "inicio": "2024-08-07 00:00:00",
+     "fim": "2024-08-08 00:00:00",
+     "espera_antes_du": 3.0,
+     "execucao_du": 1.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 3.0
+     },
      "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 3.0,
-     "horas_teto": 2.29
+     "horas_piso": 0.75,
+     "horas_teto": 1.08
     },
     {
      "atividade": "t2",
-     "inicio": "2025-12-19 00:00:00",
-     "fim": "2026-03-10 00:00:00",
+     "inicio": "2024-08-09 00:00:00",
+     "fim": "2024-08-09 00:00:00",
      "espera_antes_du": 1.0,
-     "execucao_du": 52.0,
+     "execucao_du": 0.0,
      "espera_antes_por_unidade": {
-      "CAENE": 1.0
+      "SEM UNIDADE": 1.0
      },
-     "espera_antes_terceiros_du": 1.0,
-     "horas_piso": 1.5,
-     "horas_teto": 1.73
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 21.0,
+     "horas_teto": 41.91
     },
     {
-     "atividade": "t3",
-     "inicio": "2026-03-10 00:00:00",
-     "fim": "2026-03-10 00:00:00",
-     "espera_antes_du": 0.0,
+     "atividade": "t1",
+     "inicio": "2024-08-16 00:00:00",
+     "fim": "2024-09-09 00:00:00",
+     "espera_antes_du": 5.0,
+     "execucao_du": 16.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 5.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 2.5,
+     "horas_teto": 3.42
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-09-11 00:00:00",
+     "fim": "2024-09-11 00:00:00",
+     "espera_antes_du": 2.0,
      "execucao_du": 0.0,
-     "espera_antes_por_unidade": {},
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 2.0
+     },
      "espera_antes_terceiros_du": 0.0,
      "horas_piso": 6.0,
-     "horas_teto": 6.97
-    },
-    {
-     "atividade": "t2",
-     "inicio": "2026-03-25 00:00:00",
-     "fim": "2026-04-16 00:00:00",
-     "espera_antes_du": 11.0,
-     "execucao_du": 15.0,
-     "espera_antes_por_unidade": {
-      "CAENE": 11.0
-     },
-     "espera_antes_terceiros_du": 5.0,
-     "horas_piso": 4.75,
-     "horas_teto": 4.86
+     "horas_teto": 10.06
     },
     {
      "atividade": "t3",
-     "inicio": "2026-04-27 00:00:00",
-     "fim": "2026-04-27 00:00:00",
-     "espera_antes_du": 5.0,
+     "inicio": "2024-09-26 00:00:00",
+     "fim": "2024-09-26 00:00:00",
+     "espera_antes_du": 11.0,
      "execucao_du": 0.0,
      "espera_antes_por_unidade": {
-      "CAENE": 5.0
+      "SEM UNIDADE": 11.0
      },
-     "espera_antes_terceiros_du": 3.0,
-     "horas_piso": 4.0,
-     "horas_teto": 10.96
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.08
     },
     {
-     "atividade": "t5",
-     "inicio": "2026-05-12 00:00:00",
-     "fim": "2026-05-12 00:00:00",
+     "atividade": "t2",
+     "inicio": "2024-11-06 00:00:00",
+     "fim": "2024-11-07 00:00:00",
+     "espera_antes_du": 28.0,
+     "execucao_du": 1.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 28.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 25.0,
+     "horas_teto": 58.28
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2024-11-11 00:00:00",
+     "fim": "2024-11-11 00:00:00",
+     "espera_antes_du": 2.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 2.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.12
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-12-20 00:00:00",
+     "fim": "2025-01-15 00:00:00",
+     "espera_antes_du": 27.0,
+     "execucao_du": 16.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 27.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 17.0,
+     "horas_teto": 27.65
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2025-01-30 00:00:00",
+     "fim": "2025-01-30 00:00:00",
      "espera_antes_du": 10.0,
      "execucao_du": 0.0,
      "espera_antes_por_unidade": {
-      "CAENE": 1.0,
-      "REG": 3.0,
-      "SCEXEC": 6.0
+      "SEM UNIDADE": 10.0
      },
      "espera_antes_terceiros_du": 0.0,
-     "horas_piso": 0.1,
-     "horas_teto": 0.36
+     "horas_piso": 0.75,
+     "horas_teto": 1.11
+    },
+    {
+     "atividade": "t4",
+     "inicio": "2025-07-08 00:00:00",
+     "fim": "2025-07-08 00:00:00",
+     "espera_antes_du": 106.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 106.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 12.2,
+     "horas_teto": 13.69
+    },
+    {
+     "atividade": "t5",
+     "inicio": "2025-09-23 00:00:00",
+     "fim": "2025-10-27 00:00:00",
+     "espera_antes_du": 55.0,
+     "execucao_du": 24.0,
+     "espera_antes_por_unidade": {
+      "SCEXEC": 55.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.75,
+     "horas_teto": 0.56
+    },
+    {
+     "atividade": "t6",
+     "inicio": "2025-10-30 00:00:00",
+     "fim": "2025-10-30 00:00:00",
+     "espera_antes_du": 2.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "CASAN": 2.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 8.0,
+     "horas_teto": 2.31
+    },
+    {
+     "atividade": "t7",
+     "inicio": "2026-08-28 00:00:00",
+     "fim": "2026-08-28 00:00:00",
+     "espera_antes_du": 205.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SCEXEC": 2.0,
+      "PROC": 203.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 10.0,
+     "horas_teto": 13.82
+    },
+    {
+     "atividade": "t8",
+     "inicio": "2026-08-28 00:00:00",
+     "fim": "2026-08-28 00:00:00",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.07
     }
    ]
   }

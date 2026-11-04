@@ -68,6 +68,11 @@ def _fora(cod, lacuna):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--min-casos", type=int, default=MIN_CASOS,
+                    help="mínimo de casos por código (1 = estudo de caso de um processo só)")
+    min_casos = ap.parse_args().min_casos
     d = pd.read_csv(SAIDA / "processos_classificados.csv")
     cob = DADOS / "relator" / "cobertura_texto.csv"
     if cob.exists():  # cobertura medida no texto exportado substitui a do status de download
@@ -84,7 +89,7 @@ def main():
     m1 = (d.nativo_sei & (d.cobertura_substantivas >= COBERTURA_MIN) & (d.confianca != "baixa")
           & d.processo_principal.isin(com_modelo))
     a = d[m1].copy()
-    a = a[a.groupby("processo_principal").numero.transform("size") >= MIN_CASOS]
+    a = a[a.groupby("processo_principal").numero.transform("size") >= min_casos]
     a["lote"] = 1
     # tipos novos: todo processo do SEI 2 de confiança média/alta (migrado entra pelo conteúdo) ...
     b = d[d.processo_principal.isin(NOVOS) & (d.confianca != "baixa")

@@ -127,3 +127,13 @@ exatamente o que precisa ser revisto.
 
 Avaliações atualizadas, revalidadas e carimbadas; nenhuma conclusão de gargalo mudou (a espera de terceiros
 diminuiu, reforçando que a maior parte do tempo é interna).
+
+## Estudo de caso de um processo (branch caso-igua-fiscalizacao)
+
+| Falha encontrada | Mitigação | Teste ou portão |
+|---|---|---|
+| `fichas_trabalho.py` chamava `limpar_pessoais` sem importar: a rodada inteira caía no fim, depois de gastar as chamadas | Import de `fichas_atividades.limpar_pessoais` | `test_fichas_trabalho_tem_limpeza_de_dados_pessoais_importada` |
+| Sem chave de API, as fichas não tinham como ser geradas | `--exportar` grava o prompt exato de cada peça; `--importar` lê a resposta de um agente e aplica a mesma ancoragem literal e o mesmo `legado` | `test_fichas_importadas_de_agente_passam_pela_mesma_ancoragem`; auditoria às cegas em `saida/auditoria/auditoria_fichas.json` |
+| Processo indicado pelo aluno fora da elegibilidade do piloto (não encerrado) | `selecionar_piloto.py --caso NUMERO` inclui o processo com papel "estudo de caso" e registra o critério que falhou no `motivo` | `saida/piloto.csv` |
+| Coorte da fase 2 com um caso só (abaixo de `MIN_CASOS`) e sem LLM para rotular atividades | `coorte_fase2.py --min-casos 1`; `classificar_atividades.py --gabarito` grava as atribuições a partir dos vínculos auditados, só quando toda a coorte é do piloto; `procedimento.py` marca o código como `estudo_de_caso` | `saida/fase2/procedimento_P06.json` → `situacao` |
+| Saídas por código do caso de referência misturadas às do caso novo (fatos e linha de base liam a coorte de referência) | No branch do estudo de caso, as saídas por código da referência foram retiradas; o `main` as mantém | `linha_base_P06.json` → `casos_nativos` = 1 |

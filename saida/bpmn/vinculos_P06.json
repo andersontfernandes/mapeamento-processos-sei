@@ -3,141 +3,149 @@
   "atividades": {
     "t1": {
       "docs": [
-        "SEI-480002/005546/2024:77902687",
-        "SEI-480002/005546/2024:77911746",
-        "SEI-480002/005546/2024:77900978",
-        "SEI-480002/005546/2024:77953922",
-        "SEI-480002/005546/2024:77989526",
-        "SEI-480002/007520/2025:112252850",
-        "SEI-480002/007520/2025:112252631",
-        "SEI-480002/007520/2025:112251018",
-        "SEI-480002/007520/2025:112267024",
-        "SEI-480002/007520/2025:112271910"
+        "SEI-480002/001314/2024:77432319",
+        "SEI-480002/001314/2024:77459067",
+        "SEI-480002/001314/2024:81195142",
+        "SEI-480002/001314/2024:81213540",
+        "SEI-480002/001314/2024:81595411",
+        "SEI-480002/001314/2024:81701160",
+        "SEI-480002/001314/2024:82718456",
+        "SEI-480002/001314/2024:82834832"
       ],
       "docs_entrada": [],
-      "descritivo": "O fiscal da CAENE vistoria a estação de gás da concessionária (ERM de Santa Cruz no caso crítico; ETC Ramal Metropolitano no típico), aplica checklist visual de integridade e confere se licenças e certificados (INEA, CBMERJ, SPDA) estão disponíveis na instalação, com base no Decreto Estadual nº 46.925/2020, nas ABNT NBR 12962 e 16291 e na NR 26. Do relatório com registro fotográfico sai a minuta do Termo de Notificação, submetida por despacho ao gerente da CAENE, e o ofício que remete relatório e termo à CEG/CEG Rio com prazo de 10 dias para impugnação. No típico, o relatório retoma notificações anteriores (TN 003/2024 e TN 002/2025) sobre a mesma pendência junto ao CBMERJ.",
-      "gatilho": "Vistoria in loco da CAENE em estação de gás da concessionária",
-      "saida": "Relatório de fiscalização, Termo de Notificação (006/2024 e 018/2025) e ofício à CEG/CEG Rio com prazo de 10 dias para impugnação",
-      "observacoes": "Os dois casos tratam da falta de documentação de segurança contra incêndio exigida pelo CBMERJ; no crítico, também da licença ambiental. As peças não dizem se a vistoria foi programada ou motivada por demanda. Os e-mails de envio do ofício foram vinculados aqui."
+      "descritivo": "A câmara de saneamento envia ofício à concessionária pedindo agendamento ou confirmação de vistoria técnica conjunta nas unidades da concessão e transmite o ofício por e-mail. Os ofícios variam na antecedência, no destinatário e na indicação de horário e ponto de encontro.",
+      "gatilho": "Programação de vistorias às unidades operacionais da concessão",
+      "saida": "Ofício e e-mail de agendamento da vistoria à concessionária",
+      "observacoes": "A Deliberação que determina as vistorias anuais é a origem do ciclo; o ofício de agendamento não aparece antes de todos os lotes de vistoria."
     },
     "t2": {
       "docs": [
-        "SEI-480002/005546/2024:80209332",
-        "SEI-480002/005546/2024:80216560",
-        "SEI-480002/005546/2024:80557109",
-        "SEI-480002/005546/2024:80561920",
-        "SEI-480002/005546/2024:80787690",
-        "SEI-480002/005546/2024:80974689"
+        "SEI-480002/001314/2024:69710124",
+        "SEI-480002/001314/2024:69712392",
+        "SEI-480002/001314/2024:69716140",
+        "SEI-480002/001314/2024:72642867",
+        "SEI-480002/001314/2024:72710417",
+        "SEI-480002/001314/2024:72711316",
+        "SEI-480002/001314/2024:72838107",
+        "SEI-480002/001314/2024:72851141",
+        "SEI-480002/001314/2024:72853692",
+        "SEI-480002/001314/2024:72974318",
+        "SEI-480002/001314/2024:72975320",
+        "SEI-480002/001314/2024:72980247",
+        "SEI-480002/001314/2024:74334571",
+        "SEI-480002/001314/2024:74336951",
+        "SEI-480002/001314/2024:74338948",
+        "SEI-480002/001314/2024:74871240",
+        "SEI-480002/001314/2024:74873701",
+        "SEI-480002/001314/2024:74881165",
+        "SEI-480002/001314/2024:74882333",
+        "SEI-480002/001314/2024:75824232",
+        "SEI-480002/001314/2024:75824539",
+        "SEI-480002/001314/2024:76104339",
+        "SEI-480002/001314/2024:76213730",
+        "SEI-480002/001314/2024:79573103",
+        "SEI-480002/001314/2024:79573239",
+        "SEI-480002/001314/2024:79575319",
+        "SEI-480002/001314/2024:79900134",
+        "SEI-480002/001314/2024:79901118",
+        "SEI-480002/001314/2024:80654568",
+        "SEI-480002/001314/2024:80655356",
+        "SEI-480002/001314/2024:80656194",
+        "SEI-480002/001314/2024:80656240",
+        "SEI-480002/001314/2024:82895573",
+        "SEI-480002/001314/2024:86161531",
+        "SEI-480002/001314/2024:86162193",
+        "SEI-480002/001314/2024:86826650",
+        "SEI-480002/001314/2024:86826664",
+        "SEI-480002/001314/2024:86827856",
+        "SEI-480002/001314/2024:87028948",
+        "SEI-480002/001314/2024:89901514",
+        "SEI-480002/001314/2024:91213447",
+        "SEI-480002/001314/2024:91278977"
       ],
-      "docs_entrada": [
-        "SEI-480002/005546/2024:105413127"
-      ],
-      "descritivo": "No caso crítico, a CAENE recebeu a resposta da CEG (Ofício GEREG 339/2024, com Licença Ambiental Unificada), verificou que a licença não cobria a pressão de operação da ERM (acima de 4,2 bar) e pediu a Licença de Operação do INEA em 3 dias; dias depois pediu o projeto da estação, também em 3 dias, e consultou o INEA sobre a abrangência da LO IN026824. O INEA tramitou a consulta dentro do próprio processo SEI.",
-      "gatilho": "Documentação apresentada pela concessionária insuficiente para concluir a análise",
-      "saida": "Ofícios de requisição à CEG (NA 173 e NA 176) e de consulta ao INEA (NA 179)",
-      "observacoes": "Só no caso crítico. As peças produzidas pelo INEA dentro do processo (despachos de encaminhamento, Manifestação 1146 e Ofício NA 2015) aparecem com autoria AGENERSA no insumo, mas ficaram fora por não serem produção da Agência. O e-mail da SCEXEC de 14/08/2024 foi vinculado aqui por coincidir com a remessa ao INEA (inferência). A carta GEREG 339/24 só foi juntada aos autos em 07/2025."
+      "docs_entrada": [],
+      "descritivo": "Os especialistas da câmara vistoriam estações elevatórias e de tratamento de água e esgoto, aplicam um checklist e registram não conformidades, recomendações ou exigências, com aprovação do gerente da câmara. Os relatórios seguem o mesmo modelo, mas variam no uso de prazo, na forma (recomendação ou exigência) e nas datas de vistoria, elaboração e assinatura.",
+      "gatilho": "Vistoria agendada em estação elevatória ou de tratamento",
+      "saida": "Relatório de fiscalização com checklist, não conformidades e recomendações",
+      "observacoes": "Parte das vistorias ficou incompleta por falta de acesso a painéis ou tampas, sem nova visita registrada."
     },
     "t3": {
       "docs": [
-        "SEI-480002/005546/2024:81973158",
-        "SEI-480002/007520/2025:114314297"
+        "SEI-480002/001314/2024:74141761",
+        "SEI-480002/001314/2024:74179603",
+        "SEI-480002/001314/2024:75600516",
+        "SEI-480002/001314/2024:75783205",
+        "SEI-480002/001314/2024:77695170",
+        "SEI-480002/001314/2024:77748737",
+        "SEI-480002/001314/2024:80501066",
+        "SEI-480002/001314/2024:80626379",
+        "SEI-480002/001314/2024:83969598",
+        "SEI-480002/001314/2024:84132825",
+        "SEI-480002/001314/2024:87188346",
+        "SEI-480002/001314/2024:87308946",
+        "SEI-480002/001314/2024:92310062",
+        "SEI-480002/001314/2024:92342599"
       ],
-      "docs_entrada": [
-        "SEI-480002/005546/2024:84643661",
-        "SEI-480002/005546/2024:105414477",
-        "SEI-480002/005546/2024:105413736"
-      ],
-      "descritivo": "A CAENE confronta a manifestação da concessionária com o relatório de fiscalização e o termo de notificação, verificando a conformidade com o COSCIP (Decreto Estadual nº 42/2018) e com as exigências do CBMERJ (Laudo de Exigências e Certificado de Aprovação); no crítico, verifica também a cobertura do licenciamento ambiental com base na manifestação do INEA. O parecer técnico conclui pelo descumprimento documental e indica o encaminhamento ao Conselho-Diretor. No típico, o Parecer 83 analisa a petição GEREG 485-25 e o histórico de notificações sobre a mesma pendência.",
-      "gatilho": "Defesa da concessionária recebida e, no crítico, resposta do INEA",
-      "saida": "Parecer técnico (Parecer 83/2025 no típico; Parecer 86/2024 no crítico) remetido à SCEXEC",
-      "observacoes": "No típico, o parecer saiu na mesma passagem da vistoria; a petição GEREG 485-25 não consta da lista de documentos do piloto. No crítico, o Ofício INEA/PRESI 2326 (juntado em 10/2024) e as cartas GEREG 372/24 e 390/24 (juntadas em 07/2025) chegaram aos autos depois do Parecer 86; a ligação delas com esta atividade, e com o Parecer 126/2024 da CAENE citado no encaminhamento à Procuradoria (fora da lista), é inferência."
+      "docs_entrada": [],
+      "descritivo": "A câmara reúne os relatórios assinados em um ofício à concessionária, com prazo para manifestação ou saneamento, transmite o ofício por e-mail e libera acesso externo ao processo. Os e-mails anexam o ofício, e os relatórios ficam acessíveis pela vista do processo.",
+      "gatilho": "Lote de relatórios de fiscalização assinados",
+      "saida": "Ofício com prazo de manifestação, e-mail e acesso externo ao processo",
+      "observacoes": "Nem todo relatório aparece listado em um ofício de encaminhamento."
     },
     "t4": {
       "docs": [
-        "SEI-480002/005546/2024:105410586",
-        "SEI-480002/005546/2024:106841239",
-        "SEI-480002/007520/2025:118192732",
-        "SEI-480002/007520/2025:119990083"
+        "SEI-480002/001314/2024:104033188",
+        "SEI-480002/001314/2024:104117825"
       ],
       "docs_entrada": [],
-      "descritivo": "A SCEXEC remete o processo à Procuradoria, que examina relatórios de fiscalização, termos de notificação, pareceres da CAENE e manifestações da CEG à luz do contrato de concessão, da Lei Estadual nº 4.556/2005, do Decreto nº 38.618/2005 e da IN CODIR nº 001/2007, verificando a observância do contraditório e a regularidade dos atos de fiscalização. O parecer jurídico opina pelo cabimento de penalidade (no crítico, com atenuante) e devolve os autos à Secretaria para designação do relator.",
-      "gatilho": "Parecer técnico concluído e despacho da SCEXEC remetendo o processo à Procuradoria",
-      "saida": "Parecer jurídico (735/2025 no típico; 417/2025 no crítico) remetido à SCEXEC",
-      "observacoes": "Os despachos de remessa à Procuradoria foram vinculados aqui por abrirem a passagem. No típico, o processo ficou 32 du na Secretaria antes do envio; no crítico, o despacho saiu cerca de 11 meses depois do Parecer 86."
+      "descritivo": "A câmara consolida o conjunto de relatórios do ciclo em parecer técnico, relaciona as fiscalizações feitas e conclui sobre o atendimento das recomendações, e encaminha o processo à Secretaria.",
+      "gatilho": "Ciclo de vistorias concluído e prazos de manifestação decorridos",
+      "saida": "Parecer técnico da câmara sobre o conjunto de relatórios",
+      "observacoes": "O parecer não detalha achados por unidade nem fixa prazos."
     },
     "t5": {
       "docs": [
-        "SEI-480002/005546/2024:110509307",
-        "SEI-480002/007520/2025:122744436"
+        "SEI-480002/001314/2024:114548072",
+        "SEI-480002/001314/2024:114551426",
+        "SEI-480002/001314/2024:117500524"
       ],
       "docs_entrada": [],
-      "descritivo": "Depois do sorteio de relatoria em reunião interna do Conselho-Diretor, a SCEXEC registra o resultado e remete os autos, por despacho, ao gabinete do conselheiro sorteado (CONS-02).",
-      "gatilho": "Parecer jurídico concluído e sorteio de relatoria em reunião interna",
-      "saida": "Despacho de encaminhamento ao gabinete do conselheiro-relator",
-      "observacoes": "As atas do sorteio (1ª e 13ª Reuniões Internas) são citadas nos despachos, mas não constam da lista de documentos."
+      "descritivo": "A Secretaria Executiva dá ciência do parecer técnico à concessionária por manifestação e e-mail, com acesso externo ao processo, e depois recebe e encaminha à câmara a manifestação da concessionária.",
+      "gatilho": "Parecer técnico da câmara juntado ao processo",
+      "saida": "Manifestação de ciência, e-mail e acesso externo à concessionária",
+      "observacoes": "O e-mail de ciência não anexa o parecer comunicado."
     },
     "t6": {
       "docs": [
-        "SEI-480002/005546/2024:123956446",
-        "SEI-480002/005546/2024:123959535",
-        "SEI-480002/007520/2025:123701432",
-        "SEI-480002/007520/2025:123734969"
+        "SEI-480002/001314/2024:117801870",
+        "SEI-480002/001314/2024:117907053"
       ],
       "docs_entrada": [],
-      "descritivo": "O gabinete do relator oficia a CEG e a CEG Rio para apresentarem razões finais em 10 dias, com envio por e-mail. O ofício é padronizado e remete ao relatório de fiscalização e ao termo de notificação do caso.",
-      "gatilho": "Processo recebido no gabinete com instrução considerada suficiente",
-      "saida": "Ofício de notificação para razões finais (NA 25 e NA 29/2026) à concessionária",
-      "observacoes": "No crítico, o ofício saiu 106 du após a chegada dos autos ao gabinete. As razões finais da concessionária não constam da lista de documentos."
+      "descritivo": "A câmara analisa a manifestação da concessionária, que contesta o escopo da fiscalização, e responde em despacho que reproduz em grande parte o parecer técnico; a Secretaria remete os autos à Procuradoria.",
+      "gatilho": "Manifestação da concessionária contestando o escopo da fiscalização",
+      "saida": "Despacho técnico com réplica e encaminhamento à Procuradoria",
+      "observacoes": "A manifestação da concessionária está em processo anexado e não consta entre as peças públicas lidas."
     },
     "t7": {
       "docs": [
-        "SEI-480002/005546/2024:133067558",
-        "SEI-480002/005546/2024:133067198",
-        "SEI-480002/005546/2024:133066742",
-        "SEI-480002/007520/2025:133067426",
-        "SEI-480002/007520/2025:133067457",
-        "SEI-480002/007520/2025:133068967"
+        "SEI-480002/001314/2024:120665498"
       ],
       "docs_entrada": [],
-      "descritivo": "O conselheiro-relator elabora relatório com o histórico processual (fiscalização, notificações, defesa, pareceres técnico e jurídico e, no crítico, a informação do INEA), voto e minuta de deliberação, julgados na mesma sessão regulatória de 27/05/2026. No crítico, o voto aplica advertência, manda lavrar auto de infração e baixa o processo em diligência ao CBMERJ; no típico, considerando as manifestações da CEG sobre dificuldades na obtenção de laudos junto ao CBMERJ, propõe apenas a diligência e a comprovação periódica pela concessionária.",
-      "gatilho": "Prazo de razões finais decorrido e inclusão do processo em pauta de sessão regulatória",
-      "saida": "Relatório, voto e Deliberações AGENERSA nº 5053/2026 e 5054/2026, com prazo de 15 dias para a SCEXEC oficiar o CBMERJ e de 30 dias recorrentes para a CEG comprovar providências",
-      "observacoes": "Cerca de 88 du entre o ofício de razões finais e a sessão nos dois casos."
+      "descritivo": "A Procuradoria examina a legitimidade da fiscalização e os argumentos da concessionária, à luz da lei de criação da agência, do contrato e das normas da agência, e opina sobre os efeitos das não conformidades, admitindo atenuante pelo saneamento parcial.",
+      "gatilho": "Autos remetidos pela Secretaria para análise jurídica",
+      "saida": "Parecer da Procuradoria sobre legitimidade e efeitos da fiscalização",
+      "observacoes": "A data do texto do parecer difere da data de assinatura."
     },
     "t8": {
       "docs": [
-        "SEI-480002/005546/2024:133763583",
-        "SEI-480002/005546/2024:133763200",
-        "SEI-480002/005546/2024:133961202",
-        "SEI-480002/005546/2024:133961561",
-        "SEI-480002/007520/2025:133761950",
-        "SEI-480002/007520/2025:133763105",
-        "SEI-480002/007520/2025:133952787",
-        "SEI-480002/007520/2025:133951315"
-      ],
-      "docs_entrada": [
-        "SEI-480002/005546/2024:133691579",
-        "SEI-480002/007520/2025:133706365"
-      ],
-      "descritivo": "A SCEXEC junta a publicação da deliberação no DOERJ, notifica a CEG da decisão, com a obrigação de comprovar a cada 30 dias as providências junto ao CBMERJ, e oficia o CBMERJ/SEDEC pedindo informações sobre prazos e pendências de regularização, anexando a deliberação (e, ao CBMERJ, também o relatório e o voto); o relatório de fiscalização e o termo de notificação só são citados na referência dos ofícios. Os dois casos geraram o mesmo par de ofícios no mesmo dia.",
-      "gatilho": "Deliberação aprovada em sessão e publicada no DOERJ",
-      "saida": "Ofícios à CEG (NA 1488 e NA 1490) e ao CBMERJ (NA 1489 e NA 1491), enviados por e-mail",
-      "observacoes": "A publicação no DOERJ entrou como peça de entrada por ter autoria registrada como externa. Os e-mails de 11/06/2026 foram vinculados aqui como envio dos ofícios (inferência pela data)."
-    },
-    "t9": {
-      "docs": [
-        "SEI-480002/005546/2024:133821942",
-        "SEI-480002/005546/2024:133971069",
-        "SEI-480002/005546/2024:133764082",
-        "SEI-480002/007520/2025:133822318",
-        "SEI-480002/007520/2025:133972992",
-        "SEI-480002/007520/2025:133761905"
+        "SEI-480002/001314/2024:140207175",
+        "SEI-480002/001314/2024:140220431"
       ],
       "docs_entrada": [],
-      "descritivo": "A SCEXEC remete os autos à CAENE para ciência da deliberação publicada, a CAENE devolve no mesmo dia em que recebe e a Secretaria lavra Informação registrando a expedição dos ofícios à CEG e ao CBMERJ. O processo segue aguardando as comprovações periódicas da concessionária e a resposta do Corpo de Bombeiros.",
-      "gatilho": "Ofícios de cumprimento da deliberação expedidos",
-      "saida": "Informação de providências nos autos, com ciência da câmara técnica",
-      "observacoes": "No crítico, a deliberação manda lavrar auto de infração; o auto não consta da lista de documentos."
+      "descritivo": "A Secretaria Executiva oficia a concessionária dando ciência do parecer jurídico, transmite por e-mail, libera acesso externo e sobrestá o processo.",
+      "gatilho": "Parecer jurídico juntado ao processo",
+      "saida": "Ofício de ciência, e-mail, acesso externo e sobrestamento",
+      "observacoes": "O ofício não fixa prazo nem penalidade."
     }
   }
 }

@@ -2,52 +2,30 @@
  "processo": {
   "codigo": "P06",
   "nome": "Fiscalização técnica de campo (programada e por demanda)",
-  "escopo": "Da vistoria in loco à publicação da deliberação e ao registro das providências de cumprimento",
-  "fontes": "Casos SEI-480002/007520/2025 (típico) e SEI-480002/005546/2024 (crítico); devoluções do relator à Procuradoria (23) e às câmaras técnicas (22) nas trilhas dos 32 processos do código. Revisado com as peças fora do modelo dos 12 processos da coorte: a notificação da concessionária pela Secretaria para manifestar-se sobre o parecer (5 processos) e a decisão sobre pedidos de dilação de prazo (2 processos) viraram tarefas; o termo de encerramento entrou na saída do registro de cumprimento. Ficaram fora, por aparecerem em um único processo: concessão de acesso aos autos a terceiro e decisões cautelares do Conselho-Diretor em reunião interna. Cartas e ofícios da concessionária, do município e de órgãos externos são entradas, não tarefas.",
+  "escopo": "Da programação das vistorias anuais às unidades operacionais da concessionária à ciência do parecer jurídico e ao sobrestamento do processo",
+  "fontes": "Estudo de caso SEI-480002/001314/2024 (Câmara de Saneamento, concessão do Bloco 1), com os processos de fiscalização anexados; fichas de trabalho das peças e resumos de leitura integral dos documentos.",
   "casos": [
    {
-    "numero": "SEI-480002/007520/2025",
-    "papel": "típico",
-    "lead_du": 187.0,
-    "trabalho_piso_h": 28.8,
-    "trabalho_teto_h": 62.6,
-    "pce_pct": "2.6–5.6",
-    "passagens": 8,
+    "numero": "SEI-480002/001314/2024",
+    "papel": "estudo de caso",
+    "lead_du": 636.0,
+    "trabalho_piso_h": 258.8,
+    "trabalho_teto_h": 490.8,
+    "pce_pct": "6.8–12.9",
+    "passagens": 6,
     "retornos": 1,
     "aguardando_terceiros_du": 0.0,
-    "pct_tempo_espera_dominante": 79.0
-   },
-   {
-    "numero": "SEI-480002/005546/2024",
-    "papel": "crítico",
-    "lead_du": 483.0,
-    "trabalho_piso_h": 33.8,
-    "trabalho_teto_h": 75.0,
-    "pce_pct": "1.2–2.6",
-    "passagens": 16,
-    "retornos": 4,
-    "aguardando_terceiros_du": 260.0,
-    "pct_tempo_espera_dominante": 82.0
+    "pct_tempo_espera_dominante": 89.0
    }
   ],
   "carteira": {
-   "processos": 32,
-   "nativos": 14,
-   "lead_mediano_du": 387.5,
-   "com_deliberacao_pct": 56,
-   "retornos_medio": 3.9,
+   "processos": 1,
+   "nativos": 1,
+   "lead_mediano_du": 636.0,
+   "com_deliberacao_pct": 100,
+   "retornos_medio": 1.0,
    "por_ano": {
-    "2006": 1,
-    "2015": 3,
-    "2017": 2,
-    "2018": 5,
-    "2019": 7,
-    "2020": 1,
-    "2021": 1,
-    "2022": 2,
-    "2023": 1,
-    "2024": 3,
-    "2025": 6
+    "2024": 1
    }
   },
   "inventario": {
@@ -56,604 +34,447 @@
    "base": "Lei 4.556/2005, art. 4º, IV; Decreto 38.618/2005, arts. 26–28 e 33-A; IN 128/2024",
    "unidades": "CASAN (saneamento); CAENE (energia/gás); CARES (resíduos)"
   },
-  "n_atividades": 11
+  "n_atividades": 8
  },
  "atividades": {
   "t1": {
    "id": "t1",
-   "nome": "Vistoriar instalação, relatar e notificar concessionária",
-   "unidade": "Câmara técnica de fiscalização (CAENE ou CASAN)",
+   "nome": "Convocar concessionária para vistoria conjunta",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
    "status": "normal",
    "nota": null,
    "freq": null,
-   "descritivo": "O fiscal da CAENE vistoria a estação de gás da concessionária (ERM de Santa Cruz no caso crítico; ETC Ramal Metropolitano no típico), aplica checklist visual de integridade e confere se licenças e certificados (INEA, CBMERJ, SPDA) estão disponíveis na instalação, com base no Decreto Estadual nº 46.925/2020, nas ABNT NBR 12962 e 16291 e na NR 26. Do relatório com registro fotográfico sai a minuta do Termo de Notificação, submetida por despacho ao gerente da CAENE, e o ofício que remete relatório e termo à CEG/CEG Rio com prazo de 10 dias para impugnação. No típico, o relatório retoma notificações anteriores (TN 003/2024 e TN 002/2025) sobre a mesma pendência junto ao CBMERJ.",
-   "gatilho": "Vistoria in loco da CAENE em estação de gás da concessionária",
-   "saida": "Relatório de fiscalização, Termo de Notificação (006/2024 e 018/2025) e ofício à CEG/CEG Rio com prazo de 10 dias para impugnação",
-   "observacoes": "Os dois casos tratam da falta de documentação de segurança contra incêndio exigida pelo CBMERJ; no crítico, também da licença ambiental. As peças não dizem se a vistoria foi programada ou motivada por demanda. Os e-mails de envio do ofício foram vinculados aqui.",
-   "casos_com_evidencia": 2,
-   "n_docs": 10,
+   "descritivo": "A câmara de saneamento envia ofício à concessionária pedindo agendamento ou confirmação de vistoria técnica conjunta nas unidades da concessão e transmite o ofício por e-mail. Os ofícios variam na antecedência, no destinatário e na indicação de horário e ponto de encontro.",
+   "gatilho": "Programação de vistorias às unidades operacionais da concessão",
+   "saida": "Ofício e e-mail de agendamento da vistoria à concessionária",
+   "observacoes": "A Deliberação que determina as vistorias anuais é a origem do ciclo; o ofício de agendamento não aparece antes de todos os lotes de vistoria.",
+   "casos_com_evidencia": 1,
+   "n_docs": 8,
    "tramite_associado": [],
    "documentos": [
-    "Despacho",
     "E-mail",
-    "Ofício - NA 149",
-    "Ofício - NA 155",
-    "Relatório",
-    "Relatório de Fiscalização",
-    "Termo de Notificação"
+    "Ofício - NA 516",
+    "Ofício - NA 708",
+    "Ofício - NA 725",
+    "Ofício - NA 757"
    ],
    "entradas_externas": [],
-   "laudas": "9–12",
+   "laudas": "9",
    "trabalho_h": {
-    "piso": "8.0–8.8",
-    "teto": "16.3–16.5",
+    "piso": "3.2",
+    "teto": "4.5",
     "modelo": null
    },
    "espera_du": {
-    "antes": "0",
-    "execucao": "0–1",
-    "ocorrencias": "1",
-    "posse_na_espera": [],
+    "antes": "17",
+    "execucao": "16",
+    "ocorrencias": "2",
+    "posse_na_espera": [
+     "SEM UNIDADE 17 du"
+    ],
     "detalhe": [
-     "típico: 2025-09-05 a 2025-09-05 — espera antes 0 du, execução 0 du",
-     "crítico: 2024-07-01 a 2024-07-02 — espera antes 0 du, execução 1 du"
+     "crítico: 2024-06-24 a 2024-06-24 — espera antes 12 du, execução 0 du",
+     "crítico: 2024-08-16 a 2024-09-09 — espera antes 5 du, execução 16 du"
     ]
    },
-   "insumos": {
-    "Vistoria/campo": [
-     "Vistoria presencial nas instalações da estação de gás da Concessionária CEG",
-     "Vistoria na Estação de Regulagem e Medição no bairro de Santa Cruz",
-     "Inspeção física e documental na Estação de Transferência de Custódia (ETC RAMAL METROPOLITANO)"
-    ],
-    "Normas e contratos": [
-     "Código de Segurança contra Incêndio e Pânico do RJ",
-     "Instrução Normativa CD nº 001/2007",
-     "Legislação e normas técnicas de segurança contra incêndio e pânico"
-    ],
-    "Documentos do próprio processo": [
-     "Relatório de vistoria P-054/24",
-     "Relatório de Fiscalização n.º P-054/24",
-     "Relatório P-054/24",
-     "Termo de Notificação 006/2024",
-     "Relatório de Fiscalização P-125/25",
-     "Relatório de Fiscalização nº P_125/25"
-    ]
-   },
-   "fontes_externas": [
-    "ABNT NBR 12962:2016",
-    "ABNT NBR 16291:2014",
-    "Decreto Estadual RJ nº 46.925/2020",
-    "NR 26"
-   ],
-   "ferramentas": [
-    "conferência documental",
-    "vistoria in loco"
-   ],
+   "insumos": {},
+   "fontes_externas": [],
+   "ferramentas": [],
    "calculos": [],
-   "testes": [
-    "Inspeção visual dos itens de segurança, manutenção e conservação da estação de gás",
-    "Constatação da não apresentação da Licença de operação, Laudo de Exigências e Certificado de Aprovação do CBMERJ durante a inspeção",
-    "Inspeção visual da conservação, infraestrutura e sinalização da estação de gás",
-    "Verificação da quantidade e validade dos extintores de incêndio no local",
-    "Identificação da necessidade de apresentação de documentos faltantes da concessionária"
-   ],
+   "testes": [],
    "competencias": [
-    {
-     "area": "Engenharia de gás e segurança",
-     "nivel": "intermediário",
-     "evidencias": [
-      "verificar as instalações e a manutenção da estação de regulagem e medição",
-      "Vistoria realizada com o objetivo de verificar o estado de conservação da Estação de Regulagem e Medição"
-     ]
-    },
     {
      "area": "Redação oficial",
      "nivel": "básico",
      "evidencias": [
-      "elaboro o presente Termo de Notificação 006/2024 (Anexo nº 77900978) para verificação e aprovação",
-      "TERMO DE NOTIFICAÇÃO"
-     ]
-    },
-    {
-     "area": "Gestão processual",
-     "nivel": "básico",
-     "evidencias": [
-      "Ao Gerente desta Câmara de Energia",
-      "disposto no Art. 6º, §2º, Capítulo II, da Instrução Normativa CD nº 001/2007."
+      "solicitar agendamento de Vistoria Técnica nas instalações localizadas no Município de Rio Bonito",
+      "sirvo-me deste para solicitar confirmação da Concessionária"
      ]
     }
    ],
-   "base_normativa": [
-    "Decreto nº 46.925, de 05/02/2020 (RJ) – Código de Segurança contra Incêndio e Pânico",
-    "ABNT NBR 12962:2016 – Extintores de incêndio – Inspeção e manutenção",
-    "ABNT NBR 16291:2014 – Chuveiros e lava-olhos de emergência",
-    "NR 26 – Sinalização de segurança",
-    "Instrução Normativa CD nº 001/2007, Art. 6º, Parágrafo 2º, Capítulo II",
-    "Termo de Notificação (TN) 003/2024",
-    "Termo de Notificação (TN) 002/2025",
-    "Relatório de Fiscalização P_016_24"
-   ],
+   "base_normativa": [],
    "cargos": [
-    "Especialista em Regulação (3)",
-    "Gerente (2)"
+    "Gerente (2)",
+    "Assistente (2)"
    ],
-   "sinais_perda": {
-    "Pedido de complementação": [
-     "há a necessidade da concessionária CEG apresentar alguns documentos",
-     "não foram apresentados os seguintes documentos referentes à estação: Licença de operação, Laudo de Exigências e Certificado de Aprovação do CBMERJ",
-     "notifique quanto à necessidade de apresentação dos documentos faltantes"
-    ],
-    "Reiteração": [
-     "ausência de documentação na estação já havia sido constatada em fiscalizações realizadas em março de 2024 e em fevereiro de 2025"
-    ]
-   },
-   "prazos_citados": [
-    "10 dias (rito, concessionaria)"
-   ],
-   "conclusoes_de_merito": [
-    "aponta permanência de irregularidade quanto à disponibilização da documentação na estação",
-    "aponta não conformidade documental pela ausência de documentos do CBMERJ e recomenda providências à concessionária"
-   ],
-   "trabalho_reproduzido": [
-    "AGENERSA/CAENE (Relatório P-054/24): Constatação da necessidade de apresentação de documentos pela concessionária CEG",
-    "Relatório P-125/25: Apuração da exigência do Laudo de Exigências e Certificado de Aprovação do CBMERJ para a ETC Ramal Metropolitano"
-   ],
+   "sinais_perda": {},
+   "prazos_citados": [],
+   "conclusoes_de_merito": [],
+   "trabalho_reproduzido": [],
    "lacunas": [
-    "2 documento(s) sem texto disponível (restritos ou não baixados)",
+    "4 documento(s) sem texto disponível (restritos ou não baixados)",
     "Tempo de trabalho estimado pelo conteúdo, não medido"
    ]
   },
   "t2": {
    "id": "t2",
-   "nome": "Requisitar documentos à concessionária e a órgãos",
-   "unidade": "Câmara técnica de fiscalização (CAENE ou CASAN)",
+   "nome": "Vistoriar unidade e elaborar relatório",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
    "status": "normal",
    "nota": null,
    "freq": null,
-   "descritivo": "No caso crítico, a CAENE recebeu a resposta da CEG (Ofício GEREG 339/2024, com Licença Ambiental Unificada), verificou que a licença não cobria a pressão de operação da ERM (acima de 4,2 bar) e pediu a Licença de Operação do INEA em 3 dias; dias depois pediu o projeto da estação, também em 3 dias, e consultou o INEA sobre a abrangência da LO IN026824. O INEA tramitou a consulta dentro do próprio processo SEI.",
-   "gatilho": "Documentação apresentada pela concessionária insuficiente para concluir a análise",
-   "saida": "Ofícios de requisição à CEG (NA 173 e NA 176) e de consulta ao INEA (NA 179)",
-   "observacoes": "Só no caso crítico. As peças produzidas pelo INEA dentro do processo (despachos de encaminhamento, Manifestação 1146 e Ofício NA 2015) aparecem com autoria AGENERSA no insumo, mas ficaram fora por não serem produção da Agência. O e-mail da SCEXEC de 14/08/2024 foi vinculado aqui por coincidir com a remessa ao INEA (inferência). A carta GEREG 339/24 só foi juntada aos autos em 07/2025.",
+   "descritivo": "Os especialistas da câmara vistoriam estações elevatórias e de tratamento de água e esgoto, aplicam um checklist e registram não conformidades, recomendações ou exigências, com aprovação do gerente da câmara. Os relatórios seguem o mesmo modelo, mas variam no uso de prazo, na forma (recomendação ou exigência) e nas datas de vistoria, elaboração e assinatura.",
+   "gatilho": "Vistoria agendada em estação elevatória ou de tratamento",
+   "saida": "Relatório de fiscalização com checklist, não conformidades e recomendações",
+   "observacoes": "Parte das vistorias ficou incompleta por falta de acesso a painéis ou tampas, sem nova visita registrada.",
    "casos_com_evidencia": 1,
-   "n_docs": 5,
-   "tramite_associado": [
-    "E-mail (SCEXEC)"
-   ],
+   "n_docs": 42,
+   "tramite_associado": [],
    "documentos": [
-    "E-mail",
-    "Ofício - NA 173",
-    "Ofício - NA 176",
-    "Ofício - NA 179"
+    "Relatório de Fiscalização"
    ],
-   "entradas_externas": [
-    "Carta GEREG 339/24"
-   ],
-   "laudas": "5",
+   "entradas_externas": [],
+   "laudas": "272",
    "trabalho_h": {
-    "piso": "3.5",
-    "teto": "3.5",
+    "piso": "217.0",
+    "teto": "446.6",
     "modelo": null
    },
    "espera_du": {
-    "antes": "23",
-    "execucao": "7",
-    "ocorrencias": "1",
+    "antes": "101",
+    "execucao": "67",
+    "ocorrencias": "8",
     "posse_na_espera": [
-     "CAENE 23 du"
+     "SEM UNIDADE 80 du",
+     "CASAN 21 du"
     ],
     "detalhe": [
-     "crítico: 2024-08-02 a 2024-08-13 — espera antes 23 du, execução 7 du"
+     "crítico: 2024-03-07 a 2024-04-29 — espera antes 19 du, execução 35 du",
+     "crítico: 2024-05-10 a 2024-05-20 — espera antes 2 du, execução 6 du",
+     "crítico: 2024-06-03 a 2024-06-06 — espera antes 2 du, execução 3 du",
+     "crítico: 2024-07-25 a 2024-08-02 — espera antes 20 du, execução 6 du",
+     "crítico: 2024-08-09 a 2024-08-09 — espera antes 1 du, execução 0 du",
+     "crítico: 2024-09-11 a 2024-09-11 — espera antes 2 du, execução 0 du",
+     "crítico: 2024-11-06 a 2024-11-07 — espera antes 28 du, execução 1 du",
+     "crítico: 2024-12-20 a 2025-01-15 — espera antes 27 du, execução 16 du"
     ]
    },
    "insumos": {
+    "Vistoria/campo": [
+     "vistoria da estação elevatória Praça Paris",
+     "informação do representante da concessionária em campo",
+     "vistoria da estação elevatória Barão de Guaratiba",
+     "informação do encarregado da concessionária em campo",
+     "vistoria in loco da estação elevatória",
+     "vistoria in loco da estação elevatória de esgoto"
+    ],
     "Documentos da regulada": [
-     "Ofício GEREG 339 2024 da concessionária com licença unificada"
+     "relatório da concessionária sobre a laje e as câmaras",
+     "Plano Diretor de Abastecimento de Água de Magé"
+    ],
+    "Documentos do próprio processo": [
+     "relatório de fiscalização anterior (vistoria de 2022)"
     ],
     "Normas e contratos": [
-     "Licença de Operação emitida pelo INEA"
+     "Portaria GM/MS 888/2021 sobre geradores de hipoclorito",
+     "Deliberação AGENERSA 4534/2023, análise do plano de manutenção das elevatórias"
     ]
    },
-   "fontes_externas": [],
-   "ferramentas": [
-    "conferência documental"
+   "fontes_externas": [
+    "Google Earth",
+    "Google Earth (figura de localização)",
+    "Google Earth (mapa de localização)",
+    "Google Maps",
+    "Google Maps (figura de localização)",
+    "Google Maps (mapa de localização)",
+    "Google Street View (figura de localização)",
+    "Portaria GM/MS nº 888/2021"
    ],
-   "calculos": [],
+   "ferramentas": [
+    "vistoria in loco",
+    "conferência documental",
+    "registro fotográfico",
+    "checklist de conformidade (anexo)",
+    "vistoria in loco com checklist",
+    "análise normativa",
+    "checklist de aspectos gerais da eta (anexo)",
+    "checklist de aspectos gerais (anexo)"
+   ],
+   "calculos": [
+    "nível do poço de sucção de 1,3 m medido na vistoria, com o tanque de cerca de 3 m de profundidade",
+    "nível do poço de sucção de 1,48 m medido na vistoria, indicado como 30% da capacidade",
+    "potência em operação: 3 motores de 150 cv, total de 450 cv",
+    "balanço de vazões registrado nos medidores: água bruta, água de barragem e água tratada, em l/s"
+   ],
    "testes": [
-    "Verificação de inaplicabilidade da Licença Ambiental Unificada em razão da pressão de operação da estação"
+    "verificação in loco dos itens de conservação, operação e manutenção da EEAT",
+    "verificação in loco dos itens de operação e manutenção da EEAT",
+    "verificação in loco de ventilação e iluminação do abrigo",
+    "vistoria de conformidade dos itens com boas práticas sanitárias e de engenharia",
+    "checklist de conformidade da estação elevatória (anexo) com boas práticas sanitárias e de engenharia"
    ],
    "competencias": [
     {
-     "area": "Engenharia de gás e segurança",
+     "area": "Engenharia de saneamento",
      "nivel": "intermediário",
      "evidencias": [
-      "uma vez que ela opera com pressão superior a 4,2 Bar, fora da faixa estipulada na própria licença unificada enviada.",
-      "estações de gás natural da concessionária CEG, listadas abaixo, estão incluídas na Licença de Operação"
+      "As características da motobomba (foto 9), cujo fabricante é a Higra Industrial LTDA",
+      "Em relação à ventilação e à iluminação (natural e artificial) do abrigo, estão adequadas"
      ]
     },
     {
-     "area": "Redação oficial",
-     "nivel": "básico",
+     "area": "Auditoria e controle",
+     "nivel": "intermediário",
      "evidencias": [
-      "solicitamos que seja enviada a Licença de Operação emitida pelo INEA",
-      "Solicitamos que seja enviado, no prazo de 3 (três) dias, o projeto da estação de Regulagem e Medição"
+      "Além das não conformidades apontadas acima, também não havia registro",
+      "Não havia registros"
+     ]
+    },
+    {
+     "area": "Ambiental",
+     "nivel": "intermediário",
+     "evidencias": [
+      "Observa-se também que o armazenamento dos resíduos estava em desacordo com a norma ABNT NBR 12208:2020",
+      "O lodo oriundo do tratamento está sendo descartado diretamente na galeria de águas pluvias"
      ]
     }
    ],
-   "base_normativa": [
-    "Faixa de pressão estipulada na Licença Ambiental Unificada (até 4,2 Bar)",
-    "Licença de Operação LO nº IN026824"
-   ],
+   "base_normativa": [],
    "cargos": [
-    "Gerente (3)"
+    "Especialista em Regulação (63)",
+    "Gerente (41)",
+    "Assessor (38)",
+    "Assistente (29)"
    ],
    "sinais_perda": {
-    "Pedido de complementação": [
-     "solicitamos que seja enviada a Licença de Operação emitida pelo INEA da Estação de Regulagem e Medição de Santa Cruz"
+    "Repetição de peça anterior": [
+     "Relatório de Fiscalização repete 61% do texto de Relatório de Fiscalização de 2024-11-06"
     ],
-    "Diligência externa": [
-     "Solicitamos que seja enviado, no prazo de 3 (três) dias, o projeto da estação de Regulagem e Medição",
-     "solicitar a colaboração do INEA a fim de confirmar se, de fato, as estações de gás natural da concessionária CEG"
+    "Pedido de complementação": [
+     "informar qual é a potência do conjunto motobomba da Estação Elevatória vistoriada",
+     "Providenciar o Prontuário de Instalações Elétricas, Atestado de Saúde Ocupacional e outros documentos",
+     "informar qual é a potência do conjunto motobomba da Estação Elevatória vistoriada"
+    ],
+    "Reiteração": [
+     "Não há planos de emergência ou contigência"
+    ],
+    "Prazo concedido": [
+     "sanadas no prazo de 30 (trinta) dias",
+     "sanadas no prazo de 30 (trinta) dias",
+     "sanadas no prazo de 30 (trinta) dias"
     ]
    },
    "prazos_citados": [
-    "3 dias (diligencia, concessionaria)"
+    "20 dias (cumprimento, concessionaria)",
+    "30 dias (cumprimento, concessionaria)"
    ],
-   "conclusoes_de_merito": [],
+   "conclusoes_de_merito": [
+    "aponta não conformidades na EEAT e recomenda que sejam sanadas",
+    "aponta não conformidades na EEAT e recomenda que sejam sanadas",
+    "aponta quatro não conformidades e recomenda medidas corretivas",
+    "aponta não conformidades no abrigo e recomenda que a concessionária as sane",
+    "aponta não conformidades e fixa exigências com prazo de 20 dias"
+   ],
    "trabalho_reproduzido": [
-    "Concessionária CEG: Afirmação de que as estações de regulagem e medição estariam cobertas pela referida licença de operação",
-    "INEA / Licença de Operação LO Nº IN026824: Descrição das especificações técnicas do ramal de distribuição contemplado na licença"
+    "AGENERSA/CASAN (Relatório nº 66/2022): lista de recomendações da vistoria anterior e foto de vistoria anterior, usadas como base da verificação",
+    "Concessionária (não identificada): especificações técnicas da EEE 52 (Tabela 1)",
+    "Concessionária Águas do Rio: informações sobre o projeto estrutural e as obras de recuperação da laje",
+    "Concessionária Águas do Rio: percentual de 70% da população de Magé não atendido pela vazão média de 160 l/s",
+    "Concessionária Águas do Rio: potência dos conjuntos motobombas, informada pela concessionária"
    ],
    "lacunas": [
-    "2 documento(s) sem texto disponível (restritos ou não baixados)",
+    "1 documento(s) sem texto disponível (restritos ou não baixados)",
     "Tempo de trabalho estimado pelo conteúdo, não medido"
    ]
   },
   "t3": {
    "id": "t3",
-   "nome": "Analisar defesa e emitir parecer técnico",
-   "unidade": "Câmara técnica de fiscalização (CAENE ou CASAN)",
+   "nome": "Encaminhar relatórios à concessionária com prazo",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
    "status": "normal",
    "nota": null,
    "freq": null,
-   "descritivo": "A CAENE confronta a manifestação da concessionária com o relatório de fiscalização e o termo de notificação, verificando a conformidade com o COSCIP (Decreto Estadual nº 42/2018) e com as exigências do CBMERJ (Laudo de Exigências e Certificado de Aprovação); no crítico, verifica também a cobertura do licenciamento ambiental com base na manifestação do INEA. O parecer técnico conclui pelo descumprimento documental e indica o encaminhamento ao Conselho-Diretor. No típico, o Parecer 83 analisa a petição GEREG 485-25 e o histórico de notificações sobre a mesma pendência.",
-   "gatilho": "Defesa da concessionária recebida e, no crítico, resposta do INEA",
-   "saida": "Parecer técnico (Parecer 83/2025 no típico; Parecer 86/2024 no crítico) remetido à SCEXEC",
-   "observacoes": "No típico, o parecer saiu na mesma passagem da vistoria; a petição GEREG 485-25 não consta da lista de documentos do piloto. No crítico, o Ofício INEA/PRESI 2326 (juntado em 10/2024) e as cartas GEREG 372/24 e 390/24 (juntadas em 07/2025) chegaram aos autos depois do Parecer 86; a ligação delas com esta atividade, e com o Parecer 126/2024 da CAENE citado no encaminhamento à Procuradoria (fora da lista), é inferência.",
-   "casos_com_evidencia": 2,
-   "n_docs": 2,
+   "descritivo": "A câmara reúne os relatórios assinados em um ofício à concessionária, com prazo para manifestação ou saneamento, transmite o ofício por e-mail e libera acesso externo ao processo. Os e-mails anexam o ofício, e os relatórios ficam acessíveis pela vista do processo.",
+   "gatilho": "Lote de relatórios de fiscalização assinados",
+   "saida": "Ofício com prazo de manifestação, e-mail e acesso externo ao processo",
+   "observacoes": "Nem todo relatório aparece listado em um ofício de encaminhamento.",
+   "casos_com_evidencia": 1,
+   "n_docs": 14,
    "tramite_associado": [],
    "documentos": [
-    "Parecer 83",
-    "Parecer 86"
+    "E-mail",
+    "Ofício - NA 32",
+    "Ofício - NA 349",
+    "Ofício - NA 452",
+    "Ofício - NA 541",
+    "Ofício - NA 682",
+    "Ofício - NA 831",
+    "Ofício - NA 946"
    ],
-   "entradas_externas": [
-    "Carta GEREG 372/24",
-    "Carta GEREG_390_24",
-    "Ofício .INEA/PRESI Nº2326"
-   ],
-   "laudas": "2–6",
+   "entradas_externas": [],
+   "laudas": "14",
    "trabalho_h": {
-    "piso": "2.0–4.0",
-    "teto": "8.4–8.6",
+    "piso": "5.2",
+    "teto": "7.8",
     "modelo": null
    },
    "espera_du": {
-    "antes": "10–11",
-    "execucao": "0",
-    "ocorrencias": "1",
+    "antes": "42",
+    "execucao": "1",
+    "ocorrencias": "7",
     "posse_na_espera": [
-     "CAENE 11 du",
-     "INEA/PRESI 5 du",
-     "INEA/GERLRAC 2 du",
-     "INEA/SERVARAT 2 du",
-     "INEA/DIRLAM 1 du"
+     "SEM UNIDADE 36 du",
+     "CASAN 6 du"
     ],
     "detalhe": [
-     "típico: 2025-09-19 a 2025-09-19 — espera antes 10 du, execução 0 du",
-     "crítico: 2024-08-28 a 2024-08-28 — espera antes 11 du, execução 0 du"
+     "crítico: 2024-05-08 a 2024-05-08 — espera antes 6 du, execução 0 du",
+     "crítico: 2024-05-29 a 2024-05-29 — espera antes 7 du, execução 0 du",
+     "crítico: 2024-06-27 a 2024-06-27 — espera antes 3 du, execução 0 du",
+     "crítico: 2024-08-07 a 2024-08-08 — espera antes 3 du, execução 1 du",
+     "crítico: 2024-09-26 a 2024-09-26 — espera antes 11 du, execução 0 du",
+     "crítico: 2024-11-11 a 2024-11-11 — espera antes 2 du, execução 0 du",
+     "crítico: 2025-01-30 a 2025-01-30 — espera antes 10 du, execução 0 du"
     ]
    },
    "insumos": {
-    "Documentos da regulada": [
-     "Anexo da concessionária contendo Licença de Operação",
-     "Ofício da concessionária informando contratação de empresa para regularização junto ao CBMERJ",
-     "Petição de defesa da concessionária GEREG 485-25"
-    ],
-    "Bases externas": [
-     "Manifestação do INEA informando sobre renovação e cobertura da Licença de Operação"
-    ],
-    "Normas e contratos": [
-     "Decreto Estadual do Código de Segurança Contra Incêndio e Pânico",
-     "Código de Segurança Contra Incêndio e Pânico (COSCIP)",
-     "Contrato de Concessão de Gás"
-    ],
     "Documentos do próprio processo": [
-     "Relatório de fiscalização da CAENE",
-     "Termo de Notificação 018/2025"
+     "Relatórios de Fiscalização nº 10 a 48/2024 encaminhados no ofício",
+     "Relatórios de Fiscalização nº 44 a 60/2024 encaminhados no ofício",
+     "quatro relatórios de fiscalização a encaminhar",
+     "relatórios de fiscalização encaminhados (seis)",
+     "relatórios de fiscalização encaminhados (três)"
     ]
    },
-   "fontes_externas": [
-    "Instituto Estadual do Ambiente - INEA"
-   ],
-   "ferramentas": [
-    "análise normativa",
-    "conferência documental"
-   ],
+   "fontes_externas": [],
+   "ferramentas": [],
    "calculos": [],
-   "testes": [
-    "Verificação de conformidade da documentação da estação de gás em relação às normas do CBMERJ",
-    "Verificação do tempo transcorrido sem a regularização documental requerida pelo CBMERJ"
-   ],
+   "testes": [],
    "competencias": [
     {
-     "area": "Engenharia de gás e segurança",
-     "nivel": "intermediário",
+     "area": "Redação oficial",
+     "nivel": "básico",
      "evidencias": [
-      "visto que o Laudo de Exigências e o Certificado de Aprovação, exigidos pelo CBMERJ - conforme dispõe Decreto Estadual n° 42, de 17 de dezembro de 2018 (COSCIP) - não foram apresentados",
-      "conclusão desta CAENE que a concessionária não cumpriu a determinação quanto à apresentação dos documentos"
-     ]
-    },
-    {
-     "area": "Jurídico-regulatória",
-     "nivel": "intermediário",
-     "evidencias": [
-      "conclui-se que a falta de documentação contraria o Art. 3º do Decreto Estadual nº 42 de 17 de dezembro de 2018"
+      "Cumprimentando V.Sª, sirvo-me deste para encaminhar os Relatórios de Fiscalização",
+      "Cumprimentando V.Sª, sirvo-me deste para encaminhar os Relatórios de Fiscalização"
      ]
     }
    ],
-   "base_normativa": [
-    "Decreto Estadual nº 42, de 17 de dezembro de 2018 (COSCIP)",
-    "Licença de Operação nº IN026824 (INEA)",
-    "Art. 6º, §2º, da IN 001/07",
-    "Cláusula 4ª, §1º, inciso 11, do Contrato de Concessão",
-    "Cláusula 10, inciso II, do Contrato de Concessão",
-    "Art. 3º do Decreto Estadual nº 42, de 17 de dezembro de 2018 (COSCIP)",
-    "Art. 40, inciso I, do Decreto Estadual nº 42, de 17 de dezembro de 2018 (COSCIP)"
-   ],
+   "base_normativa": [],
    "cargos": [
-    "Gerente (2)",
-    "Especialista em Regulação (2)"
+    "Gerente (7)"
    ],
    "sinais_perda": {
+    "Prazo concedido": [
+     "prazo de 30 (trinta) dias",
+     "prazo de 30 (trinta) dias"
+    ],
     "Diligência externa": [
-     "foi solicitado ao INEA a confirmação de que estação em questão estaria coberta pela licença"
+     "manifestação da Concessionária acerca das orientações e recomendações técnicas",
+     "manifestação da Concessionária acerca das orientações e recomendações técnicas"
     ]
    },
-   "prazos_citados": [],
-   "conclusoes_de_merito": [
-    "Conclui pelo descumprimento parcial da concessionária quanto à apresentação de documentos exigidos pelo CBMERJ",
-    "Conclui que a concessionária não cumpriu a determinação de apresentar os documentos do CBMERJ e encaminha ao Conselho Diretor"
+   "prazos_citados": [
+    "30 dias (diligencia, concessionaria)",
+    "30 dias (rito, concessionaria)"
    ],
+   "conclusoes_de_merito": [],
    "trabalho_reproduzido": [
-    "CEG / Naturgy (peticionamento SEI-480002/007905/2025): Alegações da concessionária sobre contratação de empresa especializada, tratativas cadastrais e inferência de regularidade da estação durante os trâmites do CBMERJ.",
-    "INEA: Informação de que a Licença de Operação está em renovação e contempla a estação",
-    "Naturgy / CEG: Informação de contratação de empresa para emissão de Laudo de Exigências e Certificado de Aprovação junto ao CBMERJ"
+    "AGENERSA/CASAN: lista dos Relatórios de Fiscalização nº 153 a 158/2024 encaminhados",
+    "AGENERSA/CASAN: lista dos cinco Relatórios de Fiscalização nº 111 a 159/2024 encaminhados"
    ],
    "lacunas": [
-    "Tempo de trabalho estimado pelo conteúdo, não medido"
-   ]
-  },
-  "t10": {
-   "id": "t10",
-   "nome": "Notificar concessionária sobre o parecer",
-   "unidade": "Secretaria Executiva (SCEXEC)",
-   "status": "normal",
-   "nota": null,
-   "freq": null,
-   "descritivo": null,
-   "gatilho": null,
-   "saida": null,
-   "observacoes": null,
-   "casos_com_evidencia": 0,
-   "n_docs": 0,
-   "tramite_associado": [],
-   "documentos": [],
-   "entradas_externas": [],
-   "laudas": null,
-   "trabalho_h": {
-    "piso": null,
-    "teto": null,
-    "modelo": null
-   },
-   "espera_du": {
-    "antes": null,
-    "execucao": null,
-    "ocorrencias": null,
-    "posse_na_espera": [],
-    "detalhe": []
-   },
-   "insumos": {},
-   "fontes_externas": [],
-   "ferramentas": [],
-   "calculos": [],
-   "testes": [],
-   "competencias": [],
-   "base_normativa": [],
-   "cargos": [],
-   "sinais_perda": {},
-   "prazos_citados": [],
-   "conclusoes_de_merito": [],
-   "trabalho_reproduzido": [],
-   "lacunas": [
-    "Sem documento vinculado: atividade inferida da trilha ou do outro caso",
-    "Tempo de trabalho estimado pelo conteúdo, não medido"
-   ]
-  },
-  "t11": {
-   "id": "t11",
-   "nome": "Decidir pedido de dilação de prazo",
-   "unidade": "Secretaria Executiva (SCEXEC)",
-   "status": "normal",
-   "nota": null,
-   "freq": null,
-   "descritivo": null,
-   "gatilho": null,
-   "saida": null,
-   "observacoes": null,
-   "casos_com_evidencia": 0,
-   "n_docs": 0,
-   "tramite_associado": [],
-   "documentos": [],
-   "entradas_externas": [],
-   "laudas": null,
-   "trabalho_h": {
-    "piso": null,
-    "teto": null,
-    "modelo": null
-   },
-   "espera_du": {
-    "antes": null,
-    "execucao": null,
-    "ocorrencias": null,
-    "posse_na_espera": [],
-    "detalhe": []
-   },
-   "insumos": {},
-   "fontes_externas": [],
-   "ferramentas": [],
-   "calculos": [],
-   "testes": [],
-   "competencias": [],
-   "base_normativa": [],
-   "cargos": [],
-   "sinais_perda": {},
-   "prazos_citados": [],
-   "conclusoes_de_merito": [],
-   "trabalho_reproduzido": [],
-   "lacunas": [
-    "Sem documento vinculado: atividade inferida da trilha ou do outro caso",
+    "7 documento(s) sem texto disponível (restritos ou não baixados)",
     "Tempo de trabalho estimado pelo conteúdo, não medido"
    ]
   },
   "t4": {
    "id": "t4",
-   "nome": "Analisar infração e emitir parecer jurídico",
-   "unidade": "Procuradoria (PROC)",
+   "nome": "Consolidar análise técnica das fiscalizações",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
    "status": "normal",
    "nota": null,
    "freq": null,
-   "descritivo": "A SCEXEC remete o processo à Procuradoria, que examina relatórios de fiscalização, termos de notificação, pareceres da CAENE e manifestações da CEG à luz do contrato de concessão, da Lei Estadual nº 4.556/2005, do Decreto nº 38.618/2005 e da IN CODIR nº 001/2007, verificando a observância do contraditório e a regularidade dos atos de fiscalização. O parecer jurídico opina pelo cabimento de penalidade (no crítico, com atenuante) e devolve os autos à Secretaria para designação do relator.",
-   "gatilho": "Parecer técnico concluído e despacho da SCEXEC remetendo o processo à Procuradoria",
-   "saida": "Parecer jurídico (735/2025 no típico; 417/2025 no crítico) remetido à SCEXEC",
-   "observacoes": "Os despachos de remessa à Procuradoria foram vinculados aqui por abrirem a passagem. no crítico, o despacho saiu cerca de 11 meses depois do Parecer 86.",
-   "casos_com_evidencia": 2,
+   "descritivo": "A câmara consolida o conjunto de relatórios do ciclo em parecer técnico, relaciona as fiscalizações feitas e conclui sobre o atendimento das recomendações, e encaminha o processo à Secretaria.",
+   "gatilho": "Ciclo de vistorias concluído e prazos de manifestação decorridos",
+   "saida": "Parecer técnico da câmara sobre o conjunto de relatórios",
+   "observacoes": "O parecer não detalha achados por unidade nem fixa prazos.",
+   "casos_com_evidencia": 1,
    "n_docs": 2,
-   "tramite_associado": [
-    "Despacho de Encaminhamento de Processo (SCEXEC)"
-   ],
+   "tramite_associado": [],
    "documentos": [
-    "Parecer 417",
-    "Parecer 735"
+    "Despacho de Encaminhamento de Processo",
+    "Parecer 250"
    ],
    "entradas_externas": [],
-   "laudas": "13–16",
+   "laudas": "12",
    "trabalho_h": {
-    "piso": "4.0",
-    "teto": "10.6–16.2",
+    "piso": "12.2",
+    "teto": "13.7",
     "modelo": null
    },
    "espera_du": {
-    "antes": "56–241",
+    "antes": "106",
     "execucao": "0",
     "ocorrencias": "1",
     "posse_na_espera": [
-     "SEM UNIDADE 203 du",
-     "SCEXEC 53 du",
-     "PROC 41 du"
+     "SEM UNIDADE 106 du"
     ],
     "detalhe": [
-     "típico: 2025-12-10 a 2025-12-10 — espera antes 56 du, execução 0 du",
-     "crítico: 2025-08-19 a 2025-08-19 — espera antes 241 du, execução 0 du"
+     "crítico: 2025-07-08 a 2025-07-08 — espera antes 106 du, execução 0 du"
     ]
    },
    "insumos": {
-    "Normas e contratos": [
-     "Lei Estadual nº 4.556/2005",
-     "Decreto Estadual nº 38.618/2005",
-     "Regimento Interno da AGENERSA",
-     "Instrução Normativa CODIR Nº 001/2007",
-     "Lei Estadual nº 5.427/2009",
-     "Legislação estadual e regramento interno"
-    ],
     "Documentos do próprio processo": [
-     "Termo de Notificação nº 018/2025 da CAENE",
-     "Relatório de Fiscalização P-125/25 da CAENE",
-     "Parecer técnico da Câmara de Energia"
+     "relatórios de fiscalização AGENERSA/CASAN 2024"
     ],
     "Documentos da regulada": [
-     "Petição de defesa/impugnação da concessionária"
+     "respostas e relatórios técnicos da concessionária"
+    ],
+    "Normas e contratos": [
+     "Contrato de Concessão e anexos"
+    ],
+    "Vistoria/campo": [
+     "fiscalizações periódicas em unidades operacionais"
     ]
    },
-   "fontes_externas": [
-    "Decreto Estadual nº 38.618/2005",
-    "Instrução Normativa CODIR Nº 001/2007",
-    "Lei Estadual nº 4.556/2005",
-    "Lei Estadual nº 5.427/2009",
-    "Regimento Interno da AGENERSA"
-   ],
+   "fontes_externas": [],
    "ferramentas": [
-    "análise normativa"
+    "análise documental integrada"
    ],
    "calculos": [],
    "testes": [
-    "Conferência da regularidade formal dos atos de fiscalização e de instrução processual",
-    "Verificação de conformidade jurídica dos atos praticados no processo de fiscalização"
+    "verificação de atraso nas adequações: prazos postergados por cronogramas"
    ],
    "competencias": [
-    {
-     "area": "Jurídico-regulatória",
-     "nivel": "especialista",
-     "evidencias": [
-      "conclui-se que a situação narrada nos autos pode ensejar a aplicação de penalidade, a critério do Conselho Diretor",
-      "esta Procuradoria corrobora com a sua opinião técnica de que a concessionária não cumpriu a determinação quanto à apresentação dos documentos"
-     ]
-    },
     {
      "area": "Gestão processual",
      "nivel": "intermediário",
      "evidencias": [
-      "ressalta-se a necessidade de se designar um Conselheiro-Relator para condução do feito."
+      "verificou-se que parte dos prazos estabelecidos para as adequações foi postergada"
+     ]
+    },
+    {
+     "area": "Jurídico-regulatória",
+     "nivel": "básico",
+     "evidencias": [
+      "O descumprimento de prazos ou a inércia diante das recomendações da Agência pode configurar infração contratual"
+     ]
+    },
+    {
+     "area": "Engenharia de saneamento",
+     "nivel": "básico",
+     "evidencias": [
+      "Em relação às exigências de segurança, como instalação de guarda-corpos, sinalização de risco"
      ]
     }
    ],
-   "base_normativa": [
-    "Regimento Interno da AGENERSA, art. 53, §1º",
-    "Regimento Interno da AGENERSA, arts. 48 e 49",
-    "Instrução Normativa CODIR nº 001/2007, art. 1º",
-    "Instrução Normativa CODIR nº 001/2007, art. 2º e parágrafo único",
-    "Instrução Normativa CODIR nº 001/2007, art. 3º e §1º",
-    "Instrução Normativa CODIR nº 001/2007, art. 6º, §2º",
-    "Lei Estadual nº 4.556/2005, art. 4º, incisos I e IV",
-    "Decreto Estadual nº 38.618/2005, art. 10, caput e inciso I"
-   ],
+   "base_normativa": [],
    "cargos": [
-    "Procurador (2)",
-    "Assessora Especial (2)"
+    "Especialista em Regulação (1)",
+    "Gerente (1)",
+    "Assistente (1)"
    ],
    "sinais_perda": {
     "Pedido de complementação": [
-     "expediu ofício à Regulada solicitando o envio de Licença de Operação emitida pelo INEA"
-    ],
-    "Diligência externa": [
-     "expediu ofício ao INEA a fim de confirmar se, de fato, as estações de gás natural da concessionária CEG estão incluídas na Licença de Operação"
-    ],
-    "Reiteração": [
-     "ausência de documentação na estação não é uma novidade, uma vez que já havia sido constatada em fiscalizações realizadas em março de 2024 e em fevereiro de 2025"
+     "apresentando relatórios atualizados, laudos técnicos e registros documentais que comprovem a efetiva execução das medidas"
     ]
    },
-   "prazos_citados": [
-    "10 dias (rito, concessionaria)",
-    "3 dias (diligencia, concessionaria)"
-   ],
+   "prazos_citados": [],
    "conclusoes_de_merito": [
-    "opina pela possibilidade de aplicação de penalidade a critério do Conselho-Diretor",
-    "opina que o descumprimento enseja penalidade a critério do Conselho-Diretor com observância da proporcionalidade"
+    "identifica cumprimento apenas parcial das recomendações técnicas"
    ],
    "trabalho_reproduzido": [
-    "CAENE: Conclusão do Parecer nº 83/2025/AGENERSA/CAENE sobre o descumprimento da apresentação de documentos exigidos pelo CBMERJ.",
-    "CAENE: Constatações do Relatório de Fiscalização P-125/25 sobre o estado de conservação da ETC RAMAL METROPOLITANO, sinalização de fluxo e falta de laudos do CBMERJ.",
-    "CAENE: Resumo dos relatórios de vistoria, notificações, pareceres técnicos e manifestações do INEA e da Concessionária.",
-    "Naturgy / CEG RIO: Alegações da concessionária quanto ao processo de revisão cadastral e contratação de empresa para regularização junto ao CBMERJ."
+    "equipe técnica da Agência (relatórios de fiscalização 2024): constatações e recomendações das fiscalizações de 2024 e ofícios anteriores"
    ],
    "lacunas": [
     "Tempo de trabalho estimado pelo conteúdo, não medido"
@@ -661,149 +482,57 @@
   },
   "t5": {
    "id": "t5",
-   "nome": "Sortear relator e distribuir o processo",
+   "nome": "Dar ciência do parecer à concessionária",
    "unidade": "Secretaria Executiva (SCEXEC)",
    "status": "normal",
    "nota": null,
    "freq": null,
-   "descritivo": "Depois do sorteio de relatoria em reunião interna do Conselho-Diretor, a SCEXEC registra o resultado e remete os autos, por despacho, ao gabinete do conselheiro sorteado (CONS-02).",
-   "gatilho": "Parecer jurídico concluído e sorteio de relatoria em reunião interna",
-   "saida": "Despacho de encaminhamento ao gabinete do conselheiro-relator",
-   "observacoes": "As atas do sorteio (1ª e 13ª Reuniões Internas) são citadas nos despachos, mas não constam da lista de documentos.",
-   "casos_com_evidencia": 2,
-   "n_docs": 2,
+   "descritivo": "A Secretaria Executiva dá ciência do parecer técnico à concessionária por manifestação e e-mail, com acesso externo ao processo, e depois recebe e encaminha à câmara a manifestação da concessionária.",
+   "gatilho": "Parecer técnico da câmara juntado ao processo",
+   "saida": "Manifestação de ciência, e-mail e acesso externo à concessionária",
+   "observacoes": "O e-mail de ciência não anexa o parecer comunicado.",
+   "casos_com_evidencia": 1,
+   "n_docs": 3,
    "tramite_associado": [],
    "documentos": [
-    "Despacho de Encaminhamento de Processo"
+    "Despacho de Encaminhamento de Processo",
+    "E-mail",
+    "Manifestação 55"
    ],
    "entradas_externas": [],
-   "laudas": "1",
+   "laudas": "3",
    "trabalho_h": {
-    "piso": "0.1",
-    "teto": "0.4",
+    "piso": "0.8",
+    "teto": "0.6",
     "modelo": null
    },
    "espera_du": {
-    "antes": "5–23",
-    "execucao": "0",
+    "antes": "55",
+    "execucao": "24",
     "ocorrencias": "1",
     "posse_na_espera": [
-     "SCEXEC 28 du"
+     "SCEXEC 55 du"
     ],
     "detalhe": [
-     "típico: 2026-01-14 a 2026-01-14 — espera antes 23 du, execução 0 du",
-     "crítico: 2025-08-26 a 2025-08-26 — espera antes 5 du, execução 0 du"
+     "crítico: 2025-09-23 a 2025-10-27 — espera antes 55 du, execução 24 du"
     ]
    },
    "insumos": {
-    "Documentos do próprio processo": [
-     "Ata da 13ª Reunião Interna do Conselho-Diretor",
-     "Ata de Reunião Interna do Conselho-Diretor"
+    "Documentos da regulada": [
+     "manifestação da concessionária Águas do Rio 1"
     ]
    },
    "fontes_externas": [],
    "ferramentas": [],
    "calculos": [],
    "testes": [],
-   "competencias": [
-    {
-     "area": "Gestão processual",
-     "nivel": "básico",
-     "evidencias": [
-      "Encaminho o presente processo em virtude do sorteio realizado pelo Conselho-Diretor",
-      "Encaminho o presente processo em virtude do sorteio realizado pelo Conselho-Diretor"
-     ]
-    }
-   ],
+   "competencias": [],
    "base_normativa": [],
    "cargos": [
-    "Ajudante (2)"
+    "Assistente (2)"
    ],
    "sinais_perda": {},
    "prazos_citados": [],
-   "conclusoes_de_merito": [],
-   "trabalho_reproduzido": [],
-   "lacunas": [
-    "Tempo de trabalho estimado pelo conteúdo, não medido"
-   ]
-  },
-  "t6": {
-   "id": "t6",
-   "nome": "Notificar concessionária para razões finais",
-   "unidade": "Conselheiro-Relator / Conselho-Diretor (CONS-02)",
-   "status": "normal",
-   "nota": null,
-   "freq": null,
-   "descritivo": "O gabinete do relator oficia a CEG e a CEG Rio para apresentarem razões finais em 10 dias, com envio por e-mail. O ofício é padronizado e remete ao relatório de fiscalização e ao termo de notificação do caso.",
-   "gatilho": "Processo recebido no gabinete com instrução considerada suficiente",
-   "saida": "Ofício de notificação para razões finais (NA 25 e NA 29/2026) à concessionária",
-   "observacoes": "As razões finais da concessionária não constam da lista de documentos.",
-   "casos_com_evidencia": 2,
-   "n_docs": 4,
-   "tramite_associado": [],
-   "documentos": [
-    "E-mail",
-    "Ofício - NA 25",
-    "Ofício - NA 29"
-   ],
-   "entradas_externas": [],
-   "laudas": "2–2",
-   "trabalho_h": {
-    "piso": "0.8",
-    "teto": "1.1",
-    "modelo": null
-   },
-   "espera_du": {
-    "antes": "8–106",
-    "execucao": "0",
-    "ocorrencias": "1",
-    "posse_na_espera": [
-     "CONS-02 114 du"
-    ],
-    "detalhe": [
-     "típico: 2026-01-27 a 2026-01-27 — espera antes 8 du, execução 0 du",
-     "crítico: 2026-01-28 a 2026-01-28 — espera antes 106 du, execução 0 du"
-    ]
-   },
-   "insumos": {
-    "Documentos do próprio processo": [
-     "Relatório de fiscalização e termo de notificação",
-     "Processo regulatório de fiscalização"
-    ]
-   },
-   "fontes_externas": [],
-   "ferramentas": [],
-   "calculos": [],
-   "testes": [],
-   "competencias": [
-    {
-     "area": "Gestão processual",
-     "nivel": "básico",
-     "evidencias": [
-      "se manifeste em Razões Finais, no prazo de 10 (dez) dias",
-      "se manifeste em Razões Finais, no prazo de 10 (dez) dias"
-     ]
-    },
-    {
-     "area": "Redação oficial",
-     "nivel": "básico",
-     "evidencias": [
-      "sirvo-me do presente, com base nos princípios constitucionais"
-     ]
-    }
-   ],
-   "base_normativa": [
-    "Constituição Federal — princípios do Contraditório e da Ampla Defesa",
-    "Princípios constitucionais do Contraditório e da Ampla Defesa"
-   ],
-   "cargos": [
-    "Assessor (1)",
-    "Assistente (1)"
-   ],
-   "sinais_perda": {},
-   "prazos_citados": [
-    "10 dias (rito, concessionaria)"
-   ],
    "conclusoes_de_merito": [],
    "trabalho_reproduzido": [],
    "lacunas": [
@@ -811,155 +540,177 @@
     "Tempo de trabalho estimado pelo conteúdo, não medido"
    ]
   },
-  "t7": {
-   "id": "t7",
-   "nome": "Relatar, votar e deliberar em sessão",
-   "unidade": "Conselheiro-Relator / Conselho-Diretor (CONS-02)",
+  "t6": {
+   "id": "t6",
+   "nome": "Rebater manifestação da concessionária",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
    "status": "normal",
    "nota": null,
    "freq": null,
-   "descritivo": "O conselheiro-relator elabora relatório com o histórico processual (fiscalização, notificações, defesa, pareceres técnico e jurídico e, no crítico, a informação do INEA), voto e minuta de deliberação, julgados na mesma sessão regulatória de 27/05/2026. No crítico, o voto aplica advertência, manda lavrar auto de infração e baixa o processo em diligência ao CBMERJ; no típico, considerando as manifestações da CEG sobre dificuldades na obtenção de laudos junto ao CBMERJ, propõe apenas a diligência e a comprovação periódica pela concessionária.",
-   "gatilho": "Prazo de razões finais decorrido e inclusão do processo em pauta de sessão regulatória",
-   "saida": "Relatório, voto e Deliberações AGENERSA nº 5053/2026 e 5054/2026, com prazo de 15 dias para a SCEXEC oficiar o CBMERJ e de 30 dias recorrentes para a CEG comprovar providências",
-   "observacoes": null,
-   "casos_com_evidencia": 2,
-   "n_docs": 6,
-   "tramite_associado": [],
+   "descritivo": "A câmara analisa a manifestação da concessionária, que contesta o escopo da fiscalização, e responde em despacho que reproduz em grande parte o parecer técnico; a Secretaria remete os autos à Procuradoria.",
+   "gatilho": "Manifestação da concessionária contestando o escopo da fiscalização",
+   "saida": "Despacho técnico com réplica e encaminhamento à Procuradoria",
+   "observacoes": "A manifestação da concessionária está em processo anexado e não consta entre as peças públicas lidas.",
+   "casos_com_evidencia": 1,
+   "n_docs": 1,
+   "tramite_associado": [
+    "Despacho de Encaminhamento de Processo (SCEXEC)"
+   ],
    "documentos": [
-    "Deliberação",
-    "Relatório",
-    "Voto 29",
-    "Voto 31"
+    "Despacho de Encaminhamento de Processo"
    ],
    "entradas_externas": [],
-   "laudas": "16–20",
+   "laudas": "7",
    "trabalho_h": {
-    "piso": "8.0–9.0",
-    "teto": "18.7–19.8",
+    "piso": "8.0",
+    "teto": "2.3",
     "modelo": null
    },
    "espera_du": {
-    "antes": "81–82",
+    "antes": "2",
     "execucao": "0",
     "ocorrencias": "1",
     "posse_na_espera": [
-     "SEM UNIDADE 163 du"
+     "CASAN 2 du"
     ],
     "detalhe": [
-     "típico: 2026-05-29 a 2026-05-29 — espera antes 82 du, execução 0 du",
-     "crítico: 2026-05-29 a 2026-05-29 — espera antes 81 du, execução 0 du"
+     "crítico: 2025-10-30 a 2025-10-30 — espera antes 2 du, execução 0 du"
     ]
    },
    "insumos": {
     "Documentos do próprio processo": [
-     "Relatório de Fiscalização CAENE",
-     "Pareceres da Câmara de Energia",
-     "Parecer da Procuradoria Geral",
-     "Relatório de Fiscalização CAENE nº P-054/24 e Termo de Notificação nº 006/2024",
-     "Parecer jurídico da Procuradoria da AGENERSA",
-     "Relatório P-054/24 da CAENE"
+     "Parecer 250/2025 da CASAN"
     ],
     "Documentos da regulada": [
-     "Manifestações e razões finais da CEG",
-     "Razões Finais da Concessionária CEG",
-     "Defesa e razões finais da concessionária CEG",
-     "Manifestações e Razões Finais apresentadas pela Concessionária CEG"
+     "manifestação da concessionária de 23/10/2025"
     ],
     "Normas e contratos": [
-     "Contrato de Concessão e Instrução Normativa AGENERSA nº 001/2007",
-     "Instrução Normativa AGENERSA nº 001/2007",
-     "Contrato de Concessão"
+     "Lei 11.445/2007, Contrato de Concessão e Regulamento de Serviços"
     ]
    },
    "fontes_externas": [],
    "ferramentas": [
-    "análise normativa",
-    "conferência documental",
-    "análise de precedentes",
-    "análise normativa e de razoabilidade"
+    "análise normativa"
    ],
    "calculos": [],
-   "testes": [],
+   "testes": [
+    "confronto da tese da concessionária com cláusulas contratuais e artigos legais"
+   ],
+   "competencias": [
+    {
+     "area": "Jurídico-regulatória",
+     "nivel": "intermediário",
+     "evidencias": [
+      "A limitação proposta pela Concessionária contraria o cerne da Lei do Marco do Saneamento"
+     ]
+    }
+   ],
+   "base_normativa": [],
+   "cargos": [
+    "Especialista em Regulação (2)"
+   ],
+   "sinais_perda": {
+    "Reiteração": [
+     "esta Câmara reitera o Parecer 250/2025"
+    ]
+   },
+   "prazos_citados": [],
+   "conclusoes_de_merito": [
+    "reitera o Parecer 250/2025 e rejeita limitar a fiscalização a indicadores"
+   ],
+   "trabalho_reproduzido": [
+    "CASAN (Parecer 250/2025): conclusões e recomendações do Parecer 250/2025, reiteradas",
+    "Concessionária Águas do Rio - Bloco 1 (ID 117463902): argumentos de carência contratual, metas progressivas e fiscalização apenas por indicadores"
+   ],
+   "lacunas": [
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  },
+  "t7": {
+   "id": "t7",
+   "nome": "Emitir parecer jurídico sobre a fiscalização",
+   "unidade": "Procuradoria (PROC)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "A Procuradoria examina a legitimidade da fiscalização e os argumentos da concessionária, à luz da lei de criação da agência, do contrato e das normas da agência, e opina sobre os efeitos das não conformidades, admitindo atenuante pelo saneamento parcial.",
+   "gatilho": "Autos remetidos pela Secretaria para análise jurídica",
+   "saida": "Parecer da Procuradoria sobre legitimidade e efeitos da fiscalização",
+   "observacoes": "A data do texto do parecer difere da data de assinatura.",
+   "casos_com_evidencia": 1,
+   "n_docs": 1,
+   "tramite_associado": [],
+   "documentos": [
+    "Parecer 759"
+   ],
+   "entradas_externas": [],
+   "laudas": "20",
+   "trabalho_h": {
+    "piso": "10.0",
+    "teto": "13.8",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "205",
+    "execucao": "0",
+    "ocorrencias": "1",
+    "posse_na_espera": [
+     "PROC 203 du",
+     "SCEXEC 2 du"
+    ],
+    "detalhe": [
+     "crítico: 2026-08-28 a 2026-08-28 — espera antes 205 du, execução 0 du"
+    ]
+   },
+   "insumos": {
+    "Documentos do próprio processo": [
+     "Parecer 250/2025 da CASAN"
+    ],
+    "Documentos da regulada": [
+     "manifestação da concessionária (117463902)"
+    ],
+    "Normas e contratos": [
+     "Lei Estadual 4.556/2005 e Decreto 38.618/2005",
+     "Instrução Normativa CODIR 128/2024"
+    ]
+   },
+   "fontes_externas": [],
+   "ferramentas": [
+    "análise normativa"
+   ],
+   "calculos": [],
+   "testes": [
+    "verificação da regularidade dos atos de fiscalização e de instrução",
+    "verificação de prazo e tempo hábil da concessionária para adequações"
+   ],
    "competencias": [
     {
      "area": "Jurídico-regulatória",
      "nivel": "especialista",
      "evidencias": [
-      "Aplicar à Concessionária CEG a penalidade de advertência, nos termos do artigo 12, I, da IN nº 001/2007",
-      "Aplicar à Concessionária CEG a penalidade de advertência, nos termos do artigo 12, I, da IN nº 001/2007"
-     ]
-    },
-    {
-     "area": "Gestão processual",
-     "nivel": "intermediário",
-     "evidencias": [
-      "O presente feito foi, então, distribuído à minha relatoria, por Decisão do Conselho-Diretor",
-      "Baixar o presente processo em diligência para que a SECEX, no prazo de 15 (quinze) dias, contados da publicação desta decisão, oficie o Corpo de Bombeiros"
-     ]
-    },
-    {
-     "area": "Redação oficial",
-     "nivel": "intermediário",
-     "evidencias": [
-      "É o Relatório.",
-      "Por todo o exposto, sugiro ao Conselho Diretor"
-     ]
-    },
-    {
-     "area": "Engenharia de gás e segurança",
-     "nivel": "intermediário",
-     "evidencias": [
-      "considerando que a Concessionária presta serviço público de distribuição de gás canalizado, cuja natureza e características físico-químicas demandam rigorosos padrões de segurança"
+      "Nesse sentido, o item 25.2 do Contrato de Concessão prevê uma série de deveres"
      ]
     }
    ],
-   "base_normativa": [
-    "Decreto Estadual nº 42, de 17 de dezembro de 2018 (COSCIP)",
-    "Arts. 48 e 49 do Regimento Interno da AGENERSA",
-    "Cláusula Primeira, §3º do Contrato de Concessão",
-    "Cláusula Quarta, caput e item 6 do §1º do Contrato de Concessão",
-    "Cláusula Oitava, §9º do Contrato de Concessão",
-    "Decreto Estadual nº 46.925, de 05 de fevereiro de 2020",
-    "Resolução CONEMA nº 15/2009",
-    "Contrato de Concessão – Cláusula Primeira, §3º"
-   ],
+   "base_normativa": [],
    "cargos": [
-    "Conselheiro Relator (6)",
-    "Conselheira (2)",
-    "Conselheiro (2)",
-    "Conselheiro Presidente (2)"
+    "Procurador (1)"
    ],
    "sinais_perda": {
-    "Pedido de complementação": [
-     "requerendo o envio da Licença de Operação emitida pelo INEA",
-     "solicitando informações acerca das providências, procedimentos e eventuais prazos necessários à regularização das referidas pendências documentais"
-    ],
-    "Diligência externa": [
-     "Baixar o presente processo em diligência para que a SECEX, no prazo de 15 (quinze) dias, contados da publicação desta decisão, oficie o Corpo de Bombeiros",
-     "oficie o Corpo de Bombeiros Militar do Estado do Rio de Janeiro - CBMERJ, dando ciência das dificuldades relatadas",
-     "Baixar o presente processo em diligência para que a SECEX, no prazo de 15 (quinze) dias, oficie o Corpo de Bombeiros"
-    ],
-    "Aguardando outra unidade": [
-     "Baixar o presente processo em diligência para que a SECEX, no prazo de 15 (quinze) dias"
+    "Reiteração": [
+     "sobretudo diante do histórico de notificações e da reincidência da pendência"
     ]
    },
    "prazos_citados": [
-    "15 dias (diligencia, unidade_interna)",
-    "3 dias (diligencia, concessionaria)",
-    "30 dias (cumprimento, concessionaria)"
+    "30 dias (rito, concessionaria)"
    ],
    "conclusoes_de_merito": [
-    "opina pela aplicação da penalidade de advertência à Concessionária CEG e pela realização de interlocução institucional junto ao CBMERJ",
-    "aplica penalidade de advertência à Concessionária CEG",
-    "afasta a responsabilização sancionatória e sugere conversão em diligência",
-    "Determina a realização de diligência junto ao CBMERJ e impõe apresentação periódica de comprovações pela concessionária"
+    "afirma a legitimidade da fiscalização e corrobora a opinião técnica da CASAN"
    ],
    "trabalho_reproduzido": [
-    "AGENERSA/PROC: Análise jurídica recomendando a aplicação de penalidade por descumprimento contratual",
-    "CAENE / AGENERSA: Constatações da fiscalização sobre a falta de Licença de Operação, Laudo do CBMERJ, conservação da cerca e capina na estação",
-    "CAENE: Irregularidades detectadas na fiscalização da Estação de Regulagem e Medição de Santa Cruz constantes no Relatório P-054/24 e TN 006/24",
-    "CAENE: Relatório das vistorias de fiscalização e pareceres técnicos sobre a falta de documentação do CBMERJ",
-    "CAENE: Resumo e transcrição do Parecer nº 83/2025 sobre a não apresentação do Laudo de Exigências do CBMERJ"
+    "CASAN (Parecer 250/2025 e despacho 117801870): fundamentos do Marco Legal, Regulamento e Contrato sobre a abrangência da fiscalização",
+    "CASAN (Relatórios de Fiscalização 2024): constatações de irregularidades das vistorias de 2024",
+    "Concessionária Águas do Rio - Bloco 1 (117463902): tese de fiscalização apenas por obrigações de resultado e pedido de arquivamento"
    ],
    "lacunas": [
     "Tempo de trabalho estimado pelo conteúdo, não medido"
@@ -967,67 +718,45 @@
   },
   "t8": {
    "id": "t8",
-   "nome": "Publicar deliberação e oficiar concessionária e órgãos",
+   "nome": "Oficiar concessionária e sobrestar processo",
    "unidade": "Secretaria Executiva (SCEXEC)",
    "status": "normal",
    "nota": null,
    "freq": null,
-   "descritivo": "A SCEXEC junta a publicação da deliberação no DOERJ, notifica a CEG da decisão, com a obrigação de comprovar a cada 30 dias as providências junto ao CBMERJ, e oficia o CBMERJ/SEDEC pedindo informações sobre prazos e pendências de regularização, anexando a deliberação (e, ao CBMERJ, também o relatório e o voto); o relatório de fiscalização e o termo de notificação só são citados na referência dos ofícios. Os dois casos geraram o mesmo par de ofícios no mesmo dia.",
-   "gatilho": "Deliberação aprovada em sessão e publicada no DOERJ",
-   "saida": "Ofícios à CEG (NA 1488 e NA 1490) e ao CBMERJ (NA 1489 e NA 1491), enviados por e-mail",
-   "observacoes": "A publicação no DOERJ entrou como peça de entrada por ter autoria registrada como externa. Os e-mails de 11/06/2026 foram vinculados aqui como envio dos ofícios (inferência pela data).",
-   "casos_com_evidencia": 2,
-   "n_docs": 8,
+   "descritivo": "A Secretaria Executiva oficia a concessionária dando ciência do parecer jurídico, transmite por e-mail, libera acesso externo e sobrestá o processo.",
+   "gatilho": "Parecer jurídico juntado ao processo",
+   "saida": "Ofício de ciência, e-mail, acesso externo e sobrestamento",
+   "observacoes": "O ofício não fixa prazo nem penalidade.",
+   "casos_com_evidencia": 1,
+   "n_docs": 2,
    "tramite_associado": [],
    "documentos": [
     "E-mail",
-    "Ofício - NA 1488",
-    "Ofício - NA 1489",
-    "Ofício - NA 1490",
-    "Ofício - NA 1491"
+    "Ofício - NA 2606"
    ],
-   "entradas_externas": [
-    "Publicação DOERJ_09062026_Deliberação 5054",
-    "Publicação DOERJ_09062026_deliberacao5053"
-   ],
-   "laudas": "8–8",
+   "entradas_externas": [],
+   "laudas": "2",
    "trabalho_h": {
-    "piso": "2.0–2.5",
-    "teto": "3.5–3.5",
+    "piso": "0.8",
+    "teto": "1.1",
     "modelo": null
    },
    "espera_du": {
-    "antes": "8",
+    "antes": "0",
     "execucao": "0",
-    "ocorrencias": "2",
-    "posse_na_espera": [
-     "CONS-02 12 du",
-     "SCEXEC 4 du"
-    ],
+    "ocorrencias": "1",
+    "posse_na_espera": [],
     "detalhe": [
-     "típico: 2026-06-10 a 2026-06-10 — espera antes 7 du, execução 0 du",
-     "típico: 2026-06-11 a 2026-06-11 — espera antes 1 du, execução 0 du",
-     "crítico: 2026-06-10 a 2026-06-10 — espera antes 7 du, execução 0 du",
-     "crítico: 2026-06-11 a 2026-06-11 — espera antes 1 du, execução 0 du"
+     "crítico: 2026-08-28 a 2026-08-28 — espera antes 0 du, execução 0 du"
     ]
    },
    "insumos": {
     "Documentos do próprio processo": [
-     "Deliberação AGENERSA nº 5054/2026",
-     "Deliberação AGENERSA nº 5054",
-     "Relatório de Fiscalização CAENE nº P-054/24",
-     "Deliberação AGENERSA nº 5053",
-     "Relatório de Fiscalização CAENE nº P-125/25"
-    ],
-    "Documentos da regulada": [
-     "Manifestações da concessionária nos autos"
+     "Parecer 759/2025 da Procuradoria"
     ]
    },
    "fontes_externas": [],
-   "ferramentas": [
-    "análise normativa",
-    "conferência documental"
-   ],
+   "ferramentas": [],
    "calculos": [],
    "testes": [],
    "competencias": [
@@ -1035,160 +764,22 @@
      "area": "Redação oficial",
      "nivel": "básico",
      "evidencias": [
-      "sirvo-me do presente para cientificar a Concessionária CEG acerca da Deliberação AGENERSA nº 5054",
-      "solicita-se manifestação acerca das providências, dos procedimentos e de eventuais prazos"
-     ]
-    },
-    {
-     "area": "Gestão processual",
-     "nivel": "básico",
-     "evidencias": [
-      "foi instaurado o processo SEI-480002/006169/2026",
-      "em cumprimento à Deliberação AGENERSA n° 5054 proferida pelo Conselho Diretor da AGENERSA"
+      "vimos, por meio deste, dar ciência a essa Concessionária"
      ]
     }
    ],
-   "base_normativa": [
-    "Art. 12, I, da Instrução Normativa AGENERSA nº 001/2007",
-    "Art. 16, inciso VIII, da Instrução Normativa AGENERSA nº 001/2007",
-    "Cláusula Primeira, §3º, do Contrato de Concessão",
-    "Cláusula Quarta, §1º, do Contrato de Concessão",
-    "Instrução Normativa AGENERSA nº 001/2007",
-    "Deliberação AGENERSA nº 5054, de 27 de maio de 2026 (arts. 1º a 5º)",
-    "Deliberação AGENERSA nº 5.054 (Conselho Diretor da AGENERSA)",
-    "Deliberação AGENERSA nº 5054 (publicada no DOE/RJ em 09/06/2026)"
-   ],
+   "base_normativa": [],
    "cargos": [
-    "Secretária Executiva (4)"
+    "Assessora (1)"
    ],
-   "sinais_perda": {
-    "Diligência externa": [
-     "solicita-se manifestação acerca das providências, dos procedimentos e de eventuais prazos",
-     "solicita-se manifestação acerca das providências, dos procedimentos e de eventuais prazos necessários"
-    ],
-    "Prazo concedido": [
-     "encaminhe a esta Agência, a cada 30 (trinta) dias, a documentação comprobatória"
-    ]
-   },
-   "prazos_citados": [
-    "10 dias (rito, concessionaria)",
-    "30 dias (cumprimento, concessionaria)"
-   ],
+   "sinais_perda": {},
+   "prazos_citados": [],
    "conclusoes_de_merito": [],
    "trabalho_reproduzido": [
-    "CAENE: Constatação da ausência do Laudo de Exigências e Certificado de Aprovação do Corpo de Bombeiros",
-    "CAENE: Constatação da ausência do Laudo de Exigências e do Certificado de Aprovação no relatório de fiscalização",
-    "Concessionária CEG: Informação de adoção de providências para atualização cadastral junto ao CBMERJ e relato de dificuldades",
-    "Concessionária CEG: Relato de providências adotadas e dificuldades enfrentadas para obtenção da documentação junto ao CBMERJ",
-    "Conselho-Diretor da AGENERSA: Transcrição integral do texto e dos artigos da Deliberação AGENERSA nº 5053/2026"
+    "Procuradoria Geral da AGENERSA: conclusão do Parecer 759/2025 que ratifica o poder fiscalizatório"
    ],
    "lacunas": [
-    "4 documento(s) sem texto disponível (restritos ou não baixados)",
-    "Tempo de trabalho estimado pelo conteúdo, não medido"
-   ]
-  },
-  "t9": {
-   "id": "t9",
-   "nome": "Registrar providências de cumprimento da deliberação",
-   "unidade": "Secretaria Executiva (SCEXEC)",
-   "status": "normal",
-   "nota": null,
-   "freq": null,
-   "descritivo": "A SCEXEC remete os autos à CAENE para ciência da deliberação publicada, a CAENE devolve no mesmo dia em que recebe e a Secretaria lavra Informação registrando a expedição dos ofícios à CEG e ao CBMERJ. O processo segue aguardando as comprovações periódicas da concessionária e a resposta do Corpo de Bombeiros.",
-   "gatilho": "Ofícios de cumprimento da deliberação expedidos",
-   "saida": "Informação de providências nos autos, com ciência da câmara técnica",
-   "observacoes": "No crítico, a deliberação manda lavrar auto de infração; o auto não consta da lista de documentos.",
-   "casos_com_evidencia": 2,
-   "n_docs": 4,
-   "tramite_associado": [
-    "Despacho de Encaminhamento de Processo (CAENE)"
-   ],
-   "documentos": [
-    "Despacho de Encaminhamento de Processo",
-    "Informação"
-   ],
-   "entradas_externas": [],
-   "laudas": "5–6",
-   "trabalho_h": {
-    "piso": "0.8–1.2",
-    "teto": "2.1–2.3",
-    "modelo": null
-   },
-   "espera_du": {
-    "antes": "0",
-    "execucao": "0",
-    "ocorrencias": "2",
-    "posse_na_espera": [],
-    "detalhe": [
-     "típico: 2026-06-10 a 2026-06-10 — espera antes 0 du, execução 0 du",
-     "típico: 2026-06-11 a 2026-06-11 — espera antes 0 du, execução 0 du",
-     "crítico: 2026-06-10 a 2026-06-10 — espera antes 0 du, execução 0 du",
-     "crítico: 2026-06-11 a 2026-06-11 — espera antes 0 du, execução 0 du"
-    ]
-   },
-   "insumos": {
-    "Documentos do próprio processo": [
-     "Deliberação AGENERSA nº 5054/2026",
-     "Deliberação AGENERSA nº 5053/2026"
-    ]
-   },
-   "fontes_externas": [],
-   "ferramentas": [
-    "conferência documental"
-   ],
-   "calculos": [],
-   "testes": [
-    "Verificação e registro do atendimento aos artigos da Deliberação AGENERSA nº 5054/2026",
-    "Registro e verificação das providências executadas pela SECEX"
-   ],
-   "competencias": [
-    {
-     "area": "Gestão processual",
-     "nivel": "básico",
-     "evidencias": [
-      "Encaminham-se os autos para ciência da publicação",
-      "Informa-se que esta SECEX adotou as seguintes providências"
-     ]
-    },
-    {
-     "area": "Redação oficial",
-     "nivel": "básico",
-     "evidencias": [
-      "Adicionalmente, informa-se que foi instaurado o Processo SEI-480002/006169/2026"
-     ]
-    }
-   ],
-   "base_normativa": [
-    "Art. 16, inciso VIII, da Instrução Normativa AGENERSA nº 001/2007",
-    "Cláusula Primeira, §3º, do Contrato de Concessão",
-    "Cláusula Quarta, §1º, do Contrato de Concessão",
-    "Instrução Normativa AGENERSA nº 001/2007",
-    "Art. 12, I, da Instrução Normativa AGENERSA nº 001/2007",
-    "Deliberação AGENERSA nº 5054, de 27 de maio de 2026",
-    "Art. 12, inciso I, da Instrução Normativa AGENERSA nº 001/2007",
-    "Deliberação AGENERSA nº 5053, de 27 de maio de 2026 (Art. 1º, Art. 2º e Art. 3º)"
-   ],
-   "cargos": [
-    "Secretária Executiva (2)",
-    "Analista Técnica (2)"
-   ],
-   "sinais_perda": {
-    "Diligência externa": [
-     "Baixar o presente processo em diligência para que a SECEX",
-     "Baixar o presente processo em diligência"
-    ]
-   },
-   "prazos_citados": [
-    "15 dias (diligencia, unidade_interna)",
-    "30 dias (cumprimento, concessionaria)"
-   ],
-   "conclusoes_de_merito": [],
-   "trabalho_reproduzido": [
-    "Conselho-Diretor da AGENERSA: Transcrição integral da Deliberação AGENERSA nº 5053/2026",
-    "Conselho-Diretor da AGENERSA: Transcrição integral da Deliberação AGENERSA nº 5054/2026",
-    "Conselho-Diretor da AGENERSA: Transcrição integral do texto da Deliberação AGENERSA nº 5053/2026"
-   ],
-   "lacunas": [
+    "1 documento(s) sem texto disponível (restritos ou não baixados)",
     "Tempo de trabalho estimado pelo conteúdo, não medido"
    ]
   }

@@ -1,11 +1,9 @@
 capacidade,tipos_de_processo,codigos,atividades,horas_ano_alcancadas,horas_construcao,horas_ano_por_hora_construcao
-redação assistida de minuta,11,"N01, P01, P04, P06, P07, P08, P18, P19, P21, P22, P35",83,4507.1,80,56.34
-verificação de conformidade,10,"N01, P01, P04, P06, P07, P18, P19, P21, P22, P35",36,3179.3,100,31.79
-sumarização e linha do tempo,11,"N01, P01, P04, P06, P07, P08, P18, P19, P21, P22, P35",37,3122.4,40,78.06
-busca de precedentes e normas,10,"N01, P01, P04, P06, P07, P08, P19, P21, P22, P35",28,3008.8,60,50.15
-extração de dados de documentos,11,"N01, P01, P04, P06, P07, P08, P18, P19, P21, P22, P35",34,1143.5,80,14.29
-monitoramento de prazos e alertas,11,"N01, P01, P04, P06, P07, P08, P18, P19, P21, P22, P35",54,908.9,24,37.87
-cálculo e conferência automática,7,"P01, P04, P07, P08, P19, P22, P35",12,784.2,80,9.8
-automação de tramitação (RPA no SEI),11,"N01, P01, P04, P06, P07, P08, P18, P19, P21, P22, P35",49,575.0,40,14.38
-classificação e triagem,9,"N01, P01, P04, P08, P18, P19, P21, P22, P35",13,299.0,60,4.98
-painel e indicadores,8,"N01, P01, P04, P06, P18, P21, P22, P35",12,69.7,24,2.9
+automação de tramitação (RPA no SEI),1,P06,4,0.0,40,0.0
+busca de precedentes e normas,1,P06,2,0.0,60,0.0
+extração de dados de documentos,1,P06,2,0.0,80,0.0
+monitoramento de prazos e alertas,1,P06,4,0.0,24,0.0
+painel e indicadores,1,P06,1,0.0,24,0.0
+redação assistida de minuta,1,P06,5,0.0,80,0.0
+sumarização e linha do tempo,1,P06,2,0.0,40,0.0
+verificação de conformidade,1,P06,2,0.0,100,0.0

@@ -1,320 +1,60 @@
 {
  "codigo": "P06",
  "nome": "Fiscalização técnica de campo (programada e por demanda)",
- "escopo": "Da vistoria in loco à publicação da deliberação e ao registro das providências de cumprimento",
+ "escopo": "Da programação das vistorias anuais às unidades operacionais da concessionária à ciência do parecer jurídico e ao sobrestamento do processo",
  "raias": [
-  {
-   "id": "CT",
-   "nome": "Câmara técnica de fiscalização (CAENE ou CASAN)"
-  },
-  {
-   "id": "SCEXEC",
-   "nome": "Secretaria Executiva (SCEXEC)"
-  },
-  {
-   "id": "PROC",
-   "nome": "Procuradoria (PROC)"
-  },
-  {
-   "id": "CONS",
-   "nome": "Conselheiro-Relator / Conselho-Diretor (CONS-02)"
-  },
-  {
-   "id": "EXT",
-   "nome": "Concessionária, órgãos externos e município"
-  }
+  {"id": "CASAN", "nome": "Câmara Técnica de Saneamento (CASAN)"},
+  {"id": "SCEXEC", "nome": "Secretaria Executiva (SCEXEC)"},
+  {"id": "PROC", "nome": "Procuradoria (PROC)"},
+  {"id": "EXT", "nome": "Concessionária"}
  ],
  "elementos": [
-  {
-   "id": "s1",
-   "tipo": "inicio",
-   "raia": "CT",
-   "nome": "Fiscalização programada ou demanda recebida"
-  },
-  {
-   "id": "t1",
-   "tipo": "tarefa",
-   "raia": "CT",
-   "nome": "Vistoriar instalação, relatar e notificar concessionária",
-   "gatilho": "Programação de fiscalização, demanda de usuário ou comunicação de terceiro",
-   "saida": "Relatório de fiscalização, termo de notificação e ofício à concessionária"
-  },
-  {
-   "id": "e1",
-   "tipo": "evento_mensagem",
-   "raia": "EXT",
-   "nome": "Defesa ou documentos da concessionária recebidos"
-  },
-  {
-   "id": "j1",
-   "tipo": "xor_juncao",
-   "raia": "CT"
-  },
-  {
-   "id": "g1",
-   "tipo": "xor",
-   "raia": "CT",
-   "nome": "Documentação suficiente?"
-  },
-  {
-   "id": "t2",
-   "tipo": "tarefa",
-   "raia": "CT",
-   "nome": "Requisitar documentos à concessionária e a órgãos",
-   "gatilho": "Documentação insuficiente para concluir sobre a irregularidade",
-   "saida": "Ofícios da câmara requisitando documentos à concessionária ou a órgãos externos"
-  },
-  {
-   "id": "e2",
-   "tipo": "evento_mensagem",
-   "raia": "EXT",
-   "nome": "Resposta da concessionária ou do órgão recebida"
-  },
-  {
-   "id": "j2",
-   "tipo": "xor_juncao",
-   "raia": "CT"
-  },
-  {
-   "id": "t3",
-   "tipo": "tarefa",
-   "raia": "CT",
-   "nome": "Analisar defesa e emitir parecer técnico",
-   "gatilho": "Defesa, documentos ou manifestação da concessionária recebidos",
-   "saida": "Parecer técnico sobre a defesa e a irregularidade apontada"
-  },
-  {
-   "id": "g3",
-   "tipo": "xor",
-   "raia": "SCEXEC",
-   "nome": "Contraditório sobre o parecer?"
-  },
-  {
-   "id": "t10",
-   "tipo": "tarefa",
-   "raia": "SCEXEC",
-   "nome": "Notificar concessionária sobre o parecer",
-   "gatilho": "Parecer técnico ou jurídico a comunicar à concessionária ou a terceiros",
-   "saida": "Ofício com o parecer anexo e prazo de manifestação"
-  },
-  {
-   "id": "g4",
-   "tipo": "xor",
-   "raia": "SCEXEC",
-   "nome": "Pedido de dilação de prazo?"
-  },
-  {
-   "id": "t11",
-   "tipo": "tarefa",
-   "raia": "SCEXEC",
-   "nome": "Decidir pedido de dilação de prazo",
-   "gatilho": "Pedido da concessionária ou de terceiro para prorrogar o prazo",
-   "saida": "Ofício comunicando o deferimento ou o indeferimento da dilação"
-  },
-  {
-   "id": "e4",
-   "tipo": "evento_tempo",
-   "raia": "EXT",
-   "nome": "Prazo de manifestação decorrido"
-  },
-  {
-   "id": "j3",
-   "tipo": "xor_juncao",
-   "raia": "PROC"
-  },
-  {
-   "id": "t4",
-   "tipo": "tarefa",
-   "raia": "PROC",
-   "nome": "Analisar infração e emitir parecer jurídico",
-   "gatilho": "Parecer técnico concluído ou consulta do relator",
-   "saida": "Parecer jurídico sobre a infração e a penalidade cabível"
-  },
-  {
-   "id": "t5",
-   "tipo": "tarefa",
-   "raia": "SCEXEC",
-   "nome": "Sortear relator e distribuir o processo",
-   "gatilho": "Instrução técnica e jurídica concluída",
-   "saida": "Ata de sorteio e despacho ao gabinete do relator"
-  },
-  {
-   "id": "g2",
-   "tipo": "xor",
-   "raia": "CONS",
-   "nome": "Instrução suficiente?"
-  },
-  {
-   "id": "t6",
-   "tipo": "tarefa",
-   "raia": "CONS",
-   "nome": "Notificar concessionária para razões finais",
-   "gatilho": "Instrução considerada suficiente pelo relator",
-   "saida": "Ofício do relator à concessionária com prazo para razões finais"
-  },
-  {
-   "id": "e3",
-   "tipo": "evento_tempo",
-   "raia": "EXT",
-   "nome": "Prazo de razões finais decorrido"
-  },
-  {
-   "id": "t7",
-   "tipo": "tarefa",
-   "raia": "CONS",
-   "nome": "Relatar, votar e deliberar em sessão",
-   "gatilho": "Prazo de razões finais decorrido e processo levado à sessão",
-   "saida": "Relatório, voto e deliberação do Conselho-Diretor"
-  },
-  {
-   "id": "t8",
-   "tipo": "tarefa",
-   "raia": "SCEXEC",
-   "nome": "Publicar deliberação e oficiar concessionária e órgãos",
-   "gatilho": "Deliberação ou decisão cautelar assinada pelo Conselho-Diretor",
-   "saida": "Publicação no Diário Oficial e ofícios à concessionária e órgãos interessados"
-  },
-  {
-   "id": "t9",
-   "tipo": "tarefa",
-   "raia": "SCEXEC",
-   "nome": "Registrar providências de cumprimento da deliberação",
-   "gatilho": "Deliberação publicada e prazo de cumprimento em curso",
-   "saida": "Informação de cumprimento da deliberação ou termo de encerramento"
-  },
-  {
-   "id": "f1",
-   "tipo": "fim",
-   "raia": "SCEXEC",
-   "nome": "Deliberação em cumprimento ou processo encerrado"
-  }
+  {"id": "s1", "tipo": "inicio", "raia": "CASAN", "nome": "Vistorias anuais determinadas por deliberação"},
+  {"id": "j1", "tipo": "xor_juncao", "raia": "CASAN"},
+  {"id": "t1", "tipo": "tarefa", "raia": "CASAN", "nome": "Convocar concessionária para vistoria conjunta",
+   "gatilho": "Programação de vistorias às unidades operacionais da concessão",
+   "saida": "Ofício e e-mail de agendamento da vistoria à concessionária"},
+  {"id": "t2", "tipo": "tarefa", "raia": "CASAN", "nome": "Vistoriar unidade e elaborar relatório",
+   "gatilho": "Vistoria agendada em estação elevatória ou de tratamento",
+   "saida": "Relatório de fiscalização com checklist, não conformidades e recomendações"},
+  {"id": "t3", "tipo": "tarefa", "raia": "CASAN", "nome": "Encaminhar relatórios à concessionária com prazo",
+   "gatilho": "Lote de relatórios de fiscalização assinados",
+   "saida": "Ofício com prazo de manifestação, e-mail e acesso externo ao processo"},
+  {"id": "e1", "tipo": "evento_tempo", "raia": "EXT", "nome": "Prazo de manifestação da concessionária decorrido"},
+  {"id": "g1", "tipo": "xor", "raia": "CASAN", "nome": "Há outras unidades a vistoriar?"},
+  {"id": "t4", "tipo": "tarefa", "raia": "CASAN", "nome": "Consolidar análise técnica das fiscalizações",
+   "gatilho": "Ciclo de vistorias concluído e prazos de manifestação decorridos",
+   "saida": "Parecer técnico da câmara sobre o conjunto de relatórios"},
+  {"id": "t5", "tipo": "tarefa", "raia": "SCEXEC", "nome": "Dar ciência do parecer à concessionária",
+   "gatilho": "Parecer técnico da câmara juntado ao processo",
+   "saida": "Manifestação de ciência, e-mail e acesso externo à concessionária"},
+  {"id": "e2", "tipo": "evento_mensagem", "raia": "EXT", "nome": "Manifestação da concessionária recebida"},
+  {"id": "t6", "tipo": "tarefa", "raia": "CASAN", "nome": "Rebater manifestação da concessionária",
+   "gatilho": "Manifestação da concessionária contestando o escopo da fiscalização",
+   "saida": "Despacho técnico com réplica e encaminhamento à Procuradoria"},
+  {"id": "t7", "tipo": "tarefa", "raia": "PROC", "nome": "Emitir parecer jurídico sobre a fiscalização",
+   "gatilho": "Autos remetidos pela Secretaria para análise jurídica",
+   "saida": "Parecer da Procuradoria sobre legitimidade e efeitos da fiscalização"},
+  {"id": "t8", "tipo": "tarefa", "raia": "SCEXEC", "nome": "Oficiar concessionária e sobrestar processo",
+   "gatilho": "Parecer jurídico juntado ao processo",
+   "saida": "Ofício de ciência, e-mail, acesso externo e sobrestamento"},
+  {"id": "f1", "tipo": "fim", "raia": "SCEXEC", "nome": "Processo sobrestado"}
  ],
  "fluxos": [
-  {
-   "de": "s1",
-   "para": "t1"
-  },
-  {
-   "de": "t1",
-   "para": "e1"
-  },
-  {
-   "de": "e1",
-   "para": "j1"
-  },
-  {
-   "de": "j1",
-   "para": "g1"
-  },
-  {
-   "de": "g1",
-   "para": "j2",
-   "rotulo": "Sim",
-   "principal": true
-  },
-  {
-   "de": "g1",
-   "para": "t2",
-   "rotulo": "Não"
-  },
-  {
-   "de": "t2",
-   "para": "e2"
-  },
-  {
-   "de": "e2",
-   "para": "j1"
-  },
-  {
-   "de": "j2",
-   "para": "t3"
-  },
-  {
-   "de": "t3",
-   "para": "g3"
-  },
-  {
-   "de": "g3",
-   "para": "j3",
-   "rotulo": "Não",
-   "principal": true
-  },
-  {
-   "de": "g3",
-   "para": "t10",
-   "rotulo": "Sim"
-  },
-  {
-   "de": "t10",
-   "para": "g4"
-  },
-  {
-   "de": "g4",
-   "para": "e4",
-   "rotulo": "Não",
-   "principal": true
-  },
-  {
-   "de": "g4",
-   "para": "t11",
-   "rotulo": "Sim"
-  },
-  {
-   "de": "t11",
-   "para": "e4"
-  },
-  {
-   "de": "e4",
-   "para": "j3"
-  },
-  {
-   "de": "j3",
-   "para": "t4"
-  },
-  {
-   "de": "t4",
-   "para": "t5"
-  },
-  {
-   "de": "t5",
-   "para": "g2"
-  },
-  {
-   "de": "g2",
-   "para": "t6",
-   "rotulo": "Sim",
-   "principal": true
-  },
-  {
-   "de": "g2",
-   "para": "j3",
-   "rotulo": "Não: parecer jurídico"
-  },
-  {
-   "de": "g2",
-   "para": "j2",
-   "rotulo": "Não: análise técnica"
-  },
-  {
-   "de": "t6",
-   "para": "e3"
-  },
-  {
-   "de": "e3",
-   "para": "t7"
-  },
-  {
-   "de": "t7",
-   "para": "t8"
-  },
-  {
-   "de": "t8",
-   "para": "t9"
-  },
-  {
-   "de": "t9",
-   "para": "f1"
-  }
+  {"de": "s1", "para": "j1"},
+  {"de": "j1", "para": "t1"},
+  {"de": "t1", "para": "t2"},
+  {"de": "t2", "para": "t3"},
+  {"de": "t3", "para": "e1"},
+  {"de": "e1", "para": "g1"},
+  {"de": "g1", "para": "t4", "rotulo": "Não", "principal": true},
+  {"de": "g1", "para": "j1", "rotulo": "Sim"},
+  {"de": "t4", "para": "t5"},
+  {"de": "t5", "para": "e2"},
+  {"de": "e2", "para": "t6"},
+  {"de": "t6", "para": "t7"},
+  {"de": "t7", "para": "t8"},
+  {"de": "t8", "para": "f1"}
  ],
- "fontes": "Casos SEI-480002/007520/2025 (típico) e SEI-480002/005546/2024 (crítico); devoluções do relator à Procuradoria (23) e às câmaras técnicas (22) nas trilhas dos 32 processos do código. Revisado com as peças fora do modelo dos 12 processos da coorte: a notificação da concessionária pela Secretaria para manifestar-se sobre o parecer (5 processos) e a decisão sobre pedidos de dilação de prazo (2 processos) viraram tarefas; o termo de encerramento entrou na saída do registro de cumprimento. Ficaram fora, por aparecerem em um único processo: concessão de acesso aos autos a terceiro e decisões cautelares do Conselho-Diretor em reunião interna. Cartas e ofícios da concessionária, do município e de órgãos externos são entradas, não tarefas."
+ "fontes": "Estudo de caso SEI-480002/001314/2024 (Câmara de Saneamento, concessão do Bloco 1), com os processos de fiscalização anexados; fichas de trabalho das peças e resumos de leitura integral dos documentos."
 }

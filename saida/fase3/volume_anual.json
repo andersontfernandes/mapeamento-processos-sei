@@ -6,95 +6,15 @@
   2025
  ],
  "codigos": {
-  "P01": {
-   "media_anual": 34.7,
-   "por_ano": {
-    "2023": 33,
-    "2024": 43,
-    "2025": 28
-   },
-   "revocacao_coorte": 0.944,
-   "coorte_com_deliberacao": 18
-  },
   "P06": {
-   "media_anual": 3.7,
-   "por_ano": {
-    "2023": 6,
-    "2024": 4,
-    "2025": 1
-   },
-   "revocacao_coorte": 0.875,
-   "coorte_com_deliberacao": 8
-  },
-  "P21": {
-   "media_anual": 26.7,
-   "por_ano": {
-    "2023": 26,
-    "2024": 38,
-    "2025": 16
-   },
-   "revocacao_coorte": 1.0,
-   "coorte_com_deliberacao": 8
-  },
-  "N01": {
-   "media_anual": 1.7,
+   "media_anual": 0.0,
    "por_ano": {
     "2023": 0,
-    "2024": 3,
-    "2025": 2
-   },
-   "revocacao_coorte": 1.0,
-   "coorte_com_deliberacao": 2
-  },
-  "P04": {
-   "media_anual": 3.0,
-   "por_ano": {
-    "2023": 0,
-    "2024": 1,
-    "2025": 8
-   },
-   "revocacao_coorte": 1.0,
-   "coorte_com_deliberacao": 7
-  },
-  "P08": {
-   "media_anual": 1.7,
-   "por_ano": {
-    "2023": 1,
-    "2024": 3,
-    "2025": 1
-   },
-   "revocacao_coorte": 1.0,
-   "coorte_com_deliberacao": 2
-  },
-  "P19": {
-   "media_anual": 1.0,
-   "por_ano": {
-    "2023": 0,
-    "2024": 2,
-    "2025": 1
-   },
-   "revocacao_coorte": 1.0,
-   "coorte_com_deliberacao": 4
-  },
-  "P22": {
-   "media_anual": 1.7,
-   "por_ano": {
-    "2023": 2,
     "2024": 0,
-    "2025": 3
+    "2025": 0
    },
-   "revocacao_coorte": 0.333,
-   "coorte_com_deliberacao": 3
-  },
-  "P35": {
-   "media_anual": 7.7,
-   "por_ano": {
-    "2023": 5,
-    "2024": 9,
-    "2025": 9
-   },
-   "revocacao_coorte": 1.0,
-   "coorte_com_deliberacao": 5
+   "revocacao_coorte": null,
+   "coorte_com_deliberacao": 0
   }
  }
 }

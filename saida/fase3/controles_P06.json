@@ -1,488 +1,653 @@
 {
-  "codigo": "P06",
-  "indicadores": [
+ "codigo": "P06",
+ "indicadores": [
+  {
+   "id": "I-P06-01",
+   "nome": "Lead time do ciclo de fiscalização",
+   "definicao": "Para cada processo de fiscalização de campo nativo do SEI: dias úteis da primeira peça da fiscalização (primeiro relatório ou convocação) até o ato que encerra a instrução (ofício de ciência do parecer jurídico e sobrestamento, arquivamento ou instauração de processo sancionatório), ou até a data de corte se aberto, pela mesma regra de posse e espera do mapeamento. Estatística: mediana dos processos com primeira peça nos últimos 24 meses, com q1 e q3. Linha de base de um único caso: instável, só ordem de grandeza.",
+   "calculo": {
+    "tipo": "lead",
+    "atividades": [
+     "t1",
+     "t2",
+     "t8"
+    ]
+   },
+   "fonte_dados": "andamentos do SEI",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 636.0,
+    "unidade": "du",
+    "fato": "coorte.caso.lead.mediana"
+   },
+   "metas": [
     {
-      "id": "I-P06-01",
-      "nome": "Lead time da instauração à deliberação e ao encerramento",
-      "definicao": "Para cada processo de fiscalização nativo do SEI: dias úteis da primeira peça da fiscalização (relatório ou termo de notificação) até o encerramento, ou até a data de corte se o processo estiver aberto, pela mesma regra de estadia, posse e espera do mapeamento. Estatística: mediana da coorte móvel dos processos dos últimos 24 meses; acompanhar também o terceiro quartil.",
-      "calculo": {
-        "tipo": "lead",
-        "atividades": [
-          "t1",
-          "t9"
-        ]
-      },
-      "fonte_dados": "andamentos do SEI",
-      "frequencia": "mensal",
-      "linha_base": {
-        "valor": 351.0,
-        "unidade": "du",
-        "fato": "coorte.caso.lead.mediana"
-      },
-      "metas": [
-        {
-          "fase": 1,
-          "valor": 152.5,
-          "origem": {
-            "tipo": "simulacao",
-            "ref": "fases.1.esperado.lead.mediana"
-          }
-        },
-        {
-          "fase": 2,
-          "valor": 115.5,
-          "origem": {
-            "tipo": "simulacao",
-            "ref": "fases.2.esperado.lead.mediana"
-          }
-        }
-      ],
-      "alerta": {
-        "regra": "Processo aberto cuja idade passa do terceiro quartil da linha de base (493 du), ou mediana mensal acima da meta da fase vigente por 2 meses seguidos.",
-        "destinatario": "Secretaria Executiva e Presidência do Conselho-Diretor"
-      },
-      "melhorias": [
-        "M-P06-01",
-        "M-P06-02",
-        "M-P06-03",
-        "M-P06-04",
-        "M-P06-05",
-        "M-P06-07",
-        "M-P06-09",
-        "M-P06-10",
-        "M-P06-11"
-      ],
-      "responsavel": "Secretaria Executiva"
+     "fase": 1,
+     "valor": 338.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.1.esperado.lead.mediana"
+     }
     },
     {
-      "id": "I-P06-02",
-      "nome": "Espera entre o ofício de razões finais e a deliberação",
-      "definicao": "Dias úteis entre o fim da notificação para razões finais (t6) e a juntada do relatório, voto e deliberação (t7), em cada ocorrência, descontados os dias de resposta da concessionária às razões finais (tempo de terceiro, protegido); inclui o resto do prazo de 10 dias corridos que a agência aguarda. Estatística: mediana das ocorrências no período.",
-      "calculo": {
-        "tipo": "espera_antes",
-        "atividades": [
-          "t7"
-        ],
-        "requisito": "R-P06-08"
-      },
-      "fonte_dados": "andamentos do SEI",
-      "frequencia": "mensal",
-      "linha_base": {
-        "valor": 58.5,
-        "unidade": "du",
-        "fato": "coorte.t7.espera_antes.mediana"
-      },
-      "metas": [
-        {
-          "fase": 1,
-          "valor": 42.7,
-          "origem": {
-            "tipo": "benchmark",
-            "ref": "B-fiscalizacao-15"
-          }
-        },
-        {
-          "fase": 2,
-          "valor": 22,
-          "origem": {
-            "tipo": "norma",
-            "ref": "R-P06-08"
-          },
-          "observacao": "Os 40 dias corridos do R-P06-08 não equivalem a 28 du na parte da agência: somados os dias de resposta da concessionária e os feriados, um teto de 28 du deixa os casos entre 44 e 50 dc. A parte da agência que cabe no prazo legal fica perto de 20 a 22 du, que é o teto esperado de M-P06-10."
-        }
-      ],
-      "alerta": {
-        "regra": "Processo na fila de prontos para julgamento com 20 dias corridos desde o ofício de razões finais (aviso ao gabinete) e com 30 dias (aviso à Presidência); qualquer processo sem nenhuma unidade com ele aberto depois do ofício de razões finais por mais de 2 du.",
-        "destinatario": "gabinete do relator; Presidência do Conselho-Diretor"
-      },
-      "melhorias": [
-        "M-P06-03",
-        "M-P06-10"
-      ],
-      "responsavel": "Secretaria Executiva (fila de prontos) e gabinetes do Conselho-Diretor"
+     "fase": 2,
+     "valor": 309.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.lead.mediana"
+     }
     },
     {
-      "id": "I-P06-03",
-      "nome": "Espera antes do sorteio de relator e da distribuição",
-      "definicao": "Dias úteis entre a atividade anterior (em geral o parecer jurídico) e o sorteio com distribuição ao gabinete (t5), em cada ocorrência, incluindo o tempo sem nenhuma unidade com o processo aberto. Estatística: terceiro quartil das ocorrências no período (a mediana já está perto do ciclo quinzenal).",
-      "calculo": {
-        "tipo": "espera_antes",
-        "atividades": [
-          "t5"
-        ]
-      },
-      "fonte_dados": "andamentos do SEI; atas de sorteio",
-      "frequencia": "mensal",
-      "linha_base": {
-        "valor": 31.0,
-        "unidade": "du",
-        "fato": "coorte.t5.espera_antes.q3"
-      },
-      "metas": [
-        {
-          "fase": 1,
-          "valor": 15.5,
-          "origem": {
-            "tipo": "benchmark",
-            "ref": "B-transversal-03"
-          }
-        }
-      ],
-      "alerta": {
-        "regra": "Processo no bloco \"Pronto para sorteio\" que não entrou no último ciclo de sorteio, ou processo com parecer jurídico juntado e sem distribuição há mais de 15 du.",
-        "destinatario": "Secretaria Executiva"
-      },
-      "melhorias": [
-        "M-P06-02",
-        "M-P06-11"
-      ],
-      "responsavel": "Secretaria Executiva"
-    },
-    {
-      "id": "I-P06-04",
-      "nome": "Deliberação em até 40 dias do ofício de razões finais",
-      "definicao": "Percentual dos processos deliberados no período em que a deliberação foi juntada em até 40 dias corridos da última rodada de ofício de razões finais (teste prazo_max de t6, última ocorrência, a t7, do R-P06-08). Linha de base: 1 de 8 casos conformes (conformidade_P06.json). Metas: conformidade simulada pelo TO-BE no cenário esperado.",
-      "calculo": {
-        "tipo": "conformidade",
-        "atividades": [
-          "t6",
-          "t7"
-        ],
-        "requisito": "R-P06-08"
-      },
-      "fonte_dados": "andamentos e peças do SEI",
-      "frequencia": "mensal",
-      "linha_base": {
-        "valor": 12.5,
-        "unidade": "% conforme",
-        "fonte": "conformidade_P06.json"
-      },
-      "metas": [
-        {
-          "fase": 2,
-          "valor": 75.0,
-          "origem": {
-            "tipo": "simulacao",
-            "ref": "fases.2.esperado.conformidade_temporal.R-P06-08"
-          }
-        }
-      ],
-      "alerta": {
-        "regra": "Teste diário: processo com prazo de razões finais vencido e 30 dias corridos desde o ofício sem deliberação; percentual mensal abaixo de 100% gera relatório de achados.",
-        "destinatario": "Presidência do Conselho-Diretor; controle interno"
-      },
-      "melhorias": [
-        "M-P06-03",
-        "M-P06-10",
-        "M-P06-11"
-      ],
-      "responsavel": "Presidência do Conselho-Diretor",
-      "referencia_legal": {
-        "valor": 100,
-        "unidade": "% conforme",
-        "requisito": "R-P06-08"
-      },
-      "observacao": "A fase 1 não move o indicador (12,5% nos três cenários): seus tetos valem só para a parte da agência e os casos ficam entre 44 e 50 dias corridos. Com a contagem do prazo e a pauta pela data de vencimento (M-P06-10), o esperado chega a 75% (6 de 8); o conservador fica em 12,5% e o otimista em 100%. Os 2 casos que restam fora no esperado passam do prazo por poucos dias, por feriado ou por resposta da concessionária no fim do prazo; fechar a distância até 100% exige sessão semanal ou virtual contínua para os casos sem controvérsia, por decisão do Conselho-Diretor e, se preciso, alteração do regimento interno."
-    },
-    {
-      "id": "I-P06-05",
-      "nome": "Parecer jurídico em até 15 dias do parecer técnico",
-      "definicao": "Percentual das passagens do último parecer técnico ao parecer jurídico com o parecer jurídico juntado em até 15 dias corridos (teste prazo_max de t3, última ocorrência, a t4, do R-P06-09), descontada a suspensão por diligência registrada. Linha de base: 1 de 9 passagens conformes (conformidade_P06.json). Meta: conformidade simulada pelo TO-BE no cenário esperado.",
-      "calculo": {
-        "tipo": "conformidade",
-        "atividades": [
-          "t3",
-          "t4"
-        ],
-        "requisito": "R-P06-09"
-      },
-      "fonte_dados": "andamentos e peças do SEI",
-      "frequencia": "mensal",
-      "linha_base": {
-        "valor": 11.1,
-        "unidade": "% conforme",
-        "fonte": "conformidade_P06.json"
-      },
-      "metas": [
-        {
-          "fase": 2,
-          "valor": 11.1,
-          "origem": {
-            "tipo": "simulacao",
-            "ref": "fases.2.esperado.conformidade_temporal.R-P06-09"
-          }
-        }
-      ],
-      "alerta": {
-        "regra": "Teste diário: processo na Procuradoria com 10 dias corridos desde o parecer técnico sem parecer jurídico (aviso ao procurador) e com 15 dias (lista semanal ao Procurador-Geral), sem contar o período de diligência registrada.",
-        "destinatario": "procurador responsável; Procurador-Geral"
-      },
-      "melhorias": [
-        "M-P06-01",
-        "M-P06-09",
-        "M-P06-14"
-      ],
-      "responsavel": "Procuradoria-Geral",
-      "referencia_legal": {
-        "valor": 100,
-        "unidade": "% conforme",
-        "requisito": "R-P06-09"
-      },
-      "observacao": "O TO-BE não chega ao prazo legal: a conformidade simulada fica em 11,1% em todas as fases e cenários. Com os tetos da fase 1 (M-P06-01) e da fase 2 (M-P06-09, 25 du no esperado, 15 du no otimista), a passagem fica entre 35 e 59 dias corridos. Os 15 dias (≈ 10 du) pedem que a fila da própria Procuradoria caia a menos da metade da mediana de hoje (≈ 24 du), o que nenhum alerta faz. Falta capacidade na Procuradoria (redistribuição de carga, uso das horas liberadas pela minuta de M-P06-14 para baixar a fila) ou uma norma interna que reveja o prazo ou a ordem das peças. A meta registrada é a simulada, e o indicador existe para expor essa distância."
-    },
-    {
-      "id": "I-P06-06",
-      "nome": "Carteira de fiscalização com deliberação (estoque sem decisão)",
-      "definicao": "Percentual dos processos de fiscalização da carteira (P06) que têm deliberação; o complemento é o estoque sem decisão, acompanhado em lista por idade (dias úteis desde a instauração) e por unidade com o processo. Meta da fase 1: concluir cerca de 60% do estoque sem deliberação em um ano, como na meta de estoque antigo do B-transversal-19 (56 + 0,60 × 44 ≈ 82).",
-      "calculo": {
-        "tipo": "estoque_idade",
-        "atividades": [
-          "t7"
-        ]
-      },
-      "fonte_dados": "andamentos e peças do SEI",
-      "frequencia": "mensal",
-      "linha_base": {
-        "valor": 56,
-        "unidade": "% da carteira",
-        "fato": "carteira.com_deliberacao_pct"
-      },
-      "metas": [
-        {
-          "fase": 1,
-          "valor": 82,
-          "origem": {
-            "tipo": "benchmark",
-            "ref": "B-transversal-19"
-          }
-        }
-      ],
-      "alerta": {
-        "regra": "Processo sem deliberação nem termo de encerramento que nenhuma unidade tem aberto, ou sem ato há mais de 20 du em qualquer unidade; processo com mais de 4 anos desde a instauração sem deliberação (risco de prescrição, R-P06-10) ou mais de 2 anos sem ato de apuração (R-P06-11).",
-        "destinatario": "unidade com o processo; Secretaria Executiva; controle interno"
-      },
-      "melhorias": [
-        "M-P06-03",
-        "M-P06-07",
-        "M-P06-11"
-      ],
-      "responsavel": "Secretaria Executiva"
-    },
-    {
-      "id": "I-P06-07",
-      "nome": "Retrabalho na instrução técnica: processos com mais de um parecer técnico",
-      "definicao": "Número de processos, na coorte móvel de 12 casos mais recentes com parecer técnico, que têm 2 ou mais ocorrências de parecer técnico (t3), separando as rodadas legítimas (manifestação da concessionária sobre parecer com fato novo, dilação deferida) das causadas por pedido fragmentado ou instrução incompleta. A meta é de guarda: com prazos internos e alertas, o retrabalho não pode subir (B-transversal-18); a redução que M-P06-05 supõe é hipótese a confirmar por este indicador, não meta.",
-      "calculo": {
-        "tipo": "laco",
-        "atividades": [
-          "t3"
-        ]
-      },
-      "fonte_dados": "andamentos e peças do SEI",
-      "frequencia": "trimestral",
-      "linha_base": {
-        "valor": 5,
-        "unidade": "casos em 12",
-        "fato": "coorte.t3.casos_com_laco"
-      },
-      "metas": [
-        {
-          "fase": 1,
-          "valor": 5,
-          "origem": {
-            "tipo": "benchmark",
-            "ref": "B-transversal-18"
-          }
-        }
-      ],
-      "alerta": {
-        "regra": "Terceiro parecer técnico no mesmo processo, ou segunda requisição de documentos à concessionária sem item novo em relação à primeira.",
-        "destinatario": "gerência da câmara técnica (CAENE ou CASAN)"
-      },
-      "melhorias": [
-        "M-P06-05",
-        "M-P06-13"
-      ],
-      "responsavel": "Câmaras técnicas (CAENE e CASAN)"
-    },
-    {
-      "id": "I-P06-08",
-      "nome": "Qualidade da decisão: nova deliberação no mesmo processo por recurso, embargos, anulação ou devolução para nova instrução",
-      "definicao": "Número de processos, na coorte móvel de 12 casos, com mais de uma ocorrência de relatoria e deliberação (t7), classificadas pelo motivo: recurso provido ou não, embargos, anulação de auto ou deliberação, devolução para nova instrução. Acompanha o indicador de prazo para que a meta de prazo não empurre decisões sem fundamentação para a véspera. Meta de guarda nas fases em que o prazo é cobrado (fase 2) e em que a minuta assistida entra (fase 3).",
-      "calculo": {
-        "tipo": "laco",
-        "atividades": [
-          "t7"
-        ],
-        "requisito": "R-P06-13"
-      },
-      "fonte_dados": "peças do SEI (recursos, embargos, deliberações)",
-      "frequencia": "trimestral",
-      "linha_base": {
-        "valor": 1,
-        "unidade": "casos em 12",
-        "fato": "coorte.t7.casos_com_laco"
-      },
-      "metas": [
-        {
-          "fase": 2,
-          "valor": 1,
-          "origem": {
-            "tipo": "benchmark",
-            "ref": "B-transversal-18"
-          }
-        },
-        {
-          "fase": 3,
-          "valor": 1,
-          "origem": {
-            "tipo": "benchmark",
-            "ref": "B-transversal-09"
-          }
-        }
-      ],
-      "alerta": {
-        "regra": "Qualquer recurso provido, embargos acolhidos ou anulação de auto ou deliberação de fiscalização: análise de causa em até 30 dias; dois casos no mesmo trimestre suspendem a deliberação em bloco até a análise.",
-        "destinatario": "Presidência do Conselho-Diretor; Procuradoria-Geral"
-      },
-      "melhorias": [
-        "M-P06-03",
-        "M-P06-10",
-        "M-P06-15"
-      ],
-      "responsavel": "Presidência do Conselho-Diretor"
-    },
-    {
-      "id": "I-P06-09",
-      "nome": "Horas de trabalho por processo",
-      "definicao": "Soma, por processo, das horas estimadas das peças mapeadas (horas-base + laudas × horas por lauda), no piso; acompanhar também o teto. Estatística: mediana da coorte. As horas são hipótese até a calibração com os servidores; depois da calibração, a linha de base e as metas são recalculadas pela mesma regra. Mede o efeito das fases 2 e 3, líquido da revisão humana.",
-      "calculo": {
-        "tipo": "horas",
-        "atividades": [
-          "t1",
-          "t3",
-          "t4",
-          "t7"
-        ]
-      },
-      "fonte_dados": "peças do SEI (tipo e tamanho dos documentos); calibração com servidores",
-      "frequencia": "semestral",
-      "linha_base": {
-        "valor": 22.3,
-        "unidade": "h por processo (piso)",
-        "fato": "coorte.caso.horas_piso.mediana"
-      },
-      "metas": [
-        {
-          "fase": 1,
-          "valor": 22.0,
-          "origem": {
-            "tipo": "simulacao",
-            "ref": "fases.1.esperado.horas_piso.mediana"
-          }
-        },
-        {
-          "fase": 2,
-          "valor": 19.8,
-          "origem": {
-            "tipo": "simulacao",
-            "ref": "fases.2.esperado.horas_piso.mediana"
-          }
-        },
-        {
-          "fase": 3,
-          "valor": 16.7,
-          "origem": {
-            "tipo": "simulacao",
-            "ref": "fases.3.esperado.horas_piso.mediana"
-          }
-        }
-      ],
-      "alerta": {
-        "regra": "Mediana semestral acima da meta da fase vigente, ou horas de revisão das minutas (registradas nos controles de qualidade) acima das horas economizadas na mesma atividade.",
-        "destinatario": "Superintendência das câmaras técnicas; Procuradoria-Geral; gabinetes"
-      },
-      "melhorias": [
-        "M-P06-05",
-        "M-P06-06",
-        "M-P06-08",
-        "M-P06-12",
-        "M-P06-13",
-        "M-P06-14",
-        "M-P06-15",
-        "M-P06-16"
-      ],
-      "responsavel": "controle interno"
+     "fase": 3,
+     "valor": 309.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.lead.mediana"
+     }
     }
-  ],
-  "controles_qualidade_ia": [
+   ],
+   "alerta": {
+    "regra": "Processo de fiscalização aberto sem ato há mais dias úteis do que o limite da etapa em que está (painel M-P06-05), ou sem nenhuma unidade com ele aberto e sem marcador de sobrestamento; mediana mensal acima da meta da fase vigente por 2 meses seguidos.",
+    "destinatario": "Gerência da Câmara de Saneamento e Secretaria Executiva"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-02",
+    "M-P06-03",
+    "M-P06-04",
+    "M-P06-05",
+    "M-P06-06",
+    "M-P06-07",
+    "M-P06-08"
+   ],
+   "responsavel": "Gerência da Câmara de Saneamento",
+   "observacao": "A fase 3 não move o lead (mesma meta da fase 2): a IA reduz horas, não espera. Cerca de metade do ganho simulado vem do prazo da Procuradoria (M-P06-03 e M-P06-08): sem esse par, o ganho esperado cai a menos da metade, por isso a meta depende do acordo com a Procuradoria."
+  },
+  {
+   "id": "I-P06-02",
+   "nome": "Espera entre o último encaminhamento de relatórios e o parecer técnico consolidado",
+   "definicao": "Para cada processo: dias úteis entre o último ofício de encaminhamento de relatórios à concessionária (t3, última ocorrência) e a juntada do parecer técnico consolidado (t4), separando a parte com a câmara, a parte sem nenhuma unidade com o processo aberto e o prazo concedido à concessionária. Estatística: mediana e máximo dos processos com parecer nos últimos 12 meses.",
+   "calculo": {
+    "tipo": "espera_antes",
+    "atividades": [
+     "t4"
+    ],
+    "requisito": "R-P06-06"
+   },
+   "fonte_dados": "andamentos e peças do SEI (prazo concedido lido no ofício)",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 106.0,
+    "unidade": "du",
+    "fato": "critico.t4.1.espera_antes"
+   },
+   "metas": [
     {
-      "id": "Q-P06-01",
-      "melhorias": [
-        "M-P06-12"
-      ],
-      "verificacao": "Em cada relatório e termo de notificação assistidos: cada dado extraído de foto (identificação, leitura de equipamento, legenda) confere com a imagem; cada dispositivo citado existe na base de normas, está vigente e corresponde à irregularidade; o prazo do termo é o normativo (10 dias, ou 30 dias nos Blocos); as notificações anteriores listadas existem.",
-      "amostragem": "100% das citações (verificação automática contra a base e conferência do fiscal); 100% dos dados extraídos conferidos pelo fiscal; segunda revisão por outro fiscal em 2 relatórios por mês em cada câmara técnica",
-      "criterio_aceite": "Nenhum dado extraído ou citação sem conferência no documento assinado; prazo do termo igual ao normativo em 100% dos termos.",
-      "indicador": "Taxa de dados extraídos corrigidos pelo fiscal; taxa de citações não confirmadas pela verificação automática; termos com prazo errado",
-      "meta": "0 citação inválida e 0 prazo errado em documento assinado; dados extraídos corrigidos em até 10% dos campos depois de 6 meses de uso (a calibrar no piloto)",
-      "responsavel": "gerências das câmaras técnicas (CAENE e CASAN)"
+     "fase": 1,
+     "valor": 45,
+     "origem": {
+      "tipo": "norma",
+      "ref": "R-P06-06"
+     }
     },
     {
-      "id": "Q-P06-02",
-      "melhorias": [
-        "M-P06-13"
-      ],
-      "verificacao": "Em cada parecer técnico assistido: cada item do quadro (constatação, alegação, documento apresentado, situação) confere com a defesa e os anexos; nenhum documento com escopo, validade ou condição de operação menor que o exigido é marcado como suficiente; cada citação de norma ou deliberação existe e diz o que a minuta afirma; a conclusão é do técnico.",
-      "amostragem": "100% dos itens do quadro e das citações conferidos pelo técnico autor, com verificação automática de citação em 100% das minutas; 20% dos pareceres (no mínimo 2 por mês) analisados às cegas por um segundo técnico",
-      "criterio_aceite": "Concordância entre o quadro da IA e o revisor às cegas igual ou maior que a concordância entre dois técnicos na mesma amostra (critério de B-transversal-11); nenhuma citação não confirmada no parecer assinado.",
-      "indicador": "Concordância quadro × revisor e revisor × revisor; itens do quadro corrigidos; citações inválidas detectadas antes da assinatura",
-      "meta": "Concordância quadro × revisor ≥ concordância entre técnicos; 0 citação inválida em parecer assinado",
-      "responsavel": "gerências das câmaras técnicas (CAENE e CASAN)"
+     "fase": 2,
+     "valor": 45,
+     "origem": {
+      "tipo": "norma",
+      "ref": "R-P06-06"
+     }
     },
     {
-      "id": "Q-P06-03",
-      "melhorias": [
-        "M-P06-14"
-      ],
-      "verificacao": "Em cada parecer jurídico assistido: cada data e prazo da linha do tempo confere com o andamento do SEI; o checklist de contraditório, prazos e prescrição confere com as peças; cada citação de lei, decreto, instrução normativa, deliberação ou precedente existe e sustenta o que a minuta afirma; o juízo sobre cabimento e atenuantes é do procurador.",
-      "amostragem": "100% das datas, prazos e citações conferidos pelo procurador autor, com verificação automática de citação em 100% das minutas; 1 em cada 5 pareceres assistidos revisto pelo Procurador-Geral com lista de checagem",
-      "criterio_aceite": "Nenhuma data, prazo ou citação errada no parecer assinado; na amostra do Procurador-Geral, nenhuma divergência na conclusão atribuível à minuta.",
-      "indicador": "Taxa de citações não confirmadas pela verificação automática (referência: 17% a 33% de respostas com alucinação em ferramentas jurídicas com recuperação, B-transversal-10); datas e prazos corrigidos por parecer",
-      "meta": "0 citação inválida e 0 erro de prazo em parecer assinado",
-      "responsavel": "Procuradoria-Geral"
-    },
-    {
-      "id": "Q-P06-04",
-      "melhorias": [
-        "M-P06-15"
-      ],
-      "verificacao": "Em cada relatório e minuta de deliberação assistidos: fatos, datas e números do relatório conferem com os autos; a defesa e as razões finais estão descritas e enfrentadas; as deliberações anteriores citadas existem na base e tratam de caso comparável; as determinações têm destinatário e prazo; o voto e a dosimetria são do relator.",
-      "amostragem": "100% dos fatos, datas e citações conferidos pelo assessor do gabinete, com verificação automática de citação em 100% das minutas; a cada trimestre, 5 relatórios assistidos avaliados por servidor de outro gabinete com lista de critérios (fidelidade, concisão, defesa enfrentada, citações)",
-      "criterio_aceite": "Nenhum fato ou citação sem conferência no documento levado à sessão; na avaliação trimestral, todos os relatórios com a defesa e as razões finais enfrentadas e fidelidade igual à do relatório redigido sem assistência.",
-      "indicador": "Taxa de citações não confirmadas; correções de fato por relatório; relatórios adequados sem ajuste na avaliação trimestral (referência: 11,8% em B-transversal-09); recursos e embargos acolhidos (I-P06-08)",
-      "meta": "0 citação inválida em deliberação; recursos e embargos acolhidos não acima da linha de base",
-      "responsavel": "gabinetes do Conselho-Diretor"
-    },
-    {
-      "id": "Q-P06-05",
-      "melhorias": [
-        "M-P06-16"
-      ],
-      "verificacao": "Em cada deliberação: cada determinação, destinatário e prazo extraídos confere com o texto publicado e nenhuma determinação ficou de fora; em cada comprovação, a marcação de qual determinação foi atendida confere com o documento.",
-      "amostragem": "100% das extrações conferidas pela Secretaria Executiva antes dos ofícios; 100% das marcações de comprovação validadas pela câmara técnica; extração refeita por outro servidor em 1 deliberação por mês",
-      "criterio_aceite": "Nenhuma determinação omitida ou com prazo errado nos ofícios expedidos; nenhum registro de cumprimento sem validação técnica.",
-      "indicador": "Determinações omitidas ou com prazo errado detectadas na conferência; marcações de comprovação revertidas pela câmara técnica",
-      "meta": "0 determinação omitida nos ofícios expedidos; 0 encerramento com comprovação não validada",
-      "responsavel": "Secretaria Executiva e câmaras técnicas"
+     "fase": 3,
+     "valor": 45,
+     "origem": {
+      "tipo": "norma",
+      "ref": "R-P06-06"
+     }
     }
-  ],
-  "auditoria_continua": [
-    "A-P06-01",
-    "A-P06-02",
-    "A-P06-03",
-    "A-P06-04",
-    "A-P06-05",
-    "A-P06-06"
-  ]
+   ],
+   "alerta": {
+    "regra": "No dia seguinte ao vencimento do prazo concedido no último ofício sem parecer técnico juntado; de novo quando faltar 5 dias úteis para o limite do R-P06-06. Nunca antes do vencimento do prazo do R-P06-05.",
+    "destinatario": "Gerência da Câmara de Saneamento"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-05"
+   ],
+   "responsavel": "Gerência da Câmara de Saneamento",
+   "observacao": "Meta = limite do R-P06-06 em todas as fases; o piso do R-P06-05 (prazo de manifestação da concessionária) é protegido e acompanhado no I-P06-08."
+  },
+  {
+   "id": "I-P06-03",
+   "nome": "Primeiro lote de relatórios encaminhado em até 15 du do relatório mais antigo",
+   "definicao": "Percentual dos processos em que o primeiro ofício de encaminhamento (t3) sai em até 15 dias úteis da primeira peça de relatório (t2, primeira ocorrência), teste prazo_max do R-P06-03. Metas: conformidade simulada no cenário esperado.",
+   "calculo": {
+    "tipo": "conformidade",
+    "atividades": [
+     "t2",
+     "t3"
+    ],
+    "requisito": "R-P06-03"
+   },
+   "fonte_dados": "andamentos e peças do SEI",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 0.0,
+    "unidade": "% conforme",
+    "fonte": "conformidade_P06.json"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 0.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.1.esperado.conformidade_temporal.R-P06-03"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 0.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.conformidade_temporal.R-P06-03"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 0.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.conformidade_temporal.R-P06-03"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Teste diário: relatório assinado há mais de 10 dias úteis sem ofício de encaminhamento.",
+    "destinatario": "Gerência da Câmara de Saneamento"
+   },
+   "melhorias": [
+    "M-P06-04",
+    "M-P06-06"
+   ],
+   "responsavel": "Gerência da Câmara de Saneamento",
+   "referencia_legal": {
+    "valor": 100,
+    "unidade": "% conforme",
+    "requisito": "R-P06-03"
+   },
+   "observacao": "O TO-BE não chega à exigência em nenhuma fase: as melhorias cortam a espera entre a assinatura e o ofício, mas o atraso do primeiro lote está na execução da primeira rodada de vistoria e relatório (critico.t2.1.execucao), entre a primeira e a última assinatura. Falta regra de rito: encaminhar cada relatório assim que assinado, ou entregar ao gerente em até 5 du (R-P06-18), o que exige registrar a data da vistoria como campo e medir a cadeia de revisão."
+  },
+  {
+   "id": "I-P06-04",
+   "nome": "Parecer técnico consolidado em até 45 du do último encaminhamento",
+   "definicao": "Percentual dos processos em que o parecer técnico consolidado (t4) é juntado em até 45 dias úteis do último ofício de encaminhamento (t3, última ocorrência), teste prazo_max do R-P06-06. Metas: conformidade simulada no cenário esperado.",
+   "calculo": {
+    "tipo": "conformidade",
+    "atividades": [
+     "t3",
+     "t4"
+    ],
+    "requisito": "R-P06-06"
+   },
+   "fonte_dados": "andamentos e peças do SEI",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 0.0,
+    "unidade": "% conforme",
+    "fonte": "conformidade_P06.json"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.1.esperado.conformidade_temporal.R-P06-06"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.conformidade_temporal.R-P06-06"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.conformidade_temporal.R-P06-06"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Teste diário com o painel: vencido o prazo da concessionária sem parecer; percentual mensal abaixo de 100% gera relatório de achados.",
+    "destinatario": "Gerência da Câmara de Saneamento; controle interno"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-05"
+   ],
+   "responsavel": "Gerência da Câmara de Saneamento",
+   "referencia_legal": {
+    "valor": 100,
+    "unidade": "% conforme",
+    "requisito": "R-P06-06"
+   },
+   "observacao": "A simulação chega à exigência desde a fase 1 nos três cenários; com um único caso, o resultado é ilustrativo e precisa ser recalibrado com outros processos da câmara."
+  },
+  {
+   "id": "I-P06-05",
+   "nome": "Ciência do parecer técnico em até 15 du",
+   "definicao": "Percentual dos processos em que a ciência do parecer técnico à concessionária (t5) ocorre em até 15 dias úteis da juntada do parecer (t4), teste prazo_max do R-P06-08. Metas: conformidade simulada no cenário esperado.",
+   "calculo": {
+    "tipo": "conformidade",
+    "atividades": [
+     "t4",
+     "t5"
+    ],
+    "requisito": "R-P06-08"
+   },
+   "fonte_dados": "andamentos e peças do SEI",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 0.0,
+    "unidade": "% conforme",
+    "fonte": "conformidade_P06.json"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.1.esperado.conformidade_temporal.R-P06-08"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.conformidade_temporal.R-P06-08"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.conformidade_temporal.R-P06-08"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Parecer técnico juntado há 5 dias úteis sem ofício de ciência.",
+    "destinatario": "Secretaria Executiva"
+   },
+   "melhorias": [
+    "M-P06-02",
+    "M-P06-07"
+   ],
+   "responsavel": "Secretaria Executiva",
+   "referencia_legal": {
+    "valor": 100,
+    "unidade": "% conforme",
+    "requisito": "R-P06-08"
+   },
+   "observacao": "A simulação chega à exigência desde a fase 1; o prazo de manifestação da concessionária, que corre depois da ciência, não entra no teste nem é encurtado."
+  },
+  {
+   "id": "I-P06-06",
+   "nome": "Parecer jurídico em até 30 dias da remessa à Procuradoria",
+   "definicao": "Percentual dos processos em que o parecer jurídico (t7) é juntado em até 30 dias corridos da remessa dos autos depois da réplica técnica (t6, última ocorrência), teste prazo_max do R-P06-13. Metas: conformidade simulada no cenário esperado.",
+   "calculo": {
+    "tipo": "conformidade",
+    "atividades": [
+     "t6",
+     "t7"
+    ],
+    "requisito": "R-P06-13"
+   },
+   "fonte_dados": "andamentos e peças do SEI",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 0.0,
+    "unidade": "% conforme",
+    "fonte": "conformidade_P06.json"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 0.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.1.esperado.conformidade_temporal.R-P06-13"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 0.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.conformidade_temporal.R-P06-13"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 0.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.conformidade_temporal.R-P06-13"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Remessa à Procuradoria há 10 e há 25 dias corridos sem parecer; prazo com dilação vencido sem parecer.",
+    "destinatario": "Chefia da Procuradoria; Presidência"
+   },
+   "melhorias": [
+    "M-P06-03",
+    "M-P06-08"
+   ],
+   "responsavel": "Chefia da Procuradoria",
+   "referencia_legal": {
+    "valor": 100,
+    "unidade": "% conforme",
+    "requisito": "R-P06-13"
+   },
+   "observacao": "O TO-BE não chega à exigência no cenário esperado em nenhuma fase: o teto em dias úteis equivalente ao prazo, convertido pela média de cinco úteis por sete corridos, cai um pouco acima do limite em dias corridos no calendário do caso. Só o otimista da fase 2 (prazo simples do R-P06-13) conforma. Fechar a distância exige que o prazo interno da Procuradoria seja o prazo simples, com a dilação como exceção registrada, e capacidade para isso (a acordar com a Procuradoria)."
+  },
+  {
+   "id": "I-P06-07",
+   "nome": "Horas de trabalho por processo de fiscalização",
+   "definicao": "Soma das horas estimadas das peças mapeadas por processo (piso), pela mesma regra de esforço do mapeamento; mediana dos processos com instrução encerrada nos últimos 12 meses. Horas são hipótese, a calibrar com os servidores, e a medição depois da implantação precisa de apontamento por amostra.",
+   "calculo": {
+    "tipo": "horas",
+    "atividades": [
+     "t2",
+     "t4",
+     "t6",
+     "t7"
+    ]
+   },
+   "fonte_dados": "peças do SEI e apontamento por amostra",
+   "frequencia": "semestral",
+   "linha_base": {
+    "valor": 257.2,
+    "unidade": "h por processo (piso)",
+    "fato": "coorte.caso.horas_piso.mediana"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 257.2,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.1.esperado.horas_piso.mediana"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 233.4,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.horas_piso.mediana"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 209.6,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.horas_piso.mediana"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Horas por relatório acima da linha de base depois de 6 meses de uso do modelo estruturado ou da minuta assistida.",
+    "destinatario": "Gerência da Câmara de Saneamento"
+   },
+   "melhorias": [
+    "M-P06-09",
+    "M-P06-10",
+    "M-P06-11",
+    "M-P06-12",
+    "M-P06-13"
+   ],
+   "responsavel": "Gerência da Câmara de Saneamento"
+  },
+  {
+   "id": "I-P06-08",
+   "nome": "Proteção do contraditório: prazo de manifestação decorrido antes do parecer técnico",
+   "definicao": "Percentual dos processos em que, entre o último ofício que abre prazo de manifestação (t3) e o parecer técnico (t4), decorre ao menos o prazo concedido (teste prazo_min do R-P06-05). É a guarda de que os prazos internos não cortam o tempo da concessionária.",
+   "calculo": {
+    "tipo": "conformidade",
+    "atividades": [
+     "t3",
+     "t4"
+    ],
+    "requisito": "R-P06-05"
+   },
+   "fonte_dados": "andamentos e peças do SEI",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 100.0,
+    "unidade": "% conforme",
+    "fonte": "conformidade_P06.json"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 100,
+     "origem": {
+      "tipo": "norma",
+      "ref": "R-P06-05"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 100,
+     "origem": {
+      "tipo": "norma",
+      "ref": "R-P06-05"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 100,
+     "origem": {
+      "tipo": "norma",
+      "ref": "R-P06-05"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Qualquer parecer técnico juntado antes do vencimento do prazo concedido sem manifestação já recebida; o mesmo teste vale para a réplica técnica (R-P06-10).",
+    "destinatario": "Gerência da Câmara de Saneamento; controle interno"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-05"
+   ],
+   "responsavel": "Controle interno",
+   "referencia_legal": {
+    "valor": 100,
+    "unidade": "% conforme",
+    "requisito": "R-P06-05"
+   }
+  },
+  {
+   "id": "I-P06-09",
+   "nome": "Retrabalho: retornos a unidade já visitada no fluxo",
+   "definicao": "Número de retornos do processo a uma unidade por onde já passou (devolução para nova instrução, correção ou complementação), por processo; mediana e máximo dos processos dos últimos 12 meses. Indicador de qualidade ao lado dos de prazo.",
+   "calculo": {
+    "tipo": "laco",
+    "atividades": [
+     "t4",
+     "t6",
+     "t7"
+    ]
+   },
+   "fonte_dados": "andamentos do SEI",
+   "frequencia": "trimestral",
+   "linha_base": {
+    "valor": 1.0,
+    "unidade": "retornos por processo",
+    "fato": "coorte.caso.retornos.mediana"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 1,
+     "origem": {
+      "tipo": "benchmark",
+      "ref": "B-transversal-18"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 1,
+     "origem": {
+      "tipo": "benchmark",
+      "ref": "B-transversal-18"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 1,
+     "origem": {
+      "tipo": "benchmark",
+      "ref": "B-transversal-18"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Aumento dos retornos no trimestre em relação à linha de base depois da adoção dos prazos internos.",
+    "destinatario": "Gerência da Câmara de Saneamento; Presidência"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-03",
+    "M-P06-08"
+   ],
+   "responsavel": "Gerência da Câmara de Saneamento",
+   "observacao": "Meta de não piorar: prazo-alvo concentra decisões perto do vencimento e pode baixar a qualidade (B-transversal-18)."
+  },
+  {
+   "id": "I-P06-10",
+   "nome": "Qualidade da instrução: parecer técnico ou jurídico refeito no mesmo processo",
+   "definicao": "Processos com mais de uma ocorrência de parecer técnico consolidado (t4) ou de parecer jurídico (t7) no mesmo ciclo, por devolução, impugnação acolhida ou nova instrução; contagem nos processos dos últimos 12 meses. Acompanhar também, pela matriz de não conformidades, o percentual de recomendações atendidas por unidade com evidência.",
+   "calculo": {
+    "tipo": "laco",
+    "atividades": [
+     "t4",
+     "t7"
+    ]
+   },
+   "fonte_dados": "andamentos e peças do SEI; matriz de não conformidades",
+   "frequencia": "trimestral",
+   "linha_base": {
+    "valor": 0,
+    "unidade": "casos com repetição",
+    "fato": "coorte.t4.casos_com_laco"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 0,
+     "origem": {
+      "tipo": "benchmark",
+      "ref": "B-transversal-18"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 0,
+     "origem": {
+      "tipo": "benchmark",
+      "ref": "B-transversal-18"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 0,
+     "origem": {
+      "tipo": "benchmark",
+      "ref": "B-transversal-09"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Qualquer parecer refeito por erro de fato, número ou citação depois da adoção da minuta assistida.",
+    "destinatario": "Gerência da Câmara de Saneamento; chefia da Procuradoria"
+   },
+   "melhorias": [
+    "M-P06-09",
+    "M-P06-11",
+    "M-P06-12"
+   ],
+   "responsavel": "Gerência da Câmara de Saneamento"
+  }
+ ],
+ "controles_qualidade_ia": [
+  {
+   "id": "Q-P06-01",
+   "melhorias": [
+    "M-P06-10"
+   ],
+   "verificacao": "Em cada relatório com minuta assistida: cada constatação, dado e data confere com o checklist e as fotos; o cabeçalho (processo, unidade, município, bloco, concessionária) está certo; não há trecho de modelo que não se aplica; recomendação × exigência e prazo seguem o critério da câmara; as recomendações da vistoria anterior recuperadas existem.",
+   "amostragem": "100% dos campos e datas conferidos pelo especialista; 100% dos apontamentos de inconsistência vistos pelo engenheiro revisor; 2 relatórios por mês refeitos às cegas por um segundo especialista",
+   "criterio_aceite": "Relatório assinado sem dado divergente do checklist ou da foto, sem cabeçalho errado e sem trecho de modelo que não se aplica.",
+   "indicador": "Taxa de campos corrigidos pelo especialista (corrigidos ÷ gerados); relatórios com inconsistência achada depois da assinatura",
+   "meta": "Nenhuma inconsistência em relatório assinado; taxa de correção a calibrar no piloto",
+   "responsavel": "Gerência da Câmara de Saneamento"
+  },
+  {
+   "id": "Q-P06-02",
+   "melhorias": [
+    "M-P06-11"
+   ],
+   "verificacao": "Cada item da matriz marcado como atendido tem evidência e página de origem na manifestação da concessionária; cada número e data da minuta do parecer confere com a origem; a conclusão por unidade é a do especialista.",
+   "amostragem": "100% dos itens marcados como atendidos e 100% dos números e datas; 1 parecer por trimestre refeito às cegas por outro especialista, com concordância registrada",
+   "criterio_aceite": "Parecer assinado sem item dado por atendido sem evidência e sem número divergente da origem; concordância IA × revisor não inferior à concordância entre dois revisores (critério de B-transversal-11).",
+   "indicador": "Taxa de itens reclassificados pelo especialista; concordância IA × revisor e revisor × revisor",
+   "meta": "Nenhum item atendido sem evidência em parecer assinado",
+   "responsavel": "Gerência da Câmara de Saneamento"
+  },
+  {
+   "id": "Q-P06-03",
+   "melhorias": [
+    "M-P06-12"
+   ],
+   "verificacao": "Cada citação de norma, cláusula contratual, deliberação ou parecer do dossiê e da minuta passa por verificação automática contra a base de normas e deliberações e é conferida pelo procurador; cada data da linha do tempo confere com os autos; a lista de não conformidades sem resposta confere com a matriz.",
+   "amostragem": "100% das citações (automática e humana) e 100% das datas; conclusão revista pela chefia da Procuradoria em 100% no primeiro semestre e depois em 1 parecer por mês",
+   "criterio_aceite": "Parecer assinado sem citação que não confira com a fonte e sem data divergente dos autos.",
+   "indicador": "Taxa de citações não confirmadas pela verificação automática; taxa de datas corrigidas",
+   "meta": "Nenhuma citação inválida em parecer assinado",
+   "responsavel": "Chefia da Procuradoria"
+  },
+  {
+   "id": "Q-P06-04",
+   "melhorias": [
+    "M-P06-13"
+   ],
+   "verificacao": "A classificação de cada argumento da manifestação como novo ou já respondido confere com o parecer anterior; cada cláusula e artigo citado diz o que se afirma; todo argumento novo tem resposta.",
+   "amostragem": "100% das classificações e citações conferidas pelo especialista; 100% das réplicas aprovadas pelo gerente",
+   "criterio_aceite": "Réplica assinada sem argumento novo sem resposta e sem citação que não confira.",
+   "indicador": "Taxa de argumentos reclassificados pelo especialista; citações corrigidas",
+   "meta": "Nenhum argumento novo sem resposta em réplica assinada",
+   "responsavel": "Gerência da Câmara de Saneamento"
+  }
+ ],
+ "auditoria_continua": [
+  "A-P06-01",
+  "A-P06-02",
+  "A-P06-03",
+  "A-P06-04"
+ ]
 }

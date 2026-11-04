@@ -1,642 +1,548 @@
 {
-  "codigo": "P06",
-  "melhorias": [
-    {
-      "id": "M-P06-01",
-      "fase": 1,
-      "titulo": "Remessa direta da câmara técnica à Procuradoria e prazo interno para o parecer jurídico",
-      "descricao": "Assinado o parecer técnico (t3), a própria câmara técnica envia o processo à Procuradoria no SEI, sem a passagem pela Secretaria Executiva só para encaminhar, e o processo recebe o marcador \"Aguardando parecer jurídico\" com a data de entrada. A Procuradoria passa a ter prazo interno para o parecer (t4), contado da entrada, e atende a fila por ordem de antiguidade (o mais antigo primeiro), visível no controle de prazos do SEI. O processo nunca fica sem unidade com ele aberto entre o parecer técnico e o parecer jurídico: até a juntada do parecer, o dono é a Procuradoria. Quando a Procuradoria precisar de diligência, ela a registra no processo e o prazo interno fica suspenso até a resposta.",
-      "atividades": ["t4"],
-      "efeito": {
-        "tipo": "teto_espera",
-        "atividades": ["t4"],
-        "parte": "toda",
-        "cenarios": {"conservador": 75, "esperado": 36, "otimista": 21}
-      },
-      "fatos": [
-        "coorte.t4.espera_antes.mediana",
-        "coorte.t4.espera_antes.q1",
-        "coorte.t4.espera_antes.q3",
-        "coorte.t4.espera_antes.max",
-        "coorte.posse.PROC.mediana",
-        "coorte.posse.PROC.max",
-        "coorte.transicao.t3.t4",
-        "critico.posse.SEM UNIDADE"
-      ],
-      "requisitos": ["R-P06-09", "R-P06-01", "R-P06-11"],
-      "benchmark": ["B-transversal-01", "B-transversal-02"],
-      "hipotese": false,
-      "justificativa_parametro": "Tetos tirados da própria coorte de 16 esperas antes do parecer jurídico (casos_P06.json): conservador 75 du = q3 observado (só a quarta parte mais lenta é cortada, entre elas as esperas de 384 du, 241 du, 136 du e 108 du); esperado 36 du = mediana observada (36,5 du), isto é, metade dos casos já cumpre esse tempo hoje; otimista 21 du ≈ 30 dias corridos, o dobro do prazo de 15 dias do R-P06-09, como meta de transição (o q1 observado é 12,8 du ≈ 18 dc, perto do prazo legal, e foi deixado para a fase seguinte). Na coorte, a espera antes do parecer jurídico vindo do parecer técnico mistura de 21 a 42 du na Secretaria só para encaminhar (em 5 dos 8 casos) e o tempo na fila da Procuradoria; o caso crítico tem 203 du sem unidade antes do parecer. B-transversal-01 sustenta a regra de fila por antiguidade sem mais gente (12% de redução média na duração em gabinete de julgador); B-transversal-02 sustenta tratar a espera entre etapas sem marco como a restrição. O teto não é aplicado como desconto percentual do benchmark porque o problema observado é cauda longa de fila, não lentidão uniforme.",
-      "riscos": "Capacidade da Procuradoria: o parecer custa de 4 a 11 horas por ocorrência (mediana piso e teto) e a unidade atende outros processos; o prazo interno pode empurrar a fila de outros códigos ou baixar a qualidade do parecer. Diligências pedidas pela Procuradoria precisam ser registradas como suspensão, ou o prazo vira só papel. Remessa direta sem conferência da Secretaria pode levar à Procuradoria processo sem a manifestação da concessionária sobre o parecer técnico.",
-      "dependencias": "Decisão do Conselho-Diretor fixando o fluxo direto câmara técnica → Procuradoria e o prazo interno do parecer, por portaria ou ordem de serviço que altere o rito interno da fiscalização; adesão da Procuradoria-Geral à fila por antiguidade; a Secretaria Executiva configura no SEI o marcador e o controle de prazos da etapa.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-02",
-      "fase": 1,
-      "titulo": "Sorteio de relator em ciclo fixo, com a Secretaria Executiva como dona da etapa",
-      "descricao": "Concluída a instrução técnica e jurídica, o processo entra no bloco \"Pronto para sorteio\" da Secretaria Executiva no SEI. O sorteio de relator passa a ocorrer em ciclo fixo (dia certo da semana ou da quinzena), com todos os processos do bloco sorteados na mesma ata, e a distribuição ao gabinete sai no mesmo dia. Processo devolvido ao gabinete de outro conselheiro ou sem unidade aberta entra no bloco com a data original, para não perder a vez.",
-      "atividades": ["t5"],
-      "efeito": {
-        "tipo": "teto_espera",
-        "atividades": ["t5"],
-        "parte": "toda",
-        "cenarios": {"conservador": 31, "esperado": 15, "otimista": 10}
-      },
-      "fatos": [
-        "coorte.t5.espera_antes.mediana",
-        "coorte.t5.espera_antes.q1",
-        "coorte.t5.espera_antes.q3",
-        "coorte.t5.espera_antes.max",
-        "coorte.t5.casos_com_laco",
-        "coorte.posse.SCEXEC.mediana",
-        "coorte.posse.SEM UNIDADE.max"
-      ],
-      "requisitos": ["R-P06-07", "R-P06-18"],
-      "benchmark": ["B-transversal-03"],
-      "hipotese": false,
-      "justificativa_parametro": "Tetos da própria coorte (17 esperas antes do sorteio em casos_P06.json): conservador 31 du = q3 observado (corta só a espera de 643 du, dos quais 642 du sem unidade, e as de 107, 50 e 36 du); esperado 15 du = mediana observada, compatível com um ciclo quinzenal (até 10 du de espera pelo dia do sorteio, mais a folga de recebimento); otimista 10 du = ciclo semanal com folga, perto do q1 observado de 5 du. Depois do parecer jurídico, a espera é quase toda na Secretaria Executiva (23, 23, 27, 31 e 43 du em casos com sorteio de execução nula), o que mostra fila de rotina, não trabalho. B-transversal-03 sustenta a prática (quadro visual e rotina fixa na secretaria de apoio administrativo, com redução de 44% a 50% no lead time de rotinas internas), mas o parâmetro vem da coorte.",
-      "riscos": "O ciclo fixo pode atrasar o processo que hoje é sorteado no dia em que chega (q1 de 5 du); por isso o teto e não um tempo fixo. Sorteio em lote exige conferir impedimento e a regra de relator diverso em recurso (R-P06-18) a cada processo, não ao lote.",
-      "dependencias": "Ato do Conselho-Diretor (ou do Presidente, se o regimento lhe der a competência) que fixe a periodicidade do sorteio; a Secretaria Executiva organiza o bloco no SEI e publica o calendário do sorteio.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-03",
-      "fase": 1,
-      "titulo": "Fila de prontos para julgamento e pauta regular dentro do prazo de deliberação",
-      "descricao": "Expedido o ofício de razões finais (t6), o processo continua aberto no gabinete do relator com o marcador \"Razões finais: prazo até dd/mm\". Vencido o prazo concedido (ou o prazo prorrogado, se houver dilação deferida), o processo entra na fila \"Pronto para julgamento\", visível ao Conselho-Diretor e à Secretaria Executiva, com o gabinete como dono e data-alvo de pauta. O Conselho-Diretor mantém sessões em calendário regular e inclui em pauta, por ordem de antiguidade na fila, os processos de fiscalização prontos, podendo deliberá-los em bloco quando não houver controvérsia relevante. O relatório e o voto são preparados durante o prazo de razões finais e só fechados depois dele, para enfrentar o que a concessionária alegar.",
-      "atividades": ["t7"],
-      "efeito": {
-        "tipo": "teto_espera",
-        "atividades": ["t7"],
-        "parte": "toda",
-        "cenarios": {"conservador": 58, "esperado": 43, "otimista": 28}
-      },
-      "fatos": [
-        "coorte.t7.espera_antes.mediana",
-        "coorte.t7.espera_antes.q1",
-        "coorte.t7.espera_antes.q3",
-        "coorte.t7.espera_antes.max",
-        "coorte.transicao.t6.t7",
-        "tipico.posse.SEM UNIDADE",
-        "coorte.posse.SEM UNIDADE.mediana"
-      ],
-      "requisitos": ["R-P06-08", "R-P06-19", "R-P06-06", "R-P06-05", "R-P06-13"],
-      "benchmark": ["B-fiscalizacao-15", "B-transversal-04", "B-transversal-01"],
-      "hipotese": false,
-      "justificativa_parametro": "A espera antes da deliberação contém o prazo de razões finais de 10 dias corridos (R-P06-19, cerca de 8 du); todos os tetos ficam bem acima dele, então o tempo da concessionária é preservado e só a parte da agência (fila sem unidade até a sessão e gabinete) é cortada. Na coorte, nenhuma espera t6 → t7 contém dilação deferida; quando houver, a norma interna conta o teto do fim do prazo prorrogado. Conservador 58 du = mediana observada (58,5 du): corta só a metade de cima, onde estão as esperas de 81, 82 e 82 du inteiramente sem unidade, a de 62 du (55 du sem unidade) e a de 192 du no gabinete. Esperado 43 du = mediana × (1 − 27%), a redução do tempo de deliberação da diretoria obtida em B-fiscalizacao-15 com deliberação em bloco (110 → 80 dias). Otimista 28 du, o equivalente em dias úteis aos 40 dias corridos do prazo de deliberação do R-P06-08. O teto vale só para a parte da agência: somados os dias de resposta da concessionária às razões finais (protegidos) e os feriados, os casos ficam entre 44 e 50 dias corridos, e a conformidade simulada ao R-P06-08 continua em 12,5% (1 de 8) mesmo no otimista. A fase 1 não chega ao prazo legal; a parte da agência teria de ficar perto de 20 du, o que depende da contagem do prazo e da pauta montada pela fila (M-P06-10). B-transversal-04 (sessão virtual contínua) e B-transversal-01 (fila por antiguidade no gabinete) sustentam a fila de prontos e a pauta regular.",
-      "riscos": "Pressão de pauta pode produzir voto que não enfrenta a defesa e as razões finais (R-P06-13); a deliberação em bloco precisa de critério escrito de quais casos não têm controvérsia. Sessões em calendário fixo dependem de quórum do Conselho-Diretor. O teto não cobre a hipótese de razões finais com fato novo que exija nova instrução; nesse caso o processo sai da fila de prontos e volta à instrução, com registro do motivo.",
-      "dependencias": "Decisão do Conselho-Diretor sobre o calendário de sessões, a deliberação em bloco dos processos de fiscalização prontos e o prazo-alvo de pauta, com alteração do regimento interno se a deliberação em bloco ou a sessão virtual não estiverem previstas; Procuradoria opina sobre a deliberação em bloco; a Secretaria Executiva mantém a fila de prontos e monta a pauta pela ordem de antiguidade.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-04",
-      "fase": 1,
-      "titulo": "Ofício de razões finais em modelo único, expedido pelo gabinete em prazo interno",
-      "descricao": "Recebido o processo sorteado, o gabinete do relator confere a instrução com uma lista curta (parecer técnico, manifestação sobre ele, parecer jurídico) e expede o ofício de razões finais em modelo único, com prazo de 10 dias e consequência do silêncio escritos de forma destacada, dentro de um prazo interno contado da distribuição. Se a instrução estiver incompleta, a devolução sai no mesmo prazo, com o ponto que falta escrito no despacho. O processo fica com marcador de prazo no gabinete até o ofício.",
-      "atividades": ["t6"],
-      "efeito": {
-        "tipo": "teto_espera",
-        "atividades": ["t6"],
-        "parte": "toda",
-        "cenarios": {"conservador": 28, "esperado": 15, "otimista": 8}
-      },
-      "fatos": [
-        "coorte.t6.espera_antes.mediana",
-        "coorte.t6.espera_antes.q1",
-        "coorte.t6.espera_antes.q3",
-        "coorte.t6.espera_antes.max",
-        "coorte.posse.CONS-02.q3"
-      ],
-      "requisitos": ["R-P06-05", "R-P06-06", "R-P06-07"],
-      "benchmark": ["B-transversal-01"],
-      "hipotese": false,
-      "justificativa_parametro": "Tetos da própria coorte (16 esperas antes do ofício de razões finais): o gabinete já expede o ofício em 8 du em 5 dos 7 casos que vêm direto do sorteio (q1 = mediana = 8 du), e as exceções são 66 du e 106 du. Conservador 28 du = q3 observado (28,2 du); esperado 15 du, perto do dobro do desempenho típico do gabinete, como folga para a conferência da instrução; otimista 8 du = mediana observada. B-transversal-01 sustenta a regra de fila por antiguidade no gabinete do julgador, mas o parâmetro vem da coorte. O ofício é ato da agência; o prazo de razões finais concedido à concessionária só começa depois dele e não é tocado.",
-      "riscos": "No caso aberto mais longo, algumas esperas antes de novo ofício de razões finais incluem tempo do processo em órgão externo (secretaria estadual, concessionária); o teto as corta também, o que superestima um pouco o ganho nesse caso. Prazo curto no gabinete pode levar a devolver por instrução incompleta sem dizer o que falta, criando laço.",
-      "dependencias": "Ordem de serviço dos gabinetes do Conselho-Diretor com o prazo interno e o modelo único do ofício; a Secretaria Executiva publica o modelo no SEI como documento-padrão; a Procuradoria valida o texto da consequência do silêncio.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-05",
-      "fase": 1,
-      "titulo": "Relatório, termo de notificação e parecer técnico padronizados, com lista de instrução antes de cada remessa",
-      "descricao": "A câmara técnica (CAENE e CASAN) passa a usar modelos únicos de relatório de fiscalização, termo de notificação e parecer técnico, com campos obrigatórios: irregularidade e dispositivo infringido, prazo concedido (10 dias, ou 30 dias nos Blocos), documentos exigidos de uma vez, análise de cada ponto da defesa e conclusão sobre a penalidade cabível. Antes de remeter o processo à Procuradoria, a câmara confere uma lista de instrução (defesa analisada, documentos requisitados recebidos ou recusados, manifestação sobre o parecer quando houver fato novo); a Procuradoria confere a mesma lista antes do parecer jurídico. A requisição de documentos à concessionária e a órgãos sai num único ofício, com todos os itens, e não em pedidos sucessivos.",
-      "atividades": ["t2", "t3", "t4"],
-      "efeito": {
-        "tipo": "elimina_laco_pct",
-        "atividades": ["t2", "t3", "t4"],
-        "cenarios": {"conservador": 15, "esperado": 30, "otimista": 50}
-      },
-      "fatos": [
-        "coorte.t3.casos_com_laco",
-        "coorte.t4.casos_com_laco",
-        "coorte.t2.casos_com_laco",
-        "coorte.caso.retornos.mediana",
-        "coorte.caso.retornos.max",
-        "coorte.t3.perda.reiteracao",
-        "coorte.t4.perda.pedido_complementacao",
-        "coorte.transicao.t4.t3",
-        "coorte.transicao.t5.t4"
-      ],
-      "requisitos": ["R-P06-03", "R-P06-04", "R-P06-16", "R-P06-20", "R-P06-02"],
-      "benchmark": ["B-fiscalizacao-12"],
-      "hipotese": true,
-      "justificativa_parametro": "Não há caso de benchmark com parâmetro de redução de retrabalho por padronização; B-fiscalizacao-12 sustenta só a prática (estilos diferentes de fiscal para casos comparáveis justificam modelo e critério explícitos). Os valores são hipótese: a coorte tem 5 casos com parecer técnico repetido, 3 com parecer jurídico repetido e 2 com requisição repetida, e parte dessas repetições é legítima (manifestação da concessionária sobre parecer com fato novo, dilação deferida), por isso nenhum cenário elimina todas: conservador 15%, esperado 30% e otimista 50% das repetições. O efeito atua só da 2ª ocorrência em diante; a primeira análise da defesa, com o prazo legal de defesa antes dela (R-P06-20), não é tocada. Composição: as repetições do parecer jurídico já passaram pelo teto de M-P06-01 (aplicado antes, por ordem de id); este efeito reduz o que sobra delas, sem contar duas vezes a mesma espera.",
-      "riscos": "Modelo rígido pode empobrecer o relatório de casos atípicos; a lista de instrução pode virar carimbo se ninguém conferir. Reduzir repetições não pode suprimir o contraditório: a manifestação da concessionária sobre parecer com fato novo continua obrigatória. A divergência de critério entre CAENE e CASAN tem de ser resolvida antes de fixar o modelo.",
-      "dependencias": "Câmaras técnicas (CAENE e CASAN) redigem e aprovam os modelos com a Procuradoria; Conselho-Diretor aprova por deliberação ou portaria os modelos e a lista de instrução; a Secretaria Executiva os cadastra como documentos-padrão no SEI.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-06",
-      "fase": 2,
-      "titulo": "Relatório de fiscalização e termo de notificação em formulário estruturado, com checklist por tipo de instalação e plano de vistorias por risco",
-      "descricao": "O fiscal preenche em campo um formulário estruturado por tipo de instalação (estação de regulagem, rede, ponto de entrega, unidade de saneamento), com itens de checklist, situação de cada item, fotos legendadas e documentos exigidos. O relatório de fiscalização e o termo de notificação são montados a partir do formulário no modelo único da fase 1, com o dispositivo infringido de cada item não conforme puxado de uma tabela mantida pela câmara técnica e o prazo de defesa calculado pela regra (10 dias, ou 30 dias nos Blocos). Os dados do formulário ficam guardados por instalação e alimentam uma regra de pontuação de risco (notificações anteriores sobre a mesma pendência, vencimento de certificado do CBMERJ e de licença ambiental, ocorrências informadas pela concessionária, reclamações da Ouvidoria), usada no plano anual de vistorias programadas, que mantém uma parcela sorteada para todas as instalações. A segunda notificação da mesma pendência na mesma instalação é marcada como reincidência e segue a regra de escalada escrita.",
-      "atividades": [
-        "t1"
-      ],
-      "efeito": {
-        "tipo": "reduz_horas_pct",
-        "atividades": [
-          "t1"
-        ],
-        "cenarios": {
-          "conservador": 5,
-          "esperado": 15,
-          "otimista": 25
-        }
-      },
-      "fatos": [
-        "coorte.t1.horas_piso.mediana",
-        "coorte.t1.horas_teto.mediana",
-        "tipico.t1.1.horas_piso",
-        "tipico.t1.1.horas_teto",
-        "coorte.t1.casos",
-        "coorte.t1.pct_casos",
-        "coorte.t1.perda.pedido_complementacao",
-        "carteira.processos"
-      ],
-      "requisitos": [
-        "R-P06-04",
-        "R-P06-14",
-        "R-P06-15",
-        "R-P06-16"
-      ],
-      "benchmark": [
-        "B-fiscalizacao-06",
-        "B-fiscalizacao-12",
-        "B-fiscalizacao-01",
-        "B-fiscalizacao-02",
-        "B-fiscalizacao-07"
-      ],
-      "hipotese": true,
-      "justificativa_parametro": "Só o efeito em horas entra na simulação. A vistoria (t1) custa mediana de 7,4 a 12,1 h por ocorrência (8,8 a 16,5 h no caso típico), contadas sobre o relatório de 9 a 12 laudas e o termo de notificação; a horas-base do relatório cobre a vistoria em si, que não muda. Conta (hipótese a calibrar com os fiscais): a redação e a montagem do relatório (descrição de cada constatação, quadro de itens, organização das fotos) são cerca de 40% das horas de t1; o formulário estruturado elimina metade desse trabalho (o texto livre vira campo preenchido em campo) e acrescenta a conferência do relatório gerado, cerca de 5% de t1. Líquido esperado: 0,40 × 0,50 − 0,05 = 15%. Conservador 5% (formulário usado só nos tipos de instalação mais frequentes; casos atípicos seguem em texto livre); otimista 25% (0,40 × 0,75 − 0,05, com tabela de dispositivos completa). B-fiscalizacao-06 e B-fiscalizacao-12 sustentam a prática (resultado de fiscalização em texto livre impede a análise; padronizar critério entre fiscais), sem parâmetro de horas, por isso hipótese. A seleção por risco (B-fiscalizacao-01: até 2 vezes mais não conformidades por vistoria com restrições realistas; B-fiscalizacao-02: até 2 vezes o resultado de segurança com a mesma equipe) muda a eficácia da fiscalização, não o tempo nem as horas de um processo, e por isso não entra na simulação; é medida pelos indicadores de reincidência e de não conformidade por vistoria. Não conta duas vezes com M-P06-05: aquela padroniza o modelo e corta repetições; esta reduz as horas da primeira ocorrência.",
-      "riscos": "Formulário rígido empobrece o registro de instalação atípica; por isso fica sempre um campo de observação livre. A pontuação de risco depende de o histórico de notificações estar estruturado, o que só vale para as vistorias feitas depois da adoção do formulário; o histórico anterior precisa ser cadastrado. A regra de risco pode concentrar a fiscalização sempre nas mesmas instalações, o que exige a parcela sorteada. Uso em campo depende de equipamento (tablet ou celular) e de conexão.",
-      "dependencias": "Câmaras técnicas (CAENE e CASAN) definem os tipos de instalação, os itens de checklist e a tabela de dispositivos, com a Procuradoria; contratação ou desenvolvimento do formulário de campo com geração do documento no SEI (módulo de formulário ou integração por API do SEI); cadastro das instalações por concessionária; dados de vencimento de certificados do CBMERJ e de licenças do INEA e ocorrências informadas pelas concessionárias e pela Ouvidoria, em arquivo periódico; ato do Conselho-Diretor aprovando o plano anual por risco e a regra de escalada da reincidência.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-07",
-      "fase": 2,
-      "titulo": "Painel de idade do processo por unidade, com alerta de defesa recebida ou prazo de defesa vencido na câmara técnica",
-      "descricao": "Um painel lido dos andamentos do SEI mostra, para cada processo de fiscalização aberto, a unidade com o processo, a etapa em que está, há quantos dias úteis está ali e se algum prazo concedido está correndo. Quando a defesa da concessionária é juntada ou o prazo de defesa do termo de notificação vence, o painel avisa a gerência da câmara técnica (CAENE ou CASAN) e passa a contar o tempo até o parecer técnico, com um limite de dias úteis definido em ordem de serviço; vencido o limite, o alerta sobe para o superintendente. O mesmo painel lista os processos que nenhuma unidade tem aberto e que não têm deliberação nem termo de encerramento, e serve às metas e aos alertas da camada de controles.",
-      "atividades": [
-        "t3"
-      ],
-      "efeito": {
-        "tipo": "teto_espera",
-        "atividades": [
-          "t3"
-        ],
-        "parte": "toda",
-        "cenarios": {
-          "conservador": 40,
-          "esperado": 20,
-          "otimista": 15
-        }
-      },
-      "fatos": [
-        "coorte.t3.espera_antes.mediana",
-        "coorte.t3.espera_antes.q1",
-        "coorte.t3.espera_antes.q3",
-        "coorte.t3.espera_antes.max",
-        "coorte.t3.espera_antes.n",
-        "coorte.posse.CASAN.mediana",
-        "coorte.caso.espera_entre_atividades.mediana"
-      ],
-      "requisitos": [
-        "R-P06-20",
-        "R-P06-03"
-      ],
-      "benchmark": [
-        "B-transversal-14",
-        "B-transversal-15",
-        "B-fiscalizacao-14"
-      ],
-      "hipotese": false,
-      "justificativa_parametro": "A fase 1 não toca a espera antes do parecer técnico (t3): média de 45,2 du por caso nativo, 26,5 du com a CAENE e 8,7 du com a CASAN. Nas 28 ocorrências, mediana de 9,5 du e terceiro quartil de 18,2 du, mas cauda de 234 du (processo parado na CAENE desde a abertura) e de 25 a 40 du na CASAN nas reanálises do caso aberto mais longo. Tetos tirados da coorte: conservador 40 du corta só a cauda (234 du e a de 40 du); esperado 20 du ≈ terceiro quartil observado, que já cobre o prazo de defesa de 10 dias corridos (cerca de 8 du) e cerca de 12 du de análise na câmara; otimista 15 du. Todos acima do prazo mínimo de defesa (R-P06-20, 10 dc), e a parte da espera que é resposta da concessionária ao ofício (terceiros) não é cortada pelo simulador. A nova capacidade que justifica o teto é o alerta: hoje ninguém vê que a defesa chegou ou que o prazo venceu enquanto o processo espera na câmara. B-transversal-14 sustenta limiar de tempo por atividade com alerta, B-transversal-15 mostra que o andamento do SEI basta para medir e alertar, B-fiscalizacao-14 mostra alertas automáticos melhorando o cumprimento de prazo num regulador brasileiro; nenhum dá o parâmetro, que vem da coorte. Não há contagem dupla: nenhuma melhoria anterior limita a espera de t3 (M-P06-05 só reduz as repetições, e o teto é aplicado depois dela).",
-      "riscos": "O painel depende de o andamento do SEI refletir a realidade (processo aberto em unidade que não trabalha nele, documentos juntados com atraso); o alerta perde força se disparar demais. Limite curto na câmara pode baixar a qualidade da análise da defesa; por isso o limite é de ordem de serviço, revisto com o indicador de retrabalho. O caso de 234 du pode ser processo aberto antes da vistoria ou de outro rito, o que superestima um pouco o ganho no conservador.",
-      "dependencias": "Extração periódica (diária) dos andamentos e da lista de documentos do SEI, por relatório gerencial do SEI ou API, com perfil de leitura para a equipe de controle; tabela de tipos de documento que marca defesa, termo de notificação e parecer técnico (já usada no mapeamento); servidor ou serviço para hospedar o painel; ordem de serviço das câmaras técnicas com o limite de análise e o escalonamento do alerta.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-08",
-      "fase": 2,
-      "titulo": "Termos e ofícios gerados por modelo, com campos preenchidos dos dados do processo e controle automático do prazo concedido",
-      "descricao": "Os ofícios de requisição de documentos (t2), de razões finais (t6), de contraditório sobre o parecer (t10), de resposta à dilação (t11) e de comunicação da deliberação (t8) passam a ser gerados no SEI a partir de modelos com campos preenchidos automaticamente: destinatário e endereço eletrônico da concessionária, número do processo e do termo de notificação, itens requisitados escolhidos de uma lista, prazo e data de vencimento calculados pela regra (dias corridos ou úteis, feriados), consequência do silêncio e anexos. O servidor confere o conteúdo e assina. A data de vencimento entra no controle de prazos do SEI, com lembrete automático à concessionária antes do vencimento e aviso à unidade quando o prazo vence sem resposta.",
-      "atividades": [
-        "t2",
-        "t6",
-        "t8",
-        "t10",
-        "t11"
-      ],
-      "efeito": {
-        "tipo": "reduz_horas_pct",
-        "atividades": [
-          "t2",
-          "t6",
-          "t8",
-          "t10",
-          "t11"
-        ],
-        "cenarios": {
-          "conservador": 15,
-          "esperado": 30,
-          "otimista": 40
-        }
-      },
-      "fatos": [
-        "coorte.t2.horas_piso.mediana",
-        "coorte.t2.horas_teto.mediana",
-        "coorte.t6.horas_piso.mediana",
-        "coorte.t6.horas_teto.mediana",
-        "coorte.t8.horas_piso.mediana",
-        "coorte.t8.horas_teto.mediana",
-        "coorte.t10.horas_piso.mediana",
-        "coorte.t10.horas_teto.mediana",
-        "coorte.t11.horas_piso.mediana",
-        "coorte.t11.horas_teto.mediana",
-        "coorte.caso.oficios.mediana",
-        "coorte.caso.oficios.max"
-      ],
-      "requisitos": [
-        "R-P06-04",
-        "R-P06-06",
-        "R-P06-16",
-        "R-P06-12"
-      ],
-      "benchmark": [
-        "B-transversal-06",
-        "B-transversal-05"
-      ],
-      "hipotese": true,
-      "justificativa_parametro": "São peças curtas e repetitivas: mediana de 0,7 a 2,8 h por ocorrência (t2 1,4–2,8 h; t6 0,8–1,1 h; t8 1,1–1,8 h; t10 0,7–1,4 h; t11 0,8–1,4 h), cerca de 6 h por caso nativo somadas, com mediana de 4 ofícios por caso e máximo de 25. Conta (hipótese): preencher cabeçalho, destinatário, prazo, consequência e anexos e cadastrar o prazo é cerca de metade do tempo de cada ofício; o modelo com campos preenchidos elimina 70% dessa parte; a conferência dos campos gerados acrescenta 5%. Líquido esperado: 0,50 × 0,70 − 0,05 = 30%. Conservador 15% (só os ofícios de razões finais e de comunicação padronizados; a requisição continua redigida item a item); otimista 40% (0,50 × 0,90 − 0,05). B-transversal-06 (redução média de 72 dias na duração de processos de análise documental com automação) é teto e mede duração, não horas: não é transferido. O efeito do lembrete sobre a resposta da concessionária (B-transversal-05: 13% a 21% menos faltas de resposta no prazo) não entra, porque o simulador não corta a espera de terceiros. O modelo único de ofício de razões finais da fase 1 (M-P06-04) atacou a espera do gabinete, não as horas; não há contagem dupla.",
-      "riscos": "Cálculo errado de prazo gerado automaticamente propaga o erro para todos os ofícios e pode abrir nulidade (prazo de defesa menor que o normativo, R-P06-04 e R-P06-16): a regra de prazo precisa ser testada contra casos reais e validada pela Procuradoria. Lista fechada de itens requisitados pode deixar de fora o documento atípico; fica sempre um campo livre. Envio por e-mail exige endereço oficial atualizado de cada concessionária.",
-      "dependencias": "Modelos de documento do SEI com campos variáveis (recurso nativo de modelo e, para o preenchimento dos dados do processo, automação de tramitação no SEI ou integração por API); cadastro de concessionárias com endereço eletrônico oficial; calendário de feriados estaduais e regra de contagem (já em uso no mapeamento); Procuradoria valida os textos e a regra de prazo; Secretaria Executiva mantém os modelos.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-09",
-      "fase": 2,
-      "titulo": "Contagem contínua do prazo legal do parecer jurídico, com alerta antes do vencimento",
-      "descricao": "O teste de conformidade do prazo do parecer jurídico (15 dias depois do parecer técnico) passa a rodar todo dia sobre os processos abertos, e não só na auditoria periódica. Cada processo na fila da Procuradoria mostra no painel os dias decorridos e os que faltam para o prazo legal, descontada a suspensão por diligência registrada; o procurador responsável recebe aviso no 10º dia e o Procurador-Geral recebe a lista dos vencidos, em ordem de antiguidade, toda semana. O prazo interno da fase 1 passa a ser cobrado pelo mesmo contador. O contador expõe o atraso, mas sozinho não traz o parecer para dentro dos 15 dias: para isso falta capacidade na Procuradoria.",
-      "atividades": [
-        "t4"
-      ],
-      "efeito": {
-        "tipo": "teto_espera",
-        "atividades": [
-          "t4"
-        ],
-        "parte": "toda",
-        "cenarios": {
-          "conservador": 50,
-          "esperado": 25,
-          "otimista": 15
-        }
-      },
-      "fatos": [
-        "coorte.t4.espera_antes.mediana",
-        "coorte.t4.espera_antes.q1",
-        "coorte.t4.espera_antes.q3",
-        "coorte.t4.espera_antes.max",
-        "coorte.posse.PROC.mediana",
-        "coorte.posse.PROC.q3"
-      ],
-      "requisitos": [
-        "R-P06-09",
-        "R-P06-01"
-      ],
-      "benchmark": [
-        "B-transversal-18",
-        "B-transversal-14"
-      ],
-      "hipotese": false,
-      "justificativa_parametro": "A fase 1 (M-P06-01) limitou a espera antes do parecer jurídico a 75/36/21 du, retirando a passagem pela Secretaria e o tempo sem unidade. Sobra a fila da própria Procuradoria: nas 16 ocorrências, a parte com a Procuradoria tem mediana de cerca de 24 du (24, 24, 24, 20, 17, 13, 11, 11, 4 du entre as menores; 64, 94, 107 e 382 du na cauda), e a posse da Procuradoria tem mediana de 31 du por caso. O prazo legal (R-P06-09, 15 dc ≈ 11 du) é cumprido em 2 de 10 passagens. Tetos, um degrau abaixo da fase 1 em cada cenário: conservador 50 du (entre os 75 e os 36 du da fase 1); esperado 25 du ≈ a mediana do tempo só na Procuradoria, isto é, a cauda da fila passa a ser cobrada pelo prazo; otimista 15 du ≈ 21 dc, perto do prazo legal. A nova capacidade é o contador do prazo legal visível e cobrado: B-transversal-18 mostra que um prazo acompanhado concentra as decisões antes do vencimento (com risco de qualidade, por isso o indicador de qualidade ao lado); B-transversal-14 sustenta o limiar por atividade com alerta. Nenhum dá o número, que vem da coorte. O TO-BE não chega ao prazo legal: com o teto de 25 du a passagem do último parecer técnico ao parecer jurídico fica entre 35 e 59 dias corridos, e a conformidade simulada ao R-P06-09 (15 dias corridos ≈ 10 du) continua em 11,1% (1 de 9) em todas as fases, inclusive no otimista de 15 du (≈ 21 dc). Chegar aos 15 dias exigiria baixar a fila da própria Procuradoria a cerca de 10 du, menos da metade da mediana de hoje (≈ 24 du), o que um alerta não faz: falta capacidade (o parecer custa de 4 a 11 h e a unidade atende outros códigos; as horas liberadas pela minuta de M-P06-14 não foram convertidas em teto) ou uma norma interna que reveja o prazo ou a ordem das peças. Esse teto não foi forçado para bater o prazo.",
-      "riscos": "Prazo cobrado sem mais capacidade pode só deslocar a fila para outros códigos da Procuradoria ou baixar a profundidade do parecer; a diligência precisa ser registrada como suspensão para o contador não punir o caso que precisa de instrução. Se a Procuradoria não aderir à cobrança, o alerta vira ruído.",
-      "dependencias": "Painel e extração do SEI de M-P06-07; marcador de diligência no SEI com data de início e fim (suspensão do prazo); ordem de serviço da Procuradoria-Geral sobre o prazo e a cobrança semanal; registro, no SEI, da data de entrada na Procuradoria (marcador da fase 1).",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-10",
-      "fase": 2,
-      "titulo": "Contagem contínua do prazo legal de deliberação e pauta montada a partir da fila de prontos",
-      "descricao": "O teste do prazo de deliberação (40 dias do ofício de razões finais) roda todo dia sobre os processos na fila \"Pronto para julgamento\" da fase 1. Vencido o prazo de razões finais, o processo aparece no painel do Conselho-Diretor com os dias que faltam para o prazo legal; a proposta de pauta de cada sessão é montada automaticamente com os processos de fiscalização prontos em ordem de antiguidade e com os que vencem o prazo antes da sessão seguinte em destaque. O gabinete do relator é avisado no 20º dia e a Presidência no 30º dia.",
-      "atividades": [
-        "t7"
-      ],
-      "efeito": {
-        "tipo": "teto_espera",
-        "atividades": [
-          "t7"
-        ],
-        "parte": "toda",
-        "cenarios": {
-          "conservador": 28,
-          "esperado": 22,
-          "otimista": 20
-        }
-      },
-      "fatos": [
-        "coorte.t7.espera_antes.mediana",
-        "coorte.t7.espera_antes.q1",
-        "coorte.t7.espera_antes.q3",
-        "coorte.t7.espera_antes.max",
-        "coorte.transicao.t6.t7",
-        "tipico.posse.SEM UNIDADE"
-      ],
-      "requisitos": [
-        "R-P06-08",
-        "R-P06-19",
-        "R-P06-13"
-      ],
-      "benchmark": [
-        "B-transversal-18",
-        "B-fiscalizacao-15",
-        "B-transversal-04"
-      ],
-      "hipotese": false,
-      "justificativa_parametro": "A fase 1 (M-P06-03) limitou a espera antes da deliberação a 58/43/28 du com a fila de prontos e o calendário de sessões, mas a conformidade simulada ao R-P06-08 (40 dias corridos do ofício de razões finais) fica em 12,5% (1 de 8) em todas as fases e cenários: o teto vale só para a parte da agência, e somados os dias de resposta da concessionária (protegidos) e os feriados os casos ficam entre 44 e 50 dc. Por isso o teto desta fase foi refeito pela capacidade, e não pela conversão do prazo legal em du. Conta do esperado, a partir do ofício: o resto do prazo de razões finais que a agência aguarda (até 10 dc ≈ 8 du, a parte não respondida pela concessionária), mais cerca de 5 du para o relator fechar o voto já preparado durante o prazo (fase 1), mais até 10 du até a sessão seguinte num calendário quinzenal, menos o ganho de a pauta ser montada pela data de vencimento, que leva o processo à primeira sessão depois do prazo: 22 du na parte da agência. Conservador 28 du (o contador só elimina os atrasos maiores, e as sessões continuam sem a regra de pauta por vencimento); otimista 20 du (sessão virtual contínua para os casos sem controvérsia, B-transversal-04). Conformidade simulada resultante: 12,5% no conservador, 75% no esperado e 100% no otimista. No esperado, os 2 casos que restam fora do prazo passam por poucos dias, por feriado ou por resposta da concessionária no fim do prazo; chegar a 100% exige sessão semanal ou virtual contínua. B-transversal-18 sustenta que um prazo acompanhado concentra as decisões antes do vencimento, com risco de qualidade (por isso o indicador de qualidade ao lado); B-fiscalizacao-15 e B-transversal-04 sustentam a pauta contínua e em bloco. O parâmetro vem da conta acima, não dos benchmarks; o teto fica acima do prazo de razões finais (R-P06-19, 10 dc ≈ 8 du), que não é tocado.",
-      "riscos": "Prazo legal cobrado pode empurrar votos para a véspera e produzir decisão que não enfrenta a defesa e as razões finais (R-P06-13): o indicador de qualidade da decisão acompanha esta melhoria. É a melhoria de maior peso no lead mediano e o maior degrau sobre a fase 1 (de 43 para 22 du no esperado): precisa de validação com os gabinetes e com o calendário real de sessões antes de virar meta. Depende de quórum e de sessões regulares, ao menos quinzenais (fase 1); se a sessão não ocorrer, o contador só registra o atraso.",
-      "dependencias": "Painel e extração do SEI de M-P06-07; marcador \"Razões finais: prazo até\" e fila de prontos da fase 1; a Secretaria Executiva adota a proposta automática de pauta; ato do Conselho-Diretor sobre a ordem de inclusão em pauta.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-11",
-      "fase": 2,
-      "titulo": "Testes de conformidade contínuos e trava de instrução completa antes do sorteio",
-      "descricao": "Os testes automatizáveis do programa de auditoria (pareceres técnico e jurídico antes da deliberação, prazo do termo de notificação e do ofício de razões finais, sorteio antes do relator atuar, prazos do parecer e da deliberação, prescrição e paralisação, publicação da deliberação) passam a rodar todo dia sobre os processos abertos, com a lista de achados enviada à unidade responsável. Antes de o processo entrar no bloco \"Pronto para sorteio\" da fase 1, uma verificação automática confere se estão juntados o parecer técnico sobre a defesa, a manifestação da concessionária quando houve contraditório, e o parecer jurídico; faltando peça, o processo não entra no bloco e a unidade que deve a peça é avisada. A leitura da motivação do voto continua por amostra, feita por servidor.",
-      "atividades": [
-        "t5"
-      ],
-      "efeito": {
-        "tipo": "elimina_laco_pct",
-        "atividades": [
-          "t5"
-        ],
-        "cenarios": {
-          "conservador": 25,
-          "esperado": 50,
-          "otimista": 75
-        }
-      },
-      "fatos": [
-        "coorte.t5.casos_com_laco",
-        "coorte.transicao.t5.t4",
-        "coorte.transicao.t5.t4.pct",
-        "coorte.t5.espera_antes.max",
-        "coorte.posse.SEM UNIDADE.max"
-      ],
-      "requisitos": [
-        "R-P06-01",
-        "R-P06-02",
-        "R-P06-07",
-        "R-P06-18",
-        "R-P06-10",
-        "R-P06-11"
-      ],
-      "benchmark": [
-        "B-transversal-15",
-        "B-transversal-07",
-        "B-transversal-14"
-      ],
-      "hipotese": true,
-      "justificativa_parametro": "A distribuição se repete em 5 casos e 18% das saídas do sorteio (3 passagens) voltam à Procuradoria: em 4 dos 5 casos o padrão é sorteio, parecer jurídico e novo sorteio, isto é, o processo foi sorteado antes de a instrução estar completa. A trava impede o sorteio prematuro, mas parte das voltas é legítima (o relator pede parecer complementar sobre fato novo). Valores são hipótese, sem benchmark com parâmetro de redução: conservador 25%, esperado 50% (2 dos 4 casos com sorteio prematuro deixam de repetir) e otimista 75% das repetições. O efeito atua sobre a 2ª distribuição em diante, depois do teto de M-P06-02 (aplicado antes, por fase): reduz o que sobrou dessas esperas, sem contar de novo o corte da fase 1. B-transversal-15 mostra que o log do SEI basta para testar conformidade ao modelo; B-transversal-07 sustenta a regra explícita automatizada com exceção decidida por servidor; B-transversal-14, o limiar com alerta. Os demais testes contínuos não mudam tempo nem horas do caso; são medidos pelos indicadores de conformidade.",
-      "riscos": "Trava rígida pode segurar processo que o relator quer receber para decidir questão preliminar; a exceção precisa ser registrada por despacho. Teste mal especificado gera falso achado e desgaste com as unidades; os testes precisam ser validados contra os casos da coorte antes de virar alerta. A detecção depende da classificação correta do tipo de documento no SEI.",
-      "dependencias": "Extração diária do SEI (M-P06-07); os testes de conformidade já especificados para a coorte, adaptados para rodar sobre processos abertos; tabela de tipos de documento; a Secretaria Executiva aplica a trava no bloco de sorteio; ato do Conselho-Diretor definindo a instrução mínima para sorteio e o rito da exceção; unidade de controle interno como dona dos achados.",
-      "controle_humano": ""
-    },
-    {
-      "id": "M-P06-12",
-      "fase": 3,
-      "titulo": "Extração de dados das fotos e do checklist de vistoria e minuta do relatório e do termo de notificação",
-      "descricao": "A partir do formulário de campo (fase 2), a IA lê as fotos da vistoria (placas de identificação, etiquetas de equipamento, leitura de manômetros e indicadores, sinalização), propõe a legenda e preenche os dados correspondentes, redige a parte narrativa de cada constatação e a minuta do termo de notificação com o dispositivo infringido citado da base de normas e deliberações, e mostra as notificações anteriores sobre a mesma pendência na mesma instalação. Toda citação é conferida automaticamente contra a base antes de chegar ao fiscal. O fiscal confere, ajusta e assina; o gerente da câmara assina o termo.",
-      "atividades": [
-        "t1"
-      ],
-      "efeito": {
-        "tipo": "reduz_horas_pct",
-        "atividades": [
-          "t1"
-        ],
-        "cenarios": {
-          "conservador": 5,
-          "esperado": 12,
-          "otimista": 20
-        }
-      },
-      "fatos": [
-        "coorte.t1.horas_piso.mediana",
-        "coorte.t1.horas_teto.mediana",
-        "coorte.t1.perda.pedido_complementacao",
-        "coorte.t1.casos"
-      ],
-      "requisitos": [
-        "R-P06-04",
-        "R-P06-14",
-        "R-P06-03"
-      ],
-      "benchmark": [
-        "B-transversal-09",
-        "B-transversal-10",
-        "B-transversal-12",
-        "B-fiscalizacao-06"
-      ],
-      "hipotese": true,
-      "justificativa_parametro": "Aplica-se sobre as horas que sobram depois do formulário estruturado (M-P06-06, 85% das horas de t1 no esperado). Conta (hipótese a calibrar): da hora original de t1, a narrativa das constatações e o enquadramento somam cerca de 20% e a legenda e organização das fotos cerca de 10%; a minuta e a extração economizam metade disso (15%); a revisão humana (o fiscal confere cada dado extraído contra a foto e cada dispositivo citado) custa cerca de 5%. Líquido: 10% da hora original ≈ 12% das horas restantes (10 / 85). Conservador 5% (fotos de baixa qualidade, extração descartada em boa parte); otimista 20%. Benchmarks são teto e cautela: B-transversal-12 (cerca de 26 min por servidor por dia, perto de 5% da jornada, com IA de uso geral) dá a ordem de grandeza do conservador; B-transversal-09 mostra que só 11,8% das minutas saíram prontas sem ajuste, por isso toda minuta é revista e a revisão é descontada; B-transversal-10 (17% a 33% de alucinação mesmo com recuperação) obriga a conferência de 100% das citações. A vistoria em si não muda.",
-      "riscos": "Leitura errada de foto (número de série, pressão) entra no termo como fato e pode viciar a notificação; por isso o dado extraído nunca vai ao documento sem conferência do fiscal. Dispositivo citado errado ou revogado abre nulidade. Dependência do formulário da fase 2 e de fotos com resolução mínima.",
-      "dependencias": "Formulário estruturado da fase 2 (M-P06-06); base de normas e deliberações (Especialista) com os dispositivos técnicos aplicáveis (decretos, normas técnicas, instruções normativas); contratação de serviço de modelo de linguagem com leitura de imagem, com cláusula de não uso dos dados para treino e hospedagem compatível com a LGPD; norma interna sobre uso de IA na fiscalização, com registro no processo de que a minuta foi assistida.",
-      "controle_humano": "O fiscal que fez a vistoria confere 100% dos dados extraídos das fotos contra a imagem e o checklist e 100% das legendas antes de assinar o relatório; toda citação de dispositivo passa por verificação automática contra a base e o gerente da câmara técnica confere enquadramento e prazo do termo em 100% dos termos; por amostra, 2 relatórios por mês em cada câmara são revistos por um segundo fiscal, que registra as correções feitas na minuta."
-    },
-    {
-      "id": "M-P06-13",
-      "fase": 3,
-      "titulo": "Pré-análise da defesa contra o relatório e as normas e minuta do parecer técnico",
-      "descricao": "Quando a defesa ou nova manifestação da concessionária é juntada, a IA monta um quadro ponto a ponto: cada constatação do relatório e do termo, o que a concessionária alegou, que documento apresentou (laudo de exigências, certificado do CBMERJ, licença ambiental, projeto), se o documento cobre o que foi exigido (escopo, validade, pressão de operação) e o que continua pendente, com as notificações anteriores sobre a mesma pendência e as deliberações do Conselho sobre casos semelhantes, buscadas na base do Especialista. Nas rodadas seguintes, o quadro mostra só o que a nova manifestação contesta. Sobre o quadro, a IA entrega a minuta do parecer técnico, com citação conferida automaticamente contra a base. O técnico confere cada item contra os documentos, decide a conclusão e assina.",
-      "atividades": [
-        "t3"
-      ],
-      "efeito": {
-        "tipo": "reduz_horas_pct",
-        "atividades": [
-          "t3"
-        ],
-        "cenarios": {
-          "conservador": 8,
-          "esperado": 20,
-          "otimista": 35
-        }
-      },
-      "fatos": [
-        "coorte.t3.horas_piso.mediana",
-        "coorte.t3.horas_teto.mediana",
-        "coorte.t3.casos_com_laco",
-        "coorte.t3.casos",
-        "coorte.transicao.t10.t3.pct"
-      ],
-      "requisitos": [
-        "R-P06-03",
-        "R-P06-13",
-        "R-P06-20"
-      ],
-      "benchmark": [
-        "B-transversal-13",
-        "B-transversal-11",
-        "B-transversal-10",
-        "B-transversal-09"
-      ],
-      "hipotese": true,
-      "justificativa_parametro": "É onde estão as horas: o parecer técnico custa 11,4 h por caso nativo em média (28 ocorrências em 11 casos, mediana de 3,0 a 7,9 h por ocorrência). Conta (hipótese a calibrar com as câmaras): leitura da defesa e dos anexos e confronto com relatório, termo e parecer anterior ≈ 45% das horas; redação ≈ 35%; conclusão e enquadramento ≈ 20%, que continua humana. O quadro ponto a ponto economiza 40% da leitura e do confronto (o técnico ainda lê os documentos-chave): 18%; a minuta economiza metade da redação: 17,5%; a revisão (conferir cada item do quadro contra a defesa e os anexos, e as citações) custa cerca de 12%. Líquido ≈ 23%, arredondado para baixo a 20% no esperado porque B-transversal-09 mostra que a maioria das minutas precisa de reescrita (70,6% inadequadas na avaliação global). Conservador 8% (só o quadro é aproveitado; a minuta é refeita); otimista 35%. B-transversal-13 (conferência documental de 15 du para 30 minutos num regulador) é teto, em tarefa de conferência contra regra fixa, mais simples que a análise de defesa; não é transferido. Composição: M-P06-05 já cortou parte das rodadas repetidas; esta reduz as horas de cada rodada que sobra, sem contar a mesma hora duas vezes.",
-      "riscos": "Quadro que marca como comprovado o que não foi (documento com escopo menor que o exigido, como a licença que não cobria a pressão acima de 4,2 bar no caso crítico) leva a parecer errado; a conclusão nunca é tomada do quadro sem conferência. Viés de automação: técnico que passa a confiar no quadro sem ler os anexos. A defesa traz documentos digitalizados de baixa qualidade, que a extração lê mal.",
-      "dependencias": "Ferramenta de leitura dos autos do SEI já usada pela minuta de relatório (Relator de Voto), adaptada para a defesa e o parecer técnico; base de normas e deliberações (Especialista) com os casos de fiscalização; acesso de leitura ao texto das peças do SEI por API ou exportação; contratação de modelo de linguagem com proteção de dados; norma interna sobre uso de IA e registro no processo; treinamento das câmaras técnicas na revisão.",
-      "controle_humano": "O técnico autor confere 100% dos itens do quadro contra a defesa e os anexos e decide e assina a conclusão; a verificação automática de citação roda em 100% das minutas e o técnico confere toda citação que ela não confirmar; o gerente da câmara técnica revisa 100% das conclusões pela penalidade; por amostra, 20% dos pareceres (no mínimo 2 por mês) são analisados às cegas por um segundo técnico, para medir a concordância do quadro com o revisor."
-    },
-    {
-      "id": "M-P06-14",
-      "fase": 3,
-      "titulo": "Minuta do parecer jurídico com linha do tempo dos atos e checklist de contraditório e prazos",
-      "descricao": "Na entrada do processo na Procuradoria, a IA monta a linha do tempo dos atos (vistoria, termo de notificação, prazos concedidos, defesa, pareceres, ofícios e respostas), confere num checklist se o contraditório, os prazos e a prescrição foram observados, reúne as notificações e deliberações anteriores sobre a mesma pendência e entrega a minuta do parecer jurídico com as partes de relatório e de rito preenchidas e a citação conferida contra a base. O juízo sobre o cabimento da penalidade e as atenuantes fica com o procurador.",
-      "atividades": [
-        "t4"
-      ],
-      "efeito": {
-        "tipo": "reduz_horas_pct",
-        "atividades": [
-          "t4"
-        ],
-        "cenarios": {
-          "conservador": 8,
-          "esperado": 20,
-          "otimista": 30
-        }
-      },
-      "fatos": [
-        "coorte.t4.horas_piso.mediana",
-        "coorte.t4.horas_teto.mediana",
-        "coorte.t4.casos_com_laco",
-        "coorte.t4.perda.pedido_complementacao"
-      ],
-      "requisitos": [
-        "R-P06-01",
-        "R-P06-10",
-        "R-P06-11",
-        "R-P06-09"
-      ],
-      "benchmark": [
-        "B-transversal-09",
-        "B-transversal-10",
-        "B-transversal-12"
-      ],
-      "hipotese": true,
-      "justificativa_parametro": "O parecer jurídico custa 8,4 h por caso nativo em média (mediana de 4,0 a 11,3 h por ocorrência, 13 a 16 laudas no piloto). Conta (hipótese a calibrar com a Procuradoria): montar o histórico e conferir prazos e contraditório ≈ 30% das horas; juízo jurídico ≈ 45%, que não muda; redação ≈ 25%. A linha do tempo e o checklist economizam 60% da primeira parte (18%); a minuta das partes de relatório e de rito economiza 40% da redação (10%); a revisão (conferir cada data e prazo contra o andamento e cada citação) custa cerca de 8%. Líquido esperado 20%. Conservador 8%, perto da ordem de grandeza de IA de uso geral (B-transversal-12); otimista 30%. B-transversal-09 obriga a rever toda minuta; B-transversal-10, a conferir 100% das citações. Não se conta ganho de espera: a fila da Procuradoria é tratada por M-P06-01 e M-P06-09, e as horas liberadas não são convertidas em teto menor.",
-      "riscos": "Linha do tempo com data ou prazo errado pode levar o parecer a afirmar contraditório que não houve, ou prescrição que não ocorreu; citação de precedente inexistente é o risco típico de minuta jurídica gerada por modelo. A Procuradoria atende outros códigos; o ganho em horas só vira prazo se a carga for redistribuída.",
-      "dependencias": "Ferramenta de leitura dos autos (Relator de Voto) estendida ao parecer jurídico; base de normas e deliberações (Especialista); acesso ao andamento e ao texto das peças do SEI; adesão da Procuradoria-Geral e ato sobre o uso de IA nos pareceres, com registro no processo; contratação de modelo de linguagem com proteção de dados.",
-      "controle_humano": "O procurador autor confere 100% das datas e prazos da linha do tempo contra o andamento do SEI, todas as citações (depois da verificação automática em 100% das minutas) e redige o juízo sobre cabimento e atenuantes; o Procurador-Geral revisa 1 em cada 5 pareceres assistidos, com lista de checagem (fatos, prazos, citações, conclusão), e registra as correções."
-    },
-    {
-      "id": "M-P06-15",
-      "fase": 3,
-      "titulo": "Minuta do relatório, do voto e da deliberação a partir dos autos, com citação verificada",
-      "descricao": "Durante o prazo de razões finais, a ferramenta de minuta de relatório a partir dos autos do SEI (Relator de Voto) prepara a parte de relatório (histórico da fiscalização, notificações, defesa, pareceres, razões finais quando juntadas), reúne as deliberações anteriores do Conselho sobre a mesma pendência na base do Especialista e propõe a minuta de deliberação com determinações, destinatários e prazos. Toda citação é conferida automaticamente contra a base. O gabinete revisa o relatório, o relator decide e redige a fundamentação do voto e a dosimetria, e a deliberação é aprovada em sessão.",
-      "atividades": [
-        "t7"
-      ],
-      "efeito": {
-        "tipo": "reduz_horas_pct",
-        "atividades": [
-          "t7"
-        ],
-        "cenarios": {
-          "conservador": 10,
-          "esperado": 20,
-          "otimista": 30
-        }
-      },
-      "fatos": [
-        "coorte.t7.horas_piso.mediana",
-        "coorte.t7.horas_teto.mediana",
-        "coorte.t7.casos",
-        "coorte.t7.pct_casos"
-      ],
-      "requisitos": [
-        "R-P06-13",
-        "R-P06-05",
-        "R-P06-19"
-      ],
-      "benchmark": [
-        "B-transversal-09",
-        "B-transversal-10",
-        "B-transversal-08"
-      ],
-      "hipotese": true,
-      "justificativa_parametro": "Relatar e votar custa 9,1 h por caso nativo em média (mediana de 7,0 a 18,4 h por ocorrência, 16 a 20 laudas no piloto), sobretudo o relatório descritivo. Conta (hipótese a calibrar com os gabinetes): relatório descritivo ≈ 40% das horas; análise e voto (enfrentar defesa e razões finais, dosimetria) ≈ 45%; deliberação ≈ 15%. A minuta do relatório economiza 60% da primeira parte (24%); a busca de deliberações anteriores, cerca de 10% da análise (4,5%); a minuta da deliberação, 40% da terceira (6%); a revisão (conferir cada fato e data do relatório contra os autos e toda citação) custa cerca de 10%. Líquido ≈ 24%, arredondado a 20% no esperado pela evidência de B-transversal-09 (fidelidade igual à humana, mas só 11,8% das minutas prontas sem ajuste). Conservador 10%; otimista 30%. A ferramenta já existe, o que reduz o risco de implantação, mas não o de qualidade. B-transversal-08 (triagem de 44 minutos para segundos) é teto de tarefa de classificação, não de redação; não é transferido. Não se conta ganho de espera: a fila de pauta é tratada por M-P06-03 e M-P06-10.",
-      "riscos": "Relatório com fato errado ou omissão da defesa compromete a motivação (R-P06-13) e abre recurso ou anulação; precedente inventado no voto; pressão de prazo (fase 2) pode reduzir a revisão. A ferramenta foi feita para o gabinete que a usa hoje; outros gabinetes precisam aderir.",
-      "dependencias": "Ferramenta de minuta de relatório a partir dos autos do SEI (Relator de Voto), em uso; base de normas e deliberações (Especialista) atualizada com as deliberações de fiscalização; acesso ao texto das peças do SEI; adesão dos gabinetes do Conselho-Diretor; norma interna sobre uso de IA e registro no processo; contratação contínua do modelo de linguagem.",
-      "controle_humano": "O assessor do gabinete confere 100% dos fatos, datas e números do relatório contra os autos e confirma que a defesa e as razões finais estão descritas; a verificação automática de citação roda em 100% das minutas e o assessor confere toda citação não confirmada; o conselheiro relator decide o voto, a dosimetria e assina; a cada trimestre, 5 relatórios assistidos são comparados por servidor de outro gabinete com lista de critérios (fidelidade, concisão, defesa enfrentada, citações)."
-    },
-    {
-      "id": "M-P06-16",
-      "fase": 3,
-      "titulo": "Extração das determinações da deliberação e acompanhamento assistido das comprovações",
-      "descricao": "Publicada a deliberação, a IA extrai as determinações, os destinatários e os prazos e preenche os ofícios de comunicação (modelos da fase 2) e o quadro de cumprimento do processo. Quando a concessionária ou um órgão oficiado envia comprovação, a IA lê o documento e marca no quadro qual determinação ele atende e o que falta, para a câmara técnica validar. O quadro alimenta o alerta de comprovação atrasada.",
-      "atividades": [
-        "t8",
-        "t9"
-      ],
-      "efeito": {
-        "tipo": "reduz_horas_pct",
-        "atividades": [
-          "t8",
-          "t9"
-        ],
-        "cenarios": {
-          "conservador": 5,
-          "esperado": 15,
-          "otimista": 25
-        }
-      },
-      "fatos": [
-        "coorte.t8.horas_piso.mediana",
-        "coorte.t8.horas_teto.mediana",
-        "coorte.t9.horas_piso.mediana",
-        "coorte.t9.horas_teto.mediana",
-        "coorte.t9.casos_com_laco",
-        "coorte.t8.perda.prazo_concedido"
-      ],
-      "requisitos": [
-        "R-P06-12",
-        "R-P06-17"
-      ],
-      "benchmark": [
-        "B-transversal-12",
-        "B-transversal-13",
-        "B-fiscalizacao-14"
-      ],
-      "hipotese": true,
-      "justificativa_parametro": "Horas pequenas: t8 1,7 h e t9 1,2 h por caso nativo em média (mediana de 1,1 a 1,8 h e de 0,5 a 1,7 h por ocorrência); o registro se repete em 3 casos porque as comprovações voltam ao processo. Sobre as horas de t8 que sobram da fase 2 (M-P06-08 já reduziu a montagem dos ofícios) e as de t9: extrair as determinações e ler a comprovação são cerca de 30% do trabalho restante; a IA economiza metade (15%); a conferência pela Secretaria Executiva e pela câmara técnica custa cerca de 5%. Líquido ≈ 10% a 15%; esperado 15%, conservador 5%, otimista 25%. B-transversal-13 (conferência documental de dias para minutos) é teto otimista, não meta; B-transversal-12 dá a ordem de grandeza de IA de uso geral; B-fiscalizacao-14 sustenta o acompanhamento de planos de melhoria com alerta, sem parâmetro de horas.",
-      "riscos": "Determinação omitida na extração some do acompanhamento e o cumprimento deixa de ser cobrado; comprovação marcada como suficiente sem a validação técnica leva a encerramento indevido (R-P06-17).",
-      "dependencias": "Modelos de ofício da fase 2 (M-P06-08); quadro de cumprimento por processo no painel (M-P06-07); acesso ao texto da deliberação publicada e das comprovações no SEI; contratação de modelo de linguagem com proteção de dados; norma interna sobre uso de IA.",
-      "controle_humano": "A Secretaria Executiva confere 100% das determinações, destinatários e prazos extraídos contra o texto da deliberação antes de expedir os ofícios; a câmara técnica valida 100% das marcações de comprovação antes de qualquer registro de cumprimento ou proposta de encerramento; por amostra, 1 deliberação por mês tem a extração refeita por outro servidor."
+ "codigo": "P06",
+ "melhorias": [
+  {
+   "id": "M-P06-01",
+   "fase": 1,
+   "titulo": "Marco e dono para o parecer técnico consolidado, contado do vencimento do último prazo da concessionária",
+   "descricao": "Ao expedir o último ofício de encaminhamento de relatórios (t3), a Câmara de Saneamento mantém o processo aberto na própria unidade, com marcador de etapa \"Aguardando manifestação da concessionária\" e a data-limite do prazo concedido. Vencido o prazo (ou recebida a manifestação, se chegar antes, sem encurtar o prazo dado), o processo passa ao marcador \"Parecer técnico consolidado\" e a gerência da câmara tem prazo interno para juntá-lo (t4). O processo deixa de ficar sem nenhuma unidade com ele aberto nesse intervalo. A manifestação da concessionária que chega por processo relacionado é relacionada a este no mesmo dia.",
+   "atividades": [
+    "t4"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t4"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 45,
+     "esperado": 40,
+     "otimista": 35
     }
-  ]
+   },
+   "fatos": [
+    "critico.t4.1.espera_antes",
+    "critico.t4.1.espera_antes.SEM UNIDADE",
+    "coorte.t4.espera_antes.mediana",
+    "critico.posse.SEM UNIDADE",
+    "critico.indeterminado",
+    "critico.terceiros",
+    "critico.t4.1.horas_piso",
+    "critico.t4.1.horas_teto",
+    "coorte.transicao.t3.t4"
+   ],
+   "requisitos": [
+    "R-P06-04",
+    "R-P06-05",
+    "R-P06-06",
+    "R-P06-01"
+   ],
+   "benchmark": [
+    "B-transversal-02",
+    "B-transversal-01"
+   ],
+   "hipotese": false,
+   "justificativa_parametro": "Os tetos vêm da norma, não de desconto de benchmark. O piso protegido é o prazo mínimo do R-P06-05 (o prazo de manifestação concedido no último ofício decorre inteiro antes do parecer); como a espera confirmada de terceiro do caso é nula (critico.terceiros) e o tempo indeterminado do ofício até peça externa (critico.indeterminado) não se separa do processo parado, o simulador não protege essa parte sozinho, e por isso nenhum cenário fica abaixo do piso do R-P06-05. Conservador = limite do R-P06-06 (prazo de manifestação mais o prazo do parecer); esperado e otimista = piso do R-P06-05 mais dois terços e um terço do prazo do parecer do R-P06-06, respectivamente, porque a peça custa poucas horas (critico.t4.1.horas_piso, critico.t4.1.horas_teto) e o atraso observado é de fila sem dono (critico.t4.1.espera_antes.SEM UNIDADE), não de capacidade. B-transversal-02 sustenta tratar a espera sem marco entre etapas como a restrição; B-transversal-01 sustenta o atendimento por idade sem mais gente. Com um único caso, o efeito é ilustrativo e instável.",
+   "riscos": "Se a concessionária pedir dilação de prazo deferida, o marco tem de ser recontado a partir do novo vencimento, ou o prazo interno corta o contraditório. Manifestação juntada em processo relacionado e não relacionada a este faz o parecer sair sem considerá-la.",
+   "dependencias": "Ordem de serviço da gerência da Câmara de Saneamento fixando o prazo interno do parecer consolidado e o uso dos marcadores no SEI; regra de relacionamento dos processos em que a concessionária se manifesta.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-02",
+   "fase": 1,
+   "titulo": "Ciência do parecer técnico pela Secretaria Executiva em prazo-padrão, com o parecer anexo",
+   "descricao": "Juntado o parecer técnico consolidado (t4), a Secretaria Executiva dá ciência à concessionária (t5) dentro do prazo do R-P06-08, por ofício com o parecer anexo e prazo de manifestação expresso. A fila da Secretaria para comunicações de fiscalização é atendida por ordem de chegada, e o processo recebe o marcador da etapa com a data de entrada.",
+   "atividades": [
+    "t5"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t5"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 15,
+     "esperado": 10,
+     "otimista": 5
+    }
+   },
+   "fatos": [
+    "critico.t5.1.espera_antes",
+    "critico.t5.1.espera_antes.SCEXEC",
+    "critico.t5.1.horas_piso",
+    "critico.t5.1.horas_teto",
+    "critico.t5.1.execucao",
+    "critico.posse.SCEXEC"
+   ],
+   "requisitos": [
+    "R-P06-07",
+    "R-P06-08",
+    "R-P06-09",
+    "R-P06-10",
+    "R-P06-11"
+   ],
+   "benchmark": [
+    "B-transversal-01",
+    "B-transversal-02"
+   ],
+   "hipotese": false,
+   "justificativa_parametro": "Conservador = limite do R-P06-08 para a ciência do parecer; esperado e otimista = dois terços e um terço desse limite, porque a comunicação custa menos de uma hora (critico.t5.1.horas_piso, critico.t5.1.horas_teto) e a espera observada é inteira de fila na Secretaria (critico.t5.1.espera_antes.SCEXEC). O teto vale só para a espera antes da ciência: a execução da etapa (critico.t5.1.execucao), em que corre o prazo de manifestação da concessionária, não é tocada, e por isso o intervalo mínimo do R-P06-10 entre o parecer e a réplica continua respeitado. B-transversal-01 e B-transversal-02 sustentam a regra de fila e o marco entre etapas; o valor do teto vem da norma.",
+   "riscos": "A Secretaria atende outros processos e o prazo-padrão pode deslocar a fila de outros códigos. Ciência sem o parecer anexo repete o defeito apontado na avaliação e pode gerar pedido de nova ciência.",
+   "dependencias": "Ordem de serviço da Secretaria Executiva com prazo-padrão para comunicações de fiscalização; modelo de ofício de ciência com prazo de manifestação.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-03",
+   "fase": 1,
+   "titulo": "Prazo interno e fila por idade na Procuradoria para os pareceres de fiscalização",
+   "descricao": "Os processos de fiscalização remetidos à Procuradoria para parecer jurídico (t7) entram numa fila própria, atendida por ordem de antiguidade da remessa, com o prazo do R-P06-13 como prazo interno e a dilação registrada no processo quando usada. O processo tem marcador com a data de remessa. Quando a tese já tiver parecer anterior (legitimidade da fiscalização além dos indicadores), o parecer pode ser referenciado a ele. Diligência pedida pela Procuradoria é registrada e suspende o prazo interno.",
+   "atividades": [
+    "t7"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t7"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 43,
+     "esperado": 32,
+     "otimista": 21
+    }
+   },
+   "fatos": [
+    "critico.t7.1.espera_antes",
+    "critico.t7.1.espera_antes.PROC",
+    "critico.t7.1.espera_antes.SCEXEC",
+    "critico.posse.PROC",
+    "critico.t7.1.horas_piso",
+    "critico.t7.1.horas_teto",
+    "coorte.t7.espera_antes.mediana"
+   ],
+   "requisitos": [
+    "R-P06-13",
+    "R-P06-11",
+    "R-P06-12",
+    "R-P06-21"
+   ],
+   "benchmark": [
+    "B-transversal-01",
+    "B-transversal-19"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar com a Procuradoria: nenhum benchmark mede o efeito de um prazo interno nesta escala, e o valor vem da norma. O R-P06-13 conta em dias corridos e o simulador aplica o teto em dias úteis; a conversão usa cinco dias úteis por sete corridos. Otimista = o próprio prazo do R-P06-13 (prazo com dilação) convertido em dias úteis; esperado = uma vez e meia esse prazo; conservador = o dobro, como meta de transição enquanto a fila antiga é zerada. A espera observada (critico.t7.1.espera_antes.PROC) é de fila para uma peça de poucas horas (critico.t7.1.horas_piso, critico.t7.1.horas_teto). B-transversal-01 sustenta a regra de fila por idade sem mais gente, mas mede um ganho médio muito menor do que este teto; B-transversal-19 sustenta a meta de estoque antigo com acompanhamento central. É a melhoria de maior peso esperado e a que mais precisa de validação.",
+   "riscos": "Capacidade da Procuradoria: o prazo sem capacidade vira só pressão, pode deslocar a fila de outros processos ou baixar a qualidade do parecer. Parecer referenciado a outro sobre a mesma tese exige que o anterior esteja nos autos ou acessível (R-P06-21).",
+   "dependencias": "Acordo da Procuradoria sobre o prazo interno e a fila por antiguidade, por ato da Presidência; marcador de remessa e controle de prazo no SEI; base de pareceres anteriores por tese.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-04",
+   "fase": 1,
+   "titulo": "Encaminhamento dos relatórios à concessionária logo após a assinatura, em lote com data fixa",
+   "descricao": "A Câmara de Saneamento encaminha os relatórios assinados (t3) em lote com data fixa curta depois da última assinatura, com os relatórios anexos ao e-mail (ou lista com acesso externo), prazo único com marco inicial e data-limite escrita. Relatório com achado urgente sai no mesmo dia. O processo fica aberto na câmara durante as rodadas de vistoria, para não aparecer sem unidade.",
+   "atividades": [
+    "t3"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t3"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 10,
+     "esperado": 5,
+     "otimista": 2
+    }
+   },
+   "fatos": [
+    "coorte.t3.espera_antes.mediana",
+    "critico.t3.5.espera_antes",
+    "critico.t3.7.espera_antes",
+    "critico.t3.2.espera_antes.SEM UNIDADE",
+    "critico.t3.1.horas_piso",
+    "critico.t3.1.horas_teto",
+    "coorte.t3.casos_com_laco"
+   ],
+   "requisitos": [
+    "R-P06-02",
+    "R-P06-03",
+    "R-P06-04"
+   ],
+   "benchmark": [],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar com a câmara: sem benchmark que meça este passo. Conservador = duas semanas úteis, o que já corta só as duas esperas mais longas (critico.t3.5.espera_antes, critico.t3.7.espera_antes); esperado = uma semana útil (lote semanal); otimista = dois dias úteis (encaminhamento quase imediato). O encaminhamento custa menos de uma hora por ofício (critico.t3.1.horas_piso, critico.t3.1.horas_teto). O prazo dado à concessionária não muda (R-P06-04); só a espera da agência antes do ofício.",
+   "riscos": "Lote com data fixa pode reter relatório com achado urgente (previsto envio imediato). Não resolve sozinho o R-P06-03, que depende também do tempo entre a vistoria e a última assinatura do primeiro lote.",
+   "dependencias": "Modelo único de ofício de encaminhamento aprovado pela gerência da câmara.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-05",
+   "fase": 2,
+   "titulo": "Painel de marcos com alerta no vencimento do prazo da concessionária e do parecer técnico",
+   "descricao": "Painel alimentado pelo andamento do SEI mostra, por processo de fiscalização, o último ato, a próxima etapa, a unidade responsável e há quantos dias úteis o processo está parado, inclusive quando nenhuma unidade o tem aberto. Para o parecer consolidado (t4), o painel calcula a data-limite do último ofício de encaminhamento e avisa a gerência da câmara no dia seguinte ao vencimento, e de novo antes de vencer o prazo do R-P06-06.",
+   "atividades": [
+    "t4"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t4"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 40,
+     "esperado": 35,
+     "otimista": 30
+    }
+   },
+   "fatos": [
+    "critico.t4.1.espera_antes.SEM UNIDADE",
+    "critico.posse.SEM UNIDADE",
+    "critico.indeterminado",
+    "coorte.caso.espera_entre_atividades.mediana"
+   ],
+   "requisitos": [
+    "R-P06-05",
+    "R-P06-06"
+   ],
+   "benchmark": [
+    "B-transversal-14",
+    "B-transversal-15",
+    "B-fiscalizacao-14"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Contagem dupla tratada: a fase 1 já limitou a espera antes do parecer (M-P06-01); este painel só soma porque baixa o teto em um terço do prazo do parecer do R-P06-06 em cada cenário, pela nova capacidade de ver o vencimento do prazo da concessionária no dia em que ocorre. O otimista fica exatamente no piso do R-P06-05 (prazo de manifestação protegido), e nenhum cenário corta abaixo dele. Valores são hipótese a calibrar: B-transversal-14 e B-transversal-15 sustentam o limiar por atividade e o uso do log do SEI para alertas, e B-fiscalizacao-14 mostra alertas automáticos elevando a conformidade em regulador brasileiro, mas nenhum mede este teto.",
+   "riscos": "Painel sem dono vira relatório que ninguém lê; com um único caso, os limiares precisam ser recalibrados com os demais processos de fiscalização da câmara. Sobrestamento legítimo precisa de marcação para não gerar alerta falso.",
+   "dependencias": "Extração periódica do andamento do SEI, inclusive de quem tem o processo aberto (já feita neste mapeamento); leitura do prazo concedido em cada ofício; limiares aprovados pela gerência da câmara.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-06",
+   "fase": 2,
+   "titulo": "Ofício de lote gerado por modelo a partir dos relatórios assinados ainda não encaminhados",
+   "descricao": "Uma rotina sobre o SEI lista os relatórios de fiscalização assinados e ainda não encaminhados e gera o ofício de lote (t3) no modelo da câmara, com a lista dos relatórios, o prazo único, o marco inicial e a data-limite preenchidos, e o e-mail de transmissão com os relatórios anexos. O gerente revisa e assina. A data-limite alimenta o painel (M-P06-05).",
+   "atividades": [
+    "t3"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t3"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 3,
+     "otimista": 1
+    }
+   },
+   "fatos": [
+    "coorte.t3.espera_antes.mediana",
+    "critico.t3.5.espera_antes",
+    "critico.t3.7.espera_antes",
+    "coorte.caso.oficios.mediana",
+    "critico.t3.1.horas_piso"
+   ],
+   "requisitos": [
+    "R-P06-02",
+    "R-P06-03",
+    "R-P06-04"
+   ],
+   "benchmark": [
+    "B-transversal-06",
+    "B-transversal-05"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Contagem dupla tratada: a fase 1 já limitou a espera antes do encaminhamento (M-P06-04); este passo só soma porque o ofício pronto baixa o teto em cada cenário (conservador passa ao esperado da fase 1, esperado a três dias úteis, otimista a um dia útil). Hipótese a calibrar: B-transversal-06 dá a ordem de grandeza do ganho de automatizar a conferência documental em órgão público brasileiro e B-transversal-05 sustenta o ofício-modelo que destaca prazo e consequência, mas nenhum mede este teto. O prazo concedido à concessionária não muda (R-P06-04).",
+   "riscos": "Relatório assinado fora do padrão de nome não entra na lista; ofício com prazo errado contamina o marco do painel.",
+   "dependencias": "Acesso de leitura ao SEI (relatório ou API) para listar documentos assinados por tipo; modelo de ofício aprovado.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-07",
+   "fase": 2,
+   "titulo": "Ofício de ciência gerado ao juntar o parecer técnico, com alerta à Secretaria",
+   "descricao": "Ao juntar o parecer técnico consolidado (t4), a rotina gera o ofício de ciência (t5) com o parecer anexo e o prazo de manifestação preenchido, e o coloca na fila da Secretaria Executiva; o painel avisa a Secretaria se a ciência não sair em poucos dias.",
+   "atividades": [
+    "t5"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t5"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 10,
+     "esperado": 5,
+     "otimista": 3
+    }
+   },
+   "fatos": [
+    "critico.t5.1.espera_antes.SCEXEC",
+    "critico.t5.1.horas_piso",
+    "critico.t5.1.horas_teto"
+   ],
+   "requisitos": [
+    "R-P06-08",
+    "R-P06-09",
+    "R-P06-07"
+   ],
+   "benchmark": [
+    "B-transversal-06",
+    "B-transversal-14"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Contagem dupla tratada: a fase 1 já limitou a espera antes da ciência (M-P06-02); este passo só soma porque o ofício pronto e o alerta baixam o teto em cada cenário (conservador passa ao esperado da fase 1; esperado e otimista à metade e a pouco mais de metade dos valores da fase 1). Hipótese a calibrar: B-transversal-06 (automação documental) e B-transversal-14 (limiar por atividade com alerta) sustentam o mecanismo, não o valor. O prazo de manifestação da concessionária, que corre na execução da etapa, não é tocado.",
+   "riscos": "Gerar o ofício não garante a assinatura; sem alerta com destinatário, o ganho não aparece.",
+   "dependencias": "Gatilho no SEI pela juntada do parecer técnico; modelo de ofício de ciência; painel (M-P06-05).",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-08",
+   "fase": 2,
+   "titulo": "Alerta de vencimento do prazo do parecer jurídico à chefia da Procuradoria",
+   "descricao": "O painel conta o prazo do R-P06-13 a partir da remessa à Procuradoria, mostra a fila de pareceres de fiscalização por idade e alerta a chefia da Procuradoria antes do vencimento do prazo simples e do prazo com dilação, e a Presidência quando o prazo com dilação vence sem parecer.",
+   "atividades": [
+    "t7"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t7"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 32,
+     "esperado": 21,
+     "otimista": 11
+    }
+   },
+   "fatos": [
+    "critico.t7.1.espera_antes.PROC",
+    "critico.posse.PROC",
+    "critico.t7.1.horas_piso"
+   ],
+   "requisitos": [
+    "R-P06-13"
+   ],
+   "benchmark": [
+    "B-transversal-18",
+    "B-transversal-14"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Contagem dupla tratada: a fase 1 já limitou a espera antes do parecer jurídico (M-P06-03); o alerta só soma porque baixa o teto em um passo em cada cenário: conservador passa ao esperado da fase 1, esperado ao prazo com dilação do R-P06-13 convertido em dias úteis (cinco úteis por sete corridos) e otimista ao prazo simples do R-P06-13 (metade do prazo com dilação) convertido da mesma forma. B-transversal-18 mostra que prazo-alvo com acompanhamento concentra as decisões perto do vencimento, o que justifica pôr o esperado no próprio prazo e não antes dele; B-transversal-14 sustenta o limiar por atividade. Hipótese a calibrar com a Procuradoria.",
+   "riscos": "Prazo-alvo concentra decisões na véspera e pode baixar a qualidade (B-transversal-18): acompanhar indicador de qualidade ao lado. Sem capacidade, o alerta vira pressão sem efeito.",
+   "dependencias": "Prazo interno da fase 1 (M-P06-03) aprovado; painel (M-P06-05); destinatários definidos pela Presidência.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-09",
+   "fase": 2,
+   "titulo": "Relatório de fiscalização com campos estruturados por tipo de unidade e matriz de não conformidades",
+   "descricao": "O relatório de fiscalização (t2) passa a ter modelo por tipo de unidade (elevatória de água, de esgoto, estação de tratamento) com checklist em colunas legíveis, data da vistoria como campo obrigatório e cada não conformidade, recomendação ou exigência como item estruturado com prazo. Os itens alimentam uma matriz unidade × não conformidade × resposta × evidência, de onde saem o parecer consolidado (t4), a réplica (t6) e as providências do ofício final (t8).",
+   "atividades": [
+    "t2",
+    "t4",
+    "t6",
+    "t8"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t2",
+     "t4",
+     "t6",
+     "t8"
+    ],
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 10,
+     "otimista": 15
+    }
+   },
+   "fatos": [
+    "critico.t2.1.horas_piso",
+    "critico.t2.1.horas_teto",
+    "coorte.t2.horas_piso.mediana",
+    "critico.t4.1.horas_piso",
+    "critico.t6.1.horas_piso",
+    "critico.horas_piso",
+    "critico.horas_teto"
+   ],
+   "requisitos": [
+    "R-P06-19",
+    "R-P06-01",
+    "R-P06-21"
+   ],
+   "benchmark": [
+    "B-fiscalizacao-12",
+    "B-transversal-06"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar com os especialistas da câmara (horas são hipótese mesmo com benchmark). Conta: parte das horas do relatório é texto de modelo repetido e conferência manual (avaliação AS-IS, desperdício de talento não aproveitado); o modelo estruturado elimina parte da redação de modelo e a montagem da consolidação, menos o tempo de preencher os campos novos. Líquido estimado: conservador 5%, esperado 10%, otimista 15% das horas das etapas citadas. B-fiscalizacao-12 sustenta padronizar o relatório com critérios explícitos; B-transversal-06 dá a ordem de grandeza da automação documental, como teto, não como meta. Não reduz espera.",
+   "riscos": "Campo estruturado mal desenhado empurra o especialista de volta ao texto livre; manter a matriz exige um responsável na câmara.",
+   "dependencias": "Modelo de relatório aprovado pela gerência da câmara; planilha ou formulário da matriz vinculada ao processo no SEI; acesso às manifestações da concessionária em processos relacionados.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-10",
+   "fase": 3,
+   "titulo": "Minuta assistida do relatório de fiscalização e conferência de consistência",
+   "descricao": "A partir do checklist estruturado (M-P06-09), das fotos legendadas e da ficha cadastral da unidade, a IA monta a minuta do relatório (t2) no modelo da câmara, recupera as recomendações da vistoria anterior da mesma unidade, confere texto × checklist × cabeçalho × datas × número do processo e aponta trechos de modelo que não se aplicam (município, bloco ou concessionária errados). O especialista revisa e assina; o engenheiro revisor e o gerente aprovam.",
+   "atividades": [
+    "t2"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t2"
+    ],
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 10,
+     "otimista": 20
+    }
+   },
+   "fatos": [
+    "critico.t2.1.horas_piso",
+    "critico.t2.1.horas_teto",
+    "coorte.t2.horas_piso.mediana",
+    "coorte.t2.casos_com_laco"
+   ],
+   "requisitos": [
+    "R-P06-19",
+    "R-P06-18"
+   ],
+   "benchmark": [
+    "B-transversal-09",
+    "B-transversal-12",
+    "B-transversal-13"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar com os especialistas. Aplica-se sobre as horas que restam depois da fase 2. Conta líquida: a redação da parte narrativa e a conferência de consistência caem, mas toda minuta é revista (B-transversal-09: só uma pequena fração das minutas saiu pronta sem ajuste, por isso a revisão integral é descontada); o líquido estimado é conservador 5%, esperado 10%, otimista 20%. B-transversal-12 (IA de uso geral, ganho modesto por servidor) dá a ordem de grandeza do conservador; B-transversal-13 (regulador conferindo documentos com IA) é teto otimista de outro contexto, não meta. A vistoria e a constatação não mudam; não reduz espera.",
+   "riscos": "Minuta genérica reforça a cópia de modelo que a avaliação apontou; leitura errada de foto ou de checklist entra no relatório como fato. A responsabilidade técnica continua com o especialista.",
+   "dependencias": "Checklist estruturado da fase 2 (M-P06-09); banco de fotos e ficha cadastral por unidade; serviço de modelo de linguagem contratado com cláusula de não uso dos dados para treino e tratamento compatível com a LGPD; registro no processo de que a minuta foi assistida.",
+   "controle_humano": "Toda saída de IA é minuta: ninguém assina sem conferir. O especialista que fez a vistoria confere 100% das constatações, dados extraídos e datas da minuta contra o checklist e as fotos antes de assinar; o engenheiro revisor confere 100% dos apontamentos de inconsistência; o gerente da câmara confere recomendação × exigência e prazo em 100% dos relatórios; por amostra, 2 relatórios por mês são refeitos às cegas por um segundo especialista, com registro das correções."
+  },
+  {
+   "id": "M-P06-11",
+   "fase": 3,
+   "titulo": "Extração das respostas da concessionária para a matriz e minuta do parecer técnico consolidado",
+   "descricao": "A IA lê as manifestações da concessionária (inclusive as juntadas em processos relacionados) e registra na matriz de não conformidades (M-P06-09) a resposta e a evidência de cada item por unidade, com a página de origem; gera a minuta do parecer consolidado (t4) dizendo o que foi e o que não foi atendido em cada unidade, com prazo e próxima providência. A gerência da câmara revisa e assina.",
+   "atividades": [
+    "t4"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t4"
+    ],
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 15,
+     "otimista": 25
+    }
+   },
+   "fatos": [
+    "critico.t4.1.horas_piso",
+    "critico.t4.1.horas_teto",
+    "critico.indeterminado"
+   ],
+   "requisitos": [
+    "R-P06-01",
+    "R-P06-21",
+    "R-P06-05"
+   ],
+   "benchmark": [
+    "B-transversal-11",
+    "B-transversal-13",
+    "B-transversal-09"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar. Sobre as horas restantes depois da fase 2: a leitura e transcrição das respostas por item é a maior parte do parecer; a extração reduz essa parte, menos a conferência de cada item contra a página de origem. Líquido estimado: conservador 5%, esperado 15%, otimista 25%. B-transversal-11 dá o critério de aceite (concordância IA × revisor comparada à concordância entre dois revisores); B-transversal-13 é teto otimista de outro regulador; B-transversal-09 obriga a revisão de toda minuta. Não muda o prazo de manifestação protegido (R-P06-05) nem a espera.",
+   "riscos": "Resposta classificada como atendida sem evidência leva o parecer a dar por cumprida uma pendência; manifestação em processo não relacionado fica fora da extração.",
+   "dependencias": "Matriz da fase 2 (M-P06-09); acesso às peças dos processos relacionados; serviço de modelo de linguagem contratado nas mesmas condições de M-P06-10.",
+   "controle_humano": "Toda saída de IA é minuta: ninguém assina sem conferir. O especialista responsável confere 100% dos itens da matriz marcados como atendidos contra a evidência e a página de origem, e 100% dos números e datas da minuta; o gerente da câmara confere a conclusão por unidade em 100% dos pareceres; a cada trimestre, 1 parecer é refeito às cegas por outro especialista e a concordância é registrada."
+  },
+  {
+   "id": "M-P06-12",
+   "fase": 3,
+   "titulo": "Dossiê e estrutura de minuta para o parecer jurídico, com citação verificada",
+   "descricao": "Na remessa à Procuradoria (t7), a IA gera o dossiê: linha do tempo do processo, argumentos da concessionária, não conformidades sem resposta por unidade (da matriz) e pareceres anteriores sobre a mesma tese, com estrutura de minuta. Toda citação de norma, cláusula contratual, deliberação ou parecer passa por verificação automática contra a base de normas e deliberações antes de chegar ao procurador. O procurador redige, revisa e assina.",
+   "atividades": [
+    "t7"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t7"
+    ],
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 15,
+     "otimista": 25
+    }
+   },
+   "fatos": [
+    "critico.t7.1.horas_piso",
+    "critico.t7.1.horas_teto"
+   ],
+   "requisitos": [
+    "R-P06-21",
+    "R-P06-13"
+   ],
+   "benchmark": [
+    "B-transversal-09",
+    "B-transversal-08"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar com a Procuradoria. Parte das horas do parecer é leitura e resumo do processo, que o parecer AS-IS refaz (avaliação: superprocessamento); o dossiê reduz essa parte, menos a conferência das citações e da linha do tempo. Líquido estimado: conservador 5%, esperado 15%, otimista 25%. B-transversal-08 dá a ordem de grandeza da triagem documental com revisão humana (não é meta); B-transversal-09 obriga revisão de toda minuta. Não reduz a fila da Procuradoria (o lead cai com as fases 1 e 2, não com esta).",
+   "riscos": "Citação inexistente ou revogada abre nulidade; o dossiê não substitui a leitura do procurador; resumo inadequado pode induzir a conclusão.",
+   "dependencias": "Base de normas e deliberações (Especialista) e base de pareceres anteriores por tese; matriz da fase 2; acordo da Procuradoria sobre o uso de IA, com registro nos autos.",
+   "controle_humano": "Toda saída de IA é minuta: ninguém assina sem conferir. O procurador confere 100% das citações (a verificação automática contra a base é pré-requisito e não substitui a conferência) e 100% das datas da linha do tempo contra os autos; a chefia da Procuradoria revê a conclusão em 100% dos pareceres de fiscalização no primeiro semestre e depois em amostra de 1 por mês."
+  },
+  {
+   "id": "M-P06-13",
+   "fase": 3,
+   "titulo": "Triagem dos argumentos novos da manifestação e minuta da réplica técnica",
+   "descricao": "A IA separa os argumentos da manifestação da concessionária já respondidos no parecer técnico dos argumentos novos, sugere a resposta só para os novos e confere se as cláusulas contratuais e os artigos citados dizem o que se afirma. O especialista revisa e assina a réplica (t6).",
+   "atividades": [
+    "t6"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t6"
+    ],
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 15,
+     "otimista": 25
+    }
+   },
+   "fatos": [
+    "critico.t6.1.horas_piso",
+    "critico.t6.1.horas_teto",
+    "critico.t6.1.espera_antes"
+   ],
+   "requisitos": [
+    "R-P06-21",
+    "R-P06-10"
+   ],
+   "benchmark": [
+    "B-transversal-11",
+    "B-transversal-09"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar. A réplica AS-IS reproduz em grande parte o parecer anterior (avaliação: superprocessamento); a triagem evita repetir o que já foi respondido, menos a revisão integral da minuta. Líquido estimado: conservador 5%, esperado 15%, otimista 25%. B-transversal-11 dá o critério de aceite da classificação (concordância com o revisor comparada à concordância entre revisores); B-transversal-09 obriga revisão de toda minuta. Não toca a espera antes da réplica, que contém o prazo mínimo do R-P06-10.",
+   "riscos": "Argumento novo classificado como já respondido fica sem resposta e fragiliza a motivação (R-P06-21).",
+   "dependencias": "Matriz da fase 2 (M-P06-09); serviço de modelo de linguagem contratado nas mesmas condições de M-P06-10.",
+   "controle_humano": "Toda saída de IA é minuta: ninguém assina sem conferir. O especialista confere 100% da classificação novo × já respondido contra a manifestação e 100% das cláusulas e artigos citados contra o contrato e a base de normas; o gerente da câmara aprova 100% das réplicas."
+  }
+ ]
 }

@@ -1,1452 +1,216 @@
 {
  "A_trilha": {
-  "processos_com_posse": 250,
+  "processos_com_posse": 1,
   "posse_com_lacuna_ou_sobreposicao": 0,
-  "docs_cruzados_sei2_relator": 12306,
+  "docs_cruzados_sei2_relator": 75,
   "unidade_diverge": 0,
-  "tipo_diverge": 1,
+  "tipo_diverge": 0,
   "data_diverge": 0,
-  "docs_fora_da_estadia_pct": 4.7
+  "docs_fora_da_estadia_pct": 63.9
  },
  "B_fichas": {
-  "fichas_com_texto": 3183,
-  "numeros_citados": 9722,
-  "numeros_sem_ancora": 30,
-  "pct_sem_ancora": 0.3,
+  "fichas_com_texto": 60,
+  "numeros_citados": 102,
+  "numeros_sem_ancora": 0,
+  "pct_sem_ancora": 0.0,
   "por_campo": {
-   "insumos": {
-    "citados": 7742,
-    "sem_ancora": 7
-   },
-   "calculos": {
-    "citados": 209,
-    "sem_ancora": 2
-   },
-   "fontes_externas": {
-    "citados": 282,
-    "sem_ancora": 7
-   },
-   "sinais_perda": {
-    "citados": 303,
+   "entregavel": {
+    "citados": 54,
     "sem_ancora": 0
    },
-   "encaminha_para": {
-    "citados": 308,
+   "insumos": {
+    "citados": 36,
+    "sem_ancora": 0
+   },
+   "calculos": {
+    "citados": 4,
+    "sem_ancora": 0
+   },
+   "fontes_externas": {
+    "citados": 2,
     "sem_ancora": 0
    },
    "testes_auditoria": {
-    "citados": 136,
+    "citados": 3,
     "sem_ancora": 0
    },
    "tarefa": {
-    "citados": 74,
-    "sem_ancora": 3
+    "citados": 1,
+    "sem_ancora": 0
    },
-   "entregavel": {
-    "citados": 668,
-    "sem_ancora": 11
+   "sinais_perda": {
+    "citados": 2,
+    "sem_ancora": 0
    }
   },
-  "exemplos": [
-   {
-    "ref": "E-12/003.117/2017:83189809",
-    "campo": "tarefa",
-    "numero": "4759",
-    "contexto": "Publicar deliberação nº 4759/21 no processo SEI"
-   },
-   {
-    "ref": "E-12/003.117/2017:83189809",
-    "campo": "entregavel",
-    "numero": "4759",
-    "contexto": "Documento SEI 83189809 de publicação da Deliberação 4759/21 (conteúdo não legível na extração do texto)"
-   },
-   {
-    "ref": "E-12/003.117/2017:83189809",
-    "campo": "entregavel",
-    "numero": "83189809",
-    "contexto": "Documento SEI 83189809 de publicação da Deliberação 4759/21 (conteúdo não legível na extração do texto)"
-   },
-   {
-    "ref": "E-12/003.117/2017:93103549",
-    "campo": "insumos",
-    "numero": "2021",
-    "contexto": "{\"tipo\": \"documento_do_processo\", \"descricao\": \"Deliberação AGENERSA nº 4759/2021\", \"evidencia\": \"Publicação _9_9_2024 DELIBERAÇÃO 4759_21\", \"ancorado\": true} | {\"tipo\": \"documento_do_processo\", \"desc"
-   },
-   {
-    "ref": "SEI-220007/000002/2023:36578768",
-    "campo": "entregavel",
-    "numero": "36578768",
-    "contexto": "Documento SEI 36578768 contendo apenas o desenho técnico de layout de instalação do container (fabricante STEMAC), sem análise ou manifestação do autor"
-   },
-   {
-    "ref": "SEI-220007/000002/2023:36671862",
-    "campo": "entregavel",
-    "numero": "860.630,45",
-    "contexto": "Resumo orçamentário dos 12 grupos geradores do Núcleo de Saquarema, com total de R$ 860.630,45"
-   },
-   {
-    "ref": "SEI-220007/000256/2022:42779347",
-    "campo": "fontes_externas",
-    "numero": "1966",
-    "contexto": "Lei nº 14.134/2021 | Código de Processo Civil (Lei nº 13.105/2015) | Código Tributário Nacional (Lei nº 5.172/1966)"
-   },
-   {
-    "ref": "SEI-220007/000256/2022:42779347",
-    "campo": "fontes_externas",
-    "numero": "5.172",
-    "contexto": "Lei nº 14.134/2021 | Código de Processo Civil (Lei nº 13.105/2015) | Código Tributário Nacional (Lei nº 5.172/1966)"
-   },
-   {
-    "ref": "SEI-220007/000256/2022:42779347",
-    "campo": "fontes_externas",
-    "numero": "2015",
-    "contexto": "Lei nº 14.134/2021 | Código de Processo Civil (Lei nº 13.105/2015) | Código Tributário Nacional (Lei nº 5.172/1966)"
-   },
-   {
-    "ref": "SEI-220007/000256/2022:42779347",
-    "campo": "fontes_externas",
-    "numero": "13.105",
-    "contexto": "Lei nº 14.134/2021 | Código de Processo Civil (Lei nº 13.105/2015) | Código Tributário Nacional (Lei nº 5.172/1966)"
-   },
-   {
-    "ref": "SEI-220007/000256/2022:45580835",
-    "campo": "insumos",
-    "numero": "2003",
-    "contexto": "{\"tipo\": \"documento_do_processo\", \"descricao\": \"Embargos de Declaração opostos pela CEG RIO\", \"evidencia\": \"Contra essa Deliberação a CEG RIO opôs Embargos de Declaração (Doc. SEI nº 42779347)\", \"anco"
-   },
-   {
-    "ref": "SEI-220007/000443/2022:118883631",
-    "campo": "entregavel",
-    "numero": "4968",
-    "contexto": "Publicação no Diário Oficial do Estado do RJ das Deliberações AGENERSA nºs 4968 a 4974, incluindo a Deliberação 4973 (Rainha da Sucata)"
-   },
-   {
-    "ref": "SEI-220007/001831/2021:64352063",
-    "campo": "insumos",
-    "numero": "1997",
-    "contexto": "{\"tipo\": \"documento_do_processo\", \"descricao\": \"Relatório de Fiscalização da CAENE\", \"evidencia\": \"a CAENE emitiu o Relatório de Fiscalização P-009/21 (doc. SEI 19202020)\", \"ancorado\": true} | {\"tipo\""
-   },
-   {
-    "ref": "SEI-220007/003478/2023:85405200",
-    "campo": "insumos",
-    "numero": "2005",
-    "contexto": "{\"tipo\": \"norma_ou_contrato\", \"descricao\": \"Decreto Estadual nº 38.618/2005\", \"evidencia\": \"artigo 61 do Decreto Estadual n° 38.618 de 08.12.2005\", \"ancorado\": true} | {\"tipo\": \"norma_ou_contrato\", \"d"
-   },
-   {
-    "ref": "SEI-220007/004205/2022:44973012",
-    "campo": "fontes_externas",
-    "numero": "1988",
-    "contexto": "Constituição Federal de 1988, Art. 5º, XXXV"
-   },
-   {
-    "ref": "SEI-220007/004513/2023:92834514",
-    "campo": "calculos",
-    "numero": "90.041.000,00",
-    "contexto": "Cálculo da conversão de investimentos realizados para a data-base de dez/2016 (R$ 82.701.000,00) | Cálculo do percentual e valor de descumprimento do Plano de Metas (52,12% / R$ 90.041.000,00)"
-   },
-   {
-    "ref": "SEI-480002/000528/2023:74525724",
-    "campo": "fontes_externas",
-    "numero": "1988",
-    "contexto": "Constituição da República de 1988"
-   },
-   {
-    "ref": "SEI-480002/000528/2023:110663598",
-    "campo": "insumos",
-    "numero": "1995",
-    "contexto": "{\"tipo\": \"documento_do_processo\", \"descricao\": \"Embargos de Declaração opostos por CEG e CEG Rio\", \"evidencia\": \"remetidos a esta Procuradoria, para análise e manifestação acerca do pedido de efeito s"
-   },
-   {
-    "ref": "SEI-480002/001913/2024:82949345",
-    "campo": "calculos",
-    "numero": "107,19",
-    "contexto": "Cálculo do Índice de Reajuste Contratual (IRC) resultando em 107,19% | Cálculo do percentual final de reajuste tarifário em 8,62%"
-   },
-   {
-    "ref": "SEI-480002/001914/2024:86612736",
-    "campo": "insumos",
-    "numero": "2007",
-    "contexto": "{\"tipo\": \"norma_ou_contrato\", \"descricao\": \"Contrato de Concessão nº 034/2021 e 1º Termo Aditivo\", \"evidencia\": \"subcláusulas 29.12 e 29.15 do contrato de concessão nº 034/2021\", \"ancorado\": true} | {"
-   },
-   {
-    "ref": "SEI-480002/003046/2024:93007758",
-    "campo": "tarefa",
-    "numero": "2025",
-    "contexto": "publicar deliberação AGENERSA nº 4.854/2025"
-   },
-   {
-    "ref": "SEI-480002/003046/2024:93007758",
-    "campo": "tarefa",
-    "numero": "4.854",
-    "contexto": "publicar deliberação AGENERSA nº 4.854/2025"
-   },
-   {
-    "ref": "SEI-480002/003046/2024:93007758",
-    "campo": "entregavel",
-    "numero": "4.854",
-    "contexto": "Publicação da Deliberação AGENERSA nº 4.854/2025 no processo SEI-480002/003046/2024; o texto extraído está ilegível (codificação de fonte), então o conteúdo não pôde ser verificado"
-   },
-   {
-    "ref": "SEI-480002/003046/2024:93007758",
-    "campo": "entregavel",
-    "numero": "480002",
-    "contexto": "Publicação da Deliberação AGENERSA nº 4.854/2025 no processo SEI-480002/003046/2024; o texto extraído está ilegível (codificação de fonte), então o conteúdo não pôde ser verificado"
-   },
-   {
-    "ref": "SEI-480002/003046/2024:93007758",
-    "campo": "entregavel",
-    "numero": "2025",
-    "contexto": "Publicação da Deliberação AGENERSA nº 4.854/2025 no processo SEI-480002/003046/2024; o texto extraído está ilegível (codificação de fonte), então o conteúdo não pôde ser verificado"
-   },
-   {
-    "ref": "SEI-480002/003046/2024:93007758",
-    "campo": "entregavel",
-    "numero": "003046",
-    "contexto": "Publicação da Deliberação AGENERSA nº 4.854/2025 no processo SEI-480002/003046/2024; o texto extraído está ilegível (codificação de fonte), então o conteúdo não pôde ser verificado"
-   },
-   {
-    "ref": "SEI-480002/003046/2024:93007758",
-    "campo": "entregavel",
-    "numero": "2024",
-    "contexto": "Publicação da Deliberação AGENERSA nº 4.854/2025 no processo SEI-480002/003046/2024; o texto extraído está ilegível (codificação de fonte), então o conteúdo não pôde ser verificado"
-   },
-   {
-    "ref": "SEI-480002/003046/2024:128577481",
-    "campo": "entregavel",
-    "numero": "4.854",
-    "contexto": "Voto nº 20/2026/CONS-02 propondo conhecer e negar provimento ao recurso administrativo contra a Deliberação 4.854/2025"
-   },
-   {
-    "ref": "SEI-480002/003692/2024:99670653",
-    "campo": "insumos",
-    "numero": "2025",
-    "contexto": "{\"tipo\": \"base_externa\", \"descricao\": \"Página do jornal O DIA de 01/05/2025\", \"evidencia\": \"Quinta-feira, 1.5.2025  I  O DIA\", \"ancorado\": true}"
-   },
-   {
-    "ref": "SEI-480002/003694/2024:99834210",
-    "campo": "fontes_externas",
-    "numero": "1988",
-    "contexto": "Constituição Federal de 1988, art. 25, §2º | Resolução ANP nº 52/2011"
-   }
-  ]
+  "exemplos": []
  },
  "D_modelos": {
-  "tarefas": 91,
+  "tarefas": 8,
   "freq_diverge": 0,
-  "tarefas_com_peca_fora_da_raia": 46,
+  "tarefas_com_peca_fora_da_raia": 1,
   "divergencias": [
    {
-    "codigo": "P01",
-    "tarefa": "t2",
-    "nome": "Calcular reajuste pela fórmula paramétrica",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "9–17",
-    "horas_modelo": null,
-    "horas_fichas": "11.1–18.5 / 22.9–24.5",
-    "unidades_das_pecas": [
-     "CAPET",
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02",
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P01",
-    "tarefa": "t3",
-    "nome": "Analisar legalidade do reajuste",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "14–51",
-    "horas_modelo": null,
-    "horas_fichas": "15.0–16.0 / 42.0–52.2",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "PROC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P01",
-    "tarefa": "t4",
-    "nome": "Diligenciar partes e verificador independente",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "4–10",
-    "horas_modelo": null,
-    "horas_fichas": "1.2–2.5 / 1.5–3.3",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P01",
-    "tarefa": "t5",
-    "nome": "Reiterar ofício de diligência",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "85",
-    "horas_modelo": null,
-    "horas_fichas": "0.8 / 1.4",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "PROC",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "PROC",
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P01",
-    "tarefa": "t6",
-    "nome": "Conduzir conciliação entre as partes",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "10–30",
-    "horas_modelo": null,
-    "horas_fichas": "0.2–2.0 / 0.4–2.8",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "PROC",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "PROC",
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P01",
-    "tarefa": "t9",
-    "nome": "Publicar deliberação e notificar concessionária",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "15",
-    "horas_modelo": null,
-    "horas_fichas": "1.0 / 1.5",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P01",
-    "tarefa": "t11",
-    "nome": "Opinar sobre o arquivamento",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "102",
-    "horas_modelo": null,
-    "horas_fichas": "1.0 / 1.5",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "PROC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P01",
-    "tarefa": "t12",
-    "nome": "Certificar ausência de recurso",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "81",
-    "horas_modelo": null,
-    "horas_fichas": "0.2 / 0.4",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P01",
-    "tarefa": "t13",
-    "nome": "Encerrar e arquivar o processo",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "0–175",
-    "horas_modelo": null,
-    "horas_fichas": "0.3–1.0 / 0.6–0.7",
-    "unidades_das_pecas": [
-     "CAPET",
-     "CASAN",
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CAPET",
-     "CASAN",
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P03",
-    "tarefa": "t1",
-    "nome": "Analisar pleito e estudos da concessionária",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "18",
-    "horas_modelo": null,
-    "horas_fichas": "44.2 / 49.6",
-    "unidades_das_pecas": [
-     "CAPET",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P03",
-    "tarefa": "t2",
-    "nome": "Solicitar dados complementares às partes",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "31",
-    "horas_modelo": null,
-    "horas_fichas": "12.2 / 10.9",
-    "unidades_das_pecas": [
-     "CAPET",
-     "CONS-02"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P03",
-    "tarefa": "t3",
-    "nome": "Notificar concessionária e dar vista",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "13",
-    "horas_modelo": null,
-    "horas_fichas": "0.8 / 2.3",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P03",
-    "tarefa": "t5",
-    "nome": "Diligenciar partes e convocar reuniões",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "87",
-    "horas_modelo": null,
-    "horas_fichas": "8.0 / 8.7",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P03",
-    "tarefa": "t7",
-    "nome": "Declarar ausência de escopo técnico",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "15",
-    "horas_modelo": null,
-    "horas_fichas": "0.5 / 0.6",
-    "unidades_das_pecas": [
-     "CASAN",
-     "CONS-02"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P03",
-    "tarefa": "t8",
-    "nome": "Analisar viabilidade jurídica do reequilíbrio",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "75",
-    "horas_modelo": null,
-    "horas_fichas": "12.5 / 32.6",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "PROC",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02",
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P03",
-    "tarefa": "t10",
-    "nome": "Complementar cenários tarifários",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "0",
-    "horas_modelo": null,
-    "horas_fichas": "25.0 / 39.8",
-    "unidades_das_pecas": [
-     "CAPET",
-     "CONS-02"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P03",
-    "tarefa": "t13",
-    "nome": "Encerrar e arquivar o processo",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "1",
-    "horas_modelo": null,
-    "horas_fichas": "0.5 / 0.4",
-    "unidades_das_pecas": [
-     "CAPET",
-     "CASAN",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CAPET",
-     "CASAN"
-    ]
-   },
-   {
     "codigo": "P06",
-    "tarefa": "t2",
-    "nome": "Requisitar documentos à concessionária e a órgãos",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "23",
-    "horas_modelo": null,
-    "horas_fichas": "3.5 / 3.5",
-    "unidades_das_pecas": [
-     "CAENE",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P06",
-    "tarefa": "t4",
-    "nome": "Analisar infração e emitir parecer jurídico",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "56–241",
-    "horas_modelo": null,
-    "horas_fichas": "4.0 / 10.6–16.2",
-    "unidades_das_pecas": [
-     "PROC",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P06",
-    "tarefa": "t9",
-    "nome": "Registrar providências de cumprimento da deliberação",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "0",
-    "horas_modelo": null,
-    "horas_fichas": "0.8–1.2 / 2.1–2.3",
-    "unidades_das_pecas": [
-     "CAENE",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CAENE"
-    ]
-   },
-   {
-    "codigo": "P08",
-    "tarefa": "t1",
-    "nome": "Acusar recebimento e remeter à CASAN",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "5",
-    "horas_modelo": null,
-    "horas_fichas": "0.6 / 1.5",
-    "unidades_das_pecas": [
-     "PRESI",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "PRESI"
-    ]
-   },
-   {
-    "codigo": "P08",
-    "tarefa": "t5",
-    "nome": "Reanalisar após manifestação e emitir parecer final",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "215",
-    "horas_modelo": null,
-    "horas_fichas": "2.5 / 7.2",
-    "unidades_das_pecas": [
-     "CASAN",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P08",
-    "tarefa": "t4",
-    "nome": "Emitir parecer jurídico ou restituir os autos",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "40",
-    "horas_modelo": null,
-    "horas_fichas": "0.2 / 0.1",
-    "unidades_das_pecas": [
-     "PROC",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P21",
-    "tarefa": "t1",
-    "nome": "Relatar ocorrência e omissão da concessionária",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "0–48",
-    "horas_modelo": null,
-    "horas_fichas": "1.2–1.4 / 1.4–1.7",
-    "unidades_das_pecas": [
-     "OUVI",
-     "PRESI",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "PRESI",
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P21",
-    "tarefa": "t2",
-    "nome": "Apurar ocorrência e emitir manifestação técnica",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "40",
-    "horas_modelo": null,
-    "horas_fichas": "11.1 / 11.1",
-    "unidades_das_pecas": [
-     "CAENE",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P21",
-    "tarefa": "t4",
-    "nome": "Analisar descumprimento e opinar sobre sanção",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "18–148",
-    "horas_modelo": null,
-    "horas_fichas": "4.0–4.1 / 9.8–13.7",
-    "unidades_das_pecas": [
-     "PROC",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P21",
     "tarefa": "t6",
-    "nome": "Tomar ciência das razões finais",
+    "nome": "Rebater manifestação da concessionária",
     "freq_modelo": null,
     "casos_com_pecas": 1,
     "freq_diverge": false,
     "du_modelo": null,
-    "espera_antes_fichas": "285",
+    "espera_antes_fichas": "2",
     "horas_modelo": null,
-    "horas_fichas": "0.1 / 0.1",
-    "unidades_das_pecas": [
-     "OUVI",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P21",
-    "tarefa": "t10",
-    "nome": "Publicar deliberação e notificar concessionária",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "18",
-    "horas_modelo": null,
-    "horas_fichas": "0.8 / 1.5",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P21",
-    "tarefa": "t11",
-    "nome": "Analisar recurso ou embargos de declaração",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "50",
-    "horas_modelo": null,
-    "horas_fichas": "4.0 / 11.4",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "PROC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P21",
-    "tarefa": "t12",
-    "nome": "Encerrar o processo administrativo",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "42–231",
-    "horas_modelo": null,
-    "horas_fichas": "0.3–1.5 / 0.5–1.3",
-    "unidades_das_pecas": [
-     "CAENE",
-     "CASAN",
-     "OUV",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CAENE",
-     "CASAN",
-     "OUV"
-    ]
-   },
-   {
-    "codigo": "P22",
-    "tarefa": "t1",
-    "nome": "Atestar descumprimento de prazo da concessionária",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "8",
-    "horas_modelo": null,
-    "horas_fichas": "2.3 / 2.0",
-    "unidades_das_pecas": [
-     "OUV",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P22",
-    "tarefa": "t2",
-    "nome": "Oficiar concessionária com prazo de resposta",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "20",
-    "horas_modelo": null,
-    "horas_fichas": "4.0 / 5.8",
+    "horas_fichas": "8.0 / 2.3",
     "unidades_das_pecas": [
      "CASAN",
      "SCEXEC"
     ],
     "pecas_fora_da_raia": [
      "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P22",
-    "tarefa": "t3",
-    "nome": "Reiterar prazo de instrução à CASAN",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "20",
-    "horas_modelo": null,
-    "horas_fichas": "0.8 / 1.4",
-    "unidades_das_pecas": [
-     "CASAN",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CASAN"
-    ]
-   },
-   {
-    "codigo": "P22",
-    "tarefa": "t5",
-    "nome": "Opinar sobre descumprimento e penalidade",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "31",
-    "horas_modelo": null,
-    "horas_fichas": "4.0 / 13.5",
-    "unidades_das_pecas": [
-     "PROC",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P22",
-    "tarefa": "t6",
-    "nome": "Notificar concessionária para razões finais",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "18",
-    "horas_modelo": null,
-    "horas_fichas": "0.8 / 1.1",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P22",
-    "tarefa": "t9",
-    "nome": "Certificar ausência de recurso e encerrar",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "88",
-    "horas_modelo": null,
-    "horas_fichas": "1.0 / 1.1",
-    "unidades_das_pecas": [
-     "CASAN",
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CASAN",
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P35",
-    "tarefa": "t1",
-    "nome": "Oficiar concessionária e vistoriar a ocorrência",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "0–13",
-    "horas_modelo": null,
-    "horas_fichas": "1.0–8.8 / 1.0–13.4",
-    "unidades_das_pecas": [
-     "CAENE",
-     "CASAN",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P35",
-    "tarefa": "t3",
-    "nome": "Analisar descumprimento e emitir parecer jurídico",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "38–75",
-    "horas_modelo": null,
-    "horas_fichas": "6.1–10.0 / 6.1–24.3",
-    "unidades_das_pecas": [
-     "CAENE",
-     "CONS-02",
-     "PROC",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CAENE",
-     "CONS-02",
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P35",
-    "tarefa": "t4",
-    "nome": "Complementar análise técnica do descumprimento",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "15",
-    "horas_modelo": null,
-    "horas_fichas": "4.0 / 3.4",
-    "unidades_das_pecas": [
-     "CASAN",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P35",
-    "tarefa": "t5",
-    "nome": "Apurar despesas do sinistro junto à concessionária",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "5",
-    "horas_modelo": null,
-    "horas_fichas": "11.0 / 12.7",
-    "unidades_das_pecas": [
-     "CAPET",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P35",
-    "tarefa": "t11",
-    "nome": "Analisar embargos de declaração",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "24",
-    "horas_modelo": null,
-    "horas_fichas": "6.0 / 19.4",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "PROC"
-    ],
-    "pecas_fora_da_raia": [
-     "CONS-02"
-    ]
-   },
-   {
-    "codigo": "P35",
-    "tarefa": "t12",
-    "nome": "Registrar cumprimento e encerrar o processo",
-    "freq_modelo": null,
-    "casos_com_pecas": 2,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "0–64",
-    "horas_modelo": null,
-    "horas_fichas": "0.8–1.0 / 1.3–2.1",
-    "unidades_das_pecas": [
-     "CAENE",
-     "CASAN",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CAENE",
-     "CASAN"
-    ]
-   },
-   {
-    "codigo": "P36",
-    "tarefa": "t2",
-    "nome": "Analisar minuta de contrato especial",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "26",
-    "horas_modelo": null,
-    "horas_fichas": "8.0 / 34.5",
-    "unidades_das_pecas": [
-     "PRESI",
-     "PROC",
-     "REG"
-    ],
-    "pecas_fora_da_raia": [
-     "PRESI",
-     "REG"
-    ]
-   },
-   {
-    "codigo": "P36",
-    "tarefa": "t3",
-    "nome": "Verificar incorporação das recomendações jurídicas",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "26",
-    "horas_modelo": null,
-    "horas_fichas": "1.0 / 0.9",
-    "unidades_das_pecas": [
-     "PROC",
-     "REG",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "REG",
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P36",
-    "tarefa": "t4",
-    "nome": "Notificar concessionária para razões finais",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "17",
-    "horas_modelo": null,
-    "horas_fichas": "1.2 / 1.5",
-    "unidades_das_pecas": [
-     "CONS-02",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "SCEXEC"
-    ]
-   },
-   {
-    "codigo": "P36",
-    "tarefa": "t6",
-    "nome": "Publicar deliberação e oficiar concessionária e INEA",
-    "freq_modelo": null,
-    "casos_com_pecas": 1,
-    "freq_diverge": false,
-    "du_modelo": null,
-    "espera_antes_fichas": "8",
-    "horas_modelo": null,
-    "horas_fichas": "2.8 / 5.2",
-    "unidades_das_pecas": [
-     "CASAN",
-     "SCEXEC"
-    ],
-    "pecas_fora_da_raia": [
-     "CASAN"
     ]
    }
   ]
  },
  "E_cronologia": [
   {
-   "codigo": "P01",
-   "caso": "SEI-480002/001914/2024",
-   "pares": 42,
-   "inversoes": 5,
-   "pct": 11.9
-  },
-  {
-   "codigo": "P01",
-   "caso": "SEI-220007/004053/2022",
-   "pares": 63,
-   "inversoes": 8,
-   "pct": 12.7
-  },
-  {
-   "codigo": "P03",
-   "caso": "SEI-220007/001749/2022",
-   "pares": 76,
-   "inversoes": 4,
-   "pct": 5.3
-  },
-  {
    "codigo": "P06",
-   "caso": "SEI-480002/005546/2024",
-   "pares": 36,
-   "inversoes": 0,
-   "pct": 0.0
-  },
-  {
-   "codigo": "P06",
-   "caso": "SEI-480002/007520/2025",
+   "caso": "SEI-480002/001314/2024",
    "pares": 28,
-   "inversoes": 0,
-   "pct": 0.0
-  },
-  {
-   "codigo": "P08",
-   "caso": "SEI-220007/003487/2023",
-   "pares": 15,
-   "inversoes": 1,
-   "pct": 6.7
-  },
-  {
-   "codigo": "P21",
-   "caso": "SEI-220007/001831/2021",
-   "pares": 54,
    "inversoes": 2,
-   "pct": 3.7
-  },
-  {
-   "codigo": "P21",
-   "caso": "SEI-480002/001574/2024",
-   "pares": 36,
-   "inversoes": 2,
-   "pct": 5.6
-  },
-  {
-   "codigo": "P22",
-   "caso": "SEI-480002/003768/2024",
-   "pares": 35,
-   "inversoes": 1,
-   "pct": 2.9
-  },
-  {
-   "codigo": "P35",
-   "caso": "SEI-220007/000992/2022",
-   "pares": 64,
-   "inversoes": 7,
-   "pct": 10.9
-  },
-  {
-   "codigo": "P35",
-   "caso": "SEI-220007/002039/2022",
-   "pares": 36,
-   "inversoes": 3,
-   "pct": 8.3
-  },
-  {
-   "codigo": "P36",
-   "caso": "SEI-480002/008679/2025",
-   "pares": 21,
-   "inversoes": 1,
-   "pct": 4.8
+   "pct": 7.1
   }
  ],
  "F_avaliacoes": {
-  "N01": {
-   "numeros_citados": 91,
-   "sem_ancora": 1,
-   "exemplos": [
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "13448",
-     "trecho": "d13448bea7c7e7ff"
-    }
-   ]
-  },
-  "P01": {
-   "numeros_citados": 206,
-   "sem_ancora": 4,
+  "P06": {
+   "numeros_citados": 192,
+   "sem_ancora": 30,
    "exemplos": [
     {
      "campo": "leitura_metricas",
-     "numero": "79035231",
-     "trecho": " FIPE foi entrega atrasada da própria FIPE, que pediu prazo até 12/08/2024 (SEI 79035231) e só entregou a Nota Técnica d"
+     "numero": "1.187",
+     "trecho": "32 processos, o lead mediano é de 387,5 du nos 14 processos nativos do SEI e de 1.187 du considerando todos; 56% têm del"
+    },
+    {
+     "campo": "leitura_metricas",
+     "numero": "187",
+     "trecho": "u: o tempo do processo é quase todo espera, como nos casos-piloto (lead time de 187 du e 483 du, com 0 du e 8 du de exec"
+    },
+    {
+     "campo": "leitura_metricas",
+     "numero": "483",
+     "trecho": "o do processo é quase todo espera, como nos casos-piloto (lead time de 187 du e 483 du, com 0 du e 8 du de execução soma"
+    },
+    {
+     "campo": "leitura_metricas",
+     "numero": "387,5",
+     "trecho": " visitada e 4 unidades ativas. Na carteira de 32 processos, o lead mediano é de 387,5 du nos 14 processos nativos do SEI"
+    },
+    {
+     "campo": "leitura_metricas",
+     "numero": "5,6",
+     "trecho": "87 du e 483 du, com 0 du e 8 du de execução somada e eficiência do ciclo de 2,6–5,6% e 1,2–2,6% nas fichas). Por unidade"
+    },
+    {
+     "campo": "variabilidade",
+     "numero": "62,6",
+     "trecho": "no piso por caso nativo, quartis de 20,7 a 31,1 h), o que repete o piloto (28,8–62,6 h no típico e 33,8–75,0 h no crític"
+    },
+    {
+     "campo": "variabilidade",
+     "numero": "33,8",
+     "trecho": "tivo, quartis de 20,7 a 31,1 h), o que repete o piloto (28,8–62,6 h no típico e 33,8–75,0 h no crítico, para 187 du e 48"
+    },
+    {
+     "campo": "variabilidade",
+     "numero": "483",
+     "trecho": " repete o piloto (28,8–62,6 h no típico e 33,8–75,0 h no crítico, para 187 du e 483 du de lead time): o trabalho é parec"
+    },
+    {
+     "campo": "variabilidade",
+     "numero": "28,8",
+     "trecho": ",3 h no piso por caso nativo, quartis de 20,7 a 31,1 h), o que repete o piloto (28,8–62,6 h no típico e 33,8–75,0 h no c"
+    },
+    {
+     "campo": "variabilidade",
+     "numero": "187",
+     "trecho": "h), o que repete o piloto (28,8–62,6 h no típico e 33,8–75,0 h no crítico, para 187 du e 483 du de lead time): o trabalh"
     },
     {
      "campo": "desperdicios[1].evidencia",
-     "numero": "79035231",
-     "trecho": "azo até 12/08/2024 porque o acesso aos autos só foi liberado em 10/07/2024 (SEI 79035231). Antes da conciliação (no típi"
+     "numero": "387,5",
+     "trecho": "co) sem unidade, a maior posse dos dois casos. Na carteira, o lead mediano é de 387,5 du nos processos nativos do SEI e "
     },
-    {
-     "campo": "atividades.t5.ganho_esperado",
-     "numero": "79035231",
-     "trecho": "é 12/08/2024 porque a AGENERSA só liberou o acesso aos autos em 10/07/2024 (SEI 79035231). Com alerta no vencimento do p"
-    },
-    {
-     "campo": "atividades.t16.ganho_esperado",
-     "numero": "79035231",
-     "trecho": "ir); no típico, a FIPE só teve acesso em 10/07/2024 e pediu prazo por isso (SEI 79035231). Reduz espera e passagens."
-    }
-   ]
-  },
-  "P03": {
-   "numeros_citados": 95,
-   "sem_ancora": 4,
-   "exemplos": [
-    {
-     "campo": "gargalo.evidencia",
-     "numero": "003575",
-     "trecho": "023, 12/06/2023), respondido pela concessionária em 26/06/2023 (P.I. SEI-220007/003575/2023), e durou 77 du até o despac"
-    },
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "343879",
-     "trecho": "c343879a7c905258"
-    },
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "905258",
-     "trecho": "c343879a7c905258"
-    },
-    {
-     "campo": "validado_contra.data",
-     "numero": "2026",
-     "trecho": "2026-10-30 18:37"
-    }
-   ]
-  },
-  "P04": {
-   "numeros_citados": 127,
-   "sem_ancora": 1,
-   "exemplos": [
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "872",
-     "trecho": "4f5eeaecc872cb9b"
-    }
-   ]
-  },
-  "P06": {
-   "numeros_citados": 192,
-   "sem_ancora": 6,
-   "exemplos": [
     {
      "campo": "desperdicios[2].evidencia",
-     "numero": "019",
-     "trecho": "TN 018/2025 no típico, e a estação do crítico foi notificada de novo depois (TN 019/2024): o ciclo de notificação não at"
+     "numero": "018",
+     "trecho": "ncia do CBMERJ já havia sido notificada (TN 003/2024 e TN 002/2025) antes do TN 018/2025 no típico, e a estação do críti"
     },
     {
-     "campo": "atividades.t4.aplicacao_ia",
-     "numero": "019",
-     "trecho": "sma pendência (no típico, TN 003/2024 e TN 002/2025, anteriores; no crítico, TN 019/2024, posterior) e entrega a minuta "
+     "campo": "desperdicios[5].evidencia",
+     "numero": "18,7",
+     "trecho": "iana de 7–18,4 h por ocorrência nos casos nativos; no piloto, 16–20 laudas, 8,0–18,7 h no típico e 9,0–19,8 h no crítico"
     },
     {
-     "campo": "perguntas_validacao[3]",
-     "numero": "019",
-     "trecho": "Parecer 86 sem remetê-lo à Procuradoria, e a nova vistoria na mesma estação (TN 019/2024) influiu nisso?"
+     "campo": "desperdicios[5].evidencia",
+     "numero": "19,8",
+     "trecho": "orrência nos casos nativos; no piloto, 16–20 laudas, 8,0–18,7 h no típico e 9,0–19,8 h no crítico) retoma o histórico in"
     },
     {
-     "campo": "perguntas_validacao[4]",
-     "numero": "600",
-     "trecho": " que ficou sem nenhuma unidade com ele aberto antes da distribuição por mais de 600 du, o que se aguardava?"
+     "campo": "desperdicios[5].evidencia",
+     "numero": "9,0",
+     "trecho": "r ocorrência nos casos nativos; no piloto, 16–20 laudas, 8,0–18,7 h no típico e 9,0–19,8 h no crítico) retoma o históric"
     },
     {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "20909",
-     "trecho": "bad89f987c20909b"
+     "campo": "atividades.t1.aplicacao_ia",
+     "numero": "16291",
+     "trecho": "no modelo da agência, cita os dispositivos (Decreto 46.925/2020, NBR 12962, NBR 16291, NR 26), confere a vigência de lic"
     },
     {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "987",
-     "trecho": "bad89f987c20909b"
+     "campo": "atividades.t1.aplicacao_ia",
+     "numero": "46.925",
+     "trecho": "o e do Termo de Notificação no modelo da agência, cita os dispositivos (Decreto 46.925/2020, NBR 12962, NBR 16291, NR 26"
+    },
+    {
+     "campo": "atividades.t1.aplicacao_ia",
+     "numero": "12962",
+     "trecho": "otificação no modelo da agência, cita os dispositivos (Decreto 46.925/2020, NBR 12962, NBR 16291, NR 26), confere a vigê"
+    },
+    {
+     "campo": "atividades.t1.ganho_esperado",
+     "numero": "8,8",
+     "trecho": "ho: parte da mediana de 7,4–12,1 h por ocorrência nos casos nativos (no piloto, 8,8–16,5 h no típico e 8,0–16,3 h no crí"
+    },
+    {
+     "campo": "atividades.t1.ganho_esperado",
+     "numero": "16,5",
+     "trecho": "parte da mediana de 7,4–12,1 h por ocorrência nos casos nativos (no piloto, 8,8–16,5 h no típico e 8,0–16,3 h no crítico"
+    },
+    {
+     "campo": "atividades.t1.ganho_esperado",
+     "numero": "16,3",
+     "trecho": "–12,1 h por ocorrência nos casos nativos (no piloto, 8,8–16,5 h no típico e 8,0–16,3 h no crítico, com 9–12 laudas). A v"
+    },
+    {
+     "campo": "atividades.t3.ganho_esperado",
+     "numero": "8,6",
+     "trecho": " parte da mediana de 3,0–7,9 h por ocorrência nos casos nativos (no piloto, 4,0–8,6 h no típico e 2,0–8,4 h no crítico, "
+    },
+    {
+     "campo": "atividades.t3.ganho_esperado",
+     "numero": "8,4",
+     "trecho": ",0–7,9 h por ocorrência nos casos nativos (no piloto, 4,0–8,6 h no típico e 2,0–8,4 h no crítico, com 2–6 laudas). O par"
+    },
+    {
+     "campo": "atividades.t4.ganho_esperado",
+     "numero": "10,6",
+     "trecho": "parte da mediana de 4,0–11,3 h por ocorrência nos casos nativos (no piloto, 4,0–10,6 h no típico e 4,0–16,2 h no crítico"
+    },
+    {
+     "campo": "atividades.t7.ganho_esperado",
+     "numero": "18,7",
+     "trecho": ": parte da mediana de 7–18,4 h por ocorrência nos casos nativos (no piloto, 8,0–18,7 h no típico e 9,0–19,8 h no crítico"
     }
    ]
-  },
-  "P07": {
-   "numeros_citados": 86,
-   "sem_ancora": 1,
-   "exemplos": [
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "05302",
-     "trecho": "05302bf0a6bd92ee"
-    }
-   ]
-  },
-  "P08": {
-   "numeros_citados": 162,
-   "sem_ancora": 1,
-   "exemplos": [
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "783859",
-     "trecho": "8d18cca45a783859"
-    }
-   ]
-  },
-  "P18": {
-   "numeros_citados": 80,
-   "sem_ancora": 3,
-   "exemplos": [
-    {
-     "campo": "gargalo.evidencia",
-     "numero": "2241",
-     "trecho": "s reiterações dos quatro municípios notificados (NA 2238, NA 2239, NA 2240 e NA 2241) têm a mesma data de juntada, e os "
-    },
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "477",
-     "trecho": "477d3e31cd6be571"
-    },
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "571",
-     "trecho": "477d3e31cd6be571"
-    }
-   ]
-  },
-  "P19": {
-   "numeros_citados": 146,
-   "sem_ancora": 1,
-   "exemplos": [
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "54050",
-     "trecho": "5f65e54050c0be80"
-    }
-   ]
-  },
-  "P21": {
-   "numeros_citados": 184,
-   "sem_ancora": 1,
-   "exemplos": [
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "91477",
-     "trecho": "f58cf91477d0dca3"
-    }
-   ]
-  },
-  "P22": {
-   "numeros_citados": 68,
-   "sem_ancora": 3,
-   "exemplos": [
-    {
-     "campo": "gargalo.evidencia",
-     "numero": "009198",
-     "trecho": "inclui a resposta da concessionária, protocolada em 28/10/2024 (P.I. SEI-480002/009198/2024). Dos 88 du entre a notifica"
-    },
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "3044",
-     "trecho": "346696103b3044e5"
-    },
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "346696103",
-     "trecho": "346696103b3044e5"
-    }
-   ]
-  },
-  "P35": {
-   "numeros_citados": 165,
-   "sem_ancora": 2,
-   "exemplos": [
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "631",
-     "trecho": "aac5c631a857332e"
-    },
-    {
-     "campo": "validado_contra.fatos_sha",
-     "numero": "857332",
-     "trecho": "aac5c631a857332e"
-    }
-   ]
-  },
-  "P36": {
-   "numeros_citados": 72,
-   "sem_ancora": 0,
-   "exemplos": []
   }
  }
 }

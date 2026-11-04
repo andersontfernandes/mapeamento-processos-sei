@@ -1,416 +1,84 @@
 ﻿codigo,processo,ref,unidade,tipo,atividade,confianca,motivo
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:100312695,AGENERSA/SCEXEC,Carta RIO1.JRG.2025/000211 PRT.ARJ.2025/004321,t9,media,Concessionária informa cumprimento de item da decisão.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:100863335,AGENERSA/SCEXEC,Ofício - NA 1356,t8,alta,Ofício que notifica a concessionária sobre a decisão do Conselho-Diretor.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:100870185,AGENERSA/SCEXEC,Decisão,t8,media,Decisão complementar juntada para publicação e comunicação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:100872596,AGENERSA/SCEXEC,E-mail,t8,media,E-mail de encaminhamento da decisão complementar.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:100930704,AGENERSA/SCEXEC,Publicação 26/05/2025_DECISÃO CAUTELAR,t8,alta,Publicação no Diário Oficial da decisão do Conselho-Diretor.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:101069363,AGENERSA/CASAN,Parecer 187,t3,media,Parecer técnico de análise orçamentária da CASAN.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:101070697,AGENERSA/CASAN,Anexo,t3,baixa,Anexo do parecer técnico da CASAN.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:101140152,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,Encaminhamento do parecer técnico ao gabinete.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:101514715,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,t6,baixa,Relator encaminha o feito à CAPET para análise.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:102780195,AGENERSA/CAPET,Despacho de Encaminhamento de Processo,fora_da_raia,,unidade sem raia no modelo
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103031692,AGENERSA/CONS-02,Ofício - NA 82,t6,media,Ofício que concede acesso aos autos à concessionária com prazo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103034328,AGENERSA/CONS-02,E-mail,t6,media,E-mail de encaminhamento do ofício de acesso.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103286817,AGENERSA/CONS-02,Relatório,t7,alta,Relatório do conselheiro relator para a sessão.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103287584,AGENERSA/CONS-02,Voto 16,t7,alta,Voto do relator com proposta de homologação e aprovação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103288410,AGENERSA/CONS-02,Deliberação,t7,alta,Deliberação do Conselho-Diretor em sessão.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103513863,AGENERSA/SCEXEC,Protocolo - Solicitação de Acesso aos Autos - Águas do Rio,fora_do_modelo,media,Requerimento externo de acesso aos autos.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103514053,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento de pedido de acesso ao gabinete, fora do modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103516345,AGENERSA/SCEXEC,Anexo SEI_480002_005355_2025,fora_do_modelo,media,Anexo com requerimento de acesso aos autos.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103531891,AGENERSA/CONS-02,Ofício - NA 89,t6,media,Ofício que disponibiliza acesso aos autos à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:103532221,AGENERSA/CONS-02,E-mail,t6,media,E-mail de encaminhamento do ofício de acesso.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:104477207,AGENERSA/SCEXEC,Publicação doerj 10/07/2025 Deliberação 4929,t8,alta,Publicação da Deliberação 4929 no DOERJ.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105434819,AGENERSA/SCEXEC,Ofício - NA 1914,t8,alta,Ofício de notificação da deliberação à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105601061,AGENERSA/SCEXEC,Ofício Circular 66,t8,alta,Ofício circular comunicando a deliberação a órgãos externos.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105671129,AGENERSA/SCEXEC,Ofício - NA 1957,t8,alta,Ofício de comunicação da deliberação ao colégio.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105706004,AGENERSA/SCEXEC,E-mail,t8,media,E-mail que encaminha ofício de notificação à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105707560,AGENERSA/SCEXEC,E-mail,t8,media,E-mail que determina ciência de ofício de notificação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105753109,AGENERSA/SCEXEC,Ofício RIO1.JRG.2025/000411,fora_do_modelo,media,"Pedido da concessionária de agendamento de reunião, fora do modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105764269,AGENERSA/SCEXEC,E-mail,t8,media,E-mail que encaminha o ofício circular aos órgãos destinatários.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105769055,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t9,baixa,Encaminhamento para ciência e providências após a deliberação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105809565,AGENERSA/SCEXEC,E-mail,t9,baixa,E-mail de encaminhamento para ciência da deliberação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:105978138,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,baixa,CASAN restitui o processo à SECEX após ciência.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:106150818,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t9,media,Encaminhamento para ciência da deliberação em curso de cumprimento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:106175106,AGENERSA/CAPET,Despacho de Encaminhamento de Processo,fora_da_raia,,unidade sem raia no modelo
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:106232226,AGENERSA/CONS-02,Ofício - NA 117,fora_do_modelo,media,"Agendamento de reunião virtual, não previsto no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:106239672,AGENERSA/CONS-02,E-mail,fora_do_modelo,media,E-mail de encaminhamento de agendamento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:106460099,AGENERSA/SCEXEC,Aviso de Recebimento do Oficio NA 1957- Colegio Andre Maurois,t8,media,Aviso de recebimento de ofício de notificação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:111226792,AGENERSA/CONS-02,Solicitação,fora_do_modelo,media,Pedido externo de acesso aos autos encaminhado à relatoria.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:117267949,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,t6,baixa,Relator encaminha à CASAN a análise da documentação apresentada.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:121171279,AGENERSA/CASAN,Parecer 470,t3,alta,Parecer técnico da CASAN com análise orçamentária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:121338735,AGENERSA/CASAN,Ofício - NA 1184,t2,alta,Ofício requisitando planta de intervenção à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:121357672,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,Encaminhamento do parecer técnico ao gabinete.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:121358050,AGENERSA/CASAN,E-mail,t2,media,E-mail que transmite o ofício de requisição à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:123492089,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,t6,baixa,Relator encaminha à CASAN a análise da documentação da concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:127054902,AGENERSA/CASAN,Parecer 113,t3,alta,Parecer técnico de análise orçamentária da CASAN.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:127163182,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,Encaminhamento do parecer técnico à SECEX.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:29808355,AGENERSA/SCEXEC,Carta,fora_do_modelo,media,Carta de entrada no SCEXEC sem correspondência com as atividades do modelo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:29808357,AGENERSA/SCEXEC,Recibo Eletrônico de Protocolo,fora_do_modelo,media,"Recibo de protocolo da entrada, trâmite sem atividade correspondente no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:29888009,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Despacho de distribuição a múltiplas unidades antes da instrução, etapa não prevista no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:29894589,AGENERSA/CHEGAB,Despacho de Encaminhamento de Processo,fora_da_raia,,unidade sem raia no modelo
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:29960343,AGENERSA/PROC,Despacho de Encaminhamento de Processo,t4,media,"Procuradoria recomenda diligências e apensamento, parte da análise jurídica da infração."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:30011685,AGENERSA/SCEXEC,Ofício - NA 329,fora_do_modelo,media,"Ofício à CEDAE sobre demanda judicial, diligência não descrita no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:30013081,AGENERSA/SCEXEC,E-mail,fora_do_modelo,media,E-mail de encaminhamento do ofício à CEDAE.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:30569003,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,CASAN recebe o feito para manifestação técnica sobre o peticionamento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:30572829,AGENERSA/SCEXEC,Ofício - NA 361,t11,alta,Ofício que defere a prorrogação de prazo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:30573139,AGENERSA/SCEXEC,E-mail,t11,alta,Encaminhamento à concessionária do ofício de deferimento de prorrogação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:31387133,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Pedido de considerações da CASAN sobre petição da CEDAE, não previsto no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:32304749,AGENERSA/CASAN,Parecer 76,t3,media,Parecer técnico da CASAN sobre a manifestação da concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:32410401,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,Trâmite do parecer técnico da CASAN.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:32741905,AGENERSA/SCEXEC,Folha,t10,baixa,"Folha sem conteúdo, provavelmente anexa à notificação à concessionária."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:32742046,AGENERSA/SCEXEC,Ofício - NA 582,t10,media,Ofício que cientifica a concessionária e abre prazo de manifestação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:32744464,AGENERSA/SCEXEC,E-mail,t10,media,Concessão de vista e envio da notificação à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:32864902,AGENERSA/SCEXEC,Solicitação,fora_do_modelo,baixa,"Solicitação de acesso aos autos, pedido externo sem atividade do modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:33392917,AGENERSA/SCEXEC,Solicitação,fora_do_modelo,media,"Requerimento da concessionária de acesso a outros processos, fora do modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:33393948,AGENERSA/SCEXEC,Ofício - NA 644,t10,alta,Ofício que notifica a concessionária a acessar os autos e se manifestar.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:33395440,AGENERSA/SCEXEC,E-mail,t10,media,Encaminhamento do ofício de notificação à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:33581542,AGENERSA/SCEXEC,Planta,t10,baixa,"Planta juntada, provavelmente anexa à notificação."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:34956360,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t11,media,Encaminhamento do peticionamento de prorrogação para análise.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:34962794,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,baixa,CASAN analisa o pedido de prorrogação e encaminha à SECEX.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:35035055,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t11,alta,Encaminhamento do pleito de dilação à Chefia de Gabinete para manifestação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:35121856,AGENERSA/CHEGAB,Despacho de Encaminhamento de Processo,fora_da_raia,,unidade sem raia no modelo
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:35127895,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,Manifestação da CASAN sobre a prorrogação solicitada pela concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:35264240,AGENERSA/SCEXEC,Ofício - NA 780,t11,alta,Ofício que comunica o deferimento da dilação de prazo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:35265535,AGENERSA/SCEXEC,E-mail,t11,media,Encaminhamento do ofício de deferimento de dilação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:38167213,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Envio dos autos à CASAN após peticionamento, sem atividade específica no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:38343275,AGENERSA/CASAN,Parecer 157,t3,media,"Parecer técnico da CASAN sobre a cláusula contratual, análise da defesa."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:38374345,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,Encaminhamento do parecer técnico à SECEX.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:38474933,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Envio do processo à Procuradoria sem gatilho previsto no modelo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:40341720,AGENERSA/PROC,Despacho de Encaminhamento de Processo,t4,media,Procuradoria solicita esclarecimentos técnicos antes do parecer jurídico.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:41987239,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,"Manifestação técnica da CASAN sobre alternativas, parecer técnico."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:42075627,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,Encaminhamento ao gabinete do relator após sorteio.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:43094174,AGENERSA/PROC,Despacho de Encaminhamento de Processo,t4,media,Procuradoria encaminha ao relator após parecer jurídico.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:51052174,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,media,"Despacho ao gabinete do conselheiro, distribuição do processo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:51052683,AGENERSA/SCEXEC,Ata - 7ª RI - extrapauta III,fora_do_modelo,media,Ata de reunião interna tratando de outros processos.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:59138732,AGENERSA/CONS-02,Ofício - NA 89,fora_do_modelo,media,"Convite para visita técnica conjunta, não previsto no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:59140930,AGENERSA/CONS-02,Anexo Compilado - Principais Manifestações,fora_do_modelo,media,Compilado de manifestações da concessionária para vista.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:59146186,AGENERSA/CONS-02,E-mail,fora_do_modelo,media,E-mail de encaminhamento de documentos para vista.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:59147779,AGENERSA/CONS-02,Despacho de Encaminhamento de Documento,fora_do_modelo,media,"Encaminhamento para ciência e vista, trâmite não previsto no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:59147950,AGENERSA/CONS-02,Despacho de Encaminhamento de Documento,fora_do_modelo,media,"Encaminhamento para ciência e vista, trâmite não previsto no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:59150501,AGENERSA/CONS-02,Despacho de Encaminhamento de Documento,fora_do_modelo,media,"Encaminhamento à Defesa Civil para ciência, fora do modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:59177515,AGENERSA/SCEXEC,Manifestação 782/2022,fora_do_modelo,media,"Sugestão de redirecionamento a outra secretaria, fora do modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:59254791,AGENERSA/CONS-02,E-mail,fora_do_modelo,media,E-mail de encaminhamento sem atividade do modelo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:61313888,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t1,alta,Encaminha ao gabinete o relatório de fiscalização.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:61314983,AGENERSA/CASAN,Relatório de Fiscalização,t1,alta,"Relatório de fiscalização, saída da vistoria."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:61318520,AGENERSA/CONS-02,Ofício - NA 115,t6,media,Ofício do relator que fixa prazo de 30 dias à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:62425331,AGENERSA/CONS-02,E-mail,t6,media,E-mail que transmite a notificação com prazo à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:64412004,AGENERSA/SCEXEC,Solicitação aguas do rio dilacao prazo,t11,alta,Pedido da concessionária para prorrogar o prazo de resposta.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:64572529,AGENERSA/CONS-02,Ofício - NA 132,t6,media,Ofício do relator que concede novo prazo de manifestação à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:64584743,AGENERSA/CONS-02,E-mail,t6,media,E-mail de encaminhamento da notificação com novo prazo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:84502521,AGENERSA/CONS-02,Anexo I - Carta R1R4.JRG.2024.000008,t6,baixa,Anexo com proposta da concessionária juntado ao processo do relator.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:84503657,AGENERSA/CONS-02,Carta R1R4.JRG.2024.000008,t6,baixa,Carta da concessionária em resposta ao prazo do relator.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:84504406,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,t6,media,Relator encaminha o relatório da concessionária para análise técnica.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:88397415,AGENERSA/CASAN,Parecer 349,t3,alta,Parecer técnico da CASAN sobre a proposta de mitigação.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:88472476,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,Encaminhamento do parecer técnico para prosseguimento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:88511883,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,t6,baixa,Relator encaminha o feito à Procuradoria após insuficiência da proposta.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:88953271,AGENERSA/PROC,Parecer 617,t4,alta,Parecer jurídico da Procuradoria sobre remanejamento de adutoras.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:89284031,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,t7,media,Solicitação de inclusão em pauta para deliberação do Conselho-Diretor.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:89489601,AGENERSA/SCEXEC,Ofício - NA 3091,t8,media,Ofício que encaminha decisão cautelar à concessionária para cumprimento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:89489790,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t8,baixa,"Restituição de autos ao gabinete após deliberação, trâmite pós-decisão."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:89489953,AGENERSA/SCEXEC,Decisão - 30ª RI de 2024,t8,media,"Decisão cautelar juntada, deliberação a ser publicada e comunicada."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:89490542,AGENERSA/SCEXEC,E-mail,t8,media,E-mail de encaminhamento da decisão cautelar.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:89505746,AGENERSA/SCEXEC,Publicação DECISÃO CAUTELAR,t8,alta,Publicação em diário oficial da decisão cautelar.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:89716867,AGENERSA/SCEXEC,Ofício - NA 3117,t8,alta,Ofício de comunicação da decisão a órgão externo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:92085559,AGENERSA/CAPET,Despacho de Encaminhamento de Processo,fora_da_raia,,unidade sem raia no modelo
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:93648008,AGENERSA/CASAN,Ofício - NA 91,t2,alta,Ofício requisitando modelagem hidráulica à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:93689211,AGENERSA/CASAN,E-mail,t2,media,E-mail que transmite a requisição de documentos à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:95103250,AGENERSA/CONS-02,Manifestação Águas do Rio 25.02.25,t6,baixa,Manifestação da concessionária juntada pelo relator.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:95118354,AGENERSA/CONS-02,Anexo Manifestação Águas do Rio 25.02.25,t6,baixa,Anexo de modelagem hidráulica apresentado pela concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:96837241,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Encaminhamento de manifestações à CASAN sem gatilho previsto no modelo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:97129516,AGENERSA/CASAN,Parecer 94,t3,alta,Parecer técnico da CASAN sobre o projeto executivo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:97276925,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t3,media,Encaminhamento do parecer técnico à SECEX.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:97523724,AGENERSA/SCEXEC,Ofício,t9,media,Concessionária informa início das obras de cumprimento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:97523765,AGENERSA/SCEXEC,Recibo,t9,baixa,Recibo de protocolo de comunicação de cumprimento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:97826984,AGENERSA/CONS-02,Ofício - NA 29,fora_do_modelo,media,"Convocação de reunião e requisição de análise técnica, não prevista no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98005023,AGENERSA/CONS-02,E-mail,fora_do_modelo,media,E-mail de convocação de reunião.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98280913,AGENERSA/CONS-02,E-mail,fora_do_modelo,baixa,Pedido de reagendamento de reunião.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98281000,AGENERSA/CONS-02,Ofício - NA 30,fora_do_modelo,media,Comunicação de reagendamento de reunião e pedido de análise comparativa.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98349065,AGENERSA/CONS-02,E-mail,fora_do_modelo,media,E-mail de encaminhamento de reagendamento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98353426,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,t6,baixa,Relator encaminha à Procuradoria para análise de responsabilidade.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98792755,AGENERSA/PROC,Parecer 185,fora_do_modelo,media,"Parecer sobre recurso administrativo, etapa não prevista no modelo."
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98806741,AGENERSA/CASAN,Ofício - NA 334,t2,alta,Ofício requisitando esclarecimentos e documentos sobre orçamento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98810598,AGENERSA/CASAN,Anexo,t2,media,Anexo de questionamentos do ofício de requisição.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:98814460,AGENERSA/CASAN,E-mail,t2,media,E-mail que encaminha o ofício de requisição à concessionária.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:99069849,AGENERSA/CONS-02,E-mail,fora_do_modelo,media,Pedido de remarcação de reunião.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:99071988,AGENERSA/CONS-02,Ofício - NA 38,fora_do_modelo,media,Ofício de reagendamento de reunião e pauta.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:99167640,AGENERSA/CONS-02,E-mail,fora_do_modelo,media,E-mail de encaminhamento de reagendamento.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:99689974,AGENERSA/CONS-02,Ata de Reunião,fora_do_modelo,media,Ata de reunião com pactuações fora do modelo.
-P06,SEI-220007/000782/2022,SEI-220007/000782/2022:99810817,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,t7,media,Solicitação de pauta para complementação da decisão no Conselho-Diretor.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:116104062,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,"Encaminhamento ao gabinete do relator sorteado, decorrente do sorteio de relatoria."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:122630582,AGENERSA/CONS-02,Ofício - NA 12,t6,alta,Ofício do relator intimando a concessionária a apresentar razões finais no prazo de 10 dias.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:122631491,AGENERSA/CONS-02,E-mail,t6,media,"E-mail do gabinete encaminhando o ofício de razões finais, trâmite de t6."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:128588370,AGENERSA/CONS-02,Relatório,t7,alta,"Relatório do conselheiro-relator para a sessão regulatória, parte de t7."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:128589145,AGENERSA/CONS-02,Voto 23,t7,alta,"Voto do relator propondo penalidade ao Conselho-Diretor, parte de t7."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:128590597,AGENERSA/CONS-02,Deliberação,t7,alta,"Deliberação do Conselho-Diretor aplicando advertência, produto de t7."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:129278460,AGENERSA/SCEXEC,Publicação Deliberação 5032 08.04.26,t8,alta,"Publicação da deliberação no Diário Oficial, conforme t8."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:129887088,AGENERSA/SCEXEC,Informação,t9,alta,"Informação registrando providências de cumprimento da deliberação, conforme t9."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:129891823,AGENERSA/SCEXEC,Ofício - NA 955,t8,alta,"Ofício dando ciência da deliberação à concessionária e órgãos, conforme t8."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:129894555,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t8,media,Encaminha os autos à CAENE para ciência da publicação; trâmite de conclusão da publicação e comunicação.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:129907967,AGENERSA/SCEXEC,E-mail,t8,media,"E-mail encaminhando o ofício de ciência à concessionária, comunicação da deliberação."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:129948051,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,fora_do_modelo,baixa,Devolução do processo à SECEX pela CAENE após ciência; não corresponde claramente a nenhuma atividade do modelo.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:44431157,AGENERSA/CAENE,Relatório,t1,alta,"Relatório de fiscalização de campo de obra, com determinações à concessionária; execução da vistoria."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:44431164,AGENERSA/CAENE,Termo,t1,alta,"Termo de notificação sobre o relatório de fiscalização, saída típica de t1."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:44431213,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,t1,media,Encaminha o termo de notificação para aprovação dentro da fase de vistoria e notificação.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:44431812,AGENERSA/CAENE,Ofício - NA 112,t1,alta,"Ofício à concessionária encaminhando relatório e termo, saída de notificação de t1."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:44438475,AGENERSA/CAENE,E-mail,t1,alta,"E-mail à concessionária encaminhando relatório e termo para providências, comunicação de t1."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:45517945,AGENERSA/CAENE,Parecer 2,t3,alta,"Parecer técnico analisando a reconstituição de pavimento apresentada pela concessionária, sobre a defesa e a irregularidade."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:45522227,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t10,media,Despacho da Scexec encaminhando processo à Procuradoria após parecer técnico; trâmite da fase de comunicação ao parecer.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:45529666,AGENERSA/PROC,Despacho de Encaminhamento de Processo,t4,alta,Parecer jurídico da Procuradoria recomendando notificação da concessionária sobre o parecer técnico.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:45553564,AGENERSA/SCEXEC,Ofício - NA 57,t10,alta,Ofício notificando a concessionária sobre o parecer técnico com prazo de manifestação.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:45558816,AGENERSA/SCEXEC,E-mail,t10,media,"E-mail de ciência do ofício NA 57 à concessionária, comunicação do parecer."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:45558954,AGENERSA/SCEXEC,Confirmação,t10,media,Confirmação de envio por e-mail do ofício de notificação do parecer à concessionária.
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:45659103,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,media,"Despacho da Scexec encaminhando processo à CAENE e devolução posterior à Procuradoria; trâmite após instrução técnica e jurídica, antes do relator."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:45665216,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,t3,media,"Despacho da CAENE encaminhando processo à Procuradoria após complementação, trâmite da análise técnica."
-P06,SEI-220007/004476/2022,SEI-220007/004476/2022:47748197,AGENERSA/PROC,Parecer 83,t4,alta,"Parecer jurídico sobre aplicação de penalidade, produto típico de t4."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:102277094,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,"Encaminhamento ao gabinete do relator por sorteio, ato de distribuição de t5."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:103068706,AGENERSA/CONS-02,Ofício - NA 84,t6,alta,"Ofício do relator intimando a CEG a apresentar razões finais no prazo de 10 dias, saída de t6."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:103072510,AGENERSA/CONS-02,E-mail,t6,media,"E-mail do gabinete encaminhando a notificação para razões finais, trâmite de t6."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:110705192,AGENERSA/CONS-02,Relatório,t7,alta,"Relatório do conselheiro para pauta de julgamento, elemento de relatar a sessão em t7."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:110705255,AGENERSA/CONS-02,Deliberação,t7,alta,"Deliberação do Conselho-Diretor aplicando advertência, saída de t7."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:110706082,AGENERSA/CONS-02,Voto 24,t7,alta,"Voto do relator propondo e fundamentando a advertência na sessão, parte de t7."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:112706709,AGENERSA/SCEXEC,Publicação Deliberação AGENERSA nº4957,t8,alta,"Publicação oficial da Deliberação nº 4957 no Diário Oficial, saída de t8."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:112715863,AGENERSA/SCEXEC,Informação,t9,alta,"Informação registrando o cumprimento das diligências da deliberação, saída de t9."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:113480802,AGENERSA/SCEXEC,Ofício - NA 2431,t8,alta,"Ofício comunicando a decisão da Deliberação 4957 à concessionária, ofício de t8."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:114126283,AGENERSA/SCEXEC,E-mail,t8,media,"E-mail de encaminhamento da Scexec logo após o ofício de comunicação, trâmite de t8."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:117752730,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t9,media,"Despacho determinando a lavratura do auto de infração como providência de cumprimento, registrado em t9."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:117965094,AGENERSA/SCEXEC,Termo de Encerramento de Processo,t9,alta,"Termo de encerramento do processo por exaurida a finalidade, saída de t9."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:60330989,AGENERSA/CAENE,Relatório P-094/23 Rua Aiuru - Humaitá,t1,alta,"Relatório de fiscalização de campo de obra com constatações e determinações à CEG, conforme o entregável de t1."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:60331087,AGENERSA/CAENE,Termo de Notificação 016-23 CAENE,t1,alta,"Termo de Notificação expedido à CEG com determinação e prazo, saída prevista em t1."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:60331770,AGENERSA/CAENE,Despacho,t1,media,"Despacho sem conteúdo transcrito, situado logo após a notificação e antes do envio, sugerindo trâmite de t1."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:60334137,AGENERSA/CAENE,Ofício - NA 189,t1,alta,"Ofício de encaminhamento do relatório e do termo de notificação à concessionária, comunicação própria de t1."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:60337228,AGENERSA/CAENE,E-mail,t1,media,"E-mail encaminhando relatório e termo à Naturgy, trâmite de comunicação da notificação de t1."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:60767320,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento à ASSINF para publicar o relatório no site, ato de divulgação que o modelo não prevê."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:60834111,AGENERSA/ASSINF,Despacho de Encaminhamento de Processo,fora_da_raia,,unidade sem raia no modelo
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:60978992,AGENERSA/CAENE,Parecer 72,t3,alta,"Parecer técnico sobre a manifestação da concessionária e o atendimento do termo de notificação, equivalente a t3."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:61151921,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento à Procuradoria pela Scexec; nenhuma candidata da Scexec descreve esse envio, que antecede t4."
-P06,SEI-220007/005630/2023,SEI-220007/005630/2023:96172479,AGENERSA/PROC,Parecer 137,t4,alta,"Parecer jurídico da Procuradoria recomendando penalidade e rito processual, saída de t4."
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:122519221,AGENERSA/CAENE,Planilha Anexo I,t3,media,Planilha de análise técnica da CAENE que sustenta o parecer 30 sobre a habilitação das empresas.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:126866767,AGENERSA/CAENE,Parecer 30,t3,alta,Parecer técnico da CAENE sobre o cumprimento das exigências de habilitação.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:127252941,AGENERSA/SCEXEC,Ofício - NA 630,t10,alta,Ofício à concessionária com o parecer anexo e prazo para manifestação e saneamento.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:127262534,AGENERSA/SCEXEC,E-mail,t10,media,E-mail que comunica às concessionárias o ofício e o parecer para ciência e providências.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:129158964,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,baixa,Encaminhamento à CAENE para nova manifestação após o prazo; etapa de devolução que o modelo não descreve para a Scexec.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:129543623,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,t3,media,Despacho da CAENE reiterando o parecer técnico e devolvendo o processo à Scexec.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:129776591,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento à Procuradoria; o modelo atribui o parecer jurídico a Proc, mas não prevê esse despacho da Scexec."
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:130389501,AGENERSA/PROC,Parecer 327,t4,alta,Parecer jurídico da Procuradoria sobre o descumprimento e a penalidade cabível.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:131682225,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,Encaminhamento do processo ao gabinete do conselheiro por sorteio.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:92571168,AGENERSA/SCEXEC,Documento OFICIO GEREG 55 25,fora_do_modelo,media,Ofício de encaminhamento de listagem de prestadoras de outra unidade (GEREG); o modelo não prevê esta entrada do processo.
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:92571170,AGENERSA/SCEXEC,Anexo ANEXO 1,fora_do_modelo,media,"Anexo da listagem de prestadoras, juntado ao ofício de entrada de outra unidade."
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:92571171,AGENERSA/SCEXEC,Anexo ANEXO 2,fora_do_modelo,media,"Anexo da listagem de prestadoras, juntado ao ofício de entrada de outra unidade."
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:92571172,AGENERSA/SCEXEC,Recibo Eletrônico de Protocolo,fora_do_modelo,media,"Recibo de protocolo da entrada do processo, sem atividade do modelo associada."
-P06,SEI-480002/001210/2025,SEI-480002/001210/2025:92593999,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Encaminhamento à CAENE para análise técnica; o modelo não prevê esse despacho da Scexec antes da vistoria.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:105410586,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,baixa,rótulo t4 fora das candidatas da unidade
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:105413127,AGENERSA/SCEXEC,Carta GEREG 339/24,fora_do_modelo,baixa,rótulo t2 fora das candidatas da unidade
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:105413736,AGENERSA/SCEXEC,Carta GEREG_390_24,fora_do_modelo,baixa,rótulo t2 fora das candidatas da unidade
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:105414477,AGENERSA/SCEXEC,Carta GEREG 372/24,fora_do_modelo,baixa,rótulo t3 fora das candidatas da unidade
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:106841239,AGENERSA/PROC,Parecer 417,t4,alta,Parecer jurídico da Procuradoria sobre a infração e a penalidade cabível.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:110509307,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,Encaminhamento do processo ao gabinete do relator por sorteio de relatoria.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:123956446,AGENERSA/CONS-02,Ofício - NA 29,t6,alta,Ofício do relator notificando a concessionária para razões finais com prazo de 10 dias.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:123959535,AGENERSA/CONS-02,E-mail,t6,alta,E-mail do Conselho encaminhando a notificação para razões finais.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133066742,AGENERSA/CONS-02,Deliberação,t7,alta,Deliberação do Conselho-Diretor aplicando advertência e determinando diligências.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133067198,AGENERSA/CONS-02,Voto 29,t7,alta,"Voto do Conselheiro-Relator propondo penalidade e diligências, parte da sessão de deliberação."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133067558,AGENERSA/CONS-02,Relatório,t7,alta,Relatório do conselheiro relator para julgamento em sessão.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133691579,AGENERSA/SCEXEC,Publicação DOERJ_09062026_Deliberação 5054,t8,alta,Publicação da Deliberação nº 5054 no DOERJ.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133763200,AGENERSA/SCEXEC,Ofício - NA 1491,t8,media,"Ofício da Scexec oficiando o CBMERJ após a deliberação publicada, com pedidos de informação sobre laudos."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133763583,AGENERSA/SCEXEC,Ofício - NA 1490,t8,alta,"Ofício notificando a concessionária sobre a Deliberação 5054, com ciência e encaminhamentos."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133764082,AGENERSA/SCEXEC,Informação,t9,alta,Informação sobre providências adotadas para cumprimento da deliberação.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133821942,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t8,media,Despacho de encaminhamento para ciência da deliberação publicada e determinação de diligências.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133961202,AGENERSA/SCEXEC,E-mail,t8,media,E-mail encaminhando oficios da deliberação publicada; trâmite de comunicação.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133961561,AGENERSA/SCEXEC,E-mail,t8,alta,E-mail encaminhando o Ofício NA 1490 à CEG para ciência da deliberação.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:133971069,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,fora_do_modelo,baixa,rótulo t9 fora das candidatas da unidade
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:77900978,AGENERSA/CAENE,Termo de Notificação,t1,alta,"Termo de Notificação da CAENE sobre pendências documentais apurados em vistoria, notificando a concessionária."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:77902687,AGENERSA/CAENE,Relatório,t1,alta,Relatório de fiscalização de campo com determinações à concessionária após vistoria.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:77911746,AGENERSA/CAENE,Despacho,t1,media,"Despacho que submete o Termo de Notificação para aprovação, para notificar a concessionária; trâmite da vistoria/notificação."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:77953922,AGENERSA/CAENE,Ofício - NA 155,t1,alta,Ofício encaminhando relatório e termo de notificação à concessionária CEG.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:77989526,AGENERSA/CAENE,E-mail,t1,alta,E-mail da CAENE encaminhando relatório e termo de notificação à concessionária.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:80209332,AGENERSA/CAENE,Ofício - NA 173,t2,alta,"Ofício requisitando à concessionária a Licença de Operação, documentação complementar."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:80216560,AGENERSA/CAENE,E-mail,t2,alta,E-mail requerendo à concessionária o envio da Licença de Operação.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:80557109,AGENERSA/CAENE,Ofício - NA 176,t2,alta,Ofício requisitando à concessionária o projeto técnico da estação.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:80561920,AGENERSA/CAENE,E-mail,t2,alta,E-mail solicitando à concessionária o projeto da estação.
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:80787690,AGENERSA/CAENE,Ofício - NA 179,t2,alta,"Ofício requisitando informação ao INEA para confirmar licenciamento, órgão externo."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:80974689,AGENERSA/SCEXEC,E-mail,t5,baixa,"E-mail da Scexec apenas encaminhando, sem conteúdo específico; posição entre requisições e resposta do INEA."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:81973158,AGENERSA/CAENE,Parecer 86,t3,alta,"Parecer técnico da CAENE sobre irregularidade documental, encaminhado ao Conselho Diretor após análise das respostas."
-P06,SEI-480002/005546/2024,SEI-480002/005546/2024:84643661,AGENERSA/SCEXEC,Ofício .INEA/PRESI Nº2326,fora_do_modelo,baixa,rótulo t2 fora das candidatas da unidade
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:110203714,AGENERSA/CAENE,Termo,t1,alta,Termo de Notificação da CAENE que formaliza os achados da fiscalização e concede prazo de impugnação à concessionária.
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:110204535,AGENERSA/CAENE,Relatório de Fiscalização,t1,alta,"Relatório de Fiscalização técnica de campo, que é o entregável da vistoria in loco."
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:110205731,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,t1,media,"Despacho que encaminha o Termo de Notificação ao gerente, trâmite da notificação em curso."
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:110212633,AGENERSA/CAENE,Ofício - NA 139,t1,alta,Ofício da CAENE que encaminha relatório e termo à concessionária com prazo de 10 dias.
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:110223173,AGENERSA/CAENE,E-mail,t1,media,"E-mail que encaminha o relatório e o termo à Naturgy para providências, comunicação da notificação."
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:112247360,AGENERSA/CAENE,Parecer 78,t3,alta,Parecer técnico que analisa a resposta da concessionária e conclui pelo descumprimento.
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:118152111,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Scexec encaminha o processo à Procuradoria para manifestação; o modelo prevê a análise jurídica (t4) mas não esse despacho de encaminhamento.
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:125012219,AGENERSA/PROC,Parecer 121,t4,alta,Parecer jurídico da Procuradoria sobre a infração e a penalidade cabível.
-P06,SEI-480002/007073/2025,SEI-480002/007073/2025:128780531,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,"Despacho da Scexec encaminhando o processo ao gabinete do conselheiro relator, após instrução concluída."
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:112251018,AGENERSA/CAENE,Termo de Notificação,t1,alta,Termo de Notificação que comunica as constatações da fiscalização e concede prazo à concessionária.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:112252631,AGENERSA/CAENE,Despacho,t1,media,Despacho de trâmite que determina a elaboração do Termo de Notificação decorrente da fiscalização.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:112252850,AGENERSA/CAENE,Relatório de Fiscalização,t1,alta,"Relatório de fiscalização técnica da estação, com não conformidades e recomendações à concessionária."
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:112267024,AGENERSA/CAENE,Ofício - NA 149,t1,alta,Ofício que encaminha o relatório e o termo de notificação à concessionária com prazo de esclarecimentos.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:112271910,AGENERSA/CAENE,E-mail,t1,media,E-mail que repassa o relatório e o termo de notificação à concessionária para providências.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:114314297,AGENERSA/CAENE,Parecer 83,t3,alta,Parecer técnico que analisa a manifestação da concessionária à notificação.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:118192732,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Despacho da Scexec que remete os autos à Procuradoria, passo de consulta jurídica não descrito como atividade do modelo."
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:119990083,AGENERSA/PROC,Parecer 735,t4,alta,Parecer jurídico 735 sobre a legalidade da fiscalização e o cabimento de penalidade.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:122744436,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,Despacho da Scexec encaminhando o processo ao gabinete do relator após o sorteio de relatoria.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:123701432,AGENERSA/CONS-02,Ofício - NA 25,t6,alta,Ofício do Conselho intimando a concessionária a apresentar razões finais em 10 dias.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:123734969,AGENERSA/CONS-02,E-mail,t6,media,E-mail do Conselho encaminhando a intimação para razões finais.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133067426,AGENERSA/CONS-02,Relatório,t7,alta,"Relatório do conselheiro relator, peça da fase de relato em sessão."
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133067457,AGENERSA/CONS-02,Voto 31,t7,alta,Voto do relator que propõe diligência e afastamento de penalidade para o Conselho-Diretor.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133068967,AGENERSA/CONS-02,Deliberação,t7,alta,Deliberação do Conselho-Diretor que determina a baixa em diligência e obrigações à CEG.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133706365,AGENERSA/SCEXEC,Publicação DOERJ_09062026_deliberacao5053,t8,alta,Publicação da Deliberação 5053/2026 no Diário Oficial.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133761905,AGENERSA/SCEXEC,Informação,t9,alta,Informação registrando o cumprimento das diligências determinadas pela deliberação.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133761950,AGENERSA/SCEXEC,Ofício - NA 1488,t8,alta,Ofício que comunica a deliberação do Conselho-Diretor à concessionária.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133763105,AGENERSA/SCEXEC,Ofício - NA 1489,t9,media,"Ofício ao CBMERJ para informações sobre regularização, ato de cumprimento da deliberação publicada."
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133822318,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t8,media,Despacho de encaminhamento que dá ciência da deliberação às unidades.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133951315,AGENERSA/SCEXEC,E-mail,t8,media,E-mail que dá ciência à CEG do ofício de comunicação da deliberação.
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133952787,AGENERSA/SCEXEC,E-mail,t8,baixa,"E-mail sem conteúdo descritivo, provavelmente de comunicação da deliberação."
-P06,SEI-480002/007520/2025,SEI-480002/007520/2025:133972992,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Devolução do processo pela CAENE à SECEX após ciência, ato não previsto entre as candidatas."
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:112594165,AGENERSA/CAENE,Anexo,t1,alta,"Relatório de fiscalização P-132/25 com constatações e recomendações, produto da vistoria in loco."
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:112610263,AGENERSA/CAENE,Termo de Notificação,t1,alta,Termo de Notificação nº 020/2025 expedido pela CAENE à concessionária.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:112611129,AGENERSA/CAENE,Ofício - NA 154,t1,alta,Ofício de notificação que encaminha o relatório e o termo de notificação à concessionária.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:112613960,AGENERSA/CAENE,E-mail,t1,media,"E-mail de encaminhamento do termo e do relatório a outra concessionária, parte da notificação."
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:115095743,AGENERSA/CAENE,Parecer 92,t3,alta,Parecer técnico 92 que analisa o cumprimento da notificação e conclui pelo descumprimento.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:118209577,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Pedido de manifestação jurídica à Procuradoria; o modelo não prevê esse despacho da Scexec.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:120422642,AGENERSA/PROC,Parecer 746,t4,alta,Parecer jurídico 746 sobre a fiscalização e o cabimento de penalidade.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:122745329,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,Despacho que encaminha o processo ao gabinete do conselheiro relator sorteado.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:123719328,AGENERSA/CONS-02,Ofício - NA 26,t6,alta,Ofício do relator intimando a concessionária a apresentar razões finais no prazo de 10 dias.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:123726707,AGENERSA/CONS-02,E-mail,t6,media,E-mail do gabinete que encaminha o ofício de razões finais.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133067366,AGENERSA/CONS-02,Deliberação,t7,alta,"Deliberação do Conselho-Diretor em sessão, determinando diligência e prazos."
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133067678,AGENERSA/CONS-02,Relatório,t7,alta,Relatório do conselheiro-relator apresentado para a sessão de deliberação.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133068080,AGENERSA/CONS-02,Voto 30,t7,alta,Voto do conselheiro-relator propondo a deliberação em sessão.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133706926,AGENERSA/SCEXEC,Publicação DOERJ_09062026_deliberacao5052,t8,alta,Publicação da deliberação no DOERJ.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133725839,AGENERSA/SCEXEC,Informação,t9,alta,Informação registrando o cumprimento das providências determinadas na deliberação.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133727669,AGENERSA/SCEXEC,Ofício - NA 1481,t9,media,Ofício à Defesa Civil/CBMERJ pedindo informações para cumprir a diligência determinada na deliberação.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133761750,AGENERSA/SCEXEC,Ofício - NA 1487,t8,media,Ofício que dá ciência da deliberação publicada à concessionária.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133822726,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t8,media,Despacho que encaminha os autos para ciência da deliberação já publicada.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133949743,AGENERSA/SCEXEC,E-mail,t9,media,E-mail que encaminha ao CBMERJ o ofício de providências de cumprimento.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133950301,AGENERSA/SCEXEC,E-mail,t9,media,E-mail de trâmite vinculado às providências de cumprimento da deliberação.
-P06,SEI-480002/007683/2025,SEI-480002/007683/2025:133973558,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Devolução à SECEX após ciência da deliberação; a CAENE não executa atividade de instrução prevista no modelo nesse momento.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:114304217,AGENERSA/CAENE,Relatório de Fiscalização,t1,alta,Relatório de fiscalização técnica da estação feito pela CAENE após vistoria.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:114305433,AGENERSA/CAENE,Termo de Notificação,t1,alta,Termo de Notificação de irregularidade emitido após a vistoria.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:114305664,AGENERSA/CAENE,Despacho,t1,media,Despacho que encaminha o Termo de Notificação à gerência para comunicar a concessionária.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:114309403,AGENERSA/CAENE,Ofício - NA 162,t1,alta,"Ofício de notificação da concessionária com prazo, encaminhando relatório e termo."
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:114312073,AGENERSA/CAENE,E-mail,t1,media,E-mail de trâmite que encaminha o termo e o relatório à concessionária para providências.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:114960748,AGENERSA/CAENE,Parecer 91,t3,alta,Parecer técnico analisando a defesa e o laudo apresentados pela concessionária.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:115361650,AGENERSA/SCEXEC,Manifestação 66,t10,alta,Ofício da SCEXEC comunicando o parecer à concessionária e fixando prazo de manifestação.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:115362320,AGENERSA/SCEXEC,E-mail,t10,media,"E-mail de ciência do parecer enviado à concessionária, parte da comunicação do parecer."
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:117137456,AGENERSA/SCEXEC,Carta GEREG 570/25,fora_do_modelo,media,Manifestação da própria concessionária em resposta ao parecer; não é ato da unidade descrito no modelo.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:117314306,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Reencaminhamento da manifestação à CAENE para nova avaliação técnica; etapa não prevista no modelo.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:117631452,AGENERSA/CAENE,Laudo,t1,media,"Nova inspeção do SPDA e medição de aterramento pela CAENE, com relatório de não conformidade."
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:117632687,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,t3,media,Despacho técnico da CAENE analisando a justificativa e mantendo o posicionamento anterior.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:120395871,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Encaminhamento dos autos à Procuradoria pela SCEXEC; o modelo não prevê esse trâmite e a análise jurídica é gatilhada por parecer técnico.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:121435110,AGENERSA/PROC,Parecer 781,t4,alta,Parecer jurídico da Procuradoria sobre a infração e a penalidade cabível.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:122745297,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,Encaminhamento ao gabinete do relator decorrente do sorteio de relatoria.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:123678350,AGENERSA/CONS-02,Ofício - NA 23,t6,alta,Ofício do relator notificando a concessionária para razões finais com prazo de 10 dias.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:123695300,AGENERSA/CONS-02,E-mail,t6,media,E-mail de encaminhamento da notificação para razões finais.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:130842274,AGENERSA/CONS-02,Relatório,t7,alta,"Relatório do Conselheiro-Relator, etapa de relatar antes da deliberação."
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:130843541,AGENERSA/CONS-02,Voto 25,t7,alta,"Voto do relator propondo a penalidade, parte da votação em sessão."
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:130844207,AGENERSA/CONS-02,Deliberação,t7,alta,Deliberação do Conselho-Diretor aplicando advertência após relato e voto.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:131753368,AGENERSA/SCEXEC,Publicação Deliberação AGENERSA 5044,t8,alta,Publicação da Deliberação 5044/2026 no Diário Oficial.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:132387992,AGENERSA/SCEXEC,Informação,t9,alta,Informação reportando as providências de cumprimento da Deliberação 5044/2026.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:132388211,AGENERSA/SCEXEC,Ofício - NA 1300,t8,alta,Ofício à concessionária comunicando a deliberação publicada.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:132389978,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t8,media,"Despacho que encaminha os autos para ciência da deliberação publicada, complementando a comunicação."
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:132535463,AGENERSA/SCEXEC,E-mail,t9,media,E-mail de encaminhamento das providências de cumprimento.
-P06,SEI-480002/007984/2025,SEI-480002/007984/2025:132544808,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Despacho da CAENE cientificando a SECEX da publicação; nenhuma candidata da unidade descreve esse trâmite.
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:102276801,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,"Despacho encaminha o processo ao gabinete do relator após o sorteio, distribuição de t5."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:103065033,AGENERSA/CONS-02,Ofício - NA 83,t6,alta,"Ofício do relator notifica as concessionárias para razões finais com prazo de 10 dias, como t6."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:103067959,AGENERSA/CONS-02,E-mail,t6,media,"E-mail encaminha o ofício de notificação para razões finais, trâmite de t6."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:128591103,AGENERSA/CONS-02,Relatório,t7,alta,"Relatório do conselheiro relator sintetiza o histórico, parte do relatar de t7."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:128592069,AGENERSA/CONS-02,Voto 24,t7,alta,Voto do relator propondo penalidade integra a etapa de votar de t7.
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:128592265,AGENERSA/CONS-02,Deliberação,t7,alta,Deliberação do Conselho-Diretor aplicando penalidade é o resultado de t7.
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:129279064,AGENERSA/SCEXEC,Publicação Deliberação 5031 08.04.26,t8,alta,"Publicação da deliberação no Diário Oficial, como t8."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:129880460,AGENERSA/SCEXEC,Ofício - NA 954,t8,alta,"Ofício da Secretaria Executiva dá ciência da deliberação à concessionária, oficiamento de t8."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:129880480,AGENERSA/SCEXEC,Informação,t9,alta,"Informação sobre providências adotadas em cumprimento da deliberação registra o cumprimento, como t9."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:129882167,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t8,media,"Despacho encaminha os autos à CAENE para ciência da publicação, comunicação ligada a t8."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:129905356,AGENERSA/SCEXEC,E-mail,t8,media,"E-mail de ciência à concessionária sobre o ofício de deliberação, comunicação de t8."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:129946601,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,fora_do_modelo,baixa,rótulo t9 fora das candidatas da unidade
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:84564397,AGENERSA/CAENE,Termo de Notificacão 015-24 CAENE,t1,alta,"Termo de Notificação 015-24 notifica a concessionária sobre a fiscalização, saída típica de t1."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:84571191,AGENERSA/CAENE,Relatório P-124/24 [endereço],t1,alta,Relatório de vistoria com recomendações é o relatório de fiscalização de t1.
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:84602367,AGENERSA/CAENE,Despacho de Encaminhamento de Processo,t1,media,"Despacho submete o termo de notificação à aprovação, trâmite da notificação de t1 antes de ser enviada."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:84610728,AGENERSA/CAENE,Ofício - NA 226,t1,alta,"Ofício encaminha à concessionária o relatório e o termo de notificação, comunicação de t1."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:84628317,AGENERSA/CAENE,E-mail,t1,media,"E-mail encaminha o ofício de notificação, trâmite de t1."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:85860950,AGENERSA/CAENE,Ofício - NA 252,t2,alta,"Ofício solicita à concessionária comprovação de providências, o que é requisição de documentos de t2."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:85866959,AGENERSA/CAENE,E-mail,t2,media,"E-mail encaminha o ofício de requisição de documentos, trâmite de t2."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:86126368,AGENERSA/CAENE,Parecer 115,t3,alta,"Parecer técnico analisa o atendimento ao termo e conclui que as irregularidades foram sanadas, como t3."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:90018174,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,media,"Despacho à Procuradoria sobre inclusão em reunião para distribuição de relator, antecedente da distribuição de t5."
-P06,SEI-480002/008372/2024,SEI-480002/008372/2024:96224176,AGENERSA/PROC,Parecer 138,t4,alta,"Parecer 138 da Procuradoria analisa a infração e recomenda penalidade, como t4."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:106956799,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Reiteração do encaminhamento à Procuradoria, sem correspondência no modelo."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:109213356,AGENERSA/PROC,Parecer 427,t4,alta,Parecer jurídico opinativo sobre a ocupação e o prosseguimento do processo.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:110346273,AGENERSA/SCEXEC,Ofício - NA 2180,t10,media,Ofício à concessionária com comunicação de providências e prazo de manifestação.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:110346299,AGENERSA/SCEXEC,Ofício - NA 2181,t10,media,Ofício à CEDAE com solicitação de manifestação e prazo de 10 dias úteis.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:110347415,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,media,"Solicita designação de Conselheiro-Relator, etapa que antecede o sorteio e a distribuição."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:110408145,AGENERSA/SCEXEC,E-mail,t10,media,E-mail que encaminha o ofício 2180 à concessionária para ciência.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:110408240,AGENERSA/SCEXEC,E-mail,t10,media,E-mail que encaminha o ofício 2181 à CEDAE para ciência.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:112441023,AGENERSA/SCEXEC,Ofício CEDAE DPR-7 Nº 248/2025,t11,baixa,"Pedido externo de prorrogação de prazo, que aciona a decisão de dilação."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:112466796,AGENERSA/SCEXEC,Ofício - NA 2358,t11,alta,Ofício comunicando o deferimento da dilação de prazo.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:112496739,AGENERSA/SCEXEC,E-mail,t11,media,E-mail que encaminha o ofício de deferimento de dilação para ciência.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:114603847,AGENERSA/SCEXEC,Ofício CEDAE DPR-7 Nº 261/2025,fora_do_modelo,media,"Manifestação externa da CEDAE sobre responsabilidade pela desocupação, sem candidata correspondente."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:114604349,AGENERSA/SCEXEC,Ofício DIR Nº 544/2025,t11,baixa,Pedido de dilação de prazo de 15 dias úteis que aciona a decisão de t11.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:114604364,AGENERSA/SCEXEC,Ofício - NA 2538,t11,alta,Ofício comunicando a concessão de prazo de 10 dias úteis.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:114814506,AGENERSA/SCEXEC,E-mail,t11,alta,E-mail que comunica a concessão de prazo à concessionária.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:116112348,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,Despacho de encaminhamento ao gabinete do relator sorteado.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:122639690,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento à Procuradoria pelo gabinete do relator, não previsto no modelo."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:124700483,AGENERSA/SCEXEC,Ofício DIR 764/2026 Considerações,t9,media,"Petição informando desocupação e pedindo arquivamento, registro de cumprimento."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:126302067,AGENERSA/PROC,Despacho de Encaminhamento de Processo,t4,media,"Análise jurídica de perda superveniente do objeto, encaminhada ao relator."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:128544660,AGENERSA/SCEXEC,Ofício CEDAE DPR-7 nº 52/2026,t9,media,"Informa desocupação de imóveis e pede encerramento, registro de cumprimento."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:132757915,AGENERSA/CONS-02,Ofício - NA 97,t6,alta,Ofício do relator notificando a concessionária para razões finais com prazo.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:132768546,AGENERSA/CONS-02,E-mail,t6,alta,E-mail que encaminha o ofício de razões finais às concessionárias.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:132770049,AGENERSA/CONS-02,Ofício - NA 98,t6,media,"Notificação do relator para razões finais, dirigida à prefeitura e não à concessionária."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:132862883,AGENERSA/CONS-02,E-mail,t6,media,E-mail que encaminha o ofício de razões finais ao prefeito.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:87218738,AGENERSA/SCEXEC,Ofício DIR 200/2024,fora_do_modelo,media,Comunicação de ocupação irregular em reservatórios que nenhuma candidata descreve; origem do processo antes da fiscalização.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:87220239,AGENERSA/SCEXEC,Anexo Ficha reservatório Pinheiros,fora_do_modelo,media,"Anexo com ficha técnica de reservatório, sem ato correspondente no modelo."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:87220241,AGENERSA/SCEXEC,Anexo Ficha Reservatório Meudom,fora_do_modelo,media,"Anexo com ficha técnica de reservatório, sem ato correspondente no modelo."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:87220242,AGENERSA/SCEXEC,Anexo Of 178-2024 - Moradores reservatório PMT,fora_do_modelo,media,"Anexo que pede apoio da prefeitura para retirada de moradores, fora do procedimento."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:87220243,AGENERSA/SCEXEC,Anexo of_270_24 - Solitação da prefeitura a CE,fora_do_modelo,media,"Anexo com solicitação da prefeitura, demanda alheia ao modelo."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:87220244,AGENERSA/SCEXEC,Recibo Eletrônico de Protocolo,fora_do_modelo,media,"Recibo de protocolo inicial, anterior a qualquer atividade prevista."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:89805140,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Encaminhamento à CASAN para vistoria; nenhuma candidata da Scexec descreve essa etapa.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:94294926,AGENERSA/CASAN,Ofício - NA 118,t1,media,"Agendamento de vistoria técnica conjunta, preparação da vistoria de campo."
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:94366102,AGENERSA/CASAN,E-mail,t1,media,Comunica a data da vistoria técnica agendada.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:94991292,AGENERSA/CASAN,Relatório de Fiscalização,t1,alta,Relatório de fiscalização de campo com recomendação de desocupação.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:94999547,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t1,media,Trâmite da CASAN que encerra a fiscalização e sugere encaminhar à Procuradoria.
-P06,SEI-480002/009573/2024,SEI-480002/009573/2024:95526735,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,Encaminhamento à Procuradoria pela Scexec; não há candidata do modelo para esse trâmite.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:119399191,AGENERSA/CAENE,Despacho,t1,media,"Despacho da CAENE dando ciência do registro do relatório de fiscalização, abrindo a etapa de notificação."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:119400348,AGENERSA/CAENE,Relatório de Fiscalização,t1,alta,"Relatório de fiscalização da vistoria conjunta, com pedidos à concessionária."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:119402127,AGENERSA/CAENE,Ofício - NA 178,t1,alta,Ofício da CAENE à concessionária determinando adequações e pedindo justificativa técnica.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:119423087,AGENERSA/CAENE,E-mail,t1,media,E-mail da CAENE encaminhando a determinação de providências do relatório à concessionária.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:120056814,AGENERSA/SCEXEC,Anexo - adobe Scan,fora_do_modelo,media,"Anexo que registra interrupção de fornecimento e notificação ao posto, ato alheio às atividades do modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:120056992,AGENERSA/SCEXEC,Carta - GEREG 648/25,fora_do_modelo,media,Carta externa da concessionária respondendo à notificação; o modelo não prevê o recebimento dessa manifestação.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:120137392,AGENERSA/CAENE,Despacho,t3,media,Despacho da CAENE analisando a manifestação da concessionária e determinando novo ofício.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:120143432,AGENERSA/CAENE,Ofício - NA 188,t2,alta,"Ofício da CAENE requisitando contrato, regularização e manifestação da concessionária."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:120496211,AGENERSA/CAENE,E-mail,t2,alta,"E-mail solicitando à concessionária o contrato e informações, trâmite do ofício de requisição."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:121015835,AGENERSA/SCEXEC,Protocolo - Recebimento - Ofício GEREG 683/25,fora_do_modelo,media,"Protocolo de petição externa da concessionária, sem atividade correspondente no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:121015836,AGENERSA/SCEXEC,Anexo - Contrato de Fornecimento de GNV - Geranius Posto,fora_do_modelo,media,"Anexo contratual apresentado pela concessionária, parte de sua petição externa."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:121016968,AGENERSA/SCEXEC,Ofício GEREG 683/25,fora_do_modelo,media,Manifestação externa da concessionária respondendo ao ofício de fiscalização.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:121273107,AGENERSA/CAENE,Despacho,t3,media,Despacho da CAENE analisando a resposta da concessionária e pedindo complementação.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:121274808,AGENERSA/CAENE,Ofício - NA 190,t2,alta,"Ofício da CAENE requisitando evidências, procedimentos e ordens de serviço."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:121419727,AGENERSA/CAENE,E-mail,t2,media,E-mail de trâmite com os mesmos pedidos de documentos do ofício 190.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:122053932,AGENERSA/SCEXEC,Protocolo - Recebimento - Ofício GEREG 014/26,fora_do_modelo,media,"Protocolo de petição externa da concessionária, sem atividade correspondente no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:122055220,AGENERSA/SCEXEC,Ofício GEREG 014/26,fora_do_modelo,media,Resposta externa da concessionária ao ofício 190.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:122055998,AGENERSA/SCEXEC,Anexo - Docs 1 até 4,fora_do_modelo,baixa,"Anexos de documentos da petição externa, sem descrição de ato do modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:123326841,AGENERSA/SCEXEC,Protocolo - Recebimento - Ofício GEREG 034/26,fora_do_modelo,media,"Protocolo de petição externa da concessionária, sem atividade correspondente no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:123326874,AGENERSA/SCEXEC,Ofício GEREG 034/26,fora_do_modelo,media,Esclarecimentos técnicos externos da concessionária sobre enquadramento de válvula.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:123326875,AGENERSA/SCEXEC,Anexo doc 1 RF Posto Gerânius,fora_do_modelo,baixa,"Anexo de documento da petição externa, sem ato próprio no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:123330562,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento da Scexec de petição da concessionária à CAENE, etapa sem atividade própria no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:123431839,AGENERSA/CAENE,Despacho,t3,media,Despacho da CAENE analisando a resposta e reiterando exigências à concessionária.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:126343847,AGENERSA/CAENE,Ofício - NA 31,t2,alta,Ofício de reiteração de solicitação de documentos técnicos à concessionária.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:126702930,AGENERSA/CAENE,E-mail,t2,media,E-mail de trâmite reiterando a solicitação de documentos.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:127320584,AGENERSA/SCEXEC,Anexo - OS-705200193746_16_03,fora_do_modelo,baixa,"Anexo de ordem de serviço da petição externa, sem ato do modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:127321000,AGENERSA/SCEXEC,Protocolo - Recebimento - Ofício GEREG 147_26,fora_do_modelo,media,"Protocolo de petição externa da concessionária, sem atividade correspondente no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:127321004,AGENERSA/SCEXEC,Ofício GEREG 147/26,fora_do_modelo,media,Esclarecimentos externos da concessionária sobre manutenção de válvula.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:127321101,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento da Scexec de petição da concessionária à CAENE, sem atividade própria no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:128344837,AGENERSA/SCEXEC,Protocolo - Recebimento - Ofício GEREG 167_26,fora_do_modelo,media,"Protocolo de carta externa da concessionária, sem atividade correspondente no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:128345929,AGENERSA/SCEXEC,Ofício GEREG 167/26,fora_do_modelo,media,Esclarecimentos técnicos externos da concessionária sobre integridade de válvulas.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:128346974,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento da Scexec de petição da concessionária à CAENE, sem atividade própria no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:128355394,AGENERSA/CAENE,Despacho,t2,media,Despacho da CAENE reiterando solicitação de planejamento à concessionária.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:128357220,AGENERSA/CAENE,Ofício - NA 47,t2,alta,Ofício da CAENE reiterando pedido de planejamento ou solução alternativa.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:128371984,AGENERSA/CAENE,E-mail,t2,media,E-mail de trâmite reiterando o pedido de planejamento à concessionária.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:128929713,AGENERSA/SCEXEC,Protocolo - Recebimento - Ofício nº GEREG 177_26,fora_do_modelo,media,"Protocolo de petição externa da concessionária, sem atividade correspondente no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:128929714,AGENERSA/SCEXEC,Ofício GEREG 177/26,fora_do_modelo,media,Manifestação externa da concessionária respondendo ao ofício de fiscalização.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:129913074,AGENERSA/CAENE,Ofício - NA 54,t2,alta,Ofício da CAENE solicitando o plano de manutenção à CEG em prazo fixado.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:129914641,AGENERSA/CAENE,E-mail,t2,media,E-mail de trâmite encaminhando o ofício 54 à concessionária.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:129958441,AGENERSA/CAENE,Ofício - NA 55,t2,alta,Ofício da CAENE solicitando normas técnicas à CEG com prazo.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:129964862,AGENERSA/CAENE,E-mail,t2,media,E-mail de trâmite encaminhando o ofício 55 à concessionária.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:130374891,AGENERSA/SCEXEC,Ofício GEREG 220/26,fora_do_modelo,media,"Petição externa da concessionária com esclarecimentos e pedidos de juntada, sem atividade do modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:130374892,AGENERSA/SCEXEC,Anexo - ES.00657 - Revestimento exterior e pintura inter,fora_do_modelo,baixa,"Anexo de norma interna da petição externa, sem ato do modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:130375289,AGENERSA/SCEXEC,Protocolo - Recebimento - Ofício GEREG 220_26,fora_do_modelo,media,"Protocolo de carta externa da concessionária, sem atividade correspondente no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:130376115,AGENERSA/SCEXEC,Anexo - PE.00502 - Plano de manutenção para redes,fora_do_modelo,baixa,"Anexo de procedimento da petição externa, sem ato do modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:130376216,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,media,"Encaminhamento da Scexec de petição da concessionária à CAENE, sem atividade própria no modelo."
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:130461674,AGENERSA/CAENE,Parecer 38,t3,alta,Parecer técnico da CAENE sobre cumprimento normativo e contratual pela concessionária.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:131682249,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,Encaminhamento ao gabinete do relator por distribuição em sorteio.
-P06,SEI-480002/010157/2025,SEI-480002/010157/2025:132163472,AGENERSA/CONS-02,Despacho de Encaminhamento de Processo,fora_do_modelo,alta,"Consulta do relator à Procuradoria, que não corresponde às candidatas t6 e t7."
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:104033188,AGENERSA/CASAN,Parecer 250,t4,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:104117825,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t4,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:114548072,AGENERSA/SCEXEC,Manifestação 55,t5,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:114551426,AGENERSA/SCEXEC,E-mail,t5,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:117500524,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,t5,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:117801870,AGENERSA/CASAN,Despacho de Encaminhamento de Processo,t6,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:117907053,AGENERSA/SCEXEC,Despacho de Encaminhamento de Processo,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:120665498,AGENERSA/PROC,Parecer 759,t7,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:140207175,AGENERSA/SCEXEC,Ofício - NA 2606,t8,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:140220431,AGENERSA/SCEXEC,E-mail,t8,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:68285969,AGENERSA/CASAN,Deliberação,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:69710124,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:69712392,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:69716140,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72642867,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72710417,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72711316,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72838107,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72851141,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72853692,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72974318,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72975320,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:72980247,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74141761,AGENERSA/CASAN,Ofício - NA 349,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74179603,AGENERSA/CASAN,E-mail,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74334571,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74336951,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74338948,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74871240,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74873701,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74881165,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:74882333,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:75600516,AGENERSA/CASAN,Ofício - NA 452,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:75783205,AGENERSA/CASAN,E-mail,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:75824232,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:75824539,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:76104339,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:76213730,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:77432319,AGENERSA/CASAN,Ofício - NA 516,t1,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:77459067,AGENERSA/CASAN,E-mail,t1,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:77695170,AGENERSA/CASAN,Ofício - NA 541,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:77748737,AGENERSA/CASAN,E-mail,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:79573103,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:79573239,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:79575319,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:79900134,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:79901118,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:80501066,AGENERSA/CASAN,Ofício - NA 682,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:80626379,AGENERSA/CASAN,E-mail,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:80654568,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:80655356,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:80656194,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:80656240,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:81195142,AGENERSA/CASAN,Ofício - NA 708,t1,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:81213540,AGENERSA/CASAN,E-mail,t1,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:81595411,AGENERSA/CASAN,Ofício - NA 725,t1,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:81701160,AGENERSA/CASAN,E-mail,t1,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:82718456,AGENERSA/CASAN,Ofício - NA 757,t1,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:82834832,AGENERSA/CASAN,E-mail,t1,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:82895573,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:83969598,AGENERSA/CASAN,Ofício - NA 831,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:84132825,AGENERSA/CASAN,E-mail,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:86161531,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:86162193,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:86826650,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:86826664,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:86827856,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:87028948,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:87188346,AGENERSA/CASAN,Ofício - NA 946,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:87308946,AGENERSA/CASAN,E-mail,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:89901514,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:91213447,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:91278977,AGENERSA/CASAN,Relatório de Fiscalização,t2,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:92310062,AGENERSA/CASAN,Ofício - NA 32,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:92342599,AGENERSA/CASAN,E-mail,t3,alta,vínculo auditado do piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:SEI-480002/000962/2025,AGENERSA/CASAN,Agenersa: Fiscalização,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:SEI-480002/002556/2025,AGENERSA/CASAN,Agenersa: Fiscalização,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:SEI-480002/006468/2024,AGENERSA/CASAN,Agenersa: Fiscalização,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:SEI-480002/006899/2024,AGENERSA/CASAN,Agenersa: Fiscalização,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:SEI-480002/007581/2024,AGENERSA/CASAN,Agenersa: Fiscalização,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:SEI-480002/008431/2024,AGENERSA/CASAN,Agenersa: Fiscalização,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:SEI-480002/009234/2025,AGENERSA/SCEXEC,Agenersa: Fiscalização,fora_do_modelo,alta,peça sem vínculo no piloto
+P06,SEI-480002/001314/2024,SEI-480002/001314/2024:SEI-480002/009552/2024,AGENERSA/CASAN,Agenersa: Fiscalização,fora_do_modelo,alta,peça sem vínculo no piloto

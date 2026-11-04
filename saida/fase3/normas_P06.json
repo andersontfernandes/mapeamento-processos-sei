@@ -1,546 +1,553 @@
 {
  "codigo": "P06",
+ "escopo": "Estudo de caso de um processo: SEI-480002/001314/2024 (fiscalização da Câmara de Saneamento sobre a concessão do Bloco 1)",
  "normas": [
   {
    "id": "N-P06-01",
-   "norma": "Lei estadual nº 4.556/2005",
+   "norma": "Lei estadual nº 4.556/2005 (criação da AGENERSA)",
    "dispositivo": "art. 4º, IV",
-   "trecho": "IV -Fiscalizar, diretamente ou mediante delegação, os aspectos técnico, econômico, contábil e financeiro, sempre nos limites estabelecidos em normas legais, regulamentares ou pactuais, os contratos de concessão ou permissão de serviços públicos, aplicando diretamente as sanções cabíveis",
+   "trecho": "IV -Fiscalizar, diretamente ou mediante delegação, os aspectos técnico, econômico, contábil e financeiro, sempre nos limites estabelecidos em normas legais, regulame ntares ou pactuais, os contratos de concessão ou permissão de serviços públicos, aplicando diretamente as sanções cabíveis",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "LEI-4556/2005~485281",
-    "txt": "data/txt/biblioteca/normas/lei4556.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/lei4556.pdf"
+    "id_canonico": "LEI-4556/2005",
+    "txt": "normas/txt/LEI-4556-2005.txt",
+    "url": ""
    },
-   "vigencia": "desde 2005 (redação atual dada pela Lei nº 8.638/2019 onde indicado)",
-   "abrangencia": "todas as concessões reguladas",
+   "vigencia": "desde 2005",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
    "obrigacao": "Fiscalizar os contratos de concessão nos aspectos técnico, econômico, contábil e financeiro e aplicar diretamente as sanções cabíveis.",
-   "responsavel": "Câmaras técnicas e Conselho-Diretor",
+   "responsavel": "AGENERSA (Câmara de Saneamento)",
    "prazo": {
     "valor": null,
     "unidade": null,
-    "contagem": ""
+    "contagem": null
    },
    "atividades": [
-    "t1",
+    "t2",
+    "t4",
     "t7"
    ]
   },
   {
    "id": "N-P06-02",
-   "norma": "Lei estadual nº 4.556/2005",
-   "dispositivo": "art. 12, caput",
-   "trecho": "Art. 12. As deliberações do Conselho-Diretor serão tomadas em sessão pública e, devidamente fundamentadas, publicadas no Diário Oficial do Estado do Rio de Janeiro",
+   "norma": "Lei estadual nº 4.556/2005 (criação da AGENERSA)",
+   "dispositivo": "art. 2º, II",
+   "trecho": "II -Na área de serviços de esgoto sanitário e industrial e de abastecimento de água e de coleta e disposição de resíduos sólidos prestados pelas empr esas outorgadas, concessionárias e permissionárias, nas quais o Estado figure como Poder Concedente ou Permitente",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "LEI-4556/2005~485281",
-    "txt": "data/txt/biblioteca/normas/lei4556.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/lei4556.pdf"
+    "id_canonico": "LEI-4556/2005",
+    "txt": "normas/txt/LEI-4556-2005.txt",
+    "url": ""
    },
-   "vigencia": "desde 2005 (redação atual dada pela Lei nº 8.638/2019 onde indicado)",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Tomar as deliberações em sessão pública, fundamentá-las e publicá-las no Diário Oficial do Estado.",
-   "responsavel": "Conselho-Diretor e Secretaria Executiva",
+   "vigencia": "desde 2005",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "Exercer o poder regulatório e fiscalizar as concessões de água e esgoto em que o Estado é poder concedente.",
+   "responsavel": "AGENERSA",
    "prazo": {
     "valor": null,
     "unidade": null,
-    "contagem": ""
+    "contagem": null
    },
    "atividades": [
-    "t7",
-    "t8"
+    "t2",
+    "t7"
    ]
   },
   {
    "id": "N-P06-03",
+   "norma": "Decreto estadual nº 38.618/2005 (Regulamento da AGENERSA)",
+   "dispositivo": "art. 26, I",
+   "trecho": "Art. 26. Compete à Câmara de Saneamento: I - acompanhar, supervisionar e fiscalizar, segundo a legislação em vigor, os contratos de concessão sujeitos à Agência, aferindo, em sua respectiva área de atuação, o cumprimento, pelos concessionários dos serviços públicos concedidos e permitidos, das metas contratualmente estabelecidas",
+   "fonte": {
+    "base": "normativo",
+    "id_canonico": "DEC-38618/2005",
+    "txt": "normas/txt/DEC-38618-2005.txt",
+    "url": ""
+   },
+   "vigencia": "desde 2005",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "A Câmara de Saneamento fiscaliza os contratos de concessão de saneamento e afere o cumprimento das metas contratuais.",
+   "responsavel": "Câmara de Saneamento (CASAN)",
+   "prazo": {
+    "valor": null,
+    "unidade": null,
+    "contagem": null
+   },
+   "atividades": [
+    "t1",
+    "t2",
+    "t4"
+   ]
+  },
+  {
+   "id": "N-P06-04",
    "norma": "Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado)",
    "dispositivo": "art. 27, III",
    "trecho": "III - emitir pareceres técnicos nos processos regulatórios e em outros em que for instado a se manifestar, no prazo de até 15 (quinze) dias, salvo pedido de dilação deste, mediante justificativa fundamentada e autorização do Gerente",
    "fonte": {
     "base": "normativo",
     "id_canonico": "RES-394/2013",
-    "txt": "data/txt/biblioteca/normas/regimentointerno_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/regimentointerno_0.pdf"
+    "txt": "normas/txt/RES-394-2013.txt",
+    "url": ""
    },
-   "vigencia": "desde 2013, com alterações até 2018",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Emitir parecer técnico nos processos regulatórios em até 15 dias, prorrogáveis com autorização do gerente.",
-   "responsavel": "Câmaras técnicas",
+   "vigencia": "desde 2013, texto consolidado da base",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "Emitir parecer técnico nos processos em até 15 dias, prorrogáveis com justificativa e autorização do gerente.",
+   "responsavel": "Câmaras técnicas (CASAN)",
    "prazo": {
     "valor": 15,
     "unidade": "dias_corridos",
-    "contagem": "do recebimento do processo pela câmara"
+    "contagem": "do momento em que a câmara está apta a se manifestar (no caso, fim do prazo de manifestação da concessionária)"
    },
    "atividades": [
-    "t3"
+    "t4",
+    "t6"
    ]
   },
   {
-   "id": "N-P06-04",
+   "id": "N-P06-05",
    "norma": "Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado)",
    "dispositivo": "art. 17, VI",
    "trecho": "VI - manifestar-se nos processos regulatórios, emitindo parecer conclusivo, previamente ao seu julgamento, no prazo de até 15 (quinze) dias, salvo pedido de dilação deste, mediante justificativa fundamentada e autorização do Procurador Geral por mais 15 dias",
    "fonte": {
     "base": "normativo",
     "id_canonico": "RES-394/2013",
-    "txt": "data/txt/biblioteca/normas/regimentointerno_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/regimentointerno_0.pdf"
+    "txt": "normas/txt/RES-394-2013.txt",
+    "url": ""
    },
-   "vigencia": "desde 2013, com alterações até 2018",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Emitir parecer jurídico conclusivo antes do julgamento de todo processo regulatório, em até 15 dias, prorrogáveis por mais 15 com justificativa.",
-   "responsavel": "Procuradoria",
+   "vigencia": "desde 2013, texto consolidado da base",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "Emitir parecer jurídico conclusivo em até 15 dias, prorrogáveis por mais 15 com justificativa e autorização do Procurador Geral.",
+   "responsavel": "Procuradoria (PROC)",
    "prazo": {
     "valor": 15,
     "unidade": "dias_corridos",
-    "contagem": "do recebimento do processo pela Procuradoria (dias úteis a partir de 2024, IN nº 115/2024)"
+    "contagem": "do recebimento dos autos; mais 15 com dilação justificada"
    },
    "atividades": [
-    "t4"
-   ]
-  },
-  {
-   "id": "N-P06-05",
-   "norma": "Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado)",
-   "dispositivo": "art. 48, caput e I",
-   "trecho": "Art. 48 - O Conselheiro-Presidente procederá à respectiva distribuição dos processos, por sorteio, obedecida a ordem cronológica de inclusão em pauta, a um Conselheiro que funcionará como Relator. I - objetivando equilibrar o número de processos que cada Conselheiro venha a receber num determinado período, os relatores já sorteados não mais participarão dos sorteios até que todos tenham sido contemplados",
-   "fonte": {
-    "base": "normativo",
-    "id_canonico": "RES-394/2013",
-    "txt": "data/txt/biblioteca/normas/regimentointerno_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/regimentointerno_0.pdf"
-   },
-   "vigencia": "desde 2013, com alterações até 2018",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Distribuir os processos por sorteio, em ordem cronológica e com rodízio entre os conselheiros.",
-   "responsavel": "Conselheiro-Presidente",
-   "prazo": {
-    "valor": null,
-    "unidade": null,
-    "contagem": ""
-   },
-   "atividades": [
-    "t5"
+    "t7"
    ]
   },
   {
    "id": "N-P06-06",
    "norma": "Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado)",
-   "dispositivo": "art. 49, § 2º",
-   "trecho": "§ 2º - Após a manifestação dos Órgãos Técnicos e da Procuradoria da Agência Reguladora, os interessados serão instados a apresentar as suas razões finais, no prazo máximo de 10 (dez) dias",
+   "dispositivo": "art. 47-A, § 2º",
+   "trecho": "§ 2° - Os prazos estabelecidos nas notificações, quando realizadas por meio eletrônico, iniciam-se no dia seguinte ao da dispo nibilização, obedecida a contagem somente nos dias úteis.",
    "fonte": {
     "base": "normativo",
     "id_canonico": "RES-394/2013",
-    "txt": "data/txt/biblioteca/normas/regimentointerno_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/regimentointerno_0.pdf"
+    "txt": "normas/txt/RES-394-2013.txt",
+    "url": ""
    },
-   "vigencia": "desde 2013, com alterações até 2018",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Instar os interessados a apresentar razões finais depois dos pareceres técnico e jurídico, com prazo de 10 dias.",
-   "responsavel": "Conselheiro-Relator",
+   "vigencia": "desde 2013, texto consolidado da base",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "Contar em dias úteis, a partir do dia seguinte à disponibilização, os prazos das notificações eletrônicas.",
+   "responsavel": "Secretaria Executiva e câmaras técnicas",
    "prazo": {
-    "valor": 10,
-    "unidade": "dias_corridos",
-    "contagem": "da notificação (dias úteis a partir de 2024, IN nº 115/2024)"
+    "valor": null,
+    "unidade": "dias_uteis",
+    "contagem": "dia seguinte ao da disponibilização da notificação eletrônica"
    },
    "atividades": [
-    "t6"
+    "t3",
+    "t5",
+    "t8"
    ]
   },
   {
    "id": "N-P06-07",
    "norma": "Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado)",
-   "dispositivo": "art. 53, caput",
-   "trecho": "Art. 53 - Para inclusão em pauta de Sessão Regulatória, o processo deverá, necessariamente, estar instruído contendo, no mínimo, pareceres conclusivos da(s) Câmara(s) Técnica(s), quando for o caso, e da Procuradoria da AGENERSA, que devem ser proferidos no prazo máximo de 30 (trinta) dias, salvo comprovada necessidade de prorrogação",
+   "dispositivo": "art. 85, caput",
+   "trecho": "Art. 85 - Na contagem dos prazos estabelecidos neste Regimento Interno para a prática de atos dos interessados, excluir -se-á o dia do início e incluir -se-á o do vencimento, e considerar-se-ão os dias consecutivos.",
    "fonte": {
     "base": "normativo",
     "id_canonico": "RES-394/2013",
-    "txt": "data/txt/biblioteca/normas/regimentointerno_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/regimentointerno_0.pdf"
+    "txt": "normas/txt/RES-394-2013.txt",
+    "url": ""
    },
-   "vigencia": "desde 2013, com alterações até 2018",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Só incluir o processo em pauta com pareceres conclusivos da câmara técnica, quando for o caso, e da Procuradoria, proferidos em até 30 dias.",
-   "responsavel": "Conselheiro-Relator, câmaras técnicas e Procuradoria",
+   "vigencia": "desde 2013, texto consolidado da base",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "Regra geral do Regimento para prazos dos interessados: exclui o dia do início, inclui o do vencimento e conta dias consecutivos.",
+   "responsavel": "Secretaria Executiva",
    "prazo": {
-    "valor": 30,
+    "valor": null,
     "unidade": "dias_corridos",
-    "contagem": "do recebimento pelo órgão parecerista"
+    "contagem": "exclui o dia do início"
    },
    "atividades": [
     "t3",
-    "t4",
-    "t7"
+    "t5"
    ]
   },
   {
    "id": "N-P06-08",
-   "norma": "Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado)",
-   "dispositivo": "art. 53, § 2º",
-   "trecho": "§2º - Concluída a instrução, o Relator terá o prazo de 30 (trinta) dias para inscrever o processo em pauta de Sessão Regulatória",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 1º, caput",
+   "trecho": "Art. 1º. Esta Instrução Normativa confere competência aos agentes públicos lotados nas Câmaras Técnicas para realização de ações de fiscalização e apli cação de penalidades referentes às",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "RES-394/2013",
-    "txt": "data/txt/biblioteca/normas/regimentointerno_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/regimentointerno_0.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2013, com alterações até 2018",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Inscrever o processo em pauta de Sessão Regulatória em até 30 dias da conclusão da instrução.",
-   "responsavel": "Conselheiro-Relator",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "Os agentes das câmaras técnicas têm competência para fiscalizar e aplicar penalidades nas concessões dos Blocos.",
+   "responsavel": "Câmara de Saneamento (CASAN)",
    "prazo": {
-    "valor": 30,
-    "unidade": "dias_corridos",
-    "contagem": "da conclusão da instrução"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
-    "t6",
-    "t7"
+    "t2"
    ]
   },
   {
    "id": "N-P06-09",
-   "norma": "Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado)",
-   "dispositivo": "art. 77, caput",
-   "trecho": "Art. 77 - Concluída a sessão, serão as deliberações publicadas no Diário Oficial do Estado do Rio de Janeiro - Seção 1, ficando a íntegra dos votos dos Conselheiros à disposição de quaisquer interessados",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 8º, § 3º (remete ao art. 4º)",
+   "trecho": "§3º. Na ação de fiscalização programada, o agente público responsável deverá enviar à Concessionária um Aviso de Fisca lização (AF), com antecedência mínima de 48 (quarenta e oito) horas, conforme art. 4º desta Instrução Normativa.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "RES-394/2013",
-    "txt": "data/txt/biblioteca/normas/regimentointerno_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/regimentointerno_0.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2013, com alterações até 2018",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Publicar as deliberações no Diário Oficial depois da sessão e manter a íntegra dos votos à disposição dos interessados.",
-   "responsavel": "Secretaria Executiva",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "Enviar Aviso de Fiscalização à concessionária com ao menos 48 horas de antecedência da fiscalização programada.",
+   "responsavel": "Agente de fiscalização da CASAN",
    "prazo": {
-    "valor": null,
+    "valor": 48,
     "unidade": null,
-    "contagem": ""
+    "contagem": "horas antes do início da fiscalização programada"
    },
    "atividades": [
-    "t8"
+    "t1"
    ]
   },
   {
    "id": "N-P06-10",
-   "norma": "Regimento Interno da AGENERSA (Resolução CODIR nº 394/2013, texto consolidado)",
-   "dispositivo": "art. 79, caput e § 1º",
-   "trecho": "caberá uma única vez, no prazo de 10 (dez) dias, recurso da parte interessada inconformada ao próprio Conselho Diretor.\" §1º - O Recurso a que alude o caput deste artigo deverá ser distribuído a Relator diverso do que propôs a deliberação recorrida",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 5º, caput",
+   "trecho": "Art. 5º. Após concluída a ação de fiscalização, o agente público responsável deverá elaborar um Relatório de Fiscalização (RF), conforme modelo do ANEXO II, e que deverá conter:",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "RES-394/2013",
-    "txt": "data/txt/biblioteca/normas/regimentointerno_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/regimentointerno_0.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2013, com alterações até 2018",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Admitir um único recurso ao Conselho-Diretor em 10 dias e distribuí-lo a relator diverso do que propôs a deliberação recorrida.",
-   "responsavel": "Conselheiro-Presidente",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "Elaborar Relatório de Fiscalização, no modelo do Anexo II, com o conteúdo mínimo dos incisos (inclusive determinações, recomendações e normas violadas).",
+   "responsavel": "Agente de fiscalização da CASAN",
    "prazo": {
-    "valor": 10,
-    "unidade": "dias_corridos",
-    "contagem": "da ciência da deliberação (dias úteis a partir de 2024)"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
-    "t7",
-    "t9"
+    "t2"
    ]
   },
   {
    "id": "N-P06-11",
-   "norma": "Decreto estadual nº 38.618/2005 (Regulamento da AGENERSA)",
-   "dispositivo": "art. 39",
-   "trecho": "Art. 39. Concluídas todas as diligências e a instrução, os autos serão remetidos à Procuradoria da Agência para parecer conclusivo e, após, devolvidos ao Relator, que terá o prazo improrrogável de 30 (trinta) dias para confecção do relatório e voto e para requerer a respectiva inclusão em pauta de Sessão Regulatória",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 6º, parágrafo único",
+   "trecho": "Parágrafo Único. Entendendo o agente público responsável pela ação de fiscalização que a situação verificada não se caracteriza como irregularidade passível de aplicação imediata de penalidade de  advertência ou  multa, lavrará somente Relatório de Fiscalização (RF),  o qual instruirá o processo de fiscalização que, ao final, poderá gerar uma Notificação de Infração (NI).",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "DEC-38618/2005~3eb60c",
-    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/DECRETO386182005.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/DECRETO386182005.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2005",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Remeter os autos instruídos à Procuradoria para parecer conclusivo; devolvidos, o relator tem 30 dias improrrogáveis para relatório, voto e pedido de pauta.",
-   "responsavel": "Procuradoria e Conselheiro-Relator",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "Sem penalidade imediata, lavrar só o Relatório de Fiscalização, que instrui o processo e pode, ao final, gerar Notificação de Infração.",
+   "responsavel": "Agente de fiscalização da CASAN",
    "prazo": {
-    "valor": 30,
-    "unidade": "dias_corridos",
-    "contagem": "da devolução dos autos pela Procuradoria"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
-    "t4",
-    "t7"
+    "t2",
+    "t4"
    ]
   },
   {
    "id": "N-P06-12",
-   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
-   "dispositivo": "art. 45",
-   "trecho": "Art. 45 - Concluída a instrução de processo administrativo, a Administração tem o prazo de até trinta dias para decidir, salvo prorrogação, por igual período, expressamente motivada",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 9º, V",
+   "trecho": "V. fixar ou prorrogar prazos para o atendimento de suas solicitações;",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "LEI-5427/2009",
-    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/LEI5427.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/LEI5427.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2009",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Decidir em até 30 dias após concluída a instrução, prorrogáveis uma vez por igual período com motivação expressa.",
-   "responsavel": "Conselho-Diretor",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "O agente de fiscalização pode fixar ou prorrogar prazos para a concessionária atender às solicitações.",
+   "responsavel": "Agente de fiscalização da CASAN",
    "prazo": {
-    "valor": 30,
-    "unidade": "dias_corridos",
-    "contagem": "da conclusão da instrução"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
-    "t6",
-    "t7"
+    "t2",
+    "t3"
    ]
   },
   {
    "id": "N-P06-13",
-   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
-   "dispositivo": "art. 48, I e II",
-   "trecho": "Art. 48 - As decisões proferidas em processo administrativo deverão ser motivadas, com indicação dos fatos e dos fundamentos jurídicos, quando: I. neguem, limitem, modifiquem ou extingam direitos; II. imponham ou agravem deveres, encargos ou sanções",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 32, caput",
+   "trecho": "Art. 32. O Relatório de Fiscalização (RF) e a Notificação de Infração (NI) deverão ser enviados ao Gerente da Câmara Técnica no prazo máximo de 05 (cinco) dias úteis, após as respectivas lavraturas.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "LEI-5427/2009",
-    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/LEI5427.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/LEI5427.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2009",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Motivar, com fatos e fundamentos jurídicos, as decisões que limitem direitos ou imponham deveres e sanções.",
-   "responsavel": "Conselho-Diretor",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "Enviar o Relatório de Fiscalização (e a Notificação de Infração, se houver) ao gerente da câmara em até 5 dias úteis da lavratura.",
+   "responsavel": "Agente de fiscalização da CASAN",
    "prazo": {
-    "valor": null,
-    "unidade": null,
-    "contagem": ""
+    "valor": 5,
+    "unidade": "dias_uteis",
+    "contagem": "da lavratura do relatório"
    },
    "atividades": [
-    "t7"
+    "t2"
    ]
   },
   {
    "id": "N-P06-14",
-   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
-   "dispositivo": "art. 69",
-   "trecho": "Art. 69 - Nenhuma sanção administrativa será aplicada à pessoa física ou jurídica pela administração, sem que lhe seja assegurada ampla e prévia defesa, em procedimento sancionatório",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 32, § 1º",
+   "trecho": "§1º. O Gerente da Câmara Técnica, concordando com o Relatório de Fiscalização (RF) e com a Notificação de Infração (NI) lavrados pelo agente público responsável pela ação de fiscalização, dará o seu “De Acordo” para prosseguimento",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "LEI-5427/2009",
-    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/LEI5427.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/LEI5427.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2009",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Só aplicar sanção depois de assegurar ampla e prévia defesa em procedimento sancionatório.",
-   "responsavel": "Conselho-Diretor",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "O gerente da câmara dá o \"De Acordo\" no relatório para que o processo prossiga.",
+   "responsavel": "Gerente da CASAN",
    "prazo": {
     "valor": null,
     "unidade": null,
-    "contagem": ""
+    "contagem": null
    },
    "atividades": [
-    "t1",
-    "t10",
-    "t6",
-    "t7"
+    "t2"
    ]
   },
   {
    "id": "N-P06-15",
-   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
-   "dispositivo": "art. 74, caput",
-   "trecho": "Art. 74 - Prescreve em cinco anos a ação punitiva da Administração Pública Estadual, direta e indireta, objetivando apurar infração à legislação em vigor, contados da data da prática do ato ou, no caso de infração permanente ou continuada, do dia em que tiver cessado",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 33, caput",
+   "trecho": "Art. 33. Após recebimento da No tificação de Infração (NI) a Concessionária terá prazo de 30 (trinta) dias para apresentar sua defesa prévia à Câmara Técnica onde se originou a ação de fiscalização.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "LEI-5427/2009",
-    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/LEI5427.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/LEI5427.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2009",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Concluir a ação punitiva em até cinco anos contados da prática do ato ou, se permanente ou continuada, da cessação.",
-   "responsavel": "Conselho-Diretor",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "Lavrada Notificação de Infração, conceder 30 dias para defesa prévia da concessionária.",
+   "responsavel": "CASAN",
    "prazo": {
-    "valor": 5,
-    "unidade": "anos",
-    "contagem": "da prática da infração ou da sua cessação; interrompe-se pela notificação, por ato inequívoco de apuração e pela decisão condenatória recorrível (§ 2º)"
+    "valor": 30,
+    "unidade": "dias_uteis",
+    "contagem": "do recebimento da Notificação de Infração (dias úteis pelo art. 39)"
    },
    "atividades": [
-    "t1",
-    "t7"
+    "t3"
    ]
   },
   {
    "id": "N-P06-16",
-   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
-   "dispositivo": "art. 74, § 1º",
-   "trecho": "§1º Incide a prescrição no procedimento administrativo paralisado por mais de três anos, pendente de julgamento ou despacho",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 39, § 3º, I e II",
+   "trecho": "§3º. Os prazos expressos em dias contar-se-ão: I - em dias úteis quando for o caso de impugnar, recorrer, falar nos autos e, em geral, cumprir providência processual; II - de modo contínuo quando se tratar de prazos para o cumprimento de obrigações materiais por parte do administrado",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "LEI-5427/2009",
-    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/LEI5427.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/LEI5427.pdf"
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
+    "url": ""
    },
-   "vigencia": "desde 2009",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Não deixar o processo sancionador paralisado por mais de três anos pendente de julgamento ou despacho.",
-   "responsavel": "Todas as unidades",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "Contar em dias úteis os prazos para a concessionária falar nos autos e em dias corridos os prazos para cumprir obrigações materiais.",
+   "responsavel": "CASAN e Secretaria Executiva",
    "prazo": {
-    "valor": 3,
-    "unidade": "anos",
-    "contagem": "do último ato que movimentou o processo"
+    "valor": null,
+    "unidade": "dias_uteis",
+    "contagem": "manifestação nos autos em dias úteis; obrigação material em dias corridos"
    },
    "atividades": [
-    "t1",
+    "t2",
     "t3",
-    "t4",
-    "t7"
+    "t5"
    ]
   },
   {
    "id": "N-P06-17",
-   "norma": "Deliberação AGENERSA nº 4.865/2025 (voto)",
-   "dispositivo": "voto, item 15",
-   "trecho": "a contagem do prazo da prescrição intercorrente se inicia toda vez que o processo fica pendente de movimentação, e cessa assim que realizada qualquer diligência destinada à apuração da conduta ou a completar o contraditório e assegurar a ampla defesa dos particulares",
+   "norma": "Instrução Normativa AGENERSA CODIR nº 128/2024 (fiscalização dos Blocos 1, 2, 3 e 4)",
+   "dispositivo": "art. 3º, caput",
+   "trecho": "Art. 3º. Durante as ações de fiscalização, os agentes públicos deverão encontrar -se devidamente identificados e credenciados e terão livre acesso às obras, equipamentos e instalações utilizados na execução dos serviços",
    "fonte": {
-    "base": "deliberacoes",
-    "id_canonico": "DEL-4865/2025",
-    "txt": "data/txt/deliberacoes/Deliberacao4865_1.txt",
+    "base": "normativo",
+    "id_canonico": "IN-128/2024",
+    "txt": "normas/txt/IN-128-2024.txt",
     "url": ""
    },
-   "vigencia": "fevereiro de 2025",
-   "abrangencia": "processos sancionadores da agência",
-   "obrigacao": "Entendimento: a prescrição intercorrente corre enquanto o processo fica sem movimentação e cessa a cada diligência de apuração ou de contraditório.",
-   "responsavel": "Conselho-Diretor",
+   "vigencia": "assinada em 01/10/2024; entra em vigor 30 dias após a publicação no Diário Oficial (art. 44). Não alcança as vistorias e relatórios anteriores (o ciclo de 2024 começou em março de 2024); data de publicação a confirmar no DOERJ",
+   "abrangencia": "concessões de água e esgoto dos Blocos 1, 2, 3 e 4 (no caso, Bloco 1)",
+   "obrigacao": "Os agentes, identificados e credenciados, têm livre acesso às obras, equipamentos e instalações da concessão.",
+   "responsavel": "Concessionária (dever de permitir acesso); CASAN",
    "prazo": {
-    "valor": 3,
-    "unidade": "anos",
-    "contagem": "do último ato de apuração ou de contraditório"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
+    "t1",
+    "t2",
+    "t6",
     "t7"
    ]
   },
   {
    "id": "N-P06-18",
-   "norma": "Lei estadual nº 9.789/2022",
-   "dispositivo": "art. 4º (nova redação do art. 67, § 2º, I, da Lei nº 5.427/2009)",
-   "trecho": "I – em dias úteis quando for o caso de impugnar, recorrer, falar nos autos e, em geral, cumprir providência processual",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 21",
+   "trecho": "Art. 21 - Inexistindo disposição específica, os atos do órgão ou autoridade responsável pelo processo e dos administrados que dele participem devem ser praticados no prazo de quinze dias úteis, salvo justo motivo.",
    "fonte": {
-    "base": "legislacao_externa",
-    "id_canonico": "LEI-9789/2022",
-    "txt": "data/txt/legislacao_externa/LEI-9789-2022.txt",
-    "url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=53&url=L2NvbnRsZWkubnNmL2YyNWVkYWU3ZTY0ZGI1M2IwMzI1NjRmZTAwNTI2MmVmLzFhNTI2MWVlOWMxYjVkMzIwMzI1ODg4NjAwNjY2MzcwP09wZW5Eb2N1bWVudA%3D%3D"
+    "base": "normativo",
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "a partir de 60 dias da publicação (DOERJ de 14/07/2022), para prazos iniciados depois da vigência",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Contar em dias úteis os prazos para impugnar, recorrer, falar nos autos e cumprir providência processual.",
-   "responsavel": "Todas as unidades",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Sem prazo específico, praticar os atos do processo (da agência e da concessionária) em até 15 dias úteis.",
+   "responsavel": "Todas as unidades e a concessionária",
    "prazo": {
-    "valor": null,
-    "unidade": null,
-    "contagem": ""
+    "valor": 15,
+    "unidade": "dias_uteis",
+    "contagem": "do ato que dá ensejo ao seguinte"
    },
    "atividades": [
-    "t1",
-    "t6",
-    "t10"
+    "t3",
+    "t5",
+    "t8"
    ]
   },
   {
    "id": "N-P06-19",
-   "norma": "Resolução AGENERSA CODIR nº 787/2022",
-   "dispositivo": "art. 1º e parágrafo único",
-   "trecho": "Art. 1º A Secretaria Executiva promoverá o encerramento e procederá ao arquivamento dos processos regulatórios em que haja decisão do Conselho Diretor da qual não caiba mais recurso na seara administrativa. Parágrafo único. Antes do encerramento do processo, a Secretaria Executiva deverá certificar o não cabimento de recurso administrativo e o cumprimento das previdências determinadas na Deliberação",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 22, caput",
+   "trecho": "Art. 22 - O órgão competente para a condução do processo determinará a intimação do interessado para ciência de decisão ou efetivação de diligências.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "RES-787/2022",
-    "txt": "data/txt/biblioteca/normas/Resolucao787.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/Resolucao787.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde junho de 2022",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Encerrar e arquivar o processo só depois de certificar o não cabimento de recurso e o cumprimento das providências da deliberação.",
-   "responsavel": "Secretaria Executiva",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Intimar a concessionária para ciência de decisão ou realização de diligência.",
+   "responsavel": "CASAN e Secretaria Executiva",
    "prazo": {
     "valor": null,
     "unidade": null,
-    "contagem": ""
+    "contagem": null
    },
    "atividades": [
-    "t9"
+    "t1",
+    "t3",
+    "t5",
+    "t8"
    ]
   },
   {
    "id": "N-P06-20",
-   "norma": "Instrução Normativa AGENERSA CODIR nº 1/2007",
-   "dispositivo": "art. 3º, § 3º",
-   "trecho": "§ 3º. Na ação de fiscalização programada, a se realizar nas dependências das Concessionárias, a AGENERSA deverá apresentar às mesmas, documento contendo a programação da mencionada ação de fiscalização, relacionando eventos e periodicidades, com antecedência mínima de 24 (vinte e quatro) horas do início do período de fiscalização",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 24",
+   "trecho": "Art. 24 - Devem ser objeto de intimação os atos do processo que resultem para o interessado em imposição de deveres, ônus, sanções ou restrição ao exercício de direitos.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-001/2007",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/IN01.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/IN01.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 2007, com alterações das IN nº 2/2008, 45/2014 e 96/2023",
-   "abrangencia": "CEG e CEG Rio",
-   "obrigacao": "Apresentar à concessionária, 24 horas antes, a programação da fiscalização programada.",
-   "responsavel": "Câmara técnica (CAENE)",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Intimar a concessionária de todo ato que lhe imponha dever, ônus ou sanção (inclusive as determinações dos relatórios e dos pareceres).",
+   "responsavel": "CASAN e Secretaria Executiva",
    "prazo": {
-    "valor": 1,
-    "unidade": "dias_corridos",
-    "contagem": "antes do início da fiscalização"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
-    "t1"
+    "t3",
+    "t5",
+    "t8"
    ]
   },
   {
    "id": "N-P06-21",
-   "norma": "Instrução Normativa AGENERSA CODIR nº 1/2007",
-   "dispositivo": "art. 5º, parágrafo único",
-   "trecho": "de acordo com o assunto, no prazo máximo de 03 (três) dias, contados do término da ação de fiscalização",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 35, caput",
+   "trecho": "Art. 35 - Quando for necessária a prestação de informações ou a apresentação de provas pelos interessados ou terceiros, serão expedidas intimações para esse fim, mencionando-se data, prazo, forma e condições de atendimento.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-001/2007",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/IN01.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/IN01.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 2007, com alterações das IN nº 2/2008, 45/2014 e 96/2023",
-   "abrangencia": "CEG e CEG Rio",
-   "obrigacao": "Entregar o relatório de fiscalização à gerência da câmara em até 3 dias do término da fiscalização.",
-   "responsavel": "Agente de fiscalização",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Ao pedir informações à concessionária, indicar na intimação data, prazo, forma e condições de atendimento.",
+   "responsavel": "CASAN",
    "prazo": {
-    "valor": 3,
-    "unidade": "dias_corridos",
-    "contagem": "do término da fiscalização"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
-    "t1"
+    "t3"
    ]
   },
   {
    "id": "N-P06-22",
-   "norma": "Instrução Normativa AGENERSA CODIR nº 1/2007",
-   "dispositivo": "art. 6º, § 2º",
-   "trecho": "§ 2º. A Concessionária terá prazo improrrogável de 10 (dez) dias, contados do dia útil seguinte ao recebimento do Termo de Notificação, para manifestar-se sobre o objeto do mesmo, inclusive juntando comprovantes que julgar convenientes",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 37",
+   "trecho": "Art. 37 - O interessado já qualificado no processo será intimado de prova ou diligência ordenada, com antecedência mínima de três dias úteis, mencionando-se data, hora e local de realização.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-001/2007",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/IN01.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/IN01.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 2007, com alterações das IN nº 2/2008, 45/2014 e 96/2023",
-   "abrangencia": "CEG e CEG Rio",
-   "obrigacao": "Conceder à concessionária 10 dias improrrogáveis para manifestar-se sobre o Termo de Notificação.",
-   "responsavel": "Câmara técnica",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Intimar a concessionária de diligência (vistoria) com ao menos 3 dias úteis de antecedência, com data, hora e local.",
+   "responsavel": "CASAN",
    "prazo": {
-    "valor": 10,
-    "unidade": "dias_corridos",
-    "contagem": "do dia útil seguinte ao recebimento do Termo de Notificação"
+    "valor": 3,
+    "unidade": "dias_uteis",
+    "contagem": "antes da data da diligência"
    },
    "atividades": [
     "t1"
@@ -548,248 +555,278 @@
   },
   {
    "id": "N-P06-23",
-   "norma": "Instrução Normativa AGENERSA CODIR nº 1/2007",
-   "dispositivo": "art. 7º",
-   "trecho": "Art. 7º. Nas hipóteses em que, na ação de fiscalização, for verificada a existência de irregularidade, o Gerente da Câmara Técnica de Energia – CAENE ou da Câmara Técnica de Política Econômica e Tarifária – CAPET, deverá providenciar a instauração de processo regulatório, cuja peça inicial será o Relatório de Fiscalização, seguido pelo Termo de Notificação",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 38, caput",
+   "trecho": "Art. 38 - Quando deva ser obrigatoriamente ouvido um órgão consultivo, o parecer deverá ser emitido no prazo máximo de trinta dias, salvo norma especial ou comprovada necessidade de prorrogação.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-001/2007",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/IN01.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/IN01.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 2007, com alterações das IN nº 2/2008, 45/2014 e 96/2023",
-   "abrangencia": "CEG e CEG Rio",
-   "obrigacao": "Instaurar processo regulatório com o relatório de fiscalização e o Termo de Notificação, instruí-lo com parecer técnico e enviá-lo a sorteio.",
-   "responsavel": "Gerência da câmara técnica",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Emitir parecer obrigatório de órgão consultivo em até 30 dias, salvo norma especial ou prorrogação justificada.",
+   "responsavel": "Procuradoria (PROC)",
    "prazo": {
-    "valor": null,
-    "unidade": null,
-    "contagem": ""
+    "valor": 30,
+    "unidade": "dias_corridos",
+    "contagem": "do recebimento dos autos"
    },
    "atividades": [
-    "t1",
-    "t3",
-    "t5"
+    "t7"
    ]
   },
   {
    "id": "N-P06-24",
-   "norma": "Instrução Normativa AGENERSA CODIR nº 1/2007",
-   "dispositivo": "art. 13",
-   "trecho": "Art. 13. As penalidades de advertência e/ou multa devem ser aplicadas mediante decisão fundamentada da AGENERSA, tomada em Processo Regulatório instaurado na forma do art. 7º, assegurado o direito à ampla defesa e ao devido processo legal",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 40",
+   "trecho": "Art. 40 - Encerrada a instrução, o interessado terá o direito de manifestar-se no prazo máximo de dez dias, salvo se outro prazo for legalmente fixado.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-001/2007",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/IN01.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/IN01.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 2007, com alterações das IN nº 2/2008, 45/2014 e 96/2023",
-   "abrangencia": "CEG e CEG Rio",
-   "obrigacao": "Aplicar advertência ou multa só por decisão fundamentada em processo regulatório, com ampla defesa.",
-   "responsavel": "Conselho-Diretor",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Encerrada a instrução, abrir à concessionária prazo de até 10 dias para manifestação.",
+   "responsavel": "Secretaria Executiva",
    "prazo": {
-    "valor": null,
-    "unidade": null,
-    "contagem": ""
+    "valor": 10,
+    "unidade": "dias_uteis",
+    "contagem": "da ciência do encerramento da instrução"
    },
    "atividades": [
-    "t7"
+    "t5",
+    "t6"
    ]
   },
   {
    "id": "N-P06-25",
-   "norma": "Instrução Normativa AGENERSA nº 128/2024",
-   "dispositivo": "art. 4º",
-   "trecho": "Antes de iniciar a ação de Fiscalização Programada, o agente público responsável deverá enviar um documento denominado Aviso de Fiscalização (AF)",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 45",
+   "trecho": "Art. 45 - Concluída a instrução de processo administrativo, a Administração tem o prazo de até trinta dias para decidir, salvo prorrogação, por igual período, expressamente motivada.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-128/2024",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/N128.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/N128.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 01/10/2024",
-   "abrangencia": "concessionárias dos Blocos 1, 2, 3 e 4 (Águas do Rio, Iguá, Rio+Saneamento)",
-   "obrigacao": "Enviar Aviso de Fiscalização antes da fiscalização programada, com antecedência mínima de 48 horas.",
-   "responsavel": "Agente de fiscalização",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Decidir em até 30 dias após concluída a instrução, prorrogáveis uma vez com motivação expressa.",
+   "responsavel": "Secretaria Executiva / autoridade competente",
    "prazo": {
-    "valor": 2,
+    "valor": 30,
     "unidade": "dias_corridos",
-    "contagem": "antes do início da fiscalização"
+    "contagem": "da conclusão da instrução"
    },
    "atividades": [
-    "t1"
+    "t8"
    ]
   },
   {
    "id": "N-P06-26",
-   "norma": "Instrução Normativa AGENERSA nº 128/2024",
-   "dispositivo": "art. 32, caput",
-   "trecho": "Art. 32. O Relatório de Fiscalização (RF) e a Notificação de Infração (NI) deverão ser enviados ao Gerente da Câmara Técnica no prazo máximo de 05 (cinco) dias úteis, após as respectivas lavraturas",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 48, caput, I e II",
+   "trecho": "Art. 48 - As decisões proferidas em processo administrativo deverão ser motivadas, com indicação dos fatos e dos fundamentos jurídicos, quando: I. neguem, limitem, modifiquem ou extingam direitos; II. imponham ou agravem deveres, encargos ou sanções;",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-128/2024",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/N128.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/N128.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 01/10/2024",
-   "abrangencia": "concessionárias dos Blocos 1, 2, 3 e 4 (Águas do Rio, Iguá, Rio+Saneamento)",
-   "obrigacao": "Enviar o relatório e a notificação de infração ao gerente da câmara em até 5 dias úteis da lavratura.",
-   "responsavel": "Agente de fiscalização",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Motivar, com fatos e fundamentos jurídicos, as decisões que limitem direitos ou imponham deveres.",
+   "responsavel": "CASAN, Procuradoria e Secretaria Executiva",
    "prazo": {
-    "valor": 5,
-    "unidade": "dias_uteis",
-    "contagem": "da lavratura"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
-    "t1"
+    "t4",
+    "t6",
+    "t8"
    ]
   },
   {
    "id": "N-P06-27",
-   "norma": "Instrução Normativa AGENERSA nº 128/2024",
-   "dispositivo": "art. 33, caput e § 1º",
-   "trecho": "Art. 33. Após recebimento da Notificação de Infração (NI) a Concessionária terá prazo de 30 (trinta) dias para apresentar sua defesa prévia à Câmara Técnica onde se originou a ação de fiscalização. §1º. O Gerente da Câmara Técnica terá prazo de 15 (quinze) dias, prorrogável por igual período, para analisar a defesa prévia apresentada pela Concessionária",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 48, § 1º",
+   "trecho": "§1º A motivação deve ser explícita, clara e congruente, podendo consistir em declaração de concordância com fundamentos de anteriores pareceres, informações, decisões ou propostas, que, neste caso, serão parte integrante do ato e deverão compor a instrução do processo.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-128/2024",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/N128.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/N128.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 01/10/2024",
-   "abrangencia": "concessionárias dos Blocos 1, 2, 3 e 4 (Águas do Rio, Iguá, Rio+Saneamento)",
-   "obrigacao": "Conceder 30 dias para defesa prévia contra a notificação de infração e analisá-la em 15 dias, prorrogáveis.",
-   "responsavel": "Câmara técnica",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "A motivação pode remeter a pareceres anteriores, que passam a integrar o ato e devem estar nos autos.",
+   "responsavel": "Secretaria Executiva",
    "prazo": {
-    "valor": 30,
-    "unidade": "dias_uteis",
-    "contagem": "do recebimento da Notificação de Infração (art. 39: dias úteis)"
+    "valor": null,
+    "unidade": null,
+    "contagem": null
    },
    "atividades": [
-    "t1",
-    "t3"
+    "t8"
    ]
   },
   {
    "id": "N-P06-28",
-   "norma": "Instrução Normativa AGENERSA CODIR nº 9/2010 (enunciados)",
-   "dispositivo": "art. 1º, Enunciado nº 2",
-   "trecho": "A Impugnação ao Auto de Infração decorrente de decisão do Conselho- Diretor não é sucedâneo recursal e, portanto, deve se restringir aos aspectos formais do Auto de Infração",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 67, caput e § 2º",
+   "trecho": "Art. 67 - Os prazos começam a correr a partir da data da cientificação oficial, excluindo-se da contagem o dia do começo e incluindo-se o do vencimento.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-009/2010",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/IN09_0.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/IN09_0.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde 2010, com alterações das IN nº 46/2014 e 76/2019",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Entendimento consolidado: a impugnação ao auto de infração não substitui o recurso e se limita aos aspectos formais.",
-   "responsavel": "Secretaria Executiva e Procuradoria",
+   "vigencia": "desde 2009. O § 2º do texto da base (prazos em dias contados de modo contínuo) é a redação original; a IN 128/2024, art. 39, § 3º, transcreve a redação dada pela Lei nº 9.789/2022 (dias úteis para falar nos autos). Texto da base desatualizado quanto ao § 2º",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Contar os prazos da cientificação oficial, excluído o dia do começo e incluído o do vencimento.",
+   "responsavel": "Secretaria Executiva",
    "prazo": {
     "valor": null,
     "unidade": null,
-    "contagem": ""
+    "contagem": "da cientificação oficial"
    },
    "atividades": [
-    "t9"
+    "t3",
+    "t5",
+    "t8"
    ]
   },
   {
    "id": "N-P06-29",
-   "norma": "Instrução Normativa AGENERSA nº 117/2024",
-   "dispositivo": "art. 1º, § 1º",
-   "trecho": "§1º. Ficam as Concessionárias obrigadas a convidar a AGENERSA a acompanhar todas as fiscalizações a serem realizadas nos postos de GNV",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 69",
+   "trecho": "Art. 69 - Nenhuma sanção administrativa será aplicada à pessoa física ou jurídica pela administração, sem que lhe seja assegurada ampla e prévia defesa, em procedimento sancionatório.",
    "fonte": {
     "base": "normativo",
-    "id_canonico": "IN-117/2024",
-    "txt": "data/txt/biblioteca/instrucoesnormativas/IN117.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/IN117.pdf"
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
    },
-   "vigencia": "desde março de 2024 (revogou a IN nº 94/2023)",
-   "abrangencia": "CEG e CEG Rio (postos de GNV)",
-   "obrigacao": "As concessionárias devem fiscalizar os postos de GNV semestralmente e convidar a AGENERSA a acompanhar todas as fiscalizações.",
-   "responsavel": "Concessionárias CEG e CEG Rio; CAENE",
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Só aplicar sanção depois de assegurar ampla e prévia defesa em procedimento sancionatório.",
+   "responsavel": "CASAN e Conselho-Diretor",
    "prazo": {
     "valor": null,
     "unidade": null,
-    "contagem": "periodicidade semestral das fiscalizações; convite com 24 horas de antecedência (§ 2º)"
-   },
-   "atividades": [
-    "t1"
-   ]
-  },
-  {
-   "id": "N-P06-30",
-   "norma": "Lei estadual nº 6.560/2013",
-   "dispositivo": "arts. 2º e 3º",
-   "trecho": "Art. 2º O Poder Concedente, através da Agência Reguladora de Energia e Saneamento Básico- AGENERSA, definirá as larguras das referidas faixas \"non aedificandi\", função do diâmetro das tubulações",
-   "fonte": {
-    "base": "legislacao_externa",
-    "id_canonico": "LEI-6560/2013",
-    "txt": "data/txt/legislacao_externa/LEI-6560-2013.txt",
-    "url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=53&url=L2NvbnRsZWkubnNmL2YyNWVkYWU3ZTY0ZGI1M2IwMzI1NjRmZTAwNTI2MmVmL2E1OGJiYzQzYmI3ZjJmMDc4MzI1N2MwODAwNjY1YzYxP09wZW5Eb2N1bWVudA%3D%3D"
-   },
-   "vigencia": "desde 17/10/2013",
-   "abrangencia": "concessionárias de saneamento (adutoras)",
-   "obrigacao": "Definir, pela AGENERSA, as larguras das faixas non aedificandi das adutoras de água.",
-   "responsavel": "AGENERSA (CASAN)",
-   "prazo": {
-    "valor": 90,
-    "unidade": "dias_corridos",
-    "contagem": "da publicação da lei (art. 3º)"
-   },
-   "atividades": [
-    "t1",
-    "t3"
-   ]
-  },
-  {
-   "id": "N-P06-31",
-   "norma": "Contrato de Concessão da CEG Rio (1997)",
-   "dispositivo": "Cláusula Oitava, § 10",
-   "trecho": "das solicitações, recomendações e determinações da ASEP-RJ implicará a aplicação das penalidades autorizadas pelas normas do serviço ou definidas neste Contrato",
-   "fonte": {
-    "base": "normativo",
-    "id_canonico": "CONTRATO-CEG-RIO/1997",
-    "txt": "data/txt/biblioteca/contratos-de-concessao-e-documentos-associados/CONTRATODECONCESSAO-CEGRIO.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/CONTRATODECONCESSAO-CEGRIO.pdf"
-   },
-   "vigencia": "desde 1997",
-   "abrangencia": "CEG e CEG Rio (mesma redação nos dois contratos de 1997)",
-   "obrigacao": "O desatendimento das determinações da agência sujeita a concessionária às penalidades das normas e do contrato.",
-   "responsavel": "Concessionária e Conselho-Diretor",
-   "prazo": {
-    "valor": null,
-    "unidade": null,
-    "contagem": ""
-   },
-   "atividades": [
-    "t1",
-    "t7"
-   ]
-  },
-  {
-   "id": "N-P06-32",
-   "norma": "Lei federal nº 8.987/1995",
-   "dispositivo": "art. 6º, § 1º",
-   "trecho": "§ 1º Serviço adequado é o que satisfaz as condições de regularidade, continuidade, eficiência, segurança, atualidade, generalidade, cortesia na sua prestação e modicidade das tarifas",
-   "fonte": {
-    "base": "normativo",
-    "id_canonico": "LEI-8987/1995",
-    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/LEI89871995.txt",
-    "url": "https://www.rj.gov.br/agenersa/sites/default/files/arquivos_paginas_basicas/LEI89871995.pdf"
-   },
-   "vigencia": "desde 1995",
-   "abrangencia": "todas as concessões reguladas",
-   "obrigacao": "Prestar serviço adequado: regular, contínuo, eficiente, seguro, atual, geral, cortês e com tarifas módicas.",
-   "responsavel": "Concessionária",
-   "prazo": {
-    "valor": null,
-    "unidade": null,
-    "contagem": ""
+    "contagem": null
    },
    "atividades": [
     "t3",
     "t7"
+   ]
+  },
+  {
+   "id": "N-P06-30",
+   "norma": "Lei estadual nº 5.427/2009 (processo administrativo do Estado do Rio de Janeiro)",
+   "dispositivo": "art. 74, § 1º",
+   "trecho": "§1º Incide a prescrição no procedimento administrativo paralisado por mais de três anos, pendente de julgamento ou despacho, cujos autos serão arquivados de ofício ou mediante requerimento da parte interessada",
+   "fonte": {
+    "base": "normativo",
+    "id_canonico": "LEI-5427/2009",
+    "txt": "normas/txt/LEI-5427-2009.txt",
+    "url": ""
+   },
+   "vigencia": "desde 2009 (90 dias após a publicação, art. 78)",
+   "abrangencia": "todo processo administrativo estadual, inclusive os da AGENERSA",
+   "obrigacao": "Não deixar o processo paralisado por mais de três anos pendente de julgamento ou despacho.",
+   "responsavel": "Todas as unidades",
+   "prazo": {
+    "valor": 3,
+    "unidade": "anos",
+    "contagem": "do último ato de impulso"
+   },
+   "atividades": [
+    "t4",
+    "t7",
+    "t8"
+   ]
+  },
+  {
+   "id": "N-P06-31",
+   "norma": "Lei federal nº 8.987/1995 (concessões)",
+   "dispositivo": "art. 6º, § 1º",
+   "trecho": "§ 1º Serviço adequado é o que satisfaz as condições de regularidade, continuidade, eficiência, segurança, atualidade, generalidade, cortesia na sua prestação e modicidade das tarifas.",
+   "fonte": {
+    "base": "normativo",
+    "id_canonico": "LEI-8987/1995",
+    "txt": "normas/txt/LEI-8987-1995.txt",
+    "url": ""
+   },
+   "vigencia": "desde 1995",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "Exigir da concessionária serviço adequado: regular, contínuo, eficiente, seguro, atual, geral, cortês e com tarifas módicas.",
+   "responsavel": "Concessionária; CASAN (verificação)",
+   "prazo": {
+    "valor": null,
+    "unidade": null,
+    "contagem": null
+   },
+   "atividades": [
+    "t2",
+    "t4"
+   ]
+  },
+  {
+   "id": "N-P06-32",
+   "norma": "Lei federal nº 8.987/1995 (concessões)",
+   "dispositivo": "art. 29, I",
+   "trecho": "Art. 29. Incumbe ao poder concedente: I - regulamentar o serviço concedido e fiscalizar permanentemente a sua prestação;",
+   "fonte": {
+    "base": "normativo",
+    "id_canonico": "LEI-8987/1995",
+    "txt": "normas/txt/LEI-8987-1995.txt",
+    "url": ""
+   },
+   "vigencia": "desde 1995",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "Fiscalizar permanentemente a prestação do serviço concedido (competência exercida pela agência reguladora).",
+   "responsavel": "AGENERSA",
+   "prazo": {
+    "valor": null,
+    "unidade": null,
+    "contagem": null
+   },
+   "atividades": [
+    "t2",
+    "t7"
+   ]
+  },
+  {
+   "id": "N-P06-33",
+   "norma": "Lei federal nº 8.987/1995 (concessões)",
+   "dispositivo": "art. 31, V",
+   "trecho": "V - permitir aos encarregados da fiscalização livre acesso, em qualquer época, às obras, aos equipamentos e às instalações integrantes do serviço, bem como a seus registros contábeis;",
+   "fonte": {
+    "base": "normativo",
+    "id_canonico": "LEI-8987/1995",
+    "txt": "normas/txt/LEI-8987-1995.txt",
+    "url": ""
+   },
+   "vigencia": "desde 1995",
+   "abrangencia": "todas as concessões reguladas pela AGENERSA",
+   "obrigacao": "A concessionária deve permitir à fiscalização livre acesso, em qualquer época, às obras, equipamentos, instalações e registros contábeis.",
+   "responsavel": "Concessionária",
+   "prazo": {
+    "valor": null,
+    "unidade": null,
+    "contagem": null
+   },
+   "atividades": [
+    "t1",
+    "t2",
+    "t6"
    ]
   }
  ],
@@ -797,61 +834,52 @@
   {
    "id": "R-P06-01",
    "normas": [
-    "N-P06-07",
+    "N-P06-03",
     "N-P06-04",
-    "N-P06-11"
+    "N-P06-11",
+    "N-P06-01",
+    "N-P06-02",
+    "N-P06-08",
+    "N-P06-31",
+    "N-P06-32"
    ],
-   "exigencia": "O parecer jurídico da Procuradoria é juntado antes da deliberação.",
-   "parametro": "ordem obrigatória: parecer conclusivo da Procuradoria antes da pauta",
+   "exigencia": "Todo ciclo de vistorias com relatórios de fiscalização é consolidado em parecer técnico da câmara.",
+   "parametro": "ato obrigatório: parecer técnico sobre os relatórios",
    "atividades": [
-    "t4",
-    "t7"
+    "t2",
+    "t4"
    ],
    "criticidade": "alta",
-   "evidencia_sei": "parecer jurídico anterior ao relatório, voto e deliberação",
+   "evidencia_sei": "relatórios de fiscalização e parecer técnico da CASAN",
    "teste": {
-    "tipo": "precede",
-    "a": "t4",
-    "b": "t7"
+    "tipo": "exige",
+    "se": [
+     "t2"
+    ],
+    "entao": [
+     "t4"
+    ]
    }
   },
   {
    "id": "R-P06-02",
    "normas": [
-    "N-P06-07",
-    "N-P06-23"
+    "N-P06-20",
+    "N-P06-19",
+    "N-P06-12"
    ],
-   "exigencia": "O parecer técnico da câmara é juntado antes da deliberação.",
-   "parametro": "ordem obrigatória: parecer técnico consubstanciado antes da pauta",
+   "exigencia": "Os relatórios de fiscalização com determinações ou recomendações são comunicados à concessionária por ofício.",
+   "parametro": "ato obrigatório: intimação dos atos que impõem deveres",
    "atividades": [
-    "t3",
-    "t7"
-   ],
-   "criticidade": "alta",
-   "evidencia_sei": "parecer técnico anterior à deliberação",
-   "teste": {
-    "tipo": "precede",
-    "a": "t3",
-    "b": "t7"
-   }
-  },
-  {
-   "id": "R-P06-03",
-   "normas": [
-    "N-P06-23"
-   ],
-   "exigencia": "Toda fiscalização com irregularidade é instruída com parecer técnico sobre a defesa.",
-   "parametro": "ato obrigatório depois do relatório e do Termo de Notificação",
-   "atividades": [
-    "t1",
+    "t2",
     "t3"
    ],
    "criticidade": "alta",
-   "evidencia_sei": "parecer técnico da câmara",
+   "evidencia_sei": "ofício de encaminhamento dos relatórios, e-mail e acesso externo",
    "teste": {
     "tipo": "exige",
     "se": [
-     "t1"
+     "t2"
     ],
     "entao": [
      "t3"
@@ -859,186 +887,271 @@
    }
   },
   {
+   "id": "R-P06-03",
+   "normas": [
+    "N-P06-18",
+    "N-P06-13"
+   ],
+   "exigencia": "O primeiro lote de relatórios é encaminhado à concessionária em até 15 dias úteis do relatório mais antigo.",
+   "parametro": "15 dias úteis (prazo geral, na falta de prazo específico)",
+   "atividades": [
+    "t2",
+    "t3"
+   ],
+   "criticidade": "media",
+   "evidencia_sei": "datas de juntada do relatório mais antigo e do primeiro ofício de encaminhamento",
+   "teste": {
+    "tipo": "prazo_max",
+    "de": "t2",
+    "ate": "t3",
+    "max": 15,
+    "unidade": "du"
+   },
+   "interpretacao": "Nenhuma norma da base fixa prazo para comunicar o relatório à concessionária; adota-se o prazo geral de 15 dias úteis do art. 21 da Lei nº 5.427/2009. O teste mede do primeiro relatório ao primeiro ofício (o motor só compara com a 1ª ocorrência do destino), ou seja, a espera do lote inicial; os lotes seguintes ficam para a amostra manual."
+  },
+  {
    "id": "R-P06-04",
    "normas": [
-    "N-P06-22",
-    "N-P06-14"
+    "N-P06-18",
+    "N-P06-12",
+    "N-P06-21"
    ],
-   "exigencia": "O Termo de Notificação concede à concessionária ao menos 10 dias para manifestação.",
-   "parametro": "10 dias (IN nº 1/2007, art. 6º, § 2º)",
+   "exigencia": "O ofício que encaminha os relatórios concede à concessionária ao menos 15 dias para manifestação.",
+   "parametro": "mínimo de 15 dias úteis",
    "atividades": [
-    "t1"
+    "t3"
    ],
    "criticidade": "alta",
-   "evidencia_sei": "prazo escrito no termo de notificação ou no ofício",
+   "evidencia_sei": "prazo escrito no ofício de encaminhamento",
    "teste": {
     "tipo": "prazo_concedido_min",
-    "atividade": "t1",
-    "min": 10
-   }
+    "atividade": "t3",
+    "min": 15
+   },
+   "interpretacao": "O prazo lido na peça vem em dias, sem unidade; compara-se o número com o mínimo legal de 15 (dias úteis do art. 21 da Lei nº 5.427/2009). Prazo de 30 dias corridos também atende, pois 15 dias úteis não passam de 21 dias corridos."
   },
   {
    "id": "R-P06-05",
    "normas": [
+    "N-P06-12",
+    "N-P06-16",
     "N-P06-06",
-    "N-P06-14"
+    "N-P06-18",
+    "N-P06-07",
+    "N-P06-28"
    ],
-   "exigencia": "A concessionária é instada a apresentar razões finais antes da deliberação.",
-   "parametro": "ato obrigatório antes da sessão",
+   "exigencia": "Entre o último ofício que abre prazo de manifestação sobre os relatórios e o parecer técnico decorre ao menos o prazo concedido.",
+   "parametro": "30 dias úteis (prazo concedido nos ofícios, contado em dias úteis)",
    "atividades": [
-    "t6",
-    "t7"
+    "t3",
+    "t4"
    ],
    "criticidade": "alta",
-   "evidencia_sei": "ofício de razões finais anterior à deliberação",
+   "evidencia_sei": "datas do último ofício de encaminhamento e do parecer técnico",
    "teste": {
-    "tipo": "precede",
-    "a": "t6",
-    "b": "t7"
-   }
+    "tipo": "prazo_min",
+    "de": "t3",
+    "ate": "t4",
+    "min": 30,
+    "unidade": "du"
+   },
+   "interpretacao": "Prazo mínimo protegido. Os ofícios concedem 30 dias; para falar nos autos a contagem é em dias úteis (IN 128/2024, art. 39, § 3º, I; Regimento, art. 47-A, § 2º), por isso o teste usa 30 dias úteis, a leitura mais protetiva. Os prazos de adequação fixados nos relatórios (obrigação material) correm em dias corridos e são cobertos por este mesmo intervalo."
   },
   {
    "id": "R-P06-06",
    "normas": [
-    "N-P06-06",
-    "N-P06-18"
+    "N-P06-04",
+    "N-P06-16"
    ],
-   "exigencia": "O ofício de razões finais concede 10 dias.",
-   "parametro": "10 dias (dias úteis desde a Lei nº 9.789/2022); o prazo é de até 10 dias para a manifestação final (art. 49, § 2º, do Regimento; art. 40 da Lei nº 5.427/2009), lido como direito do interessado ao prazo integral",
+   "exigencia": "O parecer técnico consolidado sai em até 45 dias úteis do último ofício de encaminhamento (30 de manifestação + 15 do parecer).",
+   "parametro": "30 dias úteis de manifestação + 15 dias do parecer técnico",
    "atividades": [
-    "t6"
+    "t3",
+    "t4"
    ],
    "criticidade": "media",
-   "evidencia_sei": "prazo escrito no ofício de razões finais",
+   "evidencia_sei": "datas do último ofício de encaminhamento e do parecer técnico",
    "teste": {
-    "tipo": "prazo_concedido_min",
-    "atividade": "t6",
-    "min": 10
+    "tipo": "prazo_max",
+    "de": "t3",
+    "ate": "t4",
+    "max": 45,
+    "unidade": "du",
+    "de_ocorrencia": "ultima"
    },
-   "interpretacao": "A norma fala em \"prazo máximo de 10 dias\"; o teste lê como direito da parte ao prazo integral. Interpretação a validar com a Procuradoria."
+   "interpretacao": "O art. 27, III, do Regimento dá 15 dias à câmara, sem dizer o termo inicial; adota-se o fim do prazo de manifestação do último lote (30 dias úteis do ofício), somando 45 dias úteis. Os 15 dias do Regimento são lidos em dias úteis por coerência com a soma; em dias corridos o limite seria menor. A dilação só vale com justificativa e autorização do gerente: se houver, conferir no processo."
   },
   {
    "id": "R-P06-07",
    "normas": [
-    "N-P06-05"
+    "N-P06-20",
+    "N-P06-19",
+    "N-P06-24"
    ],
-   "exigencia": "O relator é sorteado antes de conduzir o processo (razões finais).",
-   "parametro": "ordem obrigatória: sorteio antes dos atos do relator",
+   "exigencia": "O parecer técnico é levado ao conhecimento da concessionária.",
+   "parametro": "ato obrigatório: ciência do parecer técnico",
    "atividades": [
-    "t5",
-    "t6"
+    "t4",
+    "t5"
    ],
-   "criticidade": "media",
-   "evidencia_sei": "ata de sorteio anterior ao ofício do relator",
+   "criticidade": "alta",
+   "evidencia_sei": "manifestação de ciência, e-mail e acesso externo",
    "teste": {
-    "tipo": "precede",
-    "a": "t5",
-    "b": "t6"
+    "tipo": "exige",
+    "se": [
+     "t4"
+    ],
+    "entao": [
+     "t5"
+    ]
    }
   },
   {
    "id": "R-P06-08",
    "normas": [
-    "N-P06-12",
-    "N-P06-08",
-    "N-P06-11"
+    "N-P06-18",
+    "N-P06-20"
    ],
-   "exigencia": "A deliberação ocorre em até 40 dias do ofício de razões finais.",
-   "parametro": "10 dias de razões finais + 30 dias para decidir",
+   "exigencia": "A ciência do parecer técnico à concessionária ocorre em até 15 dias úteis do parecer.",
+   "parametro": "15 dias úteis (prazo geral)",
    "atividades": [
-    "t6",
-    "t7"
+    "t4",
+    "t5"
    ],
    "criticidade": "media",
-   "evidencia_sei": "datas do ofício de razões finais e da deliberação",
+   "evidencia_sei": "datas do parecer técnico e da 1ª peça de ciência",
    "teste": {
     "tipo": "prazo_max",
-    "de": "t6",
-    "ate": "t7",
-    "max": 40,
-    "unidade": "dc",
-    "de_ocorrencia": "ultima"
-   }
+    "de": "t4",
+    "ate": "t5",
+    "max": 15,
+    "unidade": "du"
+   },
+   "interpretacao": "Sem prazo específico para dar ciência, aplica-se o art. 21 da Lei nº 5.427/2009."
   },
   {
    "id": "R-P06-09",
    "normas": [
-    "N-P06-04",
-    "N-P06-11"
+    "N-P06-24",
+    "N-P06-18"
    ],
-   "exigencia": "A Procuradoria emite o parecer em até 15 dias depois do parecer técnico.",
-   "parametro": "15 dias (art. 17, VI, do Regimento); medido entre o 1º parecer técnico e o 1º parecer jurídico (aproximação)",
+   "exigencia": "A ciência do parecer técnico concede à concessionária ao menos 10 dias para manifestação.",
+   "parametro": "mínimo de 10 dias",
    "atividades": [
-    "t3",
-    "t4"
+    "t5"
    ],
-   "criticidade": "baixa",
-   "evidencia_sei": "datas do parecer técnico e do parecer jurídico",
+   "criticidade": "media",
+   "evidencia_sei": "prazo escrito na peça de ciência",
    "teste": {
-    "tipo": "prazo_max",
-    "de": "t3",
-    "ate": "t4",
-    "max": 15,
-    "unidade": "dc",
-    "de_ocorrencia": "ultima"
-   }
+    "tipo": "prazo_concedido_min",
+    "atividade": "t5",
+    "min": 10
+   },
+   "interpretacao": "Encerrada a instrução técnica, o art. 40 da Lei nº 5.427/2009 assegura até 10 dias de manifestação; lido como o prazo que a ciência deve abrir."
   },
   {
    "id": "R-P06-10",
    "normas": [
-    "N-P06-15",
-    "N-P06-17"
+    "N-P06-24",
+    "N-P06-16",
+    "N-P06-06"
    ],
-   "exigencia": "A deliberação sancionadora ocorre em até cinco anos da instauração.",
-   "parametro": "5 anos (Lei nº 5.427/2009, art. 74); contado do 1º ato do processo, que é posterior ao fato",
+   "exigencia": "Entre o parecer técnico e a réplica da câmara decorre ao menos o prazo de manifestação da concessionária (10 dias úteis).",
+   "parametro": "10 dias úteis",
    "atividades": [
-    "t1",
-    "t7"
+    "t4",
+    "t5",
+    "t6"
    ],
    "criticidade": "alta",
-   "evidencia_sei": "data do relatório de fiscalização e data da deliberação",
+   "evidencia_sei": "datas do parecer técnico e do despacho técnico de réplica",
    "teste": {
-    "tipo": "duracao_max",
-    "ate": "t7",
-    "max": 5,
-    "unidade": "anos"
-   }
+    "tipo": "prazo_min",
+    "de": "t4",
+    "ate": "t6",
+    "min": 10,
+    "unidade": "du"
+   },
+   "interpretacao": "Prazo mínimo protegido (espera pela manifestação da concessionária, evento e2). O prazo abre com a ciência (t5), mas a atividade t5 reúne também o despacho que recebe a manifestação, juntado depois dela; contar da última peça de t5 mediria só o tempo do despacho. Por isso o teste conta do parecer técnico (t4), o que é menos exigente; conferir no processo a data da ciência e a da manifestação."
   },
   {
    "id": "R-P06-11",
    "normas": [
-    "N-P06-16",
-    "N-P06-17"
+    "N-P06-24",
+    "N-P06-29"
    ],
-   "exigencia": "O processo não fica paralisado mais de três anos sem ato de apuração.",
-   "parametro": "3 anos entre atos de apuração ou de contraditório",
+   "exigencia": "A concessionária tem ciência do parecer técnico antes do parecer jurídico.",
+   "parametro": "ordem: ciência e manifestação antes da análise jurídica",
    "atividades": [
-    "t1",
-    "t3",
-    "t4",
+    "t5",
     "t7"
    ],
    "criticidade": "alta",
-   "evidencia_sei": "andamentos e peças do processo",
+   "evidencia_sei": "datas da ciência do parecer técnico e do parecer jurídico",
    "teste": {
-    "tipo": "manual",
-    "procedimento": "Ordenar as peças de instrução (relatórios, ofícios, pareceres, despachos de diligência) e calcular o maior intervalo entre duas delas antes da deliberação; acima de 3 anos, apontar risco de prescrição intercorrente."
+    "tipo": "precede",
+    "a": "t5",
+    "b": "t7"
    }
   },
   {
    "id": "R-P06-12",
    "normas": [
-    "N-P06-02",
-    "N-P06-09"
+    "N-P06-04",
+    "N-P06-05"
    ],
-   "exigencia": "Toda deliberação é publicada e comunicada à concessionária.",
-   "parametro": "ato obrigatório: publicação no Diário Oficial",
+   "exigencia": "O parecer técnico da câmara é juntado antes do parecer jurídico.",
+   "parametro": "ordem: instrução técnica antes da jurídica",
+   "atividades": [
+    "t4",
+    "t7"
+   ],
+   "criticidade": "media",
+   "evidencia_sei": "datas dos pareceres técnico e jurídico",
+   "teste": {
+    "tipo": "precede",
+    "a": "t4",
+    "b": "t7"
+   }
+  },
+  {
+   "id": "R-P06-13",
+   "normas": [
+    "N-P06-05",
+    "N-P06-23"
+   ],
+   "exigencia": "A Procuradoria emite o parecer em até 30 dias da remessa dos autos (15 + 15 de dilação).",
+   "parametro": "15 dias, prorrogáveis por mais 15; teto de 30 dias do art. 38 da Lei nº 5.427/2009",
+   "atividades": [
+    "t6",
+    "t7"
+   ],
+   "criticidade": "media",
+   "evidencia_sei": "datas do despacho de remessa e do parecer jurídico",
+   "teste": {
+    "tipo": "prazo_max",
+    "de": "t6",
+    "ate": "t7",
+    "max": 30,
+    "unidade": "dc",
+    "de_ocorrencia": "ultima"
+   },
+   "interpretacao": "Conta-se do último despacho de t6 (réplica técnica com encaminhamento) ao parecer; o despacho da Secretaria que remete os autos à Procuradoria foi classificado fora do modelo, alguns dias depois. Em dias corridos, como no caso de referência; a dilação de 15 dias exige justificativa e autorização do Procurador Geral."
+  },
+  {
+   "id": "R-P06-14",
+   "normas": [
+    "N-P06-20",
+    "N-P06-19"
+   ],
+   "exigencia": "O parecer jurídico é levado ao conhecimento da concessionária.",
+   "parametro": "ato obrigatório: ciência do parecer jurídico",
    "atividades": [
     "t7",
     "t8"
    ],
    "criticidade": "alta",
-   "evidencia_sei": "publicação ou ofício depois da deliberação",
+   "evidencia_sei": "ofício de ciência, e-mail e acesso externo",
    "teste": {
     "tipo": "exige",
     "se": [
@@ -1050,156 +1163,190 @@
    }
   },
   {
-   "id": "R-P06-13",
-   "normas": [
-    "N-P06-24",
-    "N-P06-13"
-   ],
-   "exigencia": "A penalidade é aplicada por decisão fundamentada, que enfrenta a defesa.",
-   "parametro": "motivação explícita",
-   "atividades": [
-    "t7"
-   ],
-   "criticidade": "alta",
-   "evidencia_sei": "voto e deliberação",
-   "teste": {
-    "tipo": "manual",
-    "procedimento": "Ler o voto e confirmar que indica a infração, o dispositivo infringido, a análise da defesa e das razões finais e a dosimetria."
-   }
-  },
-  {
-   "id": "R-P06-14",
-   "normas": [
-    "N-P06-21",
-    "N-P06-26"
-   ],
-   "exigencia": "O relatório de fiscalização é entregue à gerência da câmara no prazo.",
-   "parametro": "3 dias (IN nº 1/2007) ou 5 dias úteis (IN nº 128/2024)",
-   "atividades": [
-    "t1"
-   ],
-   "criticidade": "baixa",
-   "evidencia_sei": "data da vistoria no relatório e data de juntada",
-   "teste": {
-    "tipo": "manual",
-    "procedimento": "Comparar a data de término da vistoria escrita no relatório com a data de assinatura ou juntada do relatório."
-   }
-  },
-  {
    "id": "R-P06-15",
    "normas": [
-    "N-P06-20",
-    "N-P06-25"
+    "N-P06-25",
+    "N-P06-18"
    ],
-   "exigencia": "A fiscalização programada é avisada à concessionária com antecedência.",
-   "parametro": "24 horas (IN nº 1/2007) ou 48 horas (IN nº 128/2024)",
+   "exigencia": "A providência que encerra a instrução (ciência e sobrestamento) é tomada em até 30 dias do parecer jurídico.",
+   "parametro": "30 dias, prorrogáveis por igual período com motivação",
    "atividades": [
-    "t1"
+    "t7",
+    "t8"
    ],
-   "criticidade": "baixa",
-   "evidencia_sei": "aviso ou programação de fiscalização",
+   "criticidade": "media",
+   "evidencia_sei": "datas do parecer jurídico e do ofício de ciência / despacho de sobrestamento",
    "teste": {
-    "tipo": "manual",
-    "procedimento": "Nas fiscalizações programadas, localizar o aviso prévio e comparar sua data com a da vistoria."
-   }
+    "tipo": "prazo_max",
+    "de": "t7",
+    "ate": "t8",
+    "max": 30,
+    "unidade": "dc"
+   },
+   "interpretacao": "Lê-se o sobrestamento como a decisão de que trata o art. 45 da Lei nº 5.427/2009, com a instrução concluída no parecer jurídico."
   },
   {
    "id": "R-P06-16",
    "normas": [
-    "N-P06-27"
+    "N-P06-09",
+    "N-P06-22"
    ],
-   "exigencia": "Nos Blocos, a concessionária tem 30 dias para defesa prévia contra a notificação de infração.",
-   "parametro": "30 dias (IN nº 128/2024, art. 33)",
+   "exigencia": "Entre a convocação da concessionária para a vistoria e a vistoria decorre a antecedência mínima.",
+   "parametro": "3 dias úteis (cobre também as 48 horas do Aviso de Fiscalização)",
    "atividades": [
     "t1",
-    "t3"
+    "t2"
    ],
    "criticidade": "media",
-   "evidencia_sei": "notificação de infração e prazo nela indicado",
+   "evidencia_sei": "datas do ofício de agendamento e do relatório de fiscalização",
    "teste": {
-    "tipo": "manual",
-    "procedimento": "Nos processos das concessionárias dos Blocos instaurados desde 01/10/2024, ler o prazo da notificação de infração e confirmar 30 dias."
-   }
+    "tipo": "prazo_min",
+    "de": "t1",
+    "ate": "t2",
+    "min": 3,
+    "unidade": "du"
+   },
+   "interpretacao": "Prazo mínimo protegido. O motor compara com o 1º relatório do processo; como os relatórios do caso começam antes dos ofícios de agendamento, o teste tende a ser não aplicável, e a verificação real está no requisito manual R-P06-17 (data da vistoria no texto do relatório). A data de juntada do relatório não é a data da vistoria."
   },
   {
    "id": "R-P06-17",
    "normas": [
-    "N-P06-19"
+    "N-P06-09",
+    "N-P06-22"
    ],
-   "exigencia": "O processo só é encerrado depois de certificados o não cabimento de recurso e o cumprimento da deliberação.",
-   "parametro": "certidão de recurso e de cumprimento antes do arquivamento",
+   "exigencia": "Cada fiscalização programada é precedida de aviso ou convocação à concessionária com a antecedência mínima.",
+   "parametro": "48 horas (IN 128/2024) e 3 dias úteis (Lei nº 5.427/2009, art. 37)",
    "atividades": [
-    "t9"
+    "t1",
+    "t2"
    ],
    "criticidade": "media",
-   "evidencia_sei": "informação de cumprimento e termo de encerramento",
+   "evidencia_sei": "ofício ou e-mail de agendamento e data da vistoria escrita no relatório",
    "teste": {
     "tipo": "manual",
-    "procedimento": "Verificar, no termo de encerramento, a certidão de ausência de recurso e a informação de cumprimento das determinações da deliberação."
-   }
+    "procedimento": "Para cada relatório de fiscalização, ler a data da vistoria e localizar o ofício ou e-mail de agendamento correspondente; medir a antecedência. Separar as vistorias anteriores e posteriores à entrada em vigor da IN 128/2024 (Aviso de Fiscalização no modelo do Anexo I só é exigível depois dela)."
+   },
+   "interpretacao": "Vistorias conjuntas agendadas com a concessionária e por ela confirmadas podem dispensar o Aviso formal; a procuradoria deve dizer se a confirmação supre o Aviso."
   },
   {
    "id": "R-P06-18",
    "normas": [
-    "N-P06-10"
+    "N-P06-13",
+    "N-P06-14"
    ],
-   "exigencia": "Recurso é distribuído a relator diverso do que propôs a deliberação.",
-   "parametro": "segregação entre relator originário e relator do recurso",
+   "exigencia": "O relatório de fiscalização é enviado ao gerente da câmara em até 5 dias úteis e recebe o \"De Acordo\".",
+   "parametro": "5 dias úteis da lavratura; \"De Acordo\" do gerente",
    "atividades": [
-    "t7"
+    "t2"
    ],
-   "criticidade": "media",
-   "evidencia_sei": "ata de sorteio do recurso",
+   "criticidade": "baixa",
+   "evidencia_sei": "datas da vistoria, da assinatura do agente e da assinatura do gerente no relatório",
    "teste": {
     "tipo": "manual",
-    "procedimento": "Comparar o gabinete do relator do recurso com o do relator da deliberação recorrida."
+    "procedimento": "Comparar a data de término da vistoria escrita no relatório com a data da assinatura do gerente (ou de juntada); conferir a aprovação do gerente. Aplicável aos relatórios lavrados depois da entrada em vigor da IN 128/2024."
    }
   },
   {
    "id": "R-P06-19",
    "normas": [
-    "N-P06-06",
-    "N-P06-18"
+    "N-P06-10",
+    "N-P06-11",
+    "N-P06-12"
    ],
-   "exigencia": "Entre o ofício que abre o prazo de razões finais e o ato seguinte decorre ao menos o prazo concedido (10 dias).",
-   "parametro": "prazo mínimo de 10 dias corridos para a parte se manifestar",
+   "exigencia": "O relatório de fiscalização traz o conteúdo mínimo, inclusive determinações ou recomendações com prazo e as normas aplicáveis.",
+   "parametro": "incisos do art. 5º da IN 128/2024",
    "atividades": [
-    "t6",
-    "t7"
+    "t2"
    ],
-   "criticidade": "alta",
-   "evidencia_sei": "prazo escrito no ofício de razões finais",
+   "criticidade": "media",
+   "evidencia_sei": "texto do relatório de fiscalização",
    "teste": {
-    "tipo": "prazo_min",
-    "de": "t6",
-    "ate": "t7",
-    "min": 10,
-    "unidade": "dc"
+    "tipo": "manual",
+    "procedimento": "Amostrar relatórios e conferir os incisos do art. 5º: período da fiscalização, fatos, normas aplicáveis, determinações e recomendações, irregularidades e normas violadas, tipo de fiscalização. Registrar os relatórios sem prazo para as recomendações."
    },
-   "interpretacao": "Derivado de R-P06-06; o prazo legal protege a espera entre as duas atividades e não pode ser tratado como desperdício no TO-BE."
+   "interpretacao": "O caso mostra relatórios com e sem prazo e com recomendação ou exigência; a câmara deve padronizar."
   },
   {
    "id": "R-P06-20",
    "normas": [
-    "N-P06-22",
-    "N-P06-14"
+    "N-P06-15",
+    "N-P06-29",
+    "N-P06-11"
    ],
-   "exigencia": "Entre o ofício que abre o prazo de defesa contra o Termo de Notificação e o ato seguinte decorre ao menos o prazo concedido (10 dias).",
-   "parametro": "prazo mínimo de 10 dias corridos para a parte se manifestar",
+   "exigencia": "Se houver Notificação de Infração, a concessionária tem 30 dias de defesa prévia antes de qualquer penalidade.",
+   "parametro": "30 dias (dias úteis, art. 39)",
    "atividades": [
-    "t1",
     "t3"
    ],
    "criticidade": "alta",
-   "evidencia_sei": "prazo escrito no termo de notificação ou no ofício",
+   "evidencia_sei": "Notificação de Infração, prazo concedido e defesa prévia",
    "teste": {
-    "tipo": "prazo_min",
-    "de": "t1",
-    "ate": "t3",
-    "min": 10,
-    "unidade": "dc"
+    "tipo": "manual",
+    "procedimento": "Verificar se algum relatório gerou Notificação de Infração; havendo, conferir o prazo de 30 dias concedido e a análise da defesa prévia em 15 dias (prorrogáveis) antes do Auto de Infração."
    },
-   "interpretacao": "Derivado de R-P06-04; o prazo legal protege a espera entre as duas atividades e não pode ser tratado como desperdício no TO-BE."
+   "interpretacao": "No caso não houve Notificação de Infração: o processo foi sobrestado depois do parecer jurídico. O requisito fica para a continuidade do processo."
+  },
+  {
+   "id": "R-P06-21",
+   "normas": [
+    "N-P06-26",
+    "N-P06-27",
+    "N-P06-17",
+    "N-P06-33"
+   ],
+   "exigencia": "Os pareceres, a réplica técnica à contestação do escopo da fiscalização e o sobrestamento são motivados com fatos e fundamentos jurídicos.",
+   "parametro": "motivação explícita, clara e congruente",
+   "atividades": [
+    "t4",
+    "t6",
+    "t8"
+   ],
+   "criticidade": "media",
+   "evidencia_sei": "texto do parecer técnico, do despacho de réplica e do despacho de sobrestamento",
+   "teste": {
+    "tipo": "manual",
+    "procedimento": "Ler o despacho de sobrestamento e confirmar que indica o motivo, o fundamento e o evento que fará o processo voltar a andar; se remeter a parecer, confirmar que o parecer está nos autos."
+   }
+  },
+  {
+   "id": "R-P06-22",
+   "normas": [
+    "N-P06-30"
+   ],
+   "exigencia": "O processo não fica paralisado mais de três anos pendente de despacho.",
+   "parametro": "3 anos",
+   "atividades": [
+    "t4",
+    "t7",
+    "t8"
+   ],
+   "criticidade": "media",
+   "evidencia_sei": "datas das peças de instrução e do despacho de sobrestamento",
+   "teste": {
+    "tipo": "manual",
+    "procedimento": "Ordenar as peças de instrução e calcular o maior intervalo sem ato de impulso, inclusive durante o sobrestamento; acima de 3 anos, apontar risco de prescrição intercorrente de eventual ação punitiva."
+   },
+   "interpretacao": "O processo não é sancionador até haver Notificação de Infração; o controle vale para a apuração que dele decorrer."
+  },
+  {
+   "id": "R-P06-23",
+   "normas": [
+    "N-P06-16",
+    "N-P06-18",
+    "N-P06-06"
+   ],
+   "exigencia": "A retomada do processo sobrestado respeita o prazo dado à concessionária na ciência do parecer jurídico.",
+   "parametro": "prazo concedido no ofício de ciência (dias úteis)",
+   "atividades": [
+    "t8"
+   ],
+   "criticidade": "media",
+   "evidencia_sei": "ofício de ciência do parecer jurídico e primeira peça depois do sobrestamento",
+   "teste": {
+    "tipo": "manual",
+    "procedimento": "Ler o prazo do ofício de ciência do parecer jurídico; quando o processo voltar a andar, conferir que a primeira providência da agência veio depois do fim desse prazo."
+   },
+   "interpretacao": "Prazo mínimo protegido sem ato seguinte no período observado (o processo termina sobrestado), por isso manual."
   }
  ],
  "programa_auditoria": [
@@ -1208,15 +1355,16 @@
    "requisitos": [
     "R-P06-01",
     "R-P06-02",
-    "R-P06-03"
+    "R-P06-07",
+    "R-P06-14"
    ],
-   "objetivo": "Verificar se a deliberação sancionadora foi precedida dos pareceres técnico e jurídico.",
-   "criterio": "Regimento Interno, art. 53; IN nº 1/2007, art. 7º; Decreto nº 38.618/2005, art. 39",
-   "fonte_dados": "SEI (andamentos e peças juntadas)",
-   "populacao": "processos de fiscalização com deliberação",
+   "objetivo": "Verificar se os relatórios e pareceres são consolidados e levados ao conhecimento da concessionária.",
+   "criterio": "Decreto nº 38.618/2005, art. 26, I; Regimento, art. 27, III; Lei nº 5.427/2009, arts. 22 e 24",
+   "fonte_dados": "SEI (peças juntadas e andamentos)",
+   "populacao": "processos de fiscalização da Câmara de Saneamento",
    "amostra": "todos (teste automatizado)",
-   "frequencia": "semestral",
-   "achado_tipo": "Penalidade aplicada sem parecer técnico ou jurídico prévio.",
+   "frequencia": "trimestral",
+   "achado_tipo": "Relatório sem consolidação técnica ou ato com dever para a concessionária sem intimação.",
    "automatizado": true
   },
   {
@@ -1224,118 +1372,83 @@
    "requisitos": [
     "R-P06-04",
     "R-P06-05",
-    "R-P06-06"
+    "R-P06-09",
+    "R-P06-10",
+    "R-P06-16",
+    "R-P06-23"
    ],
-   "objetivo": "Verificar o contraditório: prazo do Termo de Notificação e razões finais.",
-   "criterio": "IN nº 1/2007, art. 6º, § 2º; Regimento Interno, art. 49, § 2º; Lei nº 5.427/2009, art. 69",
-   "fonte_dados": "SEI (andamentos e peças juntadas)",
-   "populacao": "processos de fiscalização instaurados no período",
-   "amostra": "todos (teste automatizado)",
-   "frequencia": "semestral",
-   "achado_tipo": "Termo de Notificação ou ofício de razões finais com prazo inferior a 10 dias, ou deliberação sem razões finais.",
+   "objetivo": "Verificar o contraditório: prazos concedidos à concessionária e espera do prazo antes do ato seguinte.",
+   "criterio": "Lei nº 5.427/2009, arts. 21, 37 e 40; IN 128/2024, arts. 9º, V, e 39, § 3º; Regimento, art. 47-A, § 2º",
+   "fonte_dados": "SEI (ofícios, prazos lidos nas peças, datas de juntada)",
+   "populacao": "ofícios que abrem prazo à concessionária",
+   "amostra": "todos (teste automatizado); R-P06-23 por leitura",
+   "frequencia": "trimestral",
+   "achado_tipo": "Prazo concedido abaixo do mínimo ou ato da agência antes do fim do prazo.",
    "automatizado": true
   },
   {
    "id": "A-P06-03",
    "requisitos": [
-    "R-P06-07"
+    "R-P06-03",
+    "R-P06-06",
+    "R-P06-08",
+    "R-P06-13",
+    "R-P06-15"
    ],
-   "objetivo": "Verificar a impessoalidade na distribuição (sorteio antes da atuação do relator).",
-   "criterio": "Regimento Interno, art. 48",
-   "fonte_dados": "SEI (andamentos e peças juntadas); atas de sorteio",
-   "populacao": "processos distribuídos",
+   "objetivo": "Medir os prazos internos: encaminhamento dos relatórios, parecer técnico, ciência, parecer jurídico e decisão.",
+   "criterio": "Lei nº 5.427/2009, arts. 21, 38 e 45; Regimento, arts. 17, VI, e 27, III",
+   "fonte_dados": "SEI (datas de juntada)",
+   "populacao": "processos de fiscalização da Câmara de Saneamento",
    "amostra": "todos (teste automatizado)",
-   "frequencia": "anual",
-   "achado_tipo": "Relator atuando antes do sorteio ou fora do rodízio.",
+   "frequencia": "trimestral",
+   "achado_tipo": "Etapa interna acima do prazo legal ou regimental.",
    "automatizado": true
   },
   {
    "id": "A-P06-04",
    "requisitos": [
-    "R-P06-08",
-    "R-P06-09"
+    "R-P06-11",
+    "R-P06-12"
    ],
-   "objetivo": "Medir os prazos internos de parecer jurídico e de decisão.",
-   "criterio": "Regimento Interno, arts. 17, VI, e 53; Lei nº 5.427/2009, art. 45",
-   "fonte_dados": "SEI (andamentos e peças juntadas)",
-   "populacao": "processos de fiscalização com deliberação",
+   "objetivo": "Verificar a ordem da instrução: parecer técnico e ciência da concessionária antes da análise jurídica.",
+   "criterio": "Regimento, arts. 17, VI, e 27, III; Lei nº 5.427/2009, arts. 40 e 69",
+   "fonte_dados": "SEI (datas de juntada)",
+   "populacao": "processos com parecer jurídico",
    "amostra": "todos (teste automatizado)",
-   "frequencia": "trimestral",
-   "achado_tipo": "Parecer depois de 15 dias ou deliberação depois de 40 dias das razões finais.",
+   "frequencia": "semestral",
+   "achado_tipo": "Parecer jurídico sem parecer técnico ou sem ciência prévia da concessionária.",
    "automatizado": true
   },
   {
    "id": "A-P06-05",
    "requisitos": [
-    "R-P06-10",
-    "R-P06-11"
+    "R-P06-17",
+    "R-P06-18",
+    "R-P06-19"
    ],
-   "objetivo": "Controlar a prescrição da ação punitiva e a prescrição intercorrente.",
-   "criterio": "Lei nº 5.427/2009, art. 74, caput e § 1º; Deliberação nº 4.865/2025",
-   "fonte_dados": "SEI (andamentos e peças juntadas)",
-   "populacao": "processos sancionadores em curso",
-   "amostra": "todos",
-   "frequencia": "trimestral",
-   "achado_tipo": "Processo com mais de 5 anos desde o fato ou parado mais de 3 anos sem ato de apuração.",
-   "automatizado": true
+   "objetivo": "Verificar o rito de campo da IN 128/2024: aviso prévio, entrega do relatório ao gerente e conteúdo do relatório.",
+   "criterio": "IN 128/2024, arts. 4º, 5º, 8º, § 3º, e 32; Lei nº 5.427/2009, art. 37",
+   "fonte_dados": "SEI (texto dos relatórios e ofícios de agendamento)",
+   "populacao": "relatórios de fiscalização lavrados na vigência da IN 128/2024",
+   "amostra": "10 relatórios por ano, ao acaso, estratificados por município",
+   "frequencia": "anual",
+   "achado_tipo": "Vistoria sem aviso com antecedência, relatório entregue fora do prazo ou sem o conteúdo mínimo.",
+   "automatizado": false
   },
   {
    "id": "A-P06-06",
    "requisitos": [
-    "R-P06-12",
-    "R-P06-13"
+    "R-P06-20",
+    "R-P06-21",
+    "R-P06-22"
    ],
-   "objetivo": "Verificar publicação e motivação das deliberações sancionadoras.",
-   "criterio": "Lei nº 4.556/2005, art. 12; IN nº 1/2007, art. 13; Lei nº 5.427/2009, art. 48",
-   "fonte_dados": "SEI (andamentos e peças juntadas); DOERJ",
-   "populacao": "deliberações sancionadoras",
-   "amostra": "todas para publicação; 10 para motivação",
+   "objetivo": "Verificar ampla defesa, motivação e risco de paralisação quando a fiscalização evoluir para penalidade.",
+   "criterio": "IN 128/2024, art. 33; Lei nº 5.427/2009, arts. 48, 69 e 74, § 1º",
+   "fonte_dados": "SEI (Notificação de Infração, defesa prévia, despachos)",
+   "populacao": "processos de fiscalização sobrestados ou com Notificação de Infração",
+   "amostra": "todos os sobrestados; processos com Notificação de Infração por amostra",
    "frequencia": "semestral",
-   "achado_tipo": "Deliberação não publicada ou sem análise da defesa e da dosimetria.",
-   "automatizado": true
-  },
-  {
-   "id": "A-P06-07",
-   "requisitos": [
-    "R-P06-14",
-    "R-P06-15",
-    "R-P06-16"
-   ],
-   "objetivo": "Verificar os ritos de campo das instruções normativas (aviso prévio, entrega do relatório, defesa prévia nos Blocos).",
-   "criterio": "IN nº 1/2007, arts. 3º e 5º; IN nº 128/2024, arts. 4º, 32 e 33",
-   "fonte_dados": "relatórios de fiscalização, avisos e notificações",
-   "populacao": "fiscalizações programadas e notificações do período",
-   "amostra": "amostra aleatória de 15 fiscalizações",
-   "frequencia": "anual",
-   "achado_tipo": "Fiscalização sem aviso prévio, relatório entregue fora do prazo ou defesa prévia com prazo menor que o normativo.",
-   "automatizado": false
-  },
-  {
-   "id": "A-P06-08",
-   "requisitos": [
-    "R-P06-17"
-   ],
-   "objetivo": "Verificar o rito de encerramento e o registro do cumprimento.",
-   "criterio": "Resolução nº 787/2022, art. 1º",
-   "fonte_dados": "SEI (andamentos e peças juntadas)",
-   "populacao": "processos de fiscalização encerrados",
-   "amostra": "todos",
-   "frequencia": "anual",
-   "achado_tipo": "Arquivamento sem certidão de recurso ou sem comprovação de cumprimento das determinações.",
-   "automatizado": false
-  },
-  {
-   "id": "A-P06-09",
-   "requisitos": [
-    "R-P06-18"
-   ],
-   "objetivo": "Teste de integridade: segregação entre quem fiscaliza, quem opina e quem decide; relator diverso no recurso.",
-   "criterio": "Regimento Interno, art. 79, § 1º; Lei nº 4.556/2005, art. 4º, IV",
-   "fonte_dados": "SEI (andamentos e peças juntadas); atas de sorteio",
-   "populacao": "processos de fiscalização com recurso",
-   "amostra": "todos os recursos; 10 processos para a segregação",
-   "frequencia": "anual",
-   "achado_tipo": "Agente que lavrou o Termo de Notificação emitindo o parecer técnico conclusivo, ou mesmo relator na deliberação e no recurso.",
+   "achado_tipo": "Penalidade sem defesa prévia, decisão sem motivação ou processo parado por mais de três anos.",
    "automatizado": false
   }
  ]

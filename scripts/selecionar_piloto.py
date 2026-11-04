@@ -44,6 +44,11 @@ def cobertura_texto() -> pd.DataFrame:
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--caso", action="append", default=[],
+                    help="número SEI indicado pelo aluno: entra como 'estudo de caso' mesmo fora da elegibilidade")
+    args = ap.parse_args()
     ind = pd.read_csv(SAIDA / "processos_indicadores.csv")
     cls = pd.read_csv(SAIDA / "classificacao_processos.csv")
     df = ind.merge(cls, on="numero", how="left", validate="1:1")
@@ -87,6 +92,14 @@ def main():
             cri = resto.sort_values("criticidade").iloc[-1]
             escolha.append((cri, "crítico", f"{cri.du_em_espera_dominante:.0f} du em espera dominante, "
                                             f"{cri.retornos_iteracao} retornos, {cri.espera_externa_du:.0f} du aguardando terceiros"))
+    criterios = {"encerrado": "não encerrado", "nativo_sei": "não nativo do SEI"}
+    for num in sorted(set(args.caso) - {r.numero for r, _, _ in escolha}):
+        r = df[df.numero == num]
+        if r.empty:
+            raise SystemExit(f"--caso {num}: processo não está em processos_indicadores.csv")
+        r = r.iloc[0]
+        falhas = [txt for col, txt in criterios.items() if not r[col]]
+        escolha.append((r, "estudo de caso", "indicado pelo aluno" + (f" ({'; '.join(falhas)})" if falhas else "")))
     linhas = []
     for r, papel, motivo in escolha:
         linhas.append(dict(numero=r.numero, processo_principal=r.processo_principal, nome_processo=r.nome_processo,

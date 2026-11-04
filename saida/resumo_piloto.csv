@@ -1,13 +1,2 @@
 ﻿numero,processo_principal,nome_processo,papel,lead_du,docs,fichas,laudas_produzidas,horas_proxy,horas_modelo,horas_llm,eficiencia_ciclo_modelo_pct,pct_tempo_espera_dominante_modelo,pct_pecas_com_base_externa,pct_pecas_com_calculo,pct_pecas_com_teste,sinal_pedido_complementacao,sinal_devolucao_por_vicio,sinal_refazimento,sinal_diligencia_externa,sinal_prazo_concedido,sinal_reiteracao,sinal_aguardando_outra_unidade,sinal_sobrestamento
-SEI-480002/001914/2024,P01,Reajuste tarifário anual (saneamento e gás),típico,327.0,63,33,149.2,48.7,112.9,54.4,5.75,53.5,0.0,9.1,21.2,0,0,2,2,0,1,4,0
-SEI-220007/004053/2022,P01,Reajuste tarifário anual (saneamento e gás),crítico,698.0,66,40,188.3,52.1,117.9,57.4,2.82,81.5,0.0,5.0,12.5,5,0,1,5,0,2,5,0
-SEI-480002/007520/2025,P06,Fiscalização técnica de campo (programada e por demanda),típico,187.0,22,17,62.7,41.5,62.6,28.8,5.58,66.3,0.0,0.0,35.3,1,0,0,5,1,2,1,0
-SEI-480002/005546/2024,P06,Fiscalização técnica de campo (programada e por demanda),crítico,483.0,38,20,69.8,44.2,75.0,33.8,2.59,81.6,5.0,0.0,30.0,6,0,0,7,0,0,1,0
-SEI-480002/008679/2025,P36,"Regulação e fiscalização comercial (faturamento, medição, corte, religação e tarifa social)",típico,166.0,28,18,96.9,25.2,65.4,23.6,6.56,28.9,0.0,0.0,27.8,1,0,0,0,0,0,0,0
-SEI-220007/002039/2022,P35,Gestão de interrupções e crises de abastecimento,típico,922.0,34,16,25.5,33.3,39.4,23.9,0.71,92.7,0.0,0.0,6.2,1,0,0,0,0,0,1,0
-SEI-220007/000992/2022,P35,Gestão de interrupções e crises de abastecimento,crítico,939.0,128,43,156.1,86.1,138.2,73.4,2.45,74.8,2.3,4.7,32.6,3,0,1,2,7,4,4,0
-SEI-480002/001574/2024,P21,Apuração de ocorrência de usuário pelo Conselho-Diretor,típico,469.0,44,27,85.0,49.3,78.0,31.2,2.77,61.0,0.0,0.0,37.0,0,0,0,0,3,5,1,0
-SEI-220007/001831/2021,P21,Apuração de ocorrência de usuário pelo Conselho-Diretor,crítico,964.0,90,23,63.2,48.2,60.0,38.1,1.04,78.5,0.0,0.0,8.7,1,0,0,0,0,1,1,0
-SEI-220007/003487/2023,P08,Monitoramento de metas contratuais e do IDG (verificador independente),típico,641.0,21,13,32.4,28.4,39.9,25.2,1.04,93.8,0.0,0.0,15.4,0,0,0,0,0,0,1,0
-SEI-220007/001749/2022,P03,Reequilíbrio econômico-financeiro e aditivos contratuais,típico,710.0,97,51,453.3,77.3,279.3,194.2,6.56,70.4,0.0,11.8,19.6,15,1,1,3,3,0,5,0
-SEI-480002/003768/2024,P22,Transparência e resposta a órgãos de controle e ao Ministério Público,típico,304.0,38,25,63.8,32.5,56.6,25.6,3.1,53.0,4.0,12.0,28.0,2,0,1,1,5,2,1,0
+SEI-480002/001314/2024,P06,Fiscalização técnica de campo (programada e por demanda),estudo de caso,636.0,75,59,336.2,361.0,490.8,258.8,12.86,88.7,0.0,6.8,74.6,16,0,0,2,7,4,0,0

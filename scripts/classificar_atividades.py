@@ -167,9 +167,29 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--avaliar", action="store_true", help="só os casos do piloto, contra os vínculos auditados")
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--gabarito", action="store_true",
+                    help="coorte só com casos do piloto: grava as atribuições a partir dos vínculos auditados, sem "
+                         "consultar o modelo de linguagem (estudo de caso)")
     args = ap.parse_args()
     coorte = pd.read_csv(SAIDA / "coorte_fase2.csv")
     coorte = coorte[[(DIR / f"modelo_{c}.json").exists() for c in coorte.processo_principal]]
+    if args.gabarito:
+        if not coorte.no_piloto.all():
+            raise SystemExit("--gabarito só vale quando toda a coorte está no piloto")
+        OUT.mkdir(parents=True, exist_ok=True)
+        docs = documentos()
+        docs = docs.assign(ref=docs.numero_processo + ":" + docs.numero)
+        for cod, g in coorte.groupby("processo_principal"):
+            gab = gabarito(cod)
+            d = docs[docs.numero_processo.isin(g.numero) & docs.unidade.str.startswith(ORGAO, na=False)]
+            tab = pd.DataFrame(dict(codigo=cod, processo=d.numero_processo, ref=d.ref, unidade=d.unidade, tipo=d.tipo,
+                                    atividade=d.ref.map(gab).fillna("fora_do_modelo"), confianca="alta",
+                                    motivo=d.ref.map(lambda r: "vínculo auditado do piloto" if r in gab
+                                                     else "peça sem vínculo no piloto")))
+            tab.sort_values(["processo", "ref"]).to_csv(OUT / f"atribuicoes_{cod}.csv", index=False,
+                                                        encoding="utf-8-sig")
+            print(cod, tab.processo.nunique(), "processos;", tab.atividade.value_counts().to_dict())
+        return
     if args.avaliar:
         coorte = coorte[coorte.no_piloto]
     OUT.mkdir(parents=True, exist_ok=True)

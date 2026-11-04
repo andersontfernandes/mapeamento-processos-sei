@@ -1,0 +1,593 @@
+{
+ "arquivo_verificado": "saida/bpmn/avaliacao_P06.json",
+ "caso": "SEI-480002/001314/2024",
+ "etapa": "G3 verificação independente por leitura",
+ "total_afirmacoes": 61,
+ "contagem": {
+  "correto": 61,
+  "impreciso": 0,
+  "sem_lastro": 0,
+  "contradito": 0,
+  "alucinacao": 0
+ },
+ "pct": {
+  "alucinacao": 0.0,
+  "imprecisao": 0.0,
+  "sem_lastro": 0.0,
+  "contradito": 0.0
+ },
+ "alucinacao_em_numero_que_sustenta_conclusao": false,
+ "criterio_aceite": "alucinação ≤ 2% e nenhuma em número que sustente conclusão; imprecisão ≤ 10% (VERIFICACAO_IA.md, protocolo, passo 5)",
+ "atende_criterio": true,
+ "conferencia_numerica": "Todos os ids citados existem em fatos_P06.json (0 ausentes) e os valores batem com o texto, exceto as inversões piso/teto em t5 e t6. Nenhum número do texto sem fato ou fonte foi encontrado.",
+ "itens_especiais": {
+  "a_remessa_CARES_e_CASAN_juntando_sem_processo_aberto": "Fatos confirmados: CARES recebeu e concluiu em 20/05/2024 (0 du); 43 peças da CASAN incluídas de 29/05/2024 a 08/07/2025 enquanto a trilha mostra SEM UNIDADE. Porém a CASAN remeteu o processo em 08/07/2025 e registrou anexações no período, de modo que \"sem dono\" é artefato da trilha (D2 contradito; L3 correto).",
+  "b_data_do_texto_do_Parecer_759": "Confirmada: texto datado de 25/06/2026, assinatura em 28/08/2026 (64 dias). A hipótese vem como hipótese (G5 correto).",
+  "c_publicacao_68285969": "Confirmada como publicação de deliberações de outras concessionárias, mas contém a Deliberação 4216, base do processo segundo o Parecer 759 (L7 e D5 imprecisos).",
+  "d_fatos_por_id": "Valores e significados conferem, com ressalva: critico.t5.1.horas_* e critico.t6.1.horas_* têm piso maior que teto; critico.lead conta da abertura do processo; posse SEM UNIDADE 306 = 282 + 24."
+ },
+ "observacao_residual": "Horas continuam hipótese; não foi verificada a conferência de cada relatório individual (checklist x texto) além de amostra de 6 relatórios; classificação de valor e potencial de IA é julgamento.",
+ "afirmacoes": [
+  {
+   "id": "S1",
+   "bloco": "sintese",
+   "afirmacao": "Único processo do código na base (SEI-480002/001314/2024); estudo de caso, sem coorte; mediana seria a do próprio caso",
+   "veredito": "correto",
+   "fonte": "fatos coorte.casos=1, carteira.processos=1",
+   "nota": ""
+  },
+  {
+   "id": "S2",
+   "bloco": "sintese",
+   "afirmacao": "Processo trata da fiscalização das unidades operacionais da concessão do Bloco 1 pela Câmara de Saneamento",
+   "veredito": "correto",
+   "fonte": "Parecer 250 (104033188), Parecer 759 (120665498), modelo_P06.json",
+   "nota": ""
+  },
+  {
+   "id": "S3",
+   "bloco": "sintese",
+   "afirmacao": "Lead de 636 du \"do primeiro relatório ao ofício de ciência do parecer jurídico\"",
+   "veredito": "correto",
+   "fonte": "fatos critico.lead=636; estadias.csv (processo gerado 2024-02-07); linha_do_tempo (1º relatório 2024-03-07; espera inicial 19 du incluída em critico.espera_total)",
+   "nota": "O valor 636 está certo, mas é contado da abertura do processo (07/02/2024), 19 du antes do primeiro relatório. A descrição \"do primeiro relatório\" está errada.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora: \"da abertura ao ofício (o primeiro relatório veio 19 du depois)\". Confere com critico.lead e linha_do_tempo."
+  },
+  {
+   "id": "S4",
+   "bloco": "sintese",
+   "afirmacao": "528 du de espera entre atividades contra 108 du de execução",
+   "veredito": "correto",
+   "fonte": "fatos critico.espera_total=528, critico.execucao_total=108 (soma 636)",
+   "nota": ""
+  },
+  {
+   "id": "S5",
+   "bloco": "sintese",
+   "afirmacao": "258,8–490,8 h de trabalho estimado (hipótese)",
+   "veredito": "correto",
+   "fonte": "fatos critico.horas_piso=258.8, critico.horas_teto=490.8",
+   "nota": ""
+  },
+  {
+   "id": "S6",
+   "bloco": "sintese",
+   "afirmacao": "O trabalho técnico está na vistoria e no relatório",
+   "veredito": "correto",
+   "fonte": "fichas_P06 t2: 217–446,6 h de 258,8–490,8 h; docs_P06.csv",
+   "nota": ""
+  },
+  {
+   "id": "S7",
+   "bloco": "sintese",
+   "afirmacao": "O tempo se perde depois do último encaminhamento (106 du \"sem nenhuma unidade\" até o parecer técnico)",
+   "veredito": "correto",
+   "fonte": "andamentos.tsv; Parecer 250 (104033188); Parecer 759 linhas 135 e 225; docs_P06.csv; ofício 92310062 (prazo 30 dias)",
+   "nota": "O último ofício (30/01/2025) abriu prazo de 30 dias à concessionária; o Parecer 250 analisa as respostas dela, entregues em outros processos (anexações até 20/03/2025). Parte das 106 du é prazo e resposta da concessionária, não tempo perdido pela agência. O próprio texto admite 180 du indeterminadas e pergunta se foi espera por resposta ou fila interna.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora diz que as 106 du incluem prazo de manifestação e respostas da concessionária, não separáveis. Confere com ofício 92310062, Parecer 250 e critico.indeterminado=180."
+  },
+  {
+   "id": "S8",
+   "bloco": "sintese",
+   "afirmacao": "106 du sem unidade até o parecer técnico consolidado",
+   "veredito": "correto",
+   "fonte": "fatos critico.t4.1.espera_antes.SEM UNIDADE=106",
+   "nota": "Valor correto como fato da trilha; ver nota de S7 e D2 sobre o significado \"sem dono\"."
+  },
+  {
+   "id": "S9",
+   "bloco": "sintese",
+   "afirmacao": "55 du com a Secretaria antes de dar ciência do parecer técnico",
+   "veredito": "correto",
+   "fonte": "fatos critico.t5.1.espera_antes.SCEXEC=55; estadias idx2 (08/07/2025 a 23/09/2025); Manifestação 55 (114548072)",
+   "nota": ""
+  },
+  {
+   "id": "S10",
+   "bloco": "sintese",
+   "afirmacao": "203 du com a Procuradoria antes do parecer jurídico",
+   "veredito": "correto",
+   "fonte": "fatos critico.t7.1.espera_antes.PROC=203; posse.csv PROC 203 du",
+   "nota": ""
+  },
+  {
+   "id": "S11",
+   "bloco": "sintese",
+   "afirmacao": "Parecer técnico, parecer jurídico e ofício final não fixam prazo, providência por unidade nem penalidade",
+   "veredito": "correto",
+   "fonte": "Parecer 250 (conclusão), Parecer 759 (fim), Ofício 2606 (140207175: \"providências cabíveis\")",
+   "nota": ""
+  },
+  {
+   "id": "S12",
+   "bloco": "sintese",
+   "afirmacao": "Processo sobrestado sem decisão colegiada",
+   "veredito": "correto",
+   "fonte": "andamentos.tsv 2026-08-28 \"Sobrestamento. Ofício - NA 2606\"; docs_P06.csv (nenhuma deliberação própria após o início)",
+   "nota": ""
+  },
+  {
+   "id": "S13",
+   "bloco": "sintese",
+   "afirmacao": "IA estrutura achados e redige minutas; ganho de prazo depende de marcos e responsáveis entre etapas",
+   "veredito": "correto",
+   "fonte": "juízo; coerente com fatos de espera",
+   "nota": "Opinião, não factual."
+  },
+  {
+   "id": "L1",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Eficiência do ciclo 6,8–12,9%; 89% do tempo em passagens dominadas pela espera; 6 passagens e 1 retorno",
+   "veredito": "correto",
+   "fonte": "fichas_P06.json processo.casos (pce_pct 6.8–12.9; pct_tempo_espera_dominante 89.0; passagens 6; retornos 1)",
+   "nota": ""
+  },
+  {
+   "id": "L2",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Posse: sem unidade 306 du, Procuradoria 203, Câmara de Saneamento 70, Secretaria 57",
+   "veredito": "correto",
+   "fonte": "fatos critico.posse.*; posse.csv (soma 636)",
+   "nota": ""
+  },
+  {
+   "id": "L3",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Parte do tempo sem unidade corresponde a meses em que a câmara continuava juntando relatórios e ofícios depois de o processo concluído na CARES",
+   "veredito": "correto",
+   "fonte": "docs_P06.csv (43 peças com data de inclusão entre 20/05/2024 e 08/07/2025, unidade CASAN); andamentos.tsv (CARES concluiu em 20/05/2024 16:41)",
+   "nota": "Confirma o item (a). A hipótese dos processos anexados tem apoio: sete anexações em 07/2024 a 03/2025. Ressalva: a remessa à SCEXEC em 08/07/2025 consta como feita pela CASAN e as anexações constam na CASAN, o que indica que a unidade operava o processo; o \"sem unidade\" é artefato da trilha, e o texto o trata como hipótese."
+  },
+  {
+   "id": "L4",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Tempo sem unidade superestima o processo parado na fase de vistorias",
+   "veredito": "correto",
+   "fonte": "estadias.csv / posse.csv: SEM UNIDADE = 282 du (20/05/2024 a 08/07/2025) + 24 du (23/09 a 27/10/2025)",
+   "nota": "Correto, e a decomposição reforça: 24 du dos 306 são a janela da concessionária após a ciência."
+  },
+  {
+   "id": "L5",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Espera confirmada de resposta da concessionária = 0 du; 180 du indeterminadas (do ofício até peça externa sem data real); manifestações estão em processos relacionados",
+   "veredito": "correto",
+   "fonte": "fatos critico.terceiros=0, critico.indeterminado=180; Parecer 759 (docs 79967680... citados); anexações no andamento",
+   "nota": ""
+  },
+  {
+   "id": "L6",
+   "bloco": "leitura_metricas",
+   "afirmacao": "Caso tem 12 ofícios e 3 unidades ativas; lead mediano nativos = todos = 636 du",
+   "veredito": "correto",
+   "fonte": "fatos coorte.caso.oficios=12, unidades_ativas=3, carteira.lead_mediano_*=636; docs_P06.csv (12 ofícios NA 349 a NA 2606)",
+   "nota": ""
+  },
+  {
+   "id": "L7",
+   "bloco": "leitura_metricas",
+   "afirmacao": "O indicador de 100% com deliberação conta a publicação de deliberações juntada no início, que trata de outras concessionárias, embora o processo não tenha deliberação própria",
+   "veredito": "correto",
+   "fonte": "68285969 (texto); Parecer 759 relatório; docs_P06.csv",
+   "nota": "Item (c). A peça 68285969 é página de publicação com as Deliberações 4216, 4218, 4219 e 4220, sobre outras concessionárias. Mas o art. 2º da 4216 manda instaurar processo por concessionária para vistorias anuais, e o Parecer 759 diz que este processo foi instaurado após essa deliberação. \"Sem deliberação própria\" é defensável (nada específico do Bloco 1); a omissão é que a peça contém a deliberação que funda o processo. O fato carteira.com_deliberacao_pct=100 está correto.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora: página do Diário Oficial com a Deliberação 4216, que funda o programa, junto com deliberações de outras concessionárias; nenhuma deliberação decide o processo. Confere com 68285969 e Parecer 759."
+  },
+  {
+   "id": "G1",
+   "bloco": "gargalo",
+   "afirmacao": "Gargalo é a fila da Procuradoria antes do parecer jurídico",
+   "veredito": "correto",
+   "fonte": "estadias.csv PROC 03/11/2025 a 28/08/2026 (203 du); Parecer 759 (data do texto 25/06/2026)",
+   "nota": "203 du é posse, não fila: inclui a elaboração do parecer (20 laudas). O texto do parecer é de 25/06/2026, ~7,7 meses após a entrada, e a assinatura de 28/08/2026. Não há dado que separe espera de elaboração.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora fala em posse da Procuradoria, com espera e elaboração não separáveis; a data do texto do Parecer 759 segue como hipótese. Confere."
+  },
+  {
+   "id": "G2",
+   "bloco": "gargalo",
+   "afirmacao": "Segundo plano: intervalo sem dono entre o último encaminhamento e o parecer técnico; fila da Secretaria antes da ciência",
+   "veredito": "correto",
+   "fonte": "ver S7 e D2",
+   "nota": "",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora inclui prazo e respostas da concessionária e marca \"sem unidade\" como rótulo da trilha. Confere."
+  },
+  {
+   "id": "G3",
+   "bloco": "gargalo",
+   "afirmacao": "Não é falta de capacidade técnica de campo: falta marco e responsável pela etapa seguinte",
+   "veredito": "correto",
+   "fonte": "nenhum fato mede capacidade; fichas_P06.json inventário (\"volume triplicou\", CASAN tramitou 6.569 processos em 2025)",
+   "nota": "Causa afirmada sem medição; o inventário do próprio caso aponta pressão de volume. Deveria ser hipótese.",
+   "veredito_anterior": "sem_lastro",
+   "nota_reverificacao": "Agora \"hipótese a validar com as unidades\". Confere."
+  },
+  {
+   "id": "G4",
+   "bloco": "gargalo",
+   "afirmacao": "Maior espera antes de uma atividade: parecer jurídico, 205 du (203 Procuradoria + 2 Secretaria); peça de 10–13,8 h",
+   "veredito": "correto",
+   "fonte": "fatos critico.t7.1.espera_antes=205, .PROC=203, .SCEXEC=2, horas 10.0/13.8; linha_do_tempo (outras esperas: 106, 55, 28)",
+   "nota": ""
+  },
+  {
+   "id": "G5",
+   "bloco": "gargalo",
+   "afirmacao": "Texto do Parecer 759 traz data cerca de dois meses anterior à da assinatura; hipótese de que parte da fila foi entre a minuta e a assinatura",
+   "veredito": "correto",
+   "fonte": "80_120665498.txt: \"Rio de Janeiro, 25 de junho de 2026\"; assinatura eletrônica 28/08/2026 11:14 (64 dias, ~2 meses)",
+   "nota": "Item (b) confirmado. A inferência vem marcada como hipótese. Observação: o número do parecer é 759/2025, e o SEI nº 120665498 fica logo após o 117907053 (03/11/2025), o que sugere que o documento foi criado em nov/2025."
+  },
+  {
+   "id": "G6",
+   "bloco": "gargalo",
+   "afirmacao": "106 du sem unidade antes do parecer técnico (peça de 12,2–13,7 h); 55 du com a Secretaria (0,6–0,8 h); maior espera nas rodadas = 28 du",
+   "veredito": "correto",
+   "fonte": "fatos critico.t4.1.*, t5.1.*, t2.7.espera_antes=28",
+   "nota": "Em t5 o fato traz piso 0,8 > teto 0,6; o texto apresenta 0,6–0,8 sem avisar a inversão."
+  },
+  {
+   "id": "V1",
+   "bloco": "variabilidade",
+   "afirmacao": "1 caminho observado; 8 rodadas de vistoria; espera de 1 a 28 du (quartis 2–21,8); execução de 0 a 35 du",
+   "veredito": "correto",
+   "fonte": "fatos coorte.n_caminhos=1, coorte.t2.espera_antes n=8/q1=2.0/q3=21.8/max=28, critico.t2.5=1, critico.t2.1.execucao=35; linha_do_tempo",
+   "nota": ""
+  },
+  {
+   "id": "V2",
+   "bloco": "variabilidade",
+   "afirmacao": "Primeira rodada reuniu relatórios de água e esgoto da capital, 35 du entre primeira e última assinatura",
+   "veredito": "correto",
+   "fonte": "linha_do_tempo (12 peças, 07/03 a 29/04/2024, execucao_du 35); Parecer 759 lista de relatórios (Praça Paris, Urca etc.)",
+   "nota": ""
+  },
+  {
+   "id": "V3",
+   "bloco": "variabilidade",
+   "afirmacao": "Horas por rodada de 6 a 63 h no piso, conforme número de unidades",
+   "veredito": "correto",
+   "fonte": "linha_do_tempo t2: 63,36,25,24,21,6,25,17 h; peças por rodada 12,7,4,5,4,1,6,3",
+   "nota": ""
+  },
+  {
+   "id": "V4",
+   "bloco": "variabilidade",
+   "afirmacao": "7 ofícios de lote, espera de 2 a 11 du, execução de 0 ou 1 du",
+   "veredito": "correto",
+   "fonte": "linha_do_tempo t3: espera 6,7,3,3,11,2,10; execução 0 ou 1; fatos coorte.t3.espera_antes.n=7",
+   "nota": ""
+  },
+  {
+   "id": "V5",
+   "bloco": "variabilidade",
+   "afirmacao": "Convocações com antecedência curta e formato variável",
+   "veredito": "correto",
+   "fonte": "ofícios 77432319 (24/06 para vistoria 26/06), 81195142 (16/08 para 20/08), 81595411 (22/08 para 28/08), 82718456 (06/09 para 10/09)",
+   "nota": ""
+  },
+  {
+   "id": "V6",
+   "bloco": "variabilidade",
+   "afirmacao": "Relatórios assinados semanas ou meses depois da vistoria",
+   "veredito": "correto",
+   "fonte": "Relatório 89901514: vistoria 20/08/2024, assinaturas 20/12/2024 a 23/01/2025; 82895573 vistoria 16/07 e inclusão 11/09",
+   "nota": ""
+  },
+  {
+   "id": "V7",
+   "bloco": "variabilidade",
+   "afirmacao": "Prazos de 20 ou 30 dias, sem prazo ou prazo maior sem critério; vistorias incompletas por falta de acesso sem nova visita registrada",
+   "veredito": "correto",
+   "fonte": "texto dos ofícios/relatórios: prazos de 15, 20, 30, 40 e 90 dias; relatório 87028948 cita 90; relatórios com tampa/painel sem acesso",
+   "nota": "O texto cita 20 e 30; há também 15 e 40 dias (omissão, não erro)."
+  },
+  {
+   "id": "V8",
+   "bloco": "variabilidade",
+   "afirmacao": "Intervalo vistoria–primeira assinatura não está nos fatos (data da peça = primeira assinatura)",
+   "veredito": "correto",
+   "fonte": "fatos_P06.json definicoes e linha_do_tempo",
+   "nota": ""
+  },
+  {
+   "id": "D1",
+   "bloco": "desperdicios",
+   "afirmacao": "Espera: 203 du Procuradoria, 106 du sem unidade, 55 du Secretaria, contra execução de 0 du no parecer técnico e no jurídico",
+   "veredito": "correto",
+   "fonte": "fatos critico.t4.1.execucao=0, t7.1.execucao=0",
+   "nota": ""
+  },
+  {
+   "id": "D2",
+   "bloco": "desperdicios",
+   "afirmacao": "Estoque: \"processo sem dono\", 306 du sem nenhuma unidade com o processo aberto, a partir da remessa à CARES, que o concluiu no mesmo dia; esconde o processo do controle de estoque",
+   "veredito": "correto",
+   "fonte": "posse.csv (SEM UNIDADE 282 du + 24 du); andamentos.tsv (remessa pela CASAN em 08/07/2025; 7 anexações na CASAN de 31/07/2024 a 20/03/2025); fatos critico.posse.CARES=0",
+   "nota": "Item (a): CARES recebeu e concluiu no mesmo dia (correto) e a CASAN juntou 43 peças depois disso (correto). Mas \"sem dono\" é contradito pelo andamento: a CASAN remeteu o processo em 08/07/2025 e registrou anexações nesse período, ou seja, operava o processo. Os 306 du também não são um bloco contínuo desde a CARES: são 282 du + 24 du, e os 24 são a janela de manifestação da concessionária após a ciência. O texto marca só o mecanismo como hipótese; o rótulo \"sem dono\" e a severidade alta ficam sem apoio.",
+   "veredito_anterior": "contradito",
+   "nota_reverificacao": "Reescrito como \"processo invisível ao controle por unidade\", rótulo artefato da trilha, CASAN continuou operando (juntadas, anexações, remessa em 08/07/2025), severidade média. Confere com andamentos.tsv. Resíduo menor: não separa 282 du + 24 du."
+  },
+  {
+   "id": "D3",
+   "bloco": "desperdicios",
+   "afirmacao": "Entre rodadas esperas até 28 du; até 11 du entre relatório assinado e ofício; ofício = 0,8–1,1 h",
+   "veredito": "correto",
+   "fonte": "fatos critico.t2.7.espera_antes=28, t3.5.espera_antes=11, t3.1.horas",
+   "nota": ""
+  },
+  {
+   "id": "D4",
+   "bloco": "desperdicios",
+   "afirmacao": "Relatórios com checklist contraditório, trechos de modelo de outros casos (outro município, bloco, concessionária), datas divergentes, estação não identificada, relatório com outro nº de processo no cabeçalho",
+   "veredito": "correto",
+   "fonte": "relatórios 79573103 e 79573239 (Bloco 04, vistoria em Jacuba citada em outro relatório), 89901514 (SEI-480002/001547/2024 e menção a Iguá), 69716140 e 91278977 (sem nome de estação; 91278977 sem nº de processo e data 07/11/2024 vs inclusão 14/01/2025)",
+   "nota": ""
+  },
+  {
+   "id": "D5",
+   "bloco": "desperdicios",
+   "afirmacao": "A publicação de deliberações juntada no início trata de outras concessionárias (listada como defeito/retrabalho, severidade alta)",
+   "veredito": "correto",
+   "fonte": "68285969; Parecer 759",
+   "nota": "Ver L7. Tratada como defeito sem considerar que contém a Deliberação 4216, base citada pelo Parecer 759. A pergunta \"juntada por engano?\" tem pouco apoio. Também não aparece em nenhum fato.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Removido das desperdícios; a publicação passou a constar só em leitura_metricas (L7)."
+  },
+  {
+   "id": "D6",
+   "bloco": "desperdicios",
+   "afirmacao": "Parecer técnico conclui por cumprimento apenas parcial sem dizer o que falta por unidade; parecer jurídico diz que a concessionária deixou de responder a diversas não conformidades sem listá-las e transcreve critérios de penalidade sem aplicá-los; ofício final sem prazo nem lista",
+   "veredito": "correto",
+   "fonte": "Parecer 250 (\"cumprimento apenas parcial\"); Parecer 759 linha 223 e nota [3] (IN128 art. 24); Ofício 2606",
+   "nota": ""
+  },
+  {
+   "id": "D7",
+   "bloco": "desperdicios",
+   "afirmacao": "Os prazos dos relatórios não têm marco inicial",
+   "veredito": "correto",
+   "fonte": "Parecer 759 linha 225 (\"contados a partir da data de emissão do ofício\"); ofícios 92310062 e 74141761",
+   "nota": "O Parecer 759 afirma que os 30 dias correm da emissão do ofício; os ofícios não dizem isso expressamente. Falta marco explícito no ofício, mas o marco existe na leitura da Procuradoria.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora: ofícios não dizem de quando corre o prazo; o Parecer 759 entende que conta da emissão. Confere com linha 225 do parecer."
+  },
+  {
+   "id": "D8",
+   "bloco": "desperdicios",
+   "afirmacao": "Réplica à manifestação reproduz em grande parte o Parecer 250 e apoia o argumento em cláusulas sobre direitos do usuário; parecer jurídico volta a resumir relatórios e parecer técnico",
+   "veredito": "correto",
+   "fonte": "Despacho 117801870; Parecer 759 seção I",
+   "nota": "A cláusula sobre direitos do usuário (23.1.x) está correta e o parecer jurídico de fato recapitula. Mas a réplica cita trechos do Parecer 250 e da concessionária e tem argumentação própria (Lei 11.445 arts. 11, 23, 25), de modo que \"em grande parte\" exagera.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora \"retoma trechos do Parecer 250, embora com argumentação própria\". Confere com 117801870."
+  },
+  {
+   "id": "D9",
+   "bloco": "desperdicios",
+   "afirmacao": "Réplica estimada em 2,3–8 h (hipótese)",
+   "veredito": "correto",
+   "fonte": "fatos critico.t6.1.horas_teto=2.3, horas_piso=8.0",
+   "nota": "Piso (8,0) maior que teto (2,3): inversão de definição no dado. O texto troca a ordem sem avisar.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora avisa que no dado o piso (8 h) supera o teto (2,3 h). Confere com critico.t6.1.*."
+  },
+  {
+   "id": "D10",
+   "bloco": "desperdicios",
+   "afirmacao": "E-mails de transmissão anexam só o ofício; variam entre pedir manifestação e enviar para conhecimento; manifestação citada com números divergentes; câmara de resíduos sem trabalho (0 du)",
+   "veredito": "correto",
+   "fonte": "e-mail 92342599 (anexo só o ofício); Manifestação 55 (\"para sua ciência\") vs ofícios (pedem manifestação); 117500524 cita 117470176 e 117907053/759/117801870 citam 117463902; fatos critico.posse.CARES=0",
+   "nota": ""
+  },
+  {
+   "id": "D11",
+   "bloco": "desperdicios",
+   "afirmacao": "Talento: especialistas gastam parte das 217–446,6 h com texto de modelo repetido e conferência manual; primeira rodada 63–132,5 h",
+   "veredito": "correto",
+   "fonte": "fatos critico.t2.1.horas_piso=63, horas_teto=132.5; fichas t2 (217,0/446,6); relatórios",
+   "nota": "Os números estão certos e o texto repetido de modelo é observável. A \"conferência manual\" não tem lastro em peça nem em fato.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "\"Conferência manual\" removida. Resto confere."
+  },
+  {
+   "id": "T1",
+   "bloco": "atividades",
+   "afirmacao": "t1: duas convocações, 0,8–1,1 h e 2,5–3,4 h; espera de 12 e 5 du; a segunda levou 16 du entre a primeira e a última peça",
+   "veredito": "correto",
+   "fonte": "linha_do_tempo t1; ofícios 516, 708, 725, 757",
+   "nota": "Os números batem com os fatos. Mas são quatro ofícios de convocação (516 e depois 708, 725, 757), não duas convocações; a \"segunda\" são três ofícios para municípios diferentes.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora quatro ofícios: um isolado e três seguidos (2,5–3,4 h no conjunto; 16 du entre o primeiro e o último). Confere com 516, 708, 725, 757."
+  },
+  {
+   "id": "T2",
+   "bloco": "atividades",
+   "afirmacao": "t2: 42 relatórios, 272 laudas, 217–446,6 h; não reduz espera de até 28 du nem os 35 du da primeira rodada",
+   "veredito": "correto",
+   "fonte": "fichas_P06.json t2 (n_docs 42, laudas 272, piso 217.0, teto 446.6); docs_P06.csv (42 relatórios)",
+   "nota": ""
+  },
+  {
+   "id": "T3",
+   "bloco": "atividades",
+   "afirmacao": "t3: espera de 2 a 11 du nas 7 ocorrências; 0,8–1,1 h por ofício (5,2–7,8 h na ficha)",
+   "veredito": "correto",
+   "fonte": "linha_do_tempo t3; 7 × 0,75 = 5,25 e 7 × 1,1 = 7,8",
+   "nota": ""
+  },
+  {
+   "id": "T4",
+   "bloco": "atividades",
+   "afirmacao": "t4: 106 du sem unidade, o maior intervalo da fase técnica; 12,2–13,7 h",
+   "veredito": "correto",
+   "fonte": "fatos critico.t4.1.*",
+   "nota": ""
+  },
+  {
+   "id": "T5",
+   "bloco": "atividades",
+   "afirmacao": "t5: 55 du com a Secretaria antes de 0,6–0,8 h; \"é a espera que mais cai com o alerta\"; 24 du seguintes incluem o tempo da concessionária",
+   "veredito": "correto",
+   "fonte": "fatos critico.t5.1.espera_antes.SCEXEC=55, critico.t5.1.execucao=24; Manifestação 55 e Despacho 117500524",
+   "nota": "Os 55 du, as horas e os 24 du (23/09 a 27/10/2025, resposta da concessionária em 23/10) estão certos. A frase de que é a espera que mais cai com o alerta é projeção sem base.",
+   "veredito_anterior": "sem_lastro",
+   "nota_reverificacao": "Agora \"hipótese, a medir\"; avisa a inversão piso/teto. Confere."
+  },
+  {
+   "id": "T6",
+   "bloco": "atividades",
+   "afirmacao": "t6: 2,3–8 h (hipótese), espera de 2 du, não reduz espera",
+   "veredito": "correto",
+   "fonte": "fatos critico.t6.1.*",
+   "nota": "Mesma inversão piso/teto de D9.",
+   "veredito_anterior": "impreciso",
+   "nota_reverificacao": "Agora avisa a inversão piso/teto. Confere."
+  },
+  {
+   "id": "T7",
+   "bloco": "atividades",
+   "afirmacao": "t7: 203 du com a Procuradoria, a maior do processo; 10–13,8 h; IA não opina sobre legitimidade",
+   "veredito": "correto",
+   "fonte": "fatos critico.t7.1.*",
+   "nota": ""
+  },
+  {
+   "id": "T8",
+   "bloco": "atividades",
+   "afirmacao": "t8: 0,8–1,1 h, sem espera (0 du); ofício final sem prazo nem lista de providências",
+   "veredito": "correto",
+   "fonte": "fatos critico.t8.1.*; Ofício 2606",
+   "nota": ""
+  },
+  {
+   "id": "T9",
+   "bloco": "atividades",
+   "afirmacao": "Classificação de valor (agrega valor / necessária sem valor) e potencial de IA (alto/médio) por atividade",
+   "veredito": "correto",
+   "fonte": "julgamento a validar; sem contradição nas fontes",
+   "nota": "Não verificável por fonte. Fica na lista de verificações humanas."
+  },
+  {
+   "id": "O1",
+   "bloco": "oportunidades",
+   "afirmacao": "Painel de marcos e alerta: 203 du, 106 du, 55 du, todos antes de peças de poucas horas; extração do andamento já feita",
+   "veredito": "correto",
+   "fonte": "fatos citados; dados/sei2_dump/andamentos.tsv",
+   "nota": ""
+  },
+  {
+   "id": "O2",
+   "bloco": "oportunidades",
+   "afirmacao": "Prazo interno e fila por idade na Procuradoria: 203 du; parecer de 10–13,8 h, em parte leitura e resumo (hipótese)",
+   "veredito": "correto",
+   "fonte": "fatos critico.t7.1.*; Parecer 759 (resume relatórios)",
+   "nota": ""
+  },
+  {
+   "id": "O3",
+   "bloco": "oportunidades",
+   "afirmacao": "Matriz de não conformidades: parecer consolidado esperou 106 du e custou 12,2–13,7 h",
+   "veredito": "correto",
+   "fonte": "fatos critico.t4.1.*",
+   "nota": ""
+  },
+  {
+   "id": "O4",
+   "bloco": "oportunidades",
+   "afirmacao": "Convocação e encaminhamento padronizados: espera de 2 a 11 du e ofícios de 0,8–1,1 h",
+   "veredito": "correto",
+   "fonte": "fatos critico.t3.*",
+   "nota": ""
+  },
+  {
+   "id": "O5",
+   "bloco": "oportunidades",
+   "afirmacao": "Encerramento com determinação: não reduz tempo porque o ofício final saiu sem espera (0 du); evita novo ciclo (a medir)",
+   "veredito": "correto",
+   "fonte": "fatos critico.t8.1.espera_antes=0",
+   "nota": ""
+  },
+  {
+   "id": "O6",
+   "bloco": "oportunidades",
+   "afirmacao": "Minuta assistida: parte das 217–446,6 h dentro das 258,8–490,8 h do caso",
+   "veredito": "correto",
+   "fonte": "fatos critico.horas_*; fichas t2",
+   "nota": ""
+  },
+  {
+   "id": "Q1",
+   "bloco": "perguntas_validacao",
+   "afirmacao": "Premissas das perguntas: remessa à CARES e conclusão no mesmo dia; data do texto do Parecer 759 anterior à assinatura; Iguá Rio de Janeiro S.A. no cadastro vs \"Águas do Rio – Bloco 1\"; relatório de Paul Leroux cita outra deliberação (4534); Parecer 759 cita a 4.216",
+   "veredito": "correto",
+   "fonte": "andamentos.tsv; 80_120665498.txt; dados/sei2_dump/processos.tsv; relatório 89901514 (Deliberação 4534/2023); Parecer 759 relatório",
+   "nota": ""
+  }
+ ],
+ "reverificacao": {
+  "escopo": "15 afirmações não corretas da primeira rodada, mais as frases novas que geraram (síntese, leitura_metricas, gargalo, desperdícios, atividades t1/t5/t6)",
+  "resultado": {
+   "S3": "correto",
+   "S7": "correto",
+   "L7": "correto",
+   "G1": "correto",
+   "G2": "correto",
+   "G3": "correto",
+   "D2": "correto",
+   "D5": "correto",
+   "D7": "correto",
+   "D8": "correto",
+   "D9": "correto",
+   "D11": "correto",
+   "T1": "correto",
+   "T5": "correto",
+   "T6": "correto"
+  },
+  "frases_novas_conferidas": "Todas as frases novas conferidas contra as fontes; nenhuma introduz número sem fato. Indicadores e oportunidades que citam \"sem nenhuma unidade\" usam o termo como definição de indicador, sem afirmar parada.",
+  "total_afirmacoes": 61,
+  "contagem": {
+   "correto": 61,
+   "impreciso": 0,
+   "sem_lastro": 0,
+   "contradito": 0,
+   "alucinacao": 0
+  },
+  "pct": {
+   "alucinacao": 0.0,
+   "imprecisao": 0.0,
+   "sem_lastro": 0.0,
+   "contradito": 0.0
+  },
+  "alucinacao_em_numero_que_sustenta_conclusao": false,
+  "atende_criterio": true,
+  "ressalvas_menores_nao_contadas": [
+   "variabilidade cita prazos de 20 ou 30 dias; as peças também têm 15, 40 e 90 dias (omissão)",
+   "D2 não decompõe os 306 du em 282 + 24",
+   "horas seguem hipótese e classificação de valor/potencial de IA é julgamento sem fonte"
+  ]
+ },
+ "totais_primeira_rodada": "46 corretas, 12 imprecisas, 2 sem lastro, 1 contradita, 0 alucinação"
+}

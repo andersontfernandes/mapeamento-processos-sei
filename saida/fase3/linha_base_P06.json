@@ -1,173 +1,139 @@
 {
  "codigo": "P06",
  "nome": "Fiscalização técnica de campo (programada e por demanda)",
- "situacao": "procedimento",
- "casos_coorte": 12,
- "casos_nativos": 12,
- "auditoria_classificador": {
-  "pecas": 20,
-  "concordancia": 0.95,
-  "substantivas": 14,
-  "concordancia_substantivas": 1.0,
-  "auditor_fora_do_modelo": 2
- },
+ "situacao": "estudo_de_caso",
+ "casos_coorte": 1,
+ "casos_nativos": 1,
+ "auditoria_classificador": null,
  "por_caso": {
   "lead_du": {
-   "n": 12,
-   "media": 404.8,
-   "mediana": 351.0,
-   "q1": 183.2,
-   "q3": 493.0,
-   "max": 1054.0
+   "n": 1,
+   "media": 636.0,
+   "mediana": 636.0,
+   "q1": 636.0,
+   "q3": 636.0,
+   "max": 636.0
   },
-  "lead_encerrados_du": {
-   "n": 7,
-   "media": 390.3,
-   "mediana": 317.0,
-   "q1": 185.5,
-   "q3": 503.0,
-   "max": 862.0
-  },
+  "lead_encerrados_du": null,
   "espera_entre_atividades_du": {
-   "n": 12,
-   "media": 355.3,
-   "mediana": 313.5,
-   "q1": 181.0,
-   "q3": 476.5,
-   "max": 821.0
+   "n": 1,
+   "media": 528.0,
+   "mediana": 528.0,
+   "q1": 528.0,
+   "q3": 528.0,
+   "max": 528.0
   },
   "execucao_du": {
-   "n": 12,
-   "media": 38.5,
-   "mediana": 8.0,
-   "q1": 4.2,
-   "q3": 37.5,
-   "max": 255.0
+   "n": 1,
+   "media": 108.0,
+   "mediana": 108.0,
+   "q1": 108.0,
+   "q3": 108.0,
+   "max": 108.0
   },
   "terceiros_du": {
-   "n": 12,
-   "media": 22.7,
-   "mediana": 11.0,
-   "q1": 8.0,
-   "q3": 15.5,
-   "max": 122.0
+   "n": 1,
+   "media": 0.0,
+   "mediana": 0.0,
+   "q1": 0.0,
+   "q3": 0.0,
+   "max": 0.0
   },
   "sem_unidade_du": {
-   "n": 12,
-   "media": 111.7,
-   "mediana": 67.0,
-   "q1": 12.8,
-   "q3": 82.0,
-   "max": 642.0
+   "n": 1,
+   "media": 306.0,
+   "mediana": 306.0,
+   "q1": 306.0,
+   "q3": 306.0,
+   "max": 306.0
   },
   "horas_piso": {
-   "n": 12,
-   "media": 29.8,
-   "mediana": 22.3,
-   "q1": 20.7,
-   "q3": 31.1,
-   "max": 104.4
+   "n": 1,
+   "media": 257.2,
+   "mediana": 257.2,
+   "q1": 257.2,
+   "q3": 257.2,
+   "max": 257.2
   },
   "horas_teto": {
-   "n": 12,
-   "media": 60.2,
-   "mediana": 54.1,
-   "q1": 44.1,
-   "q3": 64.0,
-   "max": 158.1
+   "n": 1,
+   "media": 490.3,
+   "mediana": 490.3,
+   "q1": 490.3,
+   "q3": 490.3,
+   "max": 490.3
   },
   "ocorrencias": {
-   "n": 12,
-   "media": 12.0,
-   "mediana": 10.0,
-   "q1": 8.0,
-   "q3": 10.2,
-   "max": 46.0
+   "n": 1,
+   "media": 22.0,
+   "mediana": 22.0,
+   "q1": 22.0,
+   "q3": 22.0,
+   "max": 22.0
   }
  },
  "posse_por_unidade": {
-  "SEEDUC/COOENG": {
-   "n": 1,
-   "mediana": 254.0,
-   "q1": 254.0,
-   "q3": 254.0,
-   "max": 254.0
-  },
-  "CONS-05": {
-   "n": 1,
-   "mediana": 109.0,
-   "q1": 109.0,
-   "q3": 109.0,
-   "max": 109.0
-  },
-  "CASAN": {
-   "n": 2,
-   "mediana": 81.5,
-   "q1": 57.2,
-   "q3": 105.8,
-   "max": 130.0
-  },
   "SEM UNIDADE": {
-   "n": 10,
-   "mediana": 72.0,
-   "q1": 31.8,
-   "q3": 82.0,
-   "max": 642.0
-  },
-  "SCEXEC": {
-   "n": 12,
-   "mediana": 50.0,
-   "q1": 26.2,
-   "q3": 66.0,
-   "max": 77.0
-  },
-  "CEDAE/ASS/DPR-7": {
    "n": 1,
-   "mediana": 46.0,
-   "q1": 46.0,
-   "q3": 46.0,
-   "max": 46.0
-  },
-  "CONS-02": {
-   "n": 12,
-   "mediana": 31.0,
-   "q1": 11.5,
-   "q3": 129.0,
-   "max": 284.0
+   "mediana": 306.0,
+   "q1": 306.0,
+   "q3": 306.0,
+   "max": 306.0
   },
   "PROC": {
-   "n": 12,
-   "mediana": 31.0,
-   "q1": 19.2,
-   "q3": 72.5,
-   "max": 382.0
+   "n": 1,
+   "mediana": 203.0,
+   "q1": 203.0,
+   "q3": 203.0,
+   "max": 203.0
+  },
+  "CASAN": {
+   "n": 1,
+   "mediana": 70.0,
+   "q1": 70.0,
+   "q3": 70.0,
+   "max": 70.0
+  },
+  "SCEXEC": {
+   "n": 1,
+   "mediana": 57.0,
+   "q1": 57.0,
+   "q3": 57.0,
+   "max": 57.0
+  },
+  "CARES": {
+   "n": 1,
+   "mediana": 0.0,
+   "q1": 0.0,
+   "q3": 0.0,
+   "max": 0.0
   }
  },
  "anual": {
-  "processos": 3.7,
+  "processos": 0.0,
   "horas": {
-   "piso": 110.4,
-   "teto": 222.8
+   "piso": 0.0,
+   "teto": 0.0
   },
   "fte": {
-   "piso": 0.06,
-   "teto": 0.12
+   "piso": 0.0,
+   "teto": 0.0
   },
   "custo_reais": {
-   "piso": 3611,
-   "esperado": 8719,
-   "teto": 16033
+   "piso": 0,
+   "esperado": 0,
+   "teto": 0
   }
  },
  "volume": {
-  "media_anual": 3.7,
+  "media_anual": 0.0,
   "por_ano": {
-   "2023": 6,
-   "2024": 4,
-   "2025": 1
+   "2023": 0,
+   "2024": 0,
+   "2025": 0
   },
-  "revocacao_coorte": 0.875,
-  "coorte_com_deliberacao": 8
+  "revocacao_coorte": null,
+  "coorte_com_deliberacao": 0
  },
  "parametros": {
   "custo_hora_base": {
@@ -188,7 +154,7 @@
   },
   "horas_ano_fte": 1816.0
  },
- "carimbo": "7446834127dffb668aa3ef1ffed3cdcc40e07e6464daea77bb2c87ae73768659",
+ "carimbo": "6d3577fa962f51ff73551d6e62e3a361feb5e764a575cf7850ab7fa57f475df3",
  "ressalvas": [
   "Horas por peça são estimativa (hipótese até a calibração com servidores).",
   "Volume anual é piso: só processos que chegaram a deliberação.",

@@ -1,1854 +1,781 @@
 {
  "codigo": "P06",
  "nome": "Fiscalização técnica de campo (programada e por demanda)",
- "casos": 12,
- "situacao": "procedimento",
- "auditoria_classificador": {
-  "pecas": 20,
-  "concordancia": 0.95,
-  "substantivas": 14,
-  "concordancia_substantivas": 1.0,
-  "auditor_fora_do_modelo": 2
- },
+ "casos": 1,
+ "situacao": "estudo_de_caso",
+ "auditoria_classificador": null,
  "trilha": {
-  "nativa": 12
+  "nativa": 1
  },
- "lead_nativos_encerrados": {
-  "n": 7,
-  "mediana": 317.0,
-  "q1": 185.5,
-  "q3": 503.0,
-  "max": 862.0
- },
+ "lead_nativos_encerrados": null,
  "por_caso_nativo": {
   "espera_entre_atividades": {
-   "n": 12,
-   "mediana": 313.5,
-   "q1": 181.0,
-   "q3": 476.5,
-   "max": 821.0
+   "n": 1,
+   "mediana": 528.0,
+   "q1": 528.0,
+   "q3": 528.0,
+   "max": 528.0
   },
   "execucao_atividades": {
-   "n": 12,
-   "mediana": 8.0,
-   "q1": 4.2,
-   "q3": 37.5,
-   "max": 255.0
+   "n": 1,
+   "mediana": 108.0,
+   "q1": 108.0,
+   "q3": 108.0,
+   "max": 108.0
   },
   "horas_piso": {
-   "n": 12,
-   "mediana": 22.3,
-   "q1": 20.7,
-   "q3": 31.1,
-   "max": 104.4
+   "n": 1,
+   "mediana": 257.2,
+   "q1": 257.2,
+   "q3": 257.2,
+   "max": 257.2
   },
   "horas_teto": {
-   "n": 12,
-   "mediana": 54.1,
-   "q1": 44.1,
-   "q3": 64.0,
-   "max": 158.1
+   "n": 1,
+   "mediana": 490.3,
+   "q1": 490.3,
+   "q3": 490.3,
+   "max": 490.3
   },
   "lead": {
-   "n": 12,
-   "mediana": 351.0,
-   "q1": 183.2,
-   "q3": 493.0,
-   "max": 1054.0
+   "n": 1,
+   "mediana": 636.0,
+   "q1": 636.0,
+   "q3": 636.0,
+   "max": 636.0
   },
   "terceiros": {
-   "n": 12,
-   "mediana": 11.0,
-   "q1": 8.0,
-   "q3": 15.5,
-   "max": 122.0
-  },
-  "indeterminado": {
-   "n": 12,
+   "n": 1,
    "mediana": 0.0,
    "q1": 0.0,
    "q3": 0.0,
-   "max": 17.0
+   "max": 0.0
+  },
+  "indeterminado": {
+   "n": 1,
+   "mediana": 180.0,
+   "q1": 180.0,
+   "q3": 180.0,
+   "max": 180.0
   },
   "oficios": {
-   "n": 12,
-   "mediana": 4.0,
-   "q1": 3.0,
-   "q3": 10.0,
-   "max": 25.0
+   "n": 1,
+   "mediana": 12.0,
+   "q1": 12.0,
+   "q3": 12.0,
+   "max": 12.0
   },
   "retornos": {
-   "n": 12,
-   "mediana": 1.5,
+   "n": 1,
+   "mediana": 1.0,
    "q1": 1.0,
-   "q3": 2.2,
-   "max": 29.0
+   "q3": 1.0,
+   "max": 1.0
   },
   "unidades_ativas": {
-   "n": 12,
-   "mediana": 4.0,
-   "q1": 3.8,
-   "q3": 4.2,
-   "max": 12.0
+   "n": 1,
+   "mediana": 3.0,
+   "q1": 3.0,
+   "q3": 3.0,
+   "max": 3.0
   }
  },
  "posse_por_unidade_nativos": {
-  "SEEDUC/COOENG": {
-   "n": 1,
-   "mediana": 254.0,
-   "q1": 254.0,
-   "q3": 254.0,
-   "max": 254.0
-  },
-  "CONS-05": {
-   "n": 1,
-   "mediana": 109.0,
-   "q1": 109.0,
-   "q3": 109.0,
-   "max": 109.0
-  },
-  "CASAN": {
-   "n": 2,
-   "mediana": 81.5,
-   "q1": 57.2,
-   "q3": 105.8,
-   "max": 130.0
-  },
   "SEM UNIDADE": {
-   "n": 10,
-   "mediana": 72.0,
-   "q1": 31.8,
-   "q3": 82.0,
-   "max": 642.0
-  },
-  "SCEXEC": {
-   "n": 12,
-   "mediana": 50.0,
-   "q1": 26.2,
-   "q3": 66.0,
-   "max": 77.0
-  },
-  "CEDAE/ASS/DPR-7": {
    "n": 1,
-   "mediana": 46.0,
-   "q1": 46.0,
-   "q3": 46.0,
-   "max": 46.0
-  },
-  "CONS-02": {
-   "n": 12,
-   "mediana": 31.0,
-   "q1": 11.5,
-   "q3": 129.0,
-   "max": 284.0
+   "mediana": 306.0,
+   "q1": 306.0,
+   "q3": 306.0,
+   "max": 306.0
   },
   "PROC": {
-   "n": 12,
-   "mediana": 31.0,
-   "q1": 19.2,
-   "q3": 72.5,
-   "max": 382.0
+   "n": 1,
+   "mediana": 203.0,
+   "q1": 203.0,
+   "q3": 203.0,
+   "max": 203.0
+  },
+  "CASAN": {
+   "n": 1,
+   "mediana": 70.0,
+   "q1": 70.0,
+   "q3": 70.0,
+   "max": 70.0
+  },
+  "SCEXEC": {
+   "n": 1,
+   "mediana": 57.0,
+   "q1": 57.0,
+   "q3": 57.0,
+   "max": 57.0
+  },
+  "CARES": {
+   "n": 1,
+   "mediana": 0.0,
+   "q1": 0.0,
+   "q3": 0.0,
+   "max": 0.0
   }
  },
  "fora_do_modelo_pct_substantivas": {
-  "n": 12,
-  "mediana": 0.0,
-  "q1": 0.0,
-  "q3": 0.0,
-  "max": 17.6
+  "n": 1,
+  "mediana": 2.2,
+  "q1": 2.2,
+  "q3": 2.2,
+  "max": 2.2
  },
  "fora_do_modelo_pct_expediente": {
-  "n": 12,
-  "mediana": 19.4,
-  "q1": 14.3,
-  "q3": 29.6,
-  "max": 58.3
+  "n": 1,
+  "mediana": 23.7,
+  "q1": 23.7,
+  "q3": 23.7,
+  "max": 23.7
  },
  "variantes": [
   {
-   "sequencia": "t1 → t3 → t4 → t5 → t6 → t7 → t8 → t9",
-   "casos": 2,
-   "pct": 17
-  },
-  {
-   "sequencia": "t4 → t3 → t11 → t3 → t10 → t3 → t11 → t3 → t11 → t3 → t4 → t3 → t5 → t4 → t5 → t1 → t6 → t11 → t6 → t3 → t6 → t4 → t7 → t8 → t2 → t6 → t3 → t9 → t6 → t2 → t7 → t9 → t8 → t3 → t6 → t7 → t8 → t9 → t3 → t9 → t8 → t6 → t2 → t3 → t6 → t3",
+   "sequencia": "t2 → t3 → t2 → t3 → t2 → t1 → t3 → t2 → t3 → t2 → t1 → t2 → t3 → t2 → t3 → t2 → t3 → t4 → t5 → t6 → t7 → t8",
    "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t3 → t10 → t4 → t10 → t3 → t5 → t4 → t5 → t6 → t7 → t8 → t9",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t3 → t10 → t3 → t4 → t5",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t2 → t5 → t3 → t4 → t5 → t6 → t7 → t8 → t9",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t3 → t4 → t5",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t3 → t4 → t5 → t6 → t7 → t8 → t9 → t8 → t9",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t3 → t10 → t1 → t3 → t4 → t5 → t6 → t7 → t8 → t9",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t2 → t3 → t5 → t4 → t5 → t6 → t7 → t8 → t9",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t4 → t5 → t10 → t11 → t5 → t9 → t4 → t9 → t6",
-   "casos": 1,
-   "pct": 8
+   "pct": 100
   }
  ],
- "n_variantes": 11,
+ "n_variantes": 1,
  "caminhos": [
   {
-   "sequencia": "t1 → t3 → t4 → t5 → t6 → t7 → t8 → t9",
-   "casos": 3,
-   "pct": 25
-  },
-  {
-   "sequencia": "t1 → t3 → t10 → t4 → t5 → t6 → t7 → t8 → t9",
-   "casos": 2,
-   "pct": 17
-  },
-  {
-   "sequencia": "t4 → t3 → t11 → t10 → t5 → t1 → t6 → t7 → t8 → t2 → t9",
+   "sequencia": "t2 → t3 → t1 → t4 → t5 → t6 → t7 → t8",
    "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t3 → t10 → t4 → t5",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t2 → t5 → t3 → t4 → t6 → t7 → t8 → t9",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t3 → t4 → t5",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t2 → t3 → t5 → t4 → t6 → t7 → t8 → t9",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t4 → t5 → t10 → t11 → t9 → t6",
-   "casos": 1,
-   "pct": 8
-  },
-  {
-   "sequencia": "t1 → t3 → t2 → t5",
-   "casos": 1,
-   "pct": 8
+   "pct": 100
   }
  ],
- "n_caminhos": 9,
+ "n_caminhos": 1,
  "transicoes": {
   "início": [
    {
-    "para": "t1",
-    "n": 10,
-    "pct": 83
-   },
-   {
-    "para": "t4",
-    "n": 1,
-    "pct": 8
-   },
-   {
-    "para": "t3",
-    "n": 1,
-    "pct": 8
-   }
-  ],
-  "t4": [
-   {
-    "para": "t5",
-    "n": 11,
-    "pct": 69
-   },
-   {
-    "para": "t3",
-    "n": 2,
-    "pct": 12
-   },
-   {
-    "para": "t7",
-    "n": 1,
-    "pct": 6
-   },
-   {
-    "para": "t10",
-    "n": 1,
-    "pct": 6
-   },
-   {
-    "para": "t9",
-    "n": 1,
-    "pct": 6
-   }
-  ],
-  "t3": [
-   {
-    "para": "t4",
-    "n": 8,
-    "pct": 29
-   },
-   {
-    "para": "t10",
-    "n": 4,
-    "pct": 14
-   },
-   {
-    "para": "t5",
-    "n": 4,
-    "pct": 14
-   },
-   {
-    "para": "t11",
-    "n": 3,
-    "pct": 11
-   },
-   {
-    "para": "t6",
-    "n": 3,
-    "pct": 11
-   },
-   {
-    "para": "t2",
-    "n": 3,
-    "pct": 11
-   },
-   {
-    "para": "t9",
-    "n": 2,
-    "pct": 7
-   },
-   {
-    "para": "fim",
-    "n": 1,
-    "pct": 4
-   }
-  ],
-  "t11": [
-   {
-    "para": "t3",
-    "n": 3,
-    "pct": 60
-   },
-   {
-    "para": "t6",
-    "n": 1,
-    "pct": 20
-   },
-   {
-    "para": "t5",
-    "n": 1,
-    "pct": 20
-   }
-  ],
-  "t10": [
-   {
-    "para": "t3",
-    "n": 3,
-    "pct": 50
-   },
-   {
-    "para": "t4",
-    "n": 1,
-    "pct": 17
-   },
-   {
-    "para": "t1",
-    "n": 1,
-    "pct": 17
-   },
-   {
-    "para": "t11",
-    "n": 1,
-    "pct": 17
-   }
-  ],
-  "t5": [
-   {
-    "para": "t6",
-    "n": 7,
-    "pct": 41
-   },
-   {
-    "para": "t4",
-    "n": 3,
-    "pct": 18
-   },
-   {
-    "para": "fim",
-    "n": 3,
-    "pct": 18
-   },
-   {
-    "para": "t1",
-    "n": 1,
-    "pct": 6
-   },
-   {
-    "para": "t3",
-    "n": 1,
-    "pct": 6
-   },
-   {
-    "para": "t10",
-    "n": 1,
-    "pct": 6
-   },
-   {
-    "para": "t9",
-    "n": 1,
-    "pct": 6
-   }
-  ],
-  "t1": [
-   {
-    "para": "t3",
-    "n": 8,
-    "pct": 67
-   },
-   {
-    "para": "t2",
-    "n": 2,
-    "pct": 17
-   },
-   {
-    "para": "t6",
-    "n": 1,
-    "pct": 8
-   },
-   {
-    "para": "t4",
-    "n": 1,
-    "pct": 8
-   }
-  ],
-  "t6": [
-   {
-    "para": "t7",
-    "n": 8,
-    "pct": 50
-   },
-   {
-    "para": "t3",
-    "n": 3,
-    "pct": 19
-   },
-   {
-    "para": "t2",
-    "n": 2,
-    "pct": 12
-   },
-   {
-    "para": "t11",
-    "n": 1,
-    "pct": 6
-   },
-   {
-    "para": "t4",
-    "n": 1,
-    "pct": 6
-   },
-   {
-    "para": "fim",
-    "n": 1,
-    "pct": 6
-   }
-  ],
-  "t7": [
-   {
-    "para": "t8",
-    "n": 9,
-    "pct": 90
-   },
-   {
-    "para": "t9",
-    "n": 1,
-    "pct": 10
-   }
-  ],
-  "t8": [
-   {
-    "para": "t9",
-    "n": 9,
-    "pct": 75
-   },
-   {
     "para": "t2",
     "n": 1,
-    "pct": 8
-   },
-   {
-    "para": "t3",
-    "n": 1,
-    "pct": 8
-   },
-   {
-    "para": "t6",
-    "n": 1,
-    "pct": 8
+    "pct": 100
    }
   ],
   "t2": [
    {
     "para": "t3",
-    "n": 5,
-    "pct": 62
+    "n": 6,
+    "pct": 75
    },
    {
-    "para": "t6",
-    "n": 1,
-    "pct": 12
-   },
-   {
-    "para": "t7",
-    "n": 1,
-    "pct": 12
-   },
-   {
-    "para": "t5",
-    "n": 1,
-    "pct": 12
+    "para": "t1",
+    "n": 2,
+    "pct": 25
    }
   ],
-  "t9": [
+  "t3": [
    {
-    "para": "fim",
-    "n": 7,
-    "pct": 50
-   },
-   {
-    "para": "t8",
-    "n": 3,
-    "pct": 21
-   },
-   {
-    "para": "t6",
-    "n": 2,
-    "pct": 14
-   },
-   {
-    "para": "t3",
-    "n": 1,
-    "pct": 7
+    "para": "t2",
+    "n": 6,
+    "pct": 86
    },
    {
     "para": "t4",
     "n": 1,
-    "pct": 7
+    "pct": 14
+   }
+  ],
+  "t1": [
+   {
+    "para": "t3",
+    "n": 1,
+    "pct": 50
+   },
+   {
+    "para": "t2",
+    "n": 1,
+    "pct": 50
+   }
+  ],
+  "t4": [
+   {
+    "para": "t5",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t5": [
+   {
+    "para": "t6",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t6": [
+   {
+    "para": "t7",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t7": [
+   {
+    "para": "t8",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t8": [
+   {
+    "para": "fim",
+    "n": 1,
+    "pct": 100
    }
   ]
  },
  "atividades": {
   "t1": {
-   "nome": "Vistoriar instalação, relatar e notificar concessionária",
-   "casos": 11,
-   "pct_casos": 92,
+   "nome": "Convocar concessionária para vistoria conjunta",
+   "casos": 1,
+   "pct_casos": 100,
    "casos_com_laco": 1,
    "execucao_du": {
-    "n": 12,
-    "mediana": 0.0,
-    "q1": 0.0,
-    "q3": 0.2,
-    "max": 8.0
+    "n": 2,
+    "mediana": 8.0,
+    "q1": 4.0,
+    "q3": 12.0,
+    "max": 16.0
    },
    "espera_antes_du": {
-    "n": 12,
-    "mediana": 0.0,
-    "q1": 0.0,
-    "q3": 4.2,
-    "max": 115.0
+    "n": 2,
+    "mediana": 8.5,
+    "q1": 6.8,
+    "q3": 10.2,
+    "max": 12.0
    },
    "horas_piso": {
-    "n": 12,
-    "mediana": 7.4,
-    "q1": 5.7,
-    "q3": 8.3,
-    "max": 10.8
+    "n": 2,
+    "mediana": 1.6,
+    "q1": 1.2,
+    "q3": 2.1,
+    "max": 2.5
    },
    "horas_teto": {
-    "n": 12,
-    "mediana": 12.1,
-    "q1": 9.4,
-    "q3": 14.6,
-    "max": 17.6
+    "n": 2,
+    "mediana": 2.3,
+    "q1": 1.7,
+    "q3": 2.8,
+    "max": 3.4
+   },
+   "ferramentas": [],
+   "insumos": [],
+   "competencias": [
+    {
+     "item": "redacao_oficial (basico)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [],
+   "fichas_por_modelo": {
+    "agente:claude-haiku-5-5": 4
+   },
+   "ausente_em": 0
+  },
+  "t2": {
+   "nome": "Vistoriar unidade e elaborar relatório",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 1,
+   "execucao_du": {
+    "n": 8,
+    "mediana": 4.5,
+    "q1": 0.8,
+    "q3": 8.5,
+    "max": 35.0
+   },
+   "espera_antes_du": {
+    "n": 8,
+    "mediana": 10.5,
+    "q1": 2.0,
+    "q3": 21.8,
+    "max": 28.0
+   },
+   "horas_piso": {
+    "n": 8,
+    "mediana": 24.5,
+    "q1": 20.0,
+    "q3": 27.8,
+    "max": 63.0
+   },
+   "horas_teto": {
+    "n": 8,
+    "mediana": 48.2,
+    "q1": 38.3,
+    "q3": 63.7,
+    "max": 132.5
    },
    "ferramentas": [
     {
-     "item": "vistoria in loco",
-     "casos": 10,
-     "pct": 83
+     "item": "análise normativa",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de aspectos gerais (anexo)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de aspectos gerais da eta (anexo)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de conformidade (anexo)",
+     "casos": 1,
+     "pct": 100
     },
     {
      "item": "conferência documental",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "análise normativa",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "análise normative",
      "casos": 1,
-     "pct": 8
+     "pct": 100
     },
     {
-     "item": "micro ohmímetro",
+     "item": "manômetros",
      "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "método por queda de potencial",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "redação oficial",
-     "casos": 1,
-     "pct": 8
+     "pct": 100
     },
     {
      "item": "registro fotográfico",
      "casos": 1,
-     "pct": 8
-    }
-   ],
-   "insumos": [
-    {
-     "item": "Instrução Normativa CD nº 001/2007",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "Código de Segurança contra Incêndio e Pânico do RJ",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "ABNT NBR 15749/2009 – Medição de resistência de aterramento",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "ABNT NBR 5419/2015 – Proteção contra Descargas Atmosféricas",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Deliberação AGENERSA Nº 023/2006",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Instrução Normativa AGENERSA nº 117/2024",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "competencias": [
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 11,
-     "pct": 92
-    },
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 9,
-     "pct": 75
-    },
-    {
-     "item": "engenharia_gas_seguranca (intermediario)",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "engenharia_gas_seguranca (basico)",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "auditoria_controle (intermediario)",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "engenharia_saneamento (intermediario)",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "sinais_perda": [
-    {
-     "item": "pedido_complementacao",
-     "casos": 5,
-     "pct": 42
-    },
-    {
-     "item": "reiteracao",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 37
-   },
-   "ausente_em": 1
-  },
-  "t2": {
-   "nome": "Requisitar documentos à concessionária e a órgãos",
-   "casos": 4,
-   "pct_casos": 33,
-   "casos_com_laco": 2,
-   "execucao_du": {
-    "n": 8,
-    "mediana": 3.5,
-    "q1": 0.0,
-    "q3": 10.5,
-    "max": 52.0
-   },
-   "espera_antes_du": {
-    "n": 8,
-    "mediana": 11.5,
-    "q1": 4.2,
-    "q3": 26.8,
-    "max": 42.0
-   },
-   "horas_piso": {
-    "n": 8,
-    "mediana": 1.4,
-    "q1": 1.1,
-    "q3": 2.6,
-    "max": 4.8
-   },
-   "horas_teto": {
-    "n": 8,
-    "mediana": 2.8,
-    "q1": 1.6,
-    "q3": 3.1,
-    "max": 4.9
-   },
-   "ferramentas": [
-    {
-     "item": "conferência documental",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "análise normativa",
-     "casos": 2,
-     "pct": 17
-    }
-   ],
-   "insumos": [
-    {
-     "item": "Instrução Normativa AGENERSA nº 117/2024",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Licença de Operação emitida pelo INEA",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Norma NBR 12215-1/2017",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "competencias": [
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "engenharia_gas_seguranca (intermediario)",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "engenharia_gas_seguranca (basico)",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "engenharia_saneamento (intermediario)",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "sinais_perda": [
-    {
-     "item": "pedido_complementacao",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "diligencia_externa",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "reiteracao",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 14
-   },
-   "ausente_em": 8
-  },
-  "t3": {
-   "nome": "Analisar defesa e emitir parecer técnico",
-   "casos": 11,
-   "pct_casos": 92,
-   "casos_com_laco": 5,
-   "execucao_du": {
-    "n": 28,
-    "mediana": 0.0,
-    "q1": 0.0,
-    "q3": 0.0,
-    "max": 42.0
-   },
-   "espera_antes_du": {
-    "n": 28,
-    "mediana": 9.5,
-    "q1": 1.0,
-    "q3": 18.2,
-    "max": 234.0
-   },
-   "horas_piso": {
-    "n": 28,
-    "mediana": 3.0,
-    "q1": 1.8,
-    "q3": 4.1,
-    "max": 12.2
-   },
-   "horas_teto": {
-    "n": 28,
-    "mediana": 7.9,
-    "q1": 2.0,
-    "q3": 9.1,
-    "max": 14.4
-   },
-   "ferramentas": [
-    {
-     "item": "análise normativa",
-     "casos": 11,
-     "pct": 92
-    },
-    {
-     "item": "conferência documental",
-     "casos": 9,
-     "pct": 75
-    },
-    {
-     "item": "análise de precedentes",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "análise técnica de engenharia",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "aplicação de bdi diferenciado por natureza de despesa",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "diligência a fabricante",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "planilha",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "insumos": [
-    {
-     "item": "Cláusula 34.4.12 do Contrato de Concessão do Bloco 01",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Contrato de Concessão da Concessionária CEG Rio",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Contrato de Concessão de Distribuição de Gás",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Contrato de Concessão de Distribuição de Gás Canalizado da CEG",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Contrato de Concessão de Gás",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Contrato de Concessão de gás canalizado",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "competencias": [
-    {
-     "item": "engenharia_gas_seguranca (intermediario)",
-     "casos": 10,
-     "pct": 83
-    },
-    {
-     "item": "juridico_regulatoria (intermediario)",
-     "casos": 5,
-     "pct": 42
-    },
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "juridico_regulatoria (basico)",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "auditoria_controle (intermediario)",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "sinais_perda": [
-    {
-     "item": "reiteracao",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "diligencia_externa",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "pedido_complementacao",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "aguardando_outra_unidade",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "prazo_concedido",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "refazimento",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 32
-   },
-   "ausente_em": 1
-  },
-  "t10": {
-   "nome": "Notificar concessionária sobre o parecer",
-   "casos": 5,
-   "pct_casos": 42,
-   "casos_com_laco": 1,
-   "execucao_du": {
-    "n": 6,
-    "mediana": 0.0,
-    "q1": 0.0,
-    "q3": 0.0,
-    "max": 11.0
-   },
-   "espera_antes_du": {
-    "n": 6,
-    "mediana": 1.0,
-    "q1": 0.2,
-    "q3": 3.2,
-    "max": 4.0
-   },
-   "horas_piso": {
-    "n": 6,
-    "mediana": 0.7,
-    "q1": 0.5,
-    "q3": 1.5,
-    "max": 2.5
-   },
-   "horas_teto": {
-    "n": 6,
-    "mediana": 1.4,
-    "q1": 0.7,
-    "q3": 2.5,
-    "max": 3.8
-   },
-   "ferramentas": [
-    {
-     "item": "conferência documental",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "redação oficial",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "análise normativa",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "correio eletrônico",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "insumos": [
-    {
-     "item": "Deliberação AGENERSA nº 1.962/2014",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Deliberação regulatória que estabelece requisitos",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Lei Estadual nº 6.560/2013",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "competencias": [
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 4,
-     "pct": 33
-    }
-   ],
-   "sinais_perda": [
-    {
-     "item": "diligencia_externa",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "pedido_complementacao",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 8
-   },
-   "ausente_em": 7
-  },
-  "t11": {
-   "nome": "Decidir pedido de dilação de prazo",
-   "casos": 2,
-   "pct_casos": 17,
-   "casos_com_laco": 1,
-   "execucao_du": {
-    "n": 5,
-    "mediana": 0.0,
-    "q1": 0.0,
-    "q3": 1.0,
-    "max": 14.0
-   },
-   "espera_antes_du": {
-    "n": 5,
-    "mediana": 2.0,
-    "q1": 0.0,
-    "q3": 10.0,
-    "max": 21.0
-   },
-   "horas_piso": {
-    "n": 5,
-    "mediana": 0.8,
-    "q1": 0.4,
-    "q3": 0.8,
-    "max": 1.2
-   },
-   "horas_teto": {
-    "n": 5,
-    "mediana": 1.4,
-    "q1": 0.7,
-    "q3": 1.6,
-    "max": 2.9
-   },
-   "ferramentas": [
-    {
-     "item": "conferência documental",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "análise normativa",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "insumos": [],
-   "competencias": [
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 2,
-     "pct": 17
-    }
-   ],
-   "sinais_perda": [
-    {
-     "item": "aguardando_outra_unidade",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "prazo_concedido",
-     "casos": 2,
-     "pct": 17
-    }
-   ],
-   "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 8
-   },
-   "ausente_em": 10
-  },
-  "t4": {
-   "nome": "Analisar infração e emitir parecer jurídico",
-   "casos": 11,
-   "pct_casos": 92,
-   "casos_com_laco": 3,
-   "execucao_du": {
-    "n": 16,
-    "mediana": 0.0,
-    "q1": 0.0,
-    "q3": 0.0,
-    "max": 0.0
-   },
-   "espera_antes_du": {
-    "n": 16,
-    "mediana": 36.5,
-    "q1": 12.8,
-    "q3": 75.0,
-    "max": 384.0
-   },
-   "horas_piso": {
-    "n": 16,
-    "mediana": 4.0,
-    "q1": 2.0,
-    "q3": 4.0,
-    "max": 6.0
-   },
-   "horas_teto": {
-    "n": 16,
-    "mediana": 11.3,
-    "q1": 1.6,
-    "q3": 14.5,
-    "max": 16.2
-   },
-   "ferramentas": [
-    {
-     "item": "análise normativa",
-     "casos": 11,
-     "pct": 92
-    },
-    {
-     "item": "análise de precedentes",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "conferência documental",
-     "casos": 2,
-     "pct": 17
-    }
-   ],
-   "insumos": [
-    {
-     "item": "Instrução Normativa CODIR nº 001/2007",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "Lei Estadual nº 4.556/2005",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "Deliberação AGENERSA nº 1.962/2014",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "Lei Estadual nº 5.427/2009",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "Lei Estadual nº 6.560/2013",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "Contrato de Concessão",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "competencias": [
-    {
-     "item": "juridico_regulatoria (intermediario)",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "juridico_regulatoria (especialista)",
-     "casos": 5,
-     "pct": 42
-    },
-    {
-     "item": "redacao_oficial (intermediario)",
-     "casos": 5,
-     "pct": 42
-    },
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "gestao_processual (intermediario)",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "juridico_regulatoria (basico)",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "sinais_perda": [
-    {
-     "item": "pedido_complementacao",
-     "casos": 4,
-     "pct": 33
-    },
-    {
-     "item": "diligencia_externa",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "aguardando_outra_unidade",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "prazo_concedido",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "reiteracao",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 16
-   },
-   "ausente_em": 1
-  },
-  "t5": {
-   "nome": "Sortear relator e distribuir o processo",
-   "casos": 12,
-   "pct_casos": 100,
-   "casos_com_laco": 5,
-   "execucao_du": {
-    "n": 17,
-    "mediana": 0.0,
-    "q1": 0.0,
-    "q3": 0.0,
-    "max": 0.0
-   },
-   "espera_antes_du": {
-    "n": 17,
-    "mediana": 15.0,
-    "q1": 5.0,
-    "q3": 31.0,
-    "max": 643.0
-   },
-   "horas_piso": {
-    "n": 17,
-    "mediana": 0.1,
-    "q1": 0.1,
-    "q3": 0.2,
-    "max": 0.2
-   },
-   "horas_teto": {
-    "n": 17,
-    "mediana": 0.4,
-    "q1": 0.4,
-    "q3": 0.4,
-    "max": 0.4
-   },
-   "ferramentas": [
-    {
-     "item": "conferência documental",
-     "casos": 10,
-     "pct": 83
-    }
-   ],
-   "insumos": [
-    {
-     "item": "Regimento Interno da AGENERSA",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "competencias": [
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 12,
      "pct": 100
     },
     {
-     "item": "redacao_oficial (basico)",
-     "casos": 3,
-     "pct": 25
+     "item": "vistoria in loco",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "insumos": [
+    {
+     "item": "Deliberação AGENERSA 4534/2023, análise do plano de manutenção das elevatórias",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "Portaria GM/MS 888/2021 sobre geradores de hipoclorito",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "competencias": [
+    {
+     "item": "ambiental (intermediario)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "auditoria_controle (basico)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "auditoria_controle (intermediario)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "engenharia_saneamento (basico)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "engenharia_saneamento (intermediario)",
+     "casos": 1,
+     "pct": 100
     }
    ],
    "sinais_perda": [
     {
      "item": "pedido_complementacao",
      "casos": 1,
-     "pct": 8
+     "pct": 100
+    },
+    {
+     "item": "prazo_concedido",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "reiteracao",
+     "casos": 1,
+     "pct": 100
     }
    ],
    "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 16
+    "agente:claude-haiku-5-5": 41
+   },
+   "ausente_em": 0
+  },
+  "t3": {
+   "nome": "Encaminhar relatórios à concessionária com prazo",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 1,
+   "execucao_du": {
+    "n": 7,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 1.0
+   },
+   "espera_antes_du": {
+    "n": 7,
+    "mediana": 6.0,
+    "q1": 3.0,
+    "q3": 8.5,
+    "max": 11.0
+   },
+   "horas_piso": {
+    "n": 7,
+    "mediana": 0.8,
+    "q1": 0.8,
+    "q3": 0.8,
+    "max": 0.8
+   },
+   "horas_teto": {
+    "n": 7,
+    "mediana": 1.1,
+    "q1": 1.1,
+    "q3": 1.1,
+    "max": 1.1
+   },
+   "ferramentas": [],
+   "insumos": [],
+   "competencias": [
+    {
+     "item": "redacao_oficial (basico)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [
+    {
+     "item": "diligencia_externa",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "prazo_concedido",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "fichas_por_modelo": {
+    "agente:claude-haiku-5-5": 7
+   },
+   "ausente_em": 0
+  },
+  "t4": {
+   "nome": "Consolidar análise técnica das fiscalizações",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
+   "execucao_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "espera_antes_du": {
+    "n": 1,
+    "mediana": 106.0,
+    "q1": 106.0,
+    "q3": 106.0,
+    "max": 106.0
+   },
+   "horas_piso": {
+    "n": 1,
+    "mediana": 12.2,
+    "q1": 12.2,
+    "q3": 12.2,
+    "max": 12.2
+   },
+   "horas_teto": {
+    "n": 1,
+    "mediana": 13.7,
+    "q1": 13.7,
+    "q3": 13.7,
+    "max": 13.7
+   },
+   "ferramentas": [
+    {
+     "item": "análise documental integrada",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "insumos": [
+    {
+     "item": "Contrato de Concessão e anexos",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "competencias": [
+    {
+     "item": "engenharia_saneamento (basico)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "gestao_processual (intermediario)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "juridico_regulatoria (basico)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [
+    {
+     "item": "pedido_complementacao",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "fichas_por_modelo": {
+    "agente:claude-haiku-5-5": 2
+   },
+   "ausente_em": 0
+  },
+  "t5": {
+   "nome": "Dar ciência do parecer à concessionária",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
+   "execucao_du": {
+    "n": 1,
+    "mediana": 24.0,
+    "q1": 24.0,
+    "q3": 24.0,
+    "max": 24.0
+   },
+   "espera_antes_du": {
+    "n": 1,
+    "mediana": 55.0,
+    "q1": 55.0,
+    "q3": 55.0,
+    "max": 55.0
+   },
+   "horas_piso": {
+    "n": 1,
+    "mediana": 0.8,
+    "q1": 0.8,
+    "q3": 0.8,
+    "max": 0.8
+   },
+   "horas_teto": {
+    "n": 1,
+    "mediana": 0.6,
+    "q1": 0.6,
+    "q3": 0.6,
+    "max": 0.6
+   },
+   "ferramentas": [],
+   "insumos": [],
+   "competencias": [],
+   "sinais_perda": [],
+   "fichas_por_modelo": {
+    "agente:claude-haiku-5-5": 1
    },
    "ausente_em": 0
   },
   "t6": {
-   "nome": "Notificar concessionária para razões finais",
-   "casos": 9,
-   "pct_casos": 75,
-   "casos_com_laco": 1,
+   "nome": "Rebater manifestação da concessionária",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
    "execucao_du": {
-    "n": 16,
-    "mediana": 0.0,
-    "q1": 0.0,
-    "q3": 0.0,
-    "max": 208.0
-   },
-   "espera_antes_du": {
-    "n": 16,
-    "mediana": 8.0,
-    "q1": 8.0,
-    "q3": 28.2,
-    "max": 106.0
-   },
-   "horas_piso": {
-    "n": 16,
-    "mediana": 0.8,
-    "q1": 0.4,
-    "q3": 0.9,
-    "max": 2.5
-   },
-   "horas_teto": {
-    "n": 16,
-    "mediana": 1.1,
-    "q1": 0.4,
-    "q3": 1.4,
-    "max": 4.6
-   },
-   "ferramentas": [
-    {
-     "item": "redação oficial",
-     "casos": 5,
-     "pct": 42
-    },
-    {
-     "item": "análise normativa",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "conferência documental",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "insumos": [
-    {
-     "item": "Dados de atualização fornecidos pela EMOP",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Deliberação AGENERSA nº 1.962/2014",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "competencias": [
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 6,
-     "pct": 50
-    },
-    {
-     "item": "economico_financeira_tarifaria (basico)",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "juridico_regulatoria (basico)",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "sinais_perda": [
-    {
-     "item": "aguardando_outra_unidade",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "diligencia_externa",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "pedido_complementacao",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "prazo_concedido",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 19
-   },
-   "ausente_em": 3
-  },
-  "t7": {
-   "nome": "Relatar, votar e deliberar em sessão",
-   "casos": 8,
-   "pct_casos": 67,
-   "casos_com_laco": 1,
-   "execucao_du": {
-    "n": 10,
+    "n": 1,
     "mediana": 0.0,
     "q1": 0.0,
     "q3": 0.0,
     "max": 0.0
    },
    "espera_antes_du": {
-    "n": 10,
-    "mediana": 58.5,
-    "q1": 20.2,
-    "q3": 81.8,
-    "max": 192.0
+    "n": 1,
+    "mediana": 2.0,
+    "q1": 2.0,
+    "q3": 2.0,
+    "max": 2.0
    },
    "horas_piso": {
-    "n": 10,
-    "mediana": 7.0,
-    "q1": 6.0,
-    "q3": 7.8,
-    "max": 10.0
+    "n": 1,
+    "mediana": 8.0,
+    "q1": 8.0,
+    "q3": 8.0,
+    "max": 8.0
    },
    "horas_teto": {
-    "n": 10,
-    "mediana": 18.4,
-    "q1": 17.1,
-    "q3": 19.5,
-    "max": 25.9
+    "n": 1,
+    "mediana": 2.3,
+    "q1": 2.3,
+    "q3": 2.3,
+    "max": 2.3
    },
    "ferramentas": [
     {
      "item": "análise normativa",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "conferência documental",
-     "casos": 7,
-     "pct": 58
-    },
-    {
-     "item": "análise de precedentes",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "análise normative",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "análise normativa e de razoabilidade",
      "casos": 1,
-     "pct": 8
+     "pct": 100
     }
    ],
    "insumos": [
     {
-     "item": "Instrução Normativa AGENERSA nº 001/2007",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "Instrução Normativa AGENERSA nº 001/2007 e Contrato de Concessão",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "Cláusulas do Contrato de Concessão",
+     "item": "Lei 11.445/2007, Contrato de Concessão e Regulamento de Serviços",
      "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Cláusulas do Contrato de Concessão e Instrução Normativa 001/2007",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Contrato de Concessão",
-     "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "Contrato de Concessão da CEG",
-     "casos": 1,
-     "pct": 8
+     "pct": 100
     }
    ],
    "competencias": [
     {
-     "item": "gestao_processual (intermediario)",
-     "casos": 8,
-     "pct": 67
-    },
-    {
      "item": "juridico_regulatoria (intermediario)",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "redacao_oficial (intermediario)",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "engenharia_gas_seguranca (intermediario)",
      "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 1,
-     "pct": 8
+     "pct": 100
     }
    ],
    "sinais_perda": [
-    {
-     "item": "diligencia_externa",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "pedido_complementacao",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "aguardando_outra_unidade",
-     "casos": 1,
-     "pct": 8
-    },
     {
      "item": "reiteracao",
      "casos": 1,
-     "pct": 8
-    },
-    {
-     "item": "sobrestamento",
-     "casos": 1,
-     "pct": 8
+     "pct": 100
     }
    ],
    "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 26
+    "agente:claude-haiku-5-5": 1
    },
-   "ausente_em": 4
+   "ausente_em": 0
   },
-  "t8": {
-   "nome": "Publicar deliberação e oficiar concessionária e órgãos",
-   "casos": 8,
-   "pct_casos": 67,
-   "casos_com_laco": 2,
+  "t7": {
+   "nome": "Emitir parecer jurídico sobre a fiscalização",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
    "execucao_du": {
-    "n": 12,
-    "mediana": 2.0,
-    "q1": 1.0,
-    "q3": 5.0,
-    "max": 12.0
-   },
-   "espera_antes_du": {
-    "n": 12,
-    "mediana": 6.0,
-    "q1": 2.8,
-    "q3": 6.0,
-    "max": 10.0
-   },
-   "horas_piso": {
-    "n": 12,
-    "mediana": 1.1,
-    "q1": 0.8,
-    "q3": 1.5,
-    "max": 2.9
-   },
-   "horas_teto": {
-    "n": 12,
-    "mediana": 1.8,
-    "q1": 1.6,
-    "q3": 2.2,
-    "max": 5.1
-   },
-   "ferramentas": [
-    {
-     "item": "conferência documental",
-     "casos": 7,
-     "pct": 58
-    },
-    {
-     "item": "redação oficial",
-     "casos": 5,
-     "pct": 42
-    },
-    {
-     "item": "análise normativa",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "análisis normativa",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "insumos": [
-    {
-     "item": "Contrato de Interdependência entre Concessionária e CEDAE",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "competencias": [
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 8,
-     "pct": 67
-    },
-    {
-     "item": "gestao_processual (basico)",
-     "casos": 6,
-     "pct": 50
-    },
-    {
-     "item": "juridico_regulatoria (intermediario)",
-     "casos": 1,
-     "pct": 8
-    }
-   ],
-   "sinais_perda": [
-    {
-     "item": "diligencia_externa",
-     "casos": 3,
-     "pct": 25
-    },
-    {
-     "item": "prazo_concedido",
-     "casos": 3,
-     "pct": 25
-    }
-   ],
-   "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 33
-   },
-   "ausente_em": 4
-  },
-  "t9": {
-   "nome": "Registrar providências de cumprimento da deliberação",
-   "casos": 9,
-   "pct_casos": 75,
-   "casos_com_laco": 3,
-   "execucao_du": {
-    "n": 14,
+    "n": 1,
     "mediana": 0.0,
     "q1": 0.0,
     "q3": 0.0,
-    "max": 32.0
+    "max": 0.0
    },
    "espera_antes_du": {
-    "n": 14,
-    "mediana": 0.5,
-    "q1": 0.0,
-    "q3": 2.8,
-    "max": 83.0
+    "n": 1,
+    "mediana": 205.0,
+    "q1": 205.0,
+    "q3": 205.0,
+    "max": 205.0
    },
    "horas_piso": {
-    "n": 14,
-    "mediana": 0.5,
-    "q1": 0.1,
-    "q3": 0.9,
-    "max": 2.0
+    "n": 1,
+    "mediana": 10.0,
+    "q1": 10.0,
+    "q3": 10.0,
+    "max": 10.0
    },
    "horas_teto": {
-    "n": 14,
-    "mediana": 1.7,
-    "q1": 0.2,
-    "q3": 1.9,
-    "max": 3.6
+    "n": 1,
+    "mediana": 13.8,
+    "q1": 13.8,
+    "q3": 13.8,
+    "max": 13.8
    },
    "ferramentas": [
     {
-     "item": "conferência documental",
-     "casos": 8,
-     "pct": 67
-    },
-    {
      "item": "análise normativa",
-     "casos": 2,
-     "pct": 17
-    },
-    {
-     "item": "redação oficial",
      "casos": 1,
-     "pct": 8
+     "pct": 100
     }
    ],
    "insumos": [
     {
-     "item": "Contrato de Concessão nº 32/21",
+     "item": "Instrução Normativa CODIR 128/2024",
      "casos": 1,
-     "pct": 8
+     "pct": 100
     },
     {
-     "item": "Resolução AGENERSA nº 787/2022",
+     "item": "Lei Estadual 4.556/2005 e Decreto 38.618/2005",
      "casos": 1,
-     "pct": 8
+     "pct": 100
     }
    ],
    "competencias": [
     {
-     "item": "gestao_processual (basico)",
-     "casos": 9,
-     "pct": 75
-    },
-    {
-     "item": "redacao_oficial (basico)",
-     "casos": 7,
-     "pct": 58
+     "item": "juridico_regulatoria (especialista)",
+     "casos": 1,
+     "pct": 100
     }
    ],
    "sinais_perda": [
     {
-     "item": "diligencia_externa",
-     "casos": 2,
-     "pct": 17
+     "item": "reiteracao",
+     "casos": 1,
+     "pct": 100
     }
    ],
    "fichas_por_modelo": {
-    "google/gemini-3.6-flash": 16
+    "agente:claude-haiku-5-5": 1
    },
-   "ausente_em": 3
+   "ausente_em": 0
+  },
+  "t8": {
+   "nome": "Oficiar concessionária e sobrestar processo",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
+   "execucao_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "espera_antes_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "horas_piso": {
+    "n": 1,
+    "mediana": 0.8,
+    "q1": 0.8,
+    "q3": 0.8,
+    "max": 0.8
+   },
+   "horas_teto": {
+    "n": 1,
+    "mediana": 1.1,
+    "q1": 1.1,
+    "q3": 1.1,
+    "max": 1.1
+   },
+   "ferramentas": [],
+   "insumos": [],
+   "competencias": [
+    {
+     "item": "redacao_oficial (basico)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [],
+   "fichas_por_modelo": {
+    "agente:claude-haiku-5-5": 1
+   },
+   "ausente_em": 0
   }
  },
  "fichas_por_modelo": {
-  "google/gemini-3.6-flash": 225
+  "agente:claude-haiku-5-5": 58
  }
 }

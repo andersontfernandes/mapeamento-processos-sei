@@ -24,6 +24,7 @@ import pandas as pd
 import requests
 
 from comum import DADOS, DESCRICAO_ORGAO, ORGAO, SAIDA, documentos
+from fichas_atividades import limpar_pessoais
 
 REL = DADOS / "relator"
 CACHE = DADOS / "fichas"
@@ -270,13 +271,35 @@ def main():
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--limite", type=int)
     ap.add_argument("--refazer-outros-modelos", action="store_true")
+    ap.add_argument("--exportar", type=Path, help="grava o prompt de cada peça em PASTA/<chave>.txt e sai (sem API)")
+    ap.add_argument("--importar", type=Path,
+                    help="lê as respostas PASTA/<chave>.json (mesmo JSON que a API devolveria), ancora e grava no "
+                         "cache; use --modelo para registrar quem respondeu (ex.: agente:claude-haiku-5-5)")
     args = ap.parse_args()
-    chave = os.environ.get("OPENROUTER_API_KEY")
-    var = "ANTHROPIC_API_KEY" if args.modelo.startswith("claude-") else "OPENROUTER_API_KEY"
-    if not os.environ.get(var):
-        raise SystemExit(f"{var} não definida")
     CACHE.mkdir(parents=True, exist_ok=True)
     tarefas = montar_tarefas(args.limite)
+    chave_arq = lambda t: f"{t['processo'].replace('/', '_')}__{t['sei_doc_id']}"  # noqa: E731
+    if args.exportar:
+        args.exportar.mkdir(parents=True, exist_ok=True)
+        for t in tarefas:
+            (args.exportar / f"{chave_arq(t)}.txt").write_text(
+                f"=== SISTEMA ===\n{SISTEMA}\n\n=== USUÁRIO ===\n{t['usuario']}", encoding="utf-8")
+        print(f"{len(tarefas)} prompts em {args.exportar}")
+        return
+    if args.importar:
+        for t in tarefas:
+            resp = args.importar / f"{chave_arq(t)}.json"
+            if not resp.exists():
+                continue
+            ficha = legado(ancorar(_json(resp.read_text(encoding="utf-8")), t["_texto"]))
+            dado = {k: v for k, v in t.items() if k != "usuario" and not k.startswith("_")} | {
+                "ficha": ficha, "modelo": args.modelo, "prompt_versao": PROMPT_VERSAO}
+            (CACHE / f"{chave_arq(t)}.json").write_text(json.dumps(dado, ensure_ascii=False, indent=1),
+                                                        encoding="utf-8")
+    chave = os.environ.get("OPENROUTER_API_KEY")
+    var = "ANTHROPIC_API_KEY" if args.modelo.startswith("claude-") else "OPENROUTER_API_KEY"
+    if not args.importar and not os.environ.get(var):
+        raise SystemExit(f"{var} não definida")
     uso = {"prompt_tokens": 0, "completion_tokens": 0}
     erros = []
 

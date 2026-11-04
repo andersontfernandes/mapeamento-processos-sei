@@ -466,3 +466,20 @@ def test_priorizacao_custo_incremental_e_payback():
     assert iso == pytest.approx(HORAS_PLATAFORMA + HORAS_CAPACIDADE["classificação e triagem"] + inc)
     assert payback_anos(100, 60, 10) == 2.0
     assert payback_anos(100, 10, 10) is None  # retorno não cobre o custo anual: nunca se paga
+
+
+def test_fichas_trabalho_tem_limpeza_de_dados_pessoais_importada():
+    """A gravação de saida/fichas_trabalho.jsonl chama limpar_pessoais; sem o import, a etapa caía no fim da rodada."""
+    import fichas_trabalho
+    assert fichas_trabalho.limpar_pessoais is limpar_pessoais
+
+
+def test_fichas_importadas_de_agente_passam_pela_mesma_ancoragem():
+    """Resposta gravada por agente (--importar) recebe a mesma âncora literal que a resposta da API."""
+    texto = "O relatório fixa o prazo de 30 (trinta) dias para sanar as não conformidades."
+    f = legado(ancorar({"prazos": [{"dias": 30, "beneficiario": "concessionaria", "natureza": "cumprimento",
+                                    "evidencia": "prazo de 30 (trinta) dias para sanar"},
+                                   {"dias": 10, "beneficiario": "concessionaria", "natureza": "cumprimento",
+                                    "evidencia": "prazo de 10 dias para defesa"}]}, texto))
+    assert f["prazo_concedido_dias"] == 30
+    assert len(f["nao_ancorados"]) == 1
